@@ -1,0 +1,7 @@
+action,weight_change_g,stiffness_effect,priority,cumulative_weight_g
+Reduce floor braces,-19.3536,Minor decrease,1,1360.6464
+Remove space braces,-15.552,Replaced by plates,1,1345.0944
+Aggressive XZ dama,-46.08,Minor decrease X,1,1299.0144
+Remove intermediate beams,-69.12,Diaphragm via braces,2,1229.8944
+Add shear wall plates,6.4512,MAJOR Y increase,1,1236.3456
+Add strategic Y-braces,13.27104,Moderate Y increase,1,1249.61664

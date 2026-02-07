@@ -1,0 +1,48 @@
+/* DASK 2026 - Twin Towers Structural Analysis
+   Custom Stylesheet */
+
+/* Additional styles can be added here */
+
+/* Print styles for booktabs tables */
+@media print {
+    .table-booktabs {
+        color: black;
+    }
+    
+    .table-booktabs thead {
+        border-top: 2px solid black;
+        border-bottom: 1px solid black;
+    }
+    
+    .table-booktabs tbody {
+        border-bottom: 2px solid black;
+    }
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-custom {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Loading spinner for iframes */
+.viz-iframe {
+    background: linear-gradient(90deg, #1a1a2e 25%, #2a2a4e 50%, #1a1a2e 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}

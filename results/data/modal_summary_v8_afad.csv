@@ -1,0 +1,17 @@
+Parameter,Value
+Model_Height_cm,153.0
+Prototype_Height_m,76.5
+Scale_Factor,50
+T1_model_s,0.19986705589131887
+T1_prototype_s,1.4132735055654229
+f1_Hz,5.0033258134535545
+E_kN_cm2,170.0
+Section_mm,6.0
+Total_Mass_kg,15.02
+Sae_DD1_g,1.544
+Sae_DD2_g,1.008
+Region_DD2,Plateau
+TA_DD2_s,0.102
+TB_DD2_s,0.51
+SDS_DD2_g,1.008
+SD1_DD2_g,0.514

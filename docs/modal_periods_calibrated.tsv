@@ -1,0 +1,13 @@
+Mode	Period_s	Frequency_Hz	Sae_g	Spectral_Region
+1	0.1999	5.00	1.008	Plateau
+2	0.1471	6.80	1.008	Plateau
+3	0.1348	7.42	1.008	Plateau
+4	0.0643	15.54	0.785	Ascending
+5	0.0434	23.05	0.660	Ascending
+6	0.0430	23.25	0.658	Ascending
+7	0.0420	23.81	0.652	Ascending
+8	0.0353	28.33	0.612	Ascending
+9	0.0303	33.00	0.583	Ascending
+10	0.0255	39.18	0.555	Ascending
+11	0.0242	41.26	0.547	Ascending
+12	0.0240	41.64	0.546	Ascending

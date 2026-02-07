@@ -1,0 +1,2276 @@
+
+================================================================================
+FILE: 2024 TBDY_Uygulama_Teblig_Taslak_27_05_2024.pdf
+================================================================================
+Page count: 3
+
+--- Page 1 ---
+TÜRKİYE BİNA DEPREM YÖNETMELİĞİ KAPSAMINDA YAPILACAK
+BİNALARLA İLGİLİ UYGULAMA ESASLARINA
+DAİR TEBLİĞ
+BİRİNCİ BÖLÜM
+Amaç, Kapsam, Dayanak ve Tanımlar
+Amaç ve kapsam
+MADDE 1 – (1) Bu Tebliğin amacı; 18/3/2018 tarihli ve 30364 mükerrer sayılı Resmî Gazetede
+yayımlanan Türkiye Bina Deprem Yönetmeliği (TBDY) kapsamında, tasarım ve inşa edilecek binalarla
+ilgili olarak ruhsatlandırma hizmetlerinin yürütülmesine dair usul ve esasları belirlemektir.
+Dayanak
+MADDE 2 – (1) Bu Tebliğ, 15/7/2018 tarihli ve 30479 sayılı Resmî Gazetede yayımlanan 4 sayılı
+Cumhurbaşkanlığı Teşkilatı Hakkında Cumhurbaşkanlığı Kararnamesi’nin 40’ıncı maddesinin birinci
+fıkrası ile 18/3/2018 tarihli ve 30364 mükerrer sayılı Resmî Gazetede yayımlanan Türkiye Bina Deprem
+Yönetmeliğinin 6’ncı maddesine dayanılarak hazırlanmıştır.
+Tanımlar
+MADDE 3 – (1) Bu Tebliğde geçen;
+a) Bina Kullanım Sınıfı: Türkiye Bina Deprem Yönetmeliğinin eki Deprem Etkisi Altında
+Binaların Tasarımı İçin Esaslar’ın 3.1. maddesi kapsamında belirtilen sınıfları,
+b) Esaslı tadilat: Planlı Alanlar İmar Yönetmeliği kapsamında tanımlı, ruhsata tabi olan tadilatları,
+c) İlgili idare: Belediye ve mücavir alan sınırları içindeki uygulamalar için büyükşehir
+belediyeleri ile diğer belediyeleri, bu alanlar dışında kalan alanlarda valilikleri, yapı ruhsatı ve kullanma
+izin belgesi verme yetkisine sahip diğer idareleri,
+ç) Yürürlükteki yönetmelik: 18/03/2018 tarihli ve 30364 mükerrer sayılı Resmî Gazetede
+yayımlanan ve 01/01/2019 tarihinde yürürlüğe giren Türkiye Bina Deprem Yönetmeliğini,
+ifade eder.
+d) Önceki yönetmelik: 06/03/2007 tarihli ve 26454 sayılı Resmî Gazetede yayımlanan ve
+01/01/2019 tarihinde yürürlükten kaldırılan Deprem Bölgelerinde Yapılacak Binalar Hakkında
+Yönetmeliği,
+(2) Bu Tebliğde belirtilmeyen tanımlar için 18/03/2018 tarihli ve 30364 mükerrer sayılı Resmî
+Gazetede yayımlanan ve 01/01/2019 tarihinde yürürlüğe giren Türkiye Bina Deprem Yönetmeliğinde
+belirtilen tanımlar geçerlidir.
+İKİNCİ BÖLÜM
+Türkiye Bina Deprem Yönetmeliği Uygulama Esasları
+Uygulanacak ilke ve kurallar
+MADDE 4 – (1) Aşağıdaki hallerde yürürlükteki yönetmelik hükümleri geçerli olacaktır:
+a) Yeni yapılacak resmî ve özel tüm binaların ve bina türü yapıların tamamının veya bölümlerinin
+deprem etkisi altında tasarımı ve yapımı ile mevcut binaların deprem etkisi altındaki performanslarının
+değerlendirilmesi ve güçlendirilmesi işlemleri hakkında ilgili idarelere yapılacak olan ruhsat
+başvurularında,
+b) Bina kullanım sınıfı değiştirilecek ve/veya esaslı tadilata tabi olacak binalar için ilgili idarelere
+yapılacak olan başvurularda,
+c) Ruhsatı bitmiş ve taşıyıcı sistem imalatı tamamlanmamış binalar için yapılacak olan ruhsat
+yenileme başvurularında,
+d) Kat ilavesi için ilgili idarelere yapılacak olan başvurularda.
+(2) Aşağıdaki hallerde ilk ruhsat alma tarihindeki yönetmelik hükümleri geçerli olacaktır:
+a) Ruhsat süresi içinde tamamlanamayan ve yine ruhsat süresi içerisinde ilgili idarelere yapılan
+ruhsat uzatma başvurularında, ilk ruhsat alma tarihindeki yönetmelik hükümleri geçerli olacaktır.
+b) Ruhsat süresi içerisinde taşıyıcı sistem imalatı tamamlanmış ancak ruhsatı bitmiş, tadilat
+istenmeyen binalar için yapılan ruhsat yenileme ya da iskân başvurularında,
+
+--- Page 2 ---
+(3) Yürürlükteki yönetmelik veya önceki yönetmelik hükümlerine göre ruhsat alarak inşaatına
+başlanmış, tüm inşaat faaliyetleri denetimli olarak yapılmış, tüm beton ve inşaat demiri kontrolleri
+yapılmış, numuneleri alınmış ve laboratuvar testleri yapılmış, ruhsat ve eklerine uygun olarak inşa
+edilmiş ancak ruhsat süresi içinde yapı kullanma izin belgesi almayan yapıların, denetimi yapan fennî
+mesul mimar ve mühendisler veya yapı denetim kuruluşları tarafından denetim raporu hazırlanmak ve
+ilgili idare tarafından dosyasında ve yerinde, inceleme ve tespit yapılmak koşuluyla, yeniden ruhsat
+düzenlenmeksizin yapı kullanma izin belgesi verilir.
+ÜÇÜNCÜ BÖLÜM
+Yeni Yapılacak Binalar ile İlgili Uyulması Zorunlu Esaslar
+Simgeler
+𝐴 = Göz önüne alınan kolonun enkesit alanı
+𝑐𝑖
+(∑𝐴 ) = j’inci kattaki kolon alanlarının toplamı
+𝑐𝑖 𝑗
+𝐴 = j’inci kattaki plan alanı
+𝑝𝑗
+𝐴 = Göz önüne alınan perdenin enkesit alanı
+𝑤𝑖
+(∑𝐴 ) = j’inci kattaki göz önüne alınan doğrultuda çalışan perde veya perde kolu enkesit
+𝑤𝑖 𝑗
+alanlarının toplamı
+BKS = Bina Kullanım Sınıfı (TBDY, Tablo 3.1)
+BYS = Bina yükseklik sınıfı (TBDY, Tablo 3.3)
+DD-2 = 50 yılda aşılma olasılığı %10 (tekrarlanma periyodu 475 yıl) olan deprem yer hareketi
+düzeyi
+𝑓 = Betonun karakteristik silindir basınç dayanımı
+𝑐𝑘
+𝑁 = Binanın temel üstünden itibaren toplam kat sayısı veya bodrum katta dört taraftan rijit
+bodrum perdeleriyle çevrili binada zemin kat döşemesi üstünden itibaren toplam kat
+sayısı.
+𝑁 = Düşey yükler ve deprem yüklerinin ortak etkisi altında (TS 498’de hareketli yükler için
+𝑑𝑚
+tanımlanmış olan hareketli yük azaltma katsayıları da dikkate alınarak) hesaplanan
+eksenel basınç kuvvetlerinin en büyüğü
+𝑆 = Kısa periyot tasarım spektral ivme katsayısı [boyutsuz]
+𝐷𝑆
+𝜂 = j’inci katta tanımlanan Burulma Düzensizliği Katsayısı
+𝑏𝑗
+Uygulanacak ilke ve kurallar
+MADDE 5 – Yeni yapılacak binalarla ilgili aşağıdaki hükümler geçerli olacaktır:
+(1) Bina Yükseklik Sınıfı BYS ≤ 6 olan yerinde dökme veya önüretimli betonarme binaların
+plandaki her iki doğrultusunda betonarme perdelerin kullanılması zorunludur. Bu binalarda;
+a) perdeler 𝐴 ≥ 𝑁 ⁄(0.25𝑓 ) şartını sağlayacaktır.
+𝑤𝑖 𝑑𝑚 𝑐𝑘
+b) perde uç bölgelerinde beton en az iki adet kapalı etriye ve her doğrultuda en fazla bir çiroz
+ile sargılanacaktır.
+c) herhangi bir j’inci kattaki perde en kesit toplam alanları Denk.(1) ile verilen şartı her iki
+doğrultuda da ayrı ayrı sağlayacaktır. Göz önüne alınan kattaki perde en kesit alanı, bir üst kattaki perde
+en kesit alanından küçük olamaz. Perde enkesit toplam alanı ∑𝐴 hesaplanırken sadece ilgili
+𝑤𝑖
+doğrultuda yer alan perdeler ile perde kolları dikkate alınacaktır. I, T, U, L, C vb. kesitli perdelerde her
+bir perde kolunun en kesit alanı, ilgili doğrultuda ayrı ayrı dikkate alınacaktır. Her iki doğrultuya belirli
+bir açıyla yerleşen perdelerin en kesit alanı, ilgili doğrultudaki bileşeni hesaplanarak perde en kesit
+toplam alanı için dikkate alınacaktır.
+(∑𝐴𝑤𝑖 )
+𝑗 ≥ min (0.002 𝑁,0.02)𝑆 (1)
+𝐷𝑆
+𝐴𝑝𝑗
+
+--- Page 3 ---
+(d) herhangi bir j’inci kattaki kolon ve perde enkesit toplam alanları Denk.(2) ile verilen şartı
+her iki doğrultuda da sağlayacaktır. Göz önüne alınan kattaki perde veya kolon en kesit alanı, bir üst
+kattaki en kesit alanından küçük olamaz. Kolon en kesit toplam alanı ∑𝐴 hesaplanırken her iki
+𝑐𝑖
+doğrultu için tüm kolonlar, perde en kesit toplam alanı ∑𝐴 hesaplanırken ise sadece ilgili doğrultuda
+𝑤𝑖
+yer alan perdeler dikkate alınacaktır. I, T, U, L, C vb. kesitli perdelerde her bir perde kolunun en kesit
+alanı, ilgili doğrultuda ayrı ayrı dikkate alınacaktır. Her iki doğrultuya belirli bir açıyla yerleşen
+perdelerin en kesit alanı, ilgili doğrultudaki bileşeni hesaplanarak perde en kesit toplam alanı için
+dikkate alınacaktır.
+(∑𝐴𝑐𝑖 )
+𝑗+
+(∑𝐴𝑤𝑖 )
+𝑗 ≥ maks[0.009,min(0.003 𝑁,0.03)]𝑆 (2)
+𝐷𝑆
+𝐴𝑝𝑗 𝐴𝑝𝑗
+(2) Bina Yükseklik Sınıfı BYS > 6 olan yerinde dökme veya önüretimli betonarme binaların her
+katında kolon toplam enkesit alanları veya kolon ve perde enkesit toplam alanları Denk.(2) ile verilen
+şartı sağlayacaktır.
+(3) BKS = 3 olan yerinde dökme veya önüretimli betonarme çerçevelerin tüm kolonlarında;
+a) uzun kenarın kısa kenara oranı 1.5’ten büyük olmayacak,
+b) 𝐴 ≥ 𝑁 ⁄(0.35𝑓 ) şartı sağlanacak,
+𝑐𝑖 𝑑𝑚 𝑐𝑘
+c) sarılma bölgelerinde beton en az iki adet kapalı etriye ve her doğrultuda en fazla bir çiroz ile
+sargılanacaktır.
+(4) BKS = 3 olan ve deprem yüklerinin moment aktaran çerçevelerle taşındığı tüm binalarda,
+a) planda her iki doğrultuda kat planı uzunluğunca devam eden en az iki doğrusal aks üzerinde
+ve toplam aks sayısının %50’sinden az olmamak üzere aks kesişim noktaları üzerinde yer alan kolonlar
+ile sürekli çerçeveler oluşturulacaktır.
+b) betonarme kolonlar, TBDY Bölüm 7’ye göre tasarlanacak kirişler ile her iki doğrultuda
+birbirine bağlanacaktır. Kolon merkezinden kiriş merkezine yatay dış merkezlik mesafesi kirişin
+birleştiği kolon yüzünün genişliğinin 1/3’ünden fazla olmayacaktır.
+c) burulma düzensizliği katsayısı 𝜂 1.4’den büyük olmayacaktır.
+𝑏𝑗
+(5) Dolgu duvarlı binalarda, TBDY Bölüm 4.9.1’e göre DD-2 deprem etkisi altında her bir
+deprem doğrultusunda binanın herhangi bir katında hesaplanan etkin göreli kat ötelemelerinin kat
+içindeki en büyük değeri 0.01’den büyük olmayacaktır. Dolgu duvarları ile çerçeve elemanlarının
+arasında dolgu duvarın hasar almasını engelleyen ve yeterli düzlem dışı dayanıma sahip bağlantılar
+bulunan betonarme binalarda bu öteleme değeri 0.015’ten, deprem yüklerinin tamamının moment
+aktaran çelik çerçevelerle taşındığı binalarda 0.0175’ten büyük olmayacaktır. Bu bağlantıların düzlem
+içi ve düzlem dışı deprem etkileri altındaki tersinir çevrimsel davranışının deneylerle belgelenmiş
+olması ve deney sonuçları ile detay çizimlerinin proje eklerinde sunulmuş olması gereklidir.
+Yürürlükten kaldırılan tebliğ
+MADDE 5 – (1) 17/7/2019 tarihli ve 30834 sayılı Resmî Gazete’de yayımlanan Türkiye Bina
+Deprem Yönetmeliği Kapsamında Yapılacak Binalarla İlgili Uygulama Esaslarına Dair Tebliğ
+yürürlükten kaldırılmıştır.
+Yürürlük
+MADDE 6 – (1) Bu Tebliğ yayımı tarihinde yürürlüğe girer.
+Yürütme
+MADDE 7 – (1) Bu Tebliğ hükümlerini Afet ve Acil Durum Yönetimi Başkanlığı’nın bağlı
+olduğu İçişleri Bakanı yürütür.
+
+================================================================================
+FILE: TS-498 2021.pdf
+================================================================================
+Page count: 28
+
+--- Page 1 ---
+TÜRK
+STANDARDLARI
+Türk Standardı
+ENSTİTÜSÜ
+TS 498
+Eylül 2021
+TS 498:1997 yerine
+ICS 91.040.01
+Yapı elemanlarının boyutlandırılmasında
+alınacak yüklerin hesap değerleri
+
+--- Page 2 ---
+TS 498:2021 TÜRK STANDARDI
+TELİF HAKKI KORUMALI DOKÜMAN
+© TSE 2021
+Tüm hakları saklıdır. Aksi belirtilmedikçe bu yayının herhangi bir bölümü veya tamamı, TSE'nin yazılı izni olmaksızın
+fotokopi ve mikrofilm dâhil, elektronik ya da mekanik herhangi bir yolla çoğaltılamaz ya da kopyalanamaz.
+TSE Standard Hazırlama Merkezi Başkanlığı
+Necatibey Caddesi No: 112
+06100 Bakanlıklar * ANKARA
+Tel: + 90 312 416 68 30
+Faks: + 90 312 416 64 39
+E-posta: dokumansatis@tse.org.tr
+Web: www.tse.org.tr
+
+--- Page 4 ---
+TÜRK STANDARDI TS 498:2021
+Önsöz
+Bu standart; Türk Standardları Enstitüsü İnşaat İhtisas Kurulu’na bağlı TK09 İnşaat Teknik Komitesi’nce
+TS 498:1997 revizyonu olarak hazırlanmış ve TSE Teknik Kurulu’nun 30 Eylül 2021 tarihli toplantısında
+kabul edilerek yayımına karar verilmiştir.
+Bu standardın daha önce yayımlanmış bulunan baskıları geçersizdir.
+Bu standardın hazırlanmasında, milli ihtiyaç ve imkânlarımız ön planda olmak üzere, milletlerarası
+standartlar ve ekonomik ilişkilerimiz bulunan yabancı ülkelerin standartlarındaki esaslar da göz önünde
+bulundurularak; yarar görülen hallerde, olabilen yakınlık ve benzerliklerin sağlanmasına ve bu esasların,
+ülkemiz şartları ile bağdaştırılmasına çalışılmıştır.
+Bu standart son şeklini almadan önce; bilimsel kuruluşlar, üretici/ imalatçı ve tüketici durumundaki
+konunun ilgilileri ile gerekli işbirliği yapılmış ve alınan görüşlere göre olgunlaştırılmıştır.
+Bu standartta kullanılan bazı kelime ve/veya ifadeler patent haklarına konu olabilir. Böyle bir patent
+hakkının belirlenmesi durumunda TSE sorumlu tutulamaz.
+© TSE – Tüm hakları saklıdır. iii
+
+--- Page 5 ---
+iv © TSE – Tüm hakları saklıdır.
+
+--- Page 6 ---
+TÜRK STANDARDI TS 498:2021
+İçindekiler
+Sayfa
+1 Kapsam ...................................................................................................................................................... 1
+2 Bağlayıcı atıflar ...................................................................................................................................... 1
+3 Terimler ve tanımlar ............................................................................................................................ 1
+4 Semboller .................................................................................................................................................. 2
+5 Yapı elemanlarının boyutlandırılmasında alınacak yüklerin hesap değerleri .............. 3
+5.1 Sınai, ticari ve zirai depolama malzemeleri ................................................................................. 3
+5.2 Yapı malzemesi ve yapı elemanları ................................................................................................. 3
+5.3 Beton ve harç ........................................................................................................................................... 3
+5.4 Döşeme plâkları ..................................................................................................................................... 3
+5.5 Duvar plâkları ......................................................................................................................................... 3
+5.6 Döşeme ve duvar kaplamaları .......................................................................................................... 3
+5.7 Çatı örtüleri .............................................................................................................................................. 3
+6 Kohezyonsuz zeminlerin hesap değerleri .................................................................................... 3
+7 Kohezyonlu zeminlerin hesap değerleri ....................................................................................... 6
+8 Hesap değerlerinin kullanımındaki sınırlamalar ...................................................................... 8
+9 Duvar-Sürtünme açısı () .................................................................................................................... 8
+10 Yamaçlarda ve şevlerde yer alan toprak itkisine maruz yapı elemanlarının genişliği 8
+11 Çatı kar yükü hesap değeri S, karakteristik zemin kar yükü S ........................................... 9
+k
+12 Kar yükü ve rüzgâr yükünün aynı anda etkimesi durumu ..................................................... 9
+13 Buz yükü ................................................................................................................................................ 10
+14 Rüzgâr yükü .......................................................................................................................................... 10
+15 Düşey hareketli yükler ..................................................................................................................... 14
+15.1 Düzgün yayılı hareketli yükler (Çatı, Döşeme, Merdiven İçin) .......................................... 14
+16 Hareketli yük azaltması ................................................................................................................... 15
+EK 1 İl ve ilçelere göre zatî kar yükü bölgeleri ...................................................................................... 16
+EK 2 Kar yağış yüksekliği haritası .............................................................................................................. 21
+© TSE – Tüm hakları saklıdır. v
+
+--- Page 7 ---
+vi © TSE – Tüm hakları saklıdır.
+
+--- Page 8 ---
+TÜRK STANDARDI TS 498:2021
+1 Kapsam
+Bu standart, konutlar, iş yerleri, resmi kurumlar, okullar, hastaneler, spor tesisleri, eğlence yerleri,
+garajlar vb. yapılardaki taşıyıcı elemanların (kâgir, beton, betonarme, ahşap, çelik vb.)
+boyutlandırılmasında alınacak yüklerin hesap değerini kapsar. Köprüler, su yapıları, önemli dinamik
+etkilere maruz her çeşit endüstri yapıları ve yüksek gerilim iletme hatları vb. maruz oldukları yükler
+bakımından özelik gösteren yapıların boyutlandırılmasında dikkate alınacak yükleri kapsamaz.
+NOT - Betonarme, çelik gibi değişik yapılarda etkisi farklı olan sıcaklık değişimi, rötre, deprem vb. etkiler sözü geçen
+yapılara ait standarttan veya ilgili mevzuatta yer alan dokümandan alınmalıdır .
+2 Bağlayıcı atıflar
+Bu standartta, diğer standart ve/veya dokümanlara atıf yapılmaktadır. Bu atıflar metin içerisinde uygun
+yerlerde belirtilmiş ve aşağıda liste halinde verilmiştir. Tarihli atıflarda, yalnızca alıntı yapılan baskı
+geçerlidir. Tarihli olmayan dokümanlar için, atıf yapılan dokümanın (tüm tadiller dâhil) son baskısı
+geçerlidir.
+TS No Türkçe adı İngilizce adı
+Bases for design of structures; actions
+Yapıların projelendirilme esasları-
+due to the self-weight of structures, non-
+TS ISO 9194 Taşıyıcı olan ve olmayan elemanlar
+structural elements and stored materials;
+depolanmış malzemeler-Yoğunluk
+density
+Yapılar üzerindeki etkiler - Bölüm 1-1:
+Eurocode 1 - Actions on structures - Part
+Genel etkiler - Yoğunluklar, binaların
+TS EN 1991-1-1 1-1: General actions - Densities, self-
+zatî ağırlıkları ve maruz kaldığı diğer
+weight and imposed loads for buildings
+yükler (eurocode 1)
+Yapılar üzerindeki etkiler - Bölüm 1-3: Eurocode 1 – Actions on structures – Part
+TS EN 1991-1-3
+Genel etkiler - Kar yükleri (eurocode 1) 1-3: General actions – Snow loads
+Eurocode 1: Yapıların projelendirme
+Eurocode 1: Actions on structures - Part
+TS EN 1991-1-4 ve etki esasları - Bölüm 1-4: Yapı
+1-4: General actions - Wind actions
+etkileri - Rüzgâr etkisi
+3 Terimler ve tanımlar
+3.1
+hareketli yük
+Zati yüklerin dışındaki, insan, mobilya, taşıyıcı olmayan hafif bölme duvarları, depolama malzemesi,
+makina, araç, gereç, vinç, rüzgâr, kar yükü gibi yükler
+3.2
+zati yük
+Kiriş, kolon, döşeme, çatı gibi taşıyıcı elemanların ve bunların sıva, kaplama vs. gibi tamamlayıcı
+kısımlarının ağırlıkları
+3.3
+kayma direnci açısı()
+Kesme ve normal gerilme değerlerinin, bir eksen takımının ordinat ve apsis eksenine taşınması (t-s
+diyagramı) sonucunda çizilen yaklaşık doğrunun yatayla yaptığı açı
+© TSE – Tüm hakları saklıdır. 1
+
+--- Page 9 ---
+TS 498:2021 TÜRK STANDARDI
+3.4
+tabii şev açısı
+Engelsiz ve zorlamasız birikmiş kohezyonsuz bir zemin yığınında, yığın yan yüzeyinin yatay düzlemle
+yaptığı açı
+3.5
+Birim hacim kütlesi ( )
+k
+Bir cismin kütlesinin, o cismin görünen hacmine (katı kısım + bütün boşluklar) oranı
+3.6
+birim hacim ağrlığı ( )
+g
+birim hacmin kütlesine etkiyen yerçekim kuvveti
+3.7
+kohezyon (c)
+Madde 3.3'te belirtilen doğrunun ordinat eksenini kestiği noktanın değeri
+3.8
+duvar sürtünme açısı ()
+Duvara etki eden aktif veya pasif toprak basıncı bileşkesinin (Pa), (Pp) duvar yüzeyinin normali ile yaptığı
+açı
+3.9
+aktif toprak basıncı (Pa)
+Toprağın dayanma yapısına uyarak yeterli açılma hareketi yapabildiği durumda, zatî ağırlığı ve varsa üst
+yükü sebebiyle oluşturduğu ve dayanma yapısına uyguladığı en küçük değerli yanal toprak basıncı
+3.10
+pasif toprak basıncı (Pp)
+Toprağın dayanma yapısına uyarak yeterli kapanma hareketine zorlandığı durumda, zati ağırlığı ve varsa
+üst yükü sebebiyle oluşturduğu ve dayanma yapısına uyguladığı en büyük değerli yanal toprak basıncı
+4 Semboller
+ Kayma direnci açısı
+' Efektif kayma direnci açısı
+u Drenajsız kayma direnci açısı
+ Birim hacim kütlesi
+k
+ Doygun birim hacim kütlesi
+u
+ Tabiî birim hacim kütlesi
+n
+' Batık birim hacim kütlesi
+c Kohezyon
+c' Efektif gerilmeye göre tarif edilen kohezyon
+c Drenajsız koşullarda ölçülen kohezyon
+u
+ Duvar sürtünme açısı
+P Aktif toprak basıncı
+a
+2 © TSE – Tüm hakları saklıdır.
+
+--- Page 10 ---
+TÜRK STANDARDI TS 498:2021
+P Pasif toprak basıncı
+p
+S Çatı kar yükü (kN/m2)
+Sk Dikkate alınan mahaldeki karakteristik zemin kar yükü (kN/m2)
+5 Yapı elemanlarının boyutlandırılmasında alınacak yüklerin hesap değerleri
+5.1 Sınai, ticari ve zirai depolama malzemeleri
+Sınai, ticari ve zirai depolama malzemeleri olarak alınacak yüklerin hesap değerleri TS ISO 9194 Ek A
+/veya Ek B’de verilen değerlere uygun olmalıdır.
+NOT TS ISO 9194 ‘te yer almayan malzemeler için TS EN 1991-1-1 Ek A’ya bakılmalıdır.
+5.2 Yapı malzemesi ve yapı elemanları
+Yapı malzemesi ve yapı elemanı olarak alınacak yüklerin hesap değerleri TS ISO 9194 EK A ve/veya Ek
+B’de verilen değerlere uygun olmalıdır.
+NOT TS ISO 9194 ‘te yer almayan malzemeler için TS EN 1991-1-1 Ek A’ya bakılmalıdır.
+5.3 Beton ve harç
+Beton ve harç olarak alınacak yüklerin hesap değerleri TS ISO 9194 Ek A ve/veya Ek B’de verilen
+değerlere uygun olmalıdır.
+NOT TS ISO 9194 ‘te yer almayan malzemeler için TS EN 1991-1-1 Ek A’ya bakılmalıdır.
+5.4 Döşeme plâkları
+Döşeme plağı olarak alınacak yüklerin hesap değerleri, TS ISO 9194 Ek A ve/veya Ek B’de verilen
+değerlere uygun olmalıdır.
+NOT TS ISO 9194 ‘te yer almayan plâklar için TS EN 1991-1-1 Ek A’ya bakılmalıdır.
+5.5 Duvar plâkları
+Duvar plağı olarak alınacak yüklerin hesap değerleri, TS ISO 9194 Ek A ve/veya Ek B’de verilen değerlere
+uygun olmalıdır.
+NOT TS ISO 9194 ‘te yer almayan plâklar için TS EN 1991-1-1 Ek A’ya bakılmalıdır.
+5.6 Döşeme ve duvar kaplamaları
+Döşeme ve duvar kaplaması olarak alınacak yüklerin hesap değerleri TS ISO 9194 Ek A ve/veya Ek B’de
+verilen değerlere uygun olmalıdır.
+NOT TS ISO 9194 ‘te yer almayan kaplamalar için TS EN 1991-1-1 Ek A’ya bakılmalıdır.
+5.7 Çatı örtüleri
+Çatı örtüsü olarak alınacak yüklerin hesap değerleri TS ISO 9194 Ek A ve/veya Ek B’de verilen değerlere
+uygun olmalıdır.
+NOT TS ISO 9194 ‘te yer almayan örtüler için TS EN 1991-1-1 Ek A’ya bakılmalıdır.
+6 Kohezyonsuz zeminlerin hesap değerleri
+6.1
+Çizelge 1'de verilen hesap değerleri, yerinde oluşmuş ve taşınmış zeminlerin her ikisi için de
+geçerlidir. Geçerli yerleşim sıkılığı değeri, her iki hal için de yapay bir sıkıştırma sonucu yaratılmış
+olabilir. Gözenekli tanelerden oluşan; bims çakılı, tüf kumu vb.ler için bu çizelge kullanılamaz.
+© TSE – Tüm hakları saklıdır. 3
+
+--- Page 11 ---
+TS 498:2021 TÜRK STANDARDI
+6.2
+Zeminin yığın sıkılığı hakkında bir inceleme yapılmamış ve tecrübeye dayalı bilgi de yoksa, zemin yığını
+gevşek kabul edilmelidir.
+6.3
+Çizelge 1'deki 1-9 sıra no’lu değerler yuvarlak ve yuvarlağa yakın tane şekilleri için geçerlidir. Köşeli
+taneler çoğunlukta ise, Çizelge ’deki kayma direnci açısı değerleri 2,5° artırılmalıdır.
+6.4
+Suyun kaldırmasına veya diğer kaldırma kuvvetlerine karşı yapılan tahkiklerde Çizelge 1'de verilen birim
+hacim ağırlık değerleri tabii su muhtevasındaki zeminler için 2,0 kN/m3, suya doygun veya batık zeminler
+için 1,0 kN/m3 azaltılmalıdır.
+4 © TSE – Tüm hakları saklıdır.
+
+--- Page 12 ---
+TÜRK STANDARDI TS 498:2021
+Çizelge 1 — Kohezyonsuz zemin özellikleri hesap değerleri
+Sıra Zemin türü Sembol Sıkılık Birim Hacim Ağırlık Kayma Direnci
+No Tabii zemin Doygun zemin Batık zemin Açısı
+
+n
+
+d
+' 
+kN/m3 kN/m3 kN/m3 Derece
+1 İyi derecelenmiş kum, az siltli kum, C  6 olan Gevşek 17,0 19,0 9,0 30
+u
+2 kum-çakıl SW, SM Orta Sıkı 18,0 20,0 10,0 32,5
+3 Sıkı 19,0 21,0 11,0 35
+4 İyi derecelenmiş az kumlu çakıl, Gevşek 17,0 19,0 9,0 32,5
+5 yassı çakıl ve taş GW Orta Sıkı 18,0 20,0 10,0 35
+6 Sıkı 19,0 21,0 11,0 37,5
+7 Kötü derecelenmiş kum, kum-çakıl 6 < C  15 olan Gevşek 18,0 20,0 10,0 30
+u
+8 ve çakıl SP, SM, GP Orta Sıkı 19,0 21,0 11,0 32,5
+9 Sıkı 20,0 22,0 12,0 35
+10 Kötü derecelenmiş kum, kum-çakıl, C  15 olan Gevşek 18,0 20,0 10,0 30
+u
+11 az siltli çakıl SP,SM,GP veya GM Orta Sıkı 20,0 22,0 12,0 32,5
+12 Sıkı 22,0 24,0 14,0 35
+Çizelgeye ait NOT :
+1) Üniformluluk katsayıs - C = D / D ; Burada : D : Elek analizinde, elekten geçen malzemenin % 10'unun tekabül ettiği tane büyüklüğü,
+u 60 10 10
+D : Elek analizinde, elekten geçen malzemenin % 60'ının tekabül ettiği tane büyüklüğüdür.
+60
+2) Sıkılık Oranı - Dr = (e – e ) / (e – e ) ; Burada : e : En büyük boşluk oranı
+max 0 max min max
+e : Tabii boşluk oranı
+0
+e : En küçük boşluk oranı
+min
+Sıkılık oranına göre değerlendirme :
+Gevşek : 0,15< Dr  0,3
+Ortasıkı : 0,30< Dr  0,50
+Sıkı : 0,50< Dr  0,75
+© TSE – Tüm hakları saklıdır. 5
+
+--- Page 13 ---
+TS 498:2021 TÜRK STANDARDI
+7 Kohezyonlu zeminlerin hesap değerleri
+7.1
+Çizelge 2'de verilen hesap değerleri, yerinde oluşmuş, örselenmemiş ve konsolide olmuş zeminler için
+geçerlidir. Çizelgede verilen birim hacim ağırlık ve kayma direnci açısı değerlerinin, yığın zeminde de
+geçerli olabilmesi için zemin sıkılığı, proktor sıkılığının en az % 95'i olmalıdır. Buna göre çizelgedeki
+kohezyon için verilen değerler, kohezyonlu yığın zeminler için c=0, c =0 değerleriyle değiştirilmelidir.
+u
+7.2
+Suyun kaldırmasına veya diğer kaldırma kuvvetlerine karşı yapılan tahkiklerde Çizelge 2'de verilen birim
+hacim ağırlık değerleri, yeraltı su seviyesi üstünde kalan zeminler için 2,0 kN/m3, batık zeminler için
+1,0 kN/m3 azaltılmalıdır.
+6 © TSE – Tüm hakları saklıdır.
+
+--- Page 14 ---
+TÜRK STANDARDI TS 498:2021
+Çizelge 2 — Kohezyonlu zemin ve organik zeminlerin hesap değerleri
+Birim Hacim Ağırlık Efektif Kayma Kohezyon
+Direnci Açısı
+Sıra Su Üstü Batık ' c' cu
+No. Zemin Türü Sembolü Kıvamı Derece
+kN/m3 kN/m3 kN/m2 N/m2
+1 Yüksek
+Plastisiteli Yumuşak 18,0 8,0 17,5 0 50
+CH
+İnorganik Katı 19,0 9,0 17,5 10 35
+MH
+kohezyonlu Orta sert 20,0 10,0 17,5 25 75
+zeminler (wL>%50)
+2
+Orta Plastisiteli
+Yumuşak 19,0 9,0 22,5 0 5
+İnorganik
+kohezyonlu CL Katı 19,5 9,5 22,5 5 25
+ML
+zeminler Orta sert 20,5 10,5 22,5 10 60
+(%50>wL  % 35)
+3 Düşük Plastisiteli 0
+10,0 27,5 0
+İnorganik OL Yumuşak 20,0
+10,5 27,5 2 15
+kohezylonlu CL Katı 20,5
+11,0 27,5 5 40
+zeminler (wL<%35) ML Orta sert 21,5
+10
+Organik kil, OH Yumuşak 14,0 4,0 15 0
+4 20
+organik silt OL Katı 17,0 7,0 15 0
+Çizelgeye ait NOT :
+Bağıl kıvam değeri (K) = (wL-wn)/(wL-wp)
+w = Akmadan katılaşmaya geçme sınırındaki su muhtevası (Likit Limit)
+L
+w = Tabii su muhtevası
+n
+w = Katıdan orta sertliğe geçme sınırındaki su muhtevası (Plastik Limit)
+p
+Bağıl kıvam değerine göre kıvam sınıfları ; Yumuşak : 0,50 < K  0,75
+Katı : 0,75 < K  1,00
+Orta sert : K > 1,00
+© TSE – Tüm hakları saklıdır. 7
+
+--- Page 15 ---
+TS 498:2021 TÜRK STANDARDI
+8 Hesap değerlerinin kullanımındaki sınırlamalar
+8.1
+Kohezyonu dikkate alabilmek için zeminin hamur kıvamında (elde sıkıldığında parmaklar arasından
+çıkması durumu) olmaması ve bir donma periyodu sonrasında ilk halinin değişmemesi gerekir.
+8.2
+Kohezyonlu ve kohezyonsuz zemin türlerinin tabakalar halinde bulunması durumunda, herhangi bir
+deney sonucu yoksa en gayri müsait değerdeki tabaka esas alınır.
+8.3
+Kohezyonlu zemin tabakalarında boşluk suyu basıncı oluşup oluşmadığı kontrol edilir. Boşluk suyu
+basıncının oluşması için zemin gerilme durumlarının değişmesi gerekir. Örnek olarak, zemin üzerine
+ilave bir yük uygulanması veya zemin tabakalarının ağırlığının arttırılması bu gerilmeleri ortaya çıkarır.
+Zeminin konsolide olması ile boşluk suyu basıncı tekrar düşer. Bu durumda, herhangi deney sonucu da
+mevcut değilse hesaplamalar, hem konsolide olmamış haldeki başlangıç dayanımı değerleri ( , c ) hem
+u u
+de konsolide olmuş son dayanım değerleri (',c') ile yapılır.
+9 Duvar-Sürtünme açısı ()
+Duvar pürüzlülüğü, dolgu kısmının duvar üzerinden olan eğimi, dolgu zeminin türü, kıvamı, dolgu zemin
+ile duvar arasındaki hareket imkânına bağlıdır.
+9.1
+Aktif toprak basıncının hesaplanmasında duvar-sürtünme açısı (), pürüzlü duvarlarda 2/3 , pürüzsüz
+sayılabilecek az pürüzlü duvarlarda 1/3  alınır. Genel olarak çelik, beton ve ahşap yüzeyler pürüzlü
+kabul edilir.
+9.2
+Duvar arkasındaki dolgunun çok plastik ve kayma kuvvetlerini iletemeyen bir dolgu olması halinde duvar
+sürtünme açısı sıfır alınır.
+9.3
+Konsolide olmamış kohezyonlu bir zeminin yanal basınç hesabında, duvar sürtünmesi yerine
+değeri, Ca (Adezyon) = (1/2). Cu olan bir adezyon dikkate alınabilir.
+10 Yamaçlarda ve şevlerde yer alan toprak etkisine maruz yapı elemanlarının
+genişliği
+Yamaçlarda ve şevlerde yer alan ve toprak basıncına maruz kalan narin yapılarda toprak itki yükünün
+hesaplanması için, kesin tahkik istenmeyen durumlarda, aşağıda verilen yapı elemanları genişliği esas
+alınır.
+10.1
+1,00 m'ye kadar genişlikteki yapı elemanlarında, yapı elemanı genişliğinin 3 katı genişlik
+10.2
+1,00 m - 3,00 m arası genişlikteki yapı elemanlarında 3,00 m genişlik
+10.3
+3,00 m'den fazla genişlikteki yapı elemanlarında yapı elemanı genişliğinin tamamı hesap genişliği olarak
+alınır.
+8 © TSE – Tüm hakları saklıdır.
+
+--- Page 16 ---
+TÜRK STANDARDI TS 498:2021
+11 Çatı kar yükü hesap değeri S, karakteristik zemin kar yükü S
+k
+Çatı kar yükü değeri S, karakteristik zemin kar yükü hesabı için ekte düzenlenmiş Türkiye Kar Bölge
+Haritasındaki değerlerden alınır ve çatı tipinin seçimi buna ilişkin hesaplamada, TS EN 1191-1-3
+kullanılarak hesap değeri bulunur. Çelik konstrüksiyon, hafif çelik, uzay kafes gibi çubuk elamandan
+oluşan yapılarda TS EN 1191-1-3, Ek E’de yer alan Çizelge E.1 deki değerler kullanılarak en kritik kar
+yükü değeri hesaplanır.
+Kar yükü S değeri, Ek II'de verilen kar yağış yüksekliğine göre düzenlenmiş haritadaki bölgelerin
+k
+numarasına göre Çizelge 3'den alınır. Ayrıca rakımı 1500 metreden fazla olan yerler için değerler, Çizelge
+3 de verilen oranlara göre arttırılır.
+s Çatı kar yükü (kN/m2)
+S Dikkate alınan mahaldeki karakteristik zemin kar yükü (kN/m2)
+k
+Çizelge 3 — Karakteristik kar yükü S değerleri kN/m2 (*)
+k
+Yapı yerinin denizden BÖLGELER
+yüksekliği
+m 1 2 3 4 5 6 7 8 9
+0-200 0,75 0,75 0,75 0,75 0,75 0,75 0,75 0,80 0,85
+300 0,75 0,75 0,75 0,75 0,75 0,75 0,75 0,85 0,90
+400 0,75 0,75 0,75 0,75 0,75 0,75 0,80 0,90 0,95
+500 0,75 0,75 0,75 0,80 0,80 0,80 0,85 0,95 1,00
+600 0,75 0,75 0,80 0,85 0,85 0,85 0,90 1,00 1,10
+700 0,75 0,80 0,85 0,90 0,90 0,90 0,95 1,10 1,20
+800 0,80 0,90 0,95 0,95 0,95 0,95 1,10 1,20 1,30
+900 0,80 0,95 1,05 1,10 1,10 1,10 1,25 1,30 1,40
+1000 0,80 1,05 1,10 1,20 1,30 1,35 1,40 1,50 1,60
+>1000 1000 m’ye tekabül eden değerler, 1500 m’ye kadar %10, 1500 m’den yukarı
+yüksekliklerde %15 artırılır.
+* Kar yağmayan yerlerde kar yükü hesap değeri sıfır alınır.
+12 Kar yükü ve rüzgâr yükünün aynı anda etkimesi durumu
+12.1
+Eğimi 45°'ye kadar olan çatılarda kar yükü (S) ve rüzgâr yükünün (W) aynı anda etkimesi halinde hesap
+kolaylığı olarak ve yeterli yaklaşımla
+W S
+a) S = veya b) W =
+2 2
+Burada en gayrı müsait durum dikkate alınır.
+12.2
+45°'den fazla eğimli çatılarda ise, aynı anda etkiyen kar ve rüzgâr etkisinin Madde 13.1'e göre
+hesaplanabilmesi için, kar birikintileri meydana gelen tipteki çatılar (mesela çatı tipi değişik olan fabrika
+çatılarında vb.) veya yoğun kar yağışlı bölgeler olması gereklidir.
+© TSE – Tüm hakları saklıdır. 9
+
+--- Page 17 ---
+TS 498:2021 TÜRK STANDARDI
+13 Buz yükü
+Buz yükü için, genel olarak geçerli bir değer verilememektedir. Çünkü buz oluşumu çok sayıda değişkene
+(rüzgâr yönü, yükseklik, nem, hava sıcaklığı, yapı malzemesi cinsi vs. gibi) bağlı olarak ortaya
+çıkmaktadır.
+Buz yükü, özellikle dağlık bölgelerde, nemli rüzgârların estiği bölgelerde veya büyük su birikintileri
+civarında meydana geldiği gibi, sahile yakın yerlerde ve nehir kenarlarında da ortaya çıkabilmektedir.
+Buz yükü değerinin dikkate alınması gerekiyorsa ve bunun için elde yeterli veri yoksa, buzlanma
+tehlikesine maruz kalacak bölgelerde deniz seviyesinden 400 m ve daha yüksekteki yerler için
+buzlanmaya maruz kalacak yapı elemanlarının bütün yüzeylerinin 3 cm kalınlıkta buz ile kaplanmış
+olduğu kabul edilir. Buzun birim hacim ağırlığı 7 kN/m3 alınır.
+14 Rüzgâr yükü
+Hesaplama için aşağıda verilen açıklamalar bütün yapılar için geçerli olmakla beraber kendi şartnameleri
+veya standartları olan, mesela köprü, vinçler, yüksek bacalar (fabrika bacası vs. gibi), radyo vs. yayın
+kuleleri ve yüksek gerilim hatları gibi yapılar için geçerli değildir. Yapı ya da çatı tipi ve geometrisi için
+bu maddede açıklama bulunmayan yapılar için TS EN 1991-1-4 “Yapılar üzerindeki etkiler - Bölüm 1- 4:
+Genel etkiler – Rüzgâr etkileri (EUROCODE 1)” e bakılabilir.
+14.1
+Rüzgâr yükü, her yönde en büyük değerinde tesir eder şekilde dikkate alınmalıdır. Rüzgâr doğrultusu
+genellikle yatay kabul edilir.
+14.2 Rüzgâr yükü hesap değeri (W)
+14.2.1
+Rüzgâr yükü hesabı yapının geometrisine bağlıdır (Şekil-1). Basınç, emme ve sürtünme etkileri
+birleştirilerek dikkate alınır. Bir yapının bütününde rüzgâr yükü bileşkesinin büyüklüğü;
+W = C . q . A kN
+f
+formülü ile bulunur.
+Burada;
+C = Aerodinamik yük katsayısı
+f
+q = Emme (hız basıncı) kN/m2
+A = Etkilenen yüzey alanı, m2
+Narin çelik konstrüksiyonda buzlanma sonucu artacak rüzgâra maruz (ekspoze) yüzeyler dolayısı ile
+rüzgâr yüklerinde oluşacak artışın projelendirmede dikkate alınması gereklidir.
+n
+W = C . .(q .A ) alınır.
+f i i
+i=1
+Burada:
+q = Emme, kısım (i)'de
+i
+A = Alan, kısım (i)'de
+i
+14.2.2 Aerodinamik Yük Katsayısı (Cf)
+Yük katsayısının (Cf) belirlenmesi yapı geometrisine ve rüzgârın esiş yönüne bağlıdır. Bu katsayı, rüzgâr
+kanalı deneyi ile elde edilir.
+10 © TSE – Tüm hakları saklıdır.
+
+--- Page 18 ---
+TÜRK STANDARDI TS 498:2021
+14.2.3 Rüzgâr Basıncı (w)
+Yapı üst yüzeyine tesir eden rüzgâr basıncı;
+W = C . q kN/m2
+p
+bağıntısı uygulanarak hesaplanır.
+Burada;
+q = Rüzgar basıncı, kN/m2
+C
+p
+= Emme katsayısı
+C , dikkate alınan yüzey için çeşitli esme yönüne bağlı olarak belirlenir. Rüzgâr basıncı yüzeye dik olarak
+p
+etki eder.
+Kısım kısım değişken olan emme ve/veya değişken olabilen yapı genişliği “b” için yaklaşık olarak;
+n
+
+W = C . .(q.A ) alınır.
+f i i
+i=1
+Burada:
+q = Emme, kısım (i)'de
+i
+A = Alan, kısım (i)'de
+i
+Münferit taşıyıcı yapı elemanları için (mertek, aşık, cephe elemanı vs. gibi) rüzgar basıncı değeri katsayısı
+1/4 artırılır.
+14.3 Emme basıncı (hız basıncı)(q)
+v2
+q = kN/m2 dir.
+2g
+Yaklaşık olarak havanın birim hacim kütlesi,  = 1,25 kg/m3 alınır ve hız (v) da m/s cinsinden yerine
+konursa;
+v2
+q = kN/m2 bulunur.
+1600
+Çizelge 4 — Yüksekliğe bağlı rüzgâr hızı ve emme basıncı
+Zeminden Rüzgâr Hızı Emme basıncı
+Yükseklik v q
+m m/s (kN/m2)
+0 - 8 28 0,5
+9 - 20 36 0,8
+21 - 100 42 1,1
+> 100 46 1,3
+Yerel topografik şartlar nedeniyle değişik rüzgâr hızları oluşabilir ve bu hızlar, Çizelge 4’de verilen
+değerinden sapabilir.
+Yüksekte ve sarp bir yamaçtaki yapıda rüzgâr etkisinin şiddetli olacağı düşüncesiyle emme basıncı,
+q = 1,1 kN/m2 alınmalıdır.
+© TSE – Tüm hakları saklıdır. 11
+
+--- Page 19 ---
+TS 498:2021 TÜRK STANDARDI
+Şekil 1 — Planda kare kesitli ve eğik çatılı olan kapalı yapılarda, rüzgâr yükünün ana taşıyıcı
+sistem doğrultusundaki dağıtımı
+Çizelge 5 — C katsayısı ve rüzgâr yükünün yapının etkilenen yüzeyinin birim alanına göre
+dağılımı (basınç + emme)
+Katsayı Rüzgâr yükü
+Yapı cinsi C W = c.q
+q = 0,5 q = 0,8 q = 1,10 q = 1,30
+kN/m2 kN/m2 kN/m2 kN/m2
+1) Düzlemsel yüzeyler ile
+sınırlandırılmış yapı ele-
+manları (Madde 2 istisna)
+1.1)Kapalı yapı elemanlarında
+1.1.1)Rüzgâr yönüne dik
+yüzeylerde
+a)Genel olarak 1,2 0,60 0,96 1,32 1,56
+b)Kule tipi yapılarda(*) 1,6 0,80 1,28 1,76 2,08
+1.1.2)Rüzgâr yönüne 
+açısı yapan eğimli
+yüzeylerde
+a)Genel olarak 1,2 Sin 0,60 Sin 0,96 Sin 1,32 Sin 1,56 Sin
+b)Kule tipi yapılarda 1,6 Sin 0,80 Sin 1,26 Sin 1,32 Sin 1,56 Sin
+1.2)Kapalı olmayan yapı 1,2 0,60 0,96 1,32 1,56
+elemanlarında (**)
+1.1.1 ve 1.1.2 deki verilen
+değerler geçerlidir. Ancak,
+gayri müsait durumu ver-
+mesi halinde bu yükler için
+ikinci bir hesap daha yapıl-
+malıdır. Bu hesapta rüzgâr
+yükü çatı iç kısım yüzeyine
+dik olarak alınmalıdır.
+1.3)Zemin üzerinde serbest
+duran duvarlar
+12 © TSE – Tüm hakları saklıdır.
+
+--- Page 20 ---
+TÜRK STANDARDI TS 498:2021
+Çizelge 5 (devamı)
+Katsayı Rüzgâr Yükü
+Yapı Cinsi C W = c.q
+q = 0,5 q = 0,8 q = 1,10 q = 1,30
+kN/m2 kN/m2 kN/m2 kN/m2
+Genel olarak yüksekliği 1,6 0,80 1,28 1,76 2,00
+ortalama genişliğinin 5 katı
+kadar olan duvarlar
+2)Taşıyıcı sistemler ve
+taşıyıcı dolu duvarlar
+2.1)Taşıyıcı bir duvar, art
+arda sürekli olan taşıyıcı
+duvarlardan en öndeki ve
+diğer duvarların etkilene-
+cek kısmı için
+a)Rüzgâr yönüne dik 1,6 0,80 1,28 1,76 2,08
+yüzeylerde
+b)Rüzgâr yönüne  açısı 1,6Sin 0,80 Sin 1,28 Sin 1,76 Sin 2,08 Sin
+yapan eğimli yüzeylerde
+2.2)Art arda olan taşıyıcı
+duvarlarda en öndeki
+duvar tarafından yüzeyi
+kapatılan ikinci taşıyıcı
+duvar ve diğerlerinin
+rüzgar yönünde rüzgara
+maruz kalmaları halinde
+a) Taşıyıcı sistemlerdeki 0 0 0 0 0
+aralıkların sistem ge-
+nişliğinden küçük ol-
+ması ve taşıyıcı dolu
+duvarların taşıyıcı
+yüksekliğinden küçük
+olması halinde
+b) Taşıyıcı aralıkları
+büyük ise
+I)Rüzgâr yönüne dik 1,2 0,60 0,96 1,32 1,56
+yüzeylerde
+II) Rüzgâr yönüne  1,2 Sin 0,60 Sin 0,96 Sin 1,32 Sin 1,56 Sin
+açısı yapan eğimli
+(*) Yapının, kule tipinde yapı olduğunun kabulü için cephelerin yüksekliği, ortalama yapı genişliğinin en
+az 5 katı olmalıdır.
+(**) Kapalı olmayan yapı elemanı ile, bir cephesinden veya bütün cephelerinden açık olan veya açılabilir
+şekilde olan veya bir veya birçok yerinden en az 1/3 oranında açıklıklar olan yapı kastedilmektedir.
+© TSE – Tüm hakları saklıdır. 13
+
+================================================================================
+FILE: tbdy_2018-20210506174126.pdf
+================================================================================
+Page count: 416
+
+--- Page 1 ---
+EK
+DEPREM ETKİSİ ALTINDA
+BİNALARIN TASARIMI İÇİN ESASLAR
+
+--- Page 2 ---
+İÇİNDEKİLER
+BÖLÜM 1 – GENEL HÜKÜMLER .................................................................................. 1
+1.1. KAPSAM ....................................................................................................................... 1
+1.2. GENEL İLKELER ......................................................................................................... 2
+1.3. ÖZEL KONULARDA TASARIM GÖZETİMİ VE KONTROLÜ ............................... 2
+1.3.1. Tanım ....................................................................................................................... 2
+1.3.2. Kapsam ..................................................................................................................... 2
+1.4. DENEYE DAYALI TASARIM ..................................................................................... 3
+1.5. ATIF YAPILAN STANDART, YÖNETMELİK VE/VEYA DOKÜMANLAR .......... 3
+BÖLÜM 2 – DEPREM YER HAREKETİ ........................................................................ 6
+2.0. SİMGELER .................................................................................................................... 6
+2.1. DEPREM TEHLİKE HARİTALARI ............................................................................. 6
+2.2. DEPREM YER HAREKETİ DÜZEYLERİ .................................................................. 7
+2.2.1. Deprem Yer Hareketi Düzeyi-1 (DD-1) ................................................................... 7
+2.2.2. Deprem Yer Hareketi Düzeyi-2 (DD-2) ................................................................... 7
+2.2.3. Deprem Yer Hareketi Düzeyi-3 (DD-3) ................................................................... 7
+2.2.4. Deprem Yer Hareketi Düzeyi-4 (DD-4) ................................................................... 7
+2.3. STANDART DEPREM YER HAREKETİ SPEKTRUMLARI .................................... 7
+2.3.1. Tanım ....................................................................................................................... 7
+2.3.2. Harita Spektral İvme Katsayıları ve Tasarım Spektral İvme Katsayıları ................. 7
+2.3.3. Yerel Zemin Etki Katsayıları ................................................................................... 8
+2.3.4. Yatay Elastik Tasarım Spektrumu ............................................................................ 9
+2.3.5. Düşey Elastik Tasarım Spektrumu ......................................................................... 10
+2.4. SAHAYA ÖZEL DEPREM YER HAREKETİ SPEKTRUMU .................................. 11
+2.4.1. Sahaya Özel Elastik İvme Spektrumu .................................................................... 11
+2.4.2. Sahaya Özel Zemin Davranış Analizleri ................................................................ 11
+2.5. ZAMAN TANIM ALANINDA DEPREM YER HAREKETLERİNİN
+TANIMLANMASI .............................................................................................................. 11
+2.5.1. Deprem Kayıtlarının Seçimi................................................................................... 11
+2.5.2. Deprem Kayıtlarının Basit Ölçeklendirme Yöntemi ile Ölçeklendirilmesi ........... 12
+2.5.3. Deprem Kayıtlarının Spektral Uyuşum Sağlanacak Şekilde Dönüştürülmesi ....... 12
+2.6. BİNALARA İVME KAYITÇILARININ YERLEŞTİRİLMESİ................................. 13
+BÖLÜM 3 – DEPREM ETKİSİ ALTINDA BİNALARIN DEĞERLENDİRİLMESİ
+VE TASARIMI İÇİN GENEL ESASLAR ...................................................................... 14
+3.0. SİMGELER .................................................................................................................. 14
+3.1. BİNA KULLANIM SINIFLARI VE BİNA ÖNEM KATSAYILARI ........................ 15
+3.1.1. Bina Kullanım Sınıfları .......................................................................................... 15
+
+--- Page 3 ---
+3.1.2. Bina Önem Katsayıları ........................................................................................... 15
+3.2. DEPREM TASARIM SINIFLARI ............................................................................... 16
+3.3. BİNA YÜKSEKLİĞİ VE BİNA YÜKSEKLİK SINIFLARI ...................................... 16
+3.3.1. Bina Tabanı ve Bina Yüksekliği ............................................................................ 16
+3.3.2. Bina Yükseklik Sınıfları ......................................................................................... 16
+3.4. BİNA PERFORMANS DÜZEYLERİ ......................................................................... 17
+3.4.1. Kesintisiz Kullanım (KK) Performans Düzeyi ...................................................... 17
+3.4.2. Sınırlı Hasar (SH) Performans Düzeyi ................................................................... 17
+3.4.3. Kontrollü Hasar (KH) Performans Düzeyi ............................................................. 17
+3.4.4. Göçmenin Önlenmesi (GÖ) Performans Düzeyi ................................................... 17
+3.5. DEPREM ETKİSİ ALTINDA BİNA PERFORMANS HEDEFLERİ VE
+UYGULANACAK TASARIM YAKLAŞIMLARI ............................................................ 17
+3.5.1. Bina Performans Hedefleri ..................................................................................... 18
+3.5.2. Uygulanacak Değerlendirme/Tasarım Yaklaşımları .............................................. 19
+3.6. DEPREM ETKİSİ ALTINDA DÜZENSİZ BİNALAR .............................................. 19
+3.6.1. Düzensiz Binaların Tanımı ..................................................................................... 19
+3.6.2. Düzensiz Binalara İlişkin Koşullar ........................................................................ 22
+BİLGİLENDİRME EKİ 3A – DEPREM ETKİSİ ALTINDA UYGUN TASARIM İÇİN
+BİNA TAŞIYICI SİSTEMLERİNİN DÜZENLENMESİ .................................................. 24
+3A.1. TAŞIYICI SISTEMİN SADELİĞİ VE BASİTLİĞİ ................................................. 24
+3A.2. TAŞIYICI SİSTEMİN DÜZENLİ VE SİMETRİK OLARAK DÜZENLENMESİ . 24
+3A.3. TAŞIYICI SİSTEMDE FAZLA-BAĞLILIK ÖZELLİĞİNİN SAĞLANMASI ...... 24
+3A.4. TAŞIYICI SİSTEMDE YETERLİ DAYANIM VE RİJİTLİK ................................. 24
+3A.5. TAŞIYICI SİSTEMDE YETERLİ SÜNEKLİK ....................................................... 25
+3A.6. KATLARDA VE GEÇİŞ KATLARINDA YETERLİ DÖŞEME RİJİTLİĞİ VE
+DAYANIMI ........................................................................................................................ 25
+BÖLÜM 4 – DEPREM ETKİSİ ALTINDA BİNALARIN DAYANIMA GÖRE
+TASARIMI İÇİN HESAP ESASLARI ........................................................................... 26
+4.0. SİMGELER .................................................................................................................. 26
+4.1. GENEL ......................................................................................................................... 30
+4.1.1. Amaç ...................................................................................................................... 30
+4.1.2. Tanım ..................................................................................................................... 30
+4.1.3. Kapsam ................................................................................................................... 31
+4.1.4. Performans Hedefleri ............................................................................................. 31
+4.2. DEPREM YÜKÜ KATSAYILARI VE KAPASİTE TASARIMI İLKELERİ............ 31
+4.2.1. Deprem Yükü Azaltma Katsayısı ........................................................................... 31
+4.2.2. Kapasite Tasarımı İlkeleri ...................................................................................... 32
+
+--- Page 4 ---
+4.3. TAŞIYICI SİSTEMLERİN UYGULAMA SINIRLARI, TAŞIYICI SİSTEM
+DAVRANIŞ KATSAYILARI VE DAYANIM FAZLALIĞI KATSAYILARI ................ 32
+4.3.1. Taşıyıcı Sistemlerin Uygulama Sınırları ................................................................ 32
+4.3.2. Taşıyıcı Sistem Türüne Göre R ve D Katsayıları ................................................... 32
+4.3.3. Süneklik Düzeyi Yüksek, Sınırlı ve Karma Taşıyıcı Sistemler ............................. 33
+4.3.4. Taşıyıcı Sistemlerin Süneklik Düzeylerine İlişkin Koşullar .................................. 33
+4.3.5. Dayanım Fazlalığı Katsayılarının Uygulanması .................................................... 38
+4.3.6. Binaların Üst ve Alt Bölümlerinde Farklı R ve D Katsayılarının Kullanılması .... 39
+4.4. DEPREM ETKİSİNİN TANIMLANMASI VE DİĞER ETKİLERLE
+BİRLEŞTİRİLMESİ ............................................................................................................ 40
+4.4.1. Yatay Deprem Etkisi Altında Azaltılmış Tasarım İvme Spektrumu...................... 40
+4.4.2. Yatayda Birbirine Dik Doğrultulardaki Deprem Etkilerinin Birleştirilmesi .......... 41
+4.4.3. Düşey Deprem Etkisi ............................................................................................. 41
+4.4.4. Deprem Etkisinin Diğer Etkilerle Birleştirilmesi ................................................... 41
+4.5. DOĞRUSAL HESAP İÇİN TAŞIYICI SİSTEMİN MODELLENMESİNE İLİŞKİN
+KURALLAR ....................................................................................................................... 42
+4.5.1. Genel Modelleme Kuralları .................................................................................... 42
+4.5.2. Kiriş ve Kolonların Modellenmesi ......................................................................... 42
+4.5.3. Betonarme Boşluksuz Perdelerin Modellenmesi ................................................... 42
+4.5.4. Betonarme Bağ Kirişli (Boşluklu) Perdelerin Modellenmesi ................................ 43
+4.5.5. Bodrum Perdelerinin Modellenmesi ...................................................................... 45
+4.5.6. Döşemelerin Modellenmesi .................................................................................... 45
+4.5.7. Geçiş Katlarında Döşemelerin Modellenmesi ........................................................ 46
+4.5.8. Betonarme Taşıyıcı Sistem Elemanlarının Etkin Kesit Rijitlikleri ........................ 46
+4.5.9. Kütlelerin Modellenmesi ........................................................................................ 47
+4.5.10. Ek Dışmerkezlik Etkisinin Modellenmesi ............................................................ 48
+4.6. DOĞRUSAL HESAP YÖNTEMİNİN SEÇİLMESİ .................................................. 49
+4.6.1. Doğrusal Hesap Yöntemleri ................................................................................... 49
+4.6.2. Hesap Yönteminin Seçilmesi ................................................................................. 49
+4.7. EŞDEĞER DEPREM YÜKÜ YÖNTEMİ İLE DOĞRUSAL DEPREM HESABI .... 49
+4.7.1. Toplam Eşdeğer Deprem Yükünün Belirlenmesi .................................................. 49
+4.7.2. Katlara Etkiyen Eşdeğer Deprem Yüklerinin Belirlenmesi ................................... 50
+4.7.3. Binanın Hakim Doğal Titreşim Periyodunun Belirlenmesi ................................... 51
+4.7.4. Eşdeğer Deprem Yükü Yönteminde Burulma Hesabı ........................................... 52
+4.7.5. Eşdeğer Deprem Yükü Yöntemi ile Bodrumlu Binaların Hesabı .......................... 52
+4.8. MODAL HESAP YÖNTEMLERİ İLE DOĞRUSAL DEPREM HESABI ................ 53
+4.8.1. Modal Hesap Yöntemleri ....................................................................................... 53
+4.8.2. Mod Birleştirme Yöntemi ile Deprem Hesabı ....................................................... 53
+
+--- Page 5 ---
+4.8.3. Zaman Tanım Alanında Mod Toplama Yöntemi ile Deprem Hesabı .................... 54
+4.8.4. Azaltılmış İç Kuvvetlerin ve Yerdeğiştirmelerin Eşdeğer Taban Kesme Kuvvetine
+Göre Büyütülmesi ............................................................................................................ 54
+4.8.5. Modal Hesap Yöntemleri ile Bodrumlu Binaların Hesabı ..................................... 54
+4.9. GÖRELİ KAT ÖTELEMELERİNİN SINIRLANDIRILMASI, İKİNCİ MERTEBE
+ETKİLERİ VE DEPREM DERZLERİ ............................................................................... 55
+4.9.1. Etkin Göreli Kat Ötelemelerinin Hesaplanması ve Sınırlandırılması .................... 55
+4.9.2. İkinci Mertebe Etkileri ........................................................................................... 56
+4.9.3. Deprem Derzleri ..................................................................................................... 57
+4.10. TASARIMA ESAS İÇ KUVVETLER VE TEMELLERE AKTARILAN
+KUVVETLER ..................................................................................................................... 58
+4.10.1. Bodrumlu Binalarda Tasarıma Esas İç Kuvvetler ................................................ 58
+4.10.2. Bodrumsuz Binalarda Tasarıma Esas İç Kuvvetler .............................................. 59
+4.10.3. Temellere Aktarılan Kuvvetler ............................................................................. 59
+4.10.4. Kazıklı Temeller İçin Yapı – Kazık – Zemin Etkileşimi ..................................... 59
+BİLGİLENDİRME EKİ 4A – AKMA DAYANIMI, TASARIM DAYANIMI VE DEPREM
+YÜKÜ KATSAYILARI ...................................................................................................... 60
+4A.0. SİMGELER ............................................................................................................... 60
+4A.1. AKMA DAYANIMI VE AKMA DAYANIMI AZALTMA KATSAYISI ............. 60
+4A.1.1. Akma Dayanımı .................................................................................................. 60
+4A.1.2. Akma Dayanımı Azaltma Katsayısı .................................................................... 60
+4A.2. TASARIM DAYANIMI VE DAYANIM FAZLALIĞI KATSAYISI ..................... 61
+4A.2.1. Tasarım Dayanımı ............................................................................................... 61
+4A.2.2. Dayanım Fazlalığı Katsayısı ............................................................................... 61
+4A.3. TAŞIYICI SİSTEM DAVRANIŞ KATSAYISI VE DEPREM YÜKÜ AZALTMA
+KATSAYISI ........................................................................................................................ 62
+4A.3.1. Taşıyıcı Sistem Davranış Katsayısı ..................................................................... 62
+4A.3.2. Deprem Yükü Azaltma Katsayısı ........................................................................ 62
+EK 4B – MODAL HESAP YÖNTEMLERİ ....................................................................... 63
+4B.0. SİMGELER ............................................................................................................... 63
+4B.1. MODAL HESAP PARAMETRELERİ ..................................................................... 65
+4B.2. MOD BİRLEŞTİRME YÖNTEMİ İLE DEPREM HESABI .................................... 66
+4B.3. ZAMAN TANIM ALANINDA MOD TOPLAMA YÖNTEMİ İLE DEPREM
+HESABI ............................................................................................................................... 67
+BİLGİLENDİRME EKİ 4C – DOLGU DUVARLARI İÇİN ESNEK BAĞLANTI DETAYI
+ÖRNEĞİ .............................................................................................................................. 69
+BÖLÜM 5 – DEPREM ETKİSİ ALTINDA BİNALARIN ŞEKİLDEĞİŞTİRMEYE
+GÖRE DEĞERLENDİRME VE TASARIMI İÇİN HESAP ESASLARI ................... 70
+5.0. SİMGELER .................................................................................................................. 70
+
+--- Page 6 ---
+5.1. ŞEKİLDEĞİŞTİRMEYE GÖRE DEĞERLENDİRME VE TASARIM YAKLAŞIMI
+............................................................................................................................................. 72
+5.1.1. Tanım ..................................................................................................................... 72
+5.1.2. Kapsam ................................................................................................................... 72
+5.1.3. Performans Hedefleri ............................................................................................. 73
+5.2. DEPREM ETKİSİNİN TANIMLANMASI VE DİĞER ETKİLERLE
+BİRLEŞTİRİLMESİ ............................................................................................................ 73
+5.2.1. Deprem Etkisi ......................................................................................................... 73
+5.2.2. Deprem Etkisinin Diğer Etkilerle Birleştirilmesi ................................................... 73
+5.3. DOĞRUSAL OLMAYAN DAVRANIŞ MODELLERİ ............................................. 74
+5.3.1. Yığılı Plastik Davranış Modeli ............................................................................... 74
+5.3.2. Yayılı Plastik Davranış Modelleri .......................................................................... 75
+5.4. DOĞRUSAL OLMAYAN HESAP İÇİN TAŞIYICI SİSTEMİN
+MODELLENMESİNE İLİŞKİN KURALLAR .................................................................. 75
+5.4.1. Genel Modelleme Kuralları .................................................................................... 75
+5.4.2. Kiriş ve Kolonların Modellenmesi ......................................................................... 76
+5.4.3. Betonarme Perdelerin Modellenmesi ..................................................................... 76
+5.4.4. Bodrum Perdelerinin ve Döşemelerin Modellenmesi ............................................ 77
+5.4.5. Betonarme Taşıyıcı Sistem Elemanlarının Etkin Kesit Rijitlikleri ........................ 77
+5.4.6. Kütlelerin Modellenmesi ........................................................................................ 78
+5.4.7. Ek Dışmerkezlik Etkisinin Modellenmesi .............................................................. 78
+5.5. DOĞRUSAL OLMAYAN HESAP YÖNTEMİNİN SEÇİMİ .................................... 78
+5.5.1. Doğrusal Olmayan Hesap Yöntemleri ................................................................... 78
+5.5.2. Hesap Yönteminin Seçilmesi ................................................................................. 78
+5.6. DOĞRUSAL OLMAYAN İTME YÖNTEMLERİ İLE DEPREM HESABI ............. 78
+5.6.1. İtme Yöntemleri ..................................................................................................... 78
+5.6.2. Tek Modlu İtme Yöntemleri .................................................................................. 79
+5.6.3. Sabit Tek Modlu İtme Yöntemi ............................................................................. 79
+5.6.4. Değişken Tek Modlu İtme Yöntemi ....................................................................... 79
+5.6.5. Tek Modlu İtme Yöntemlerinde Depremin Modal Yerdeğiştirme Talebinin Elde
+Edilmesi ............................................................................................................................ 80
+5.6.6. Çok Modlu İtme Yöntemleri .................................................................................. 80
+5.7. ZAMAN TANIM ALANINDA DOĞRUSAL OLMAYAN HESAP YÖNTEMİ İLE
+DEPREM HESABI ............................................................................................................. 80
+5.7.1. Tanım ..................................................................................................................... 80
+5.7.2. Deprem Kayıtlarının Seçimi ve Ölçeklendirilmesi ................................................ 81
+5.7.3. Hesapta Gözönüne Alınacak Hususlar ................................................................... 81
+5.7.4. Değerlendirmeye Esas Şekildeğiştirme ve İç Kuvvet Talepleri ............................. 81
+
+--- Page 7 ---
+5.8. ŞEKİLDEĞİŞTİRMELERİN VE İÇ KUVVETLERİN DEĞERLENDİRİLMESİ .... 81
+5.8.1. Yeni Betonarme Bina Elemanları İçin İzin Verilen Şekildeğiştirme ve İç Kuvvet
+Sınırları ............................................................................................................................. 81
+5.8.2. Yeni Çelik Bina Elemanları İçin İzin Verilen Şekildeğiştirme ve İç Kuvvet Sınırları
+.......................................................................................................................................... 83
+5.8.3. Betonarme ve Çelik Kazıklar İçin İzin Verilen Şekildeğiştirme ve İç Kuvvet Sınırları
+.......................................................................................................................................... 84
+5.9. ŞEKİLDEĞİŞTİRMEYE GÖRE TASARIMININ SONUÇLANDIRILMASI .......... 84
+EK 5A – BETON VE DONATI ÇELİĞİ İÇİN GERİLME – ŞEKİLDEĞİŞTİRME
+BAĞINTILARI ................................................................................................................... 85
+5A.0. SİMGELER ............................................................................................................... 85
+5A.1. SARGILI VE SARGISIZ BETON MODELLERİ .................................................... 85
+5A.2. DONATI ÇELİĞİ MODELİ ..................................................................................... 87
+EK 5B – TEK MODLU İTME HESABI YÖNTEMLERİ.................................................. 88
+5B.0. SİMGELER ............................................................................................................... 88
+5B.1. SABİT TEK MODLU İTME YÖNTEMİ İLE MODAL KAPASİTE
+DİYAGRAMININ ELDE EDİLMESİ ................................................................................ 90
+5B.2. DEĞİŞKEN TEK MODLU İTME YÖNTEMİ İLE MODAL KAPASİTE
+DİYAGRAMININ ELDE EDİLMESİ ................................................................................ 92
+5B.3. DEPREMİN MODAL YERDEĞİŞTİRME TALEBİNİN DOĞRUSAL OLMAYAN
+SPEKTRAL YERDEĞİŞTİRME OLARAK ELDE EDİLMESİ ....................................... 93
+5B.4. DEPREMİN MODAL YERDEĞİŞTİRME TALEBİNİN ZAMAN TANIM
+ALANINDA DOĞRUSAL OLMAYAN HESAPTAN ELDE EDİLMESİ ....................... 96
+EK 5C – ÇELİK ELEMANLAR İÇİN İZİN VERİLEN ŞEKİLDEĞİŞTİRME SINIRLARI
+............................................................................................................................................. 98
+5C.0. SİMGELER ............................................................................................................... 98
+5C.1. ÇELİK KİRİŞ VE KOLONLARIN ŞEKİLDEĞİŞTİRME SINIRLARI ................. 98
+5C.1.1. Çelik Kirişler için Akma Dönmesinin Hesaplanması .......................................... 99
+5C.1.2. Çelik Kolonlar için Akma Dönmesinin Hesaplanması ........................................ 99
+5C.2. MOMENT AKTARAN ÇERÇEVELERİN KOLON – KİRİŞ BİRLEŞİM
+BÖLGELERİNİN ŞEKİLDEĞİŞTİRME SINIRLARI....................................................... 99
+5C.2.1. Alın Levhalı ve Başlık Levhalı Birleşimlerin Dönme Rijitliği ......................... 100
+5C.2.2. Alın Levhalı ve Başlık Levhalı Birleşimli Sistemleri Kiriş Rijitliği ................. 100
+5C.3. MERKEZİ ÇAPRAZLI ÇELİK ÇERÇEVELERİN ŞEKİLDEĞİŞTİRME
+SINIRLARI ....................................................................................................................... 100
+5C.3.1. Eksenel Basınç Kuvveti Altında Akma Şekildeğiştirmesi ................................ 100
+5C.3.2. Eksenel Çekme Kuvveti Altında Akma Şekildeğiştirmesi ................................ 100
+5C.3.3. Burkulması Engellenmiş Çelik Çaprazın Akma Şekildeğiştirmesi ................... 101
+5C.4. DIŞMERKEZ ÇAPRAZLI ÇELİK ÇERÇEVELERİN VE ÇELİK BAĞ KİRİŞLİ
+SİSTEMLERİN ŞEKİLDEĞİŞTİRME SINIRLARI ........................................................ 101
+
+--- Page 8 ---
+BÖLÜM 6 – DEPREM ETKİSİ ALTINDA YAPISAL OLMAYAN BİNA
+ELEMANLARININ TASARIM ESASLARI ............................................................... 103
+6.0. SİMGELER ................................................................................................................ 103
+6.1. GENEL KURALLAR ................................................................................................ 103
+6.2. EŞDEĞER DEPREM YÜKLERİ .............................................................................. 104
+6.3. YERDEĞİŞTİRMELERİN SINIRLANDIRILMASI ................................................ 107
+BÖLÜM 7 – DEPREM ETKİSİ ALTINDA YERİNDE DÖKME BETONARME BİNA
+TAŞIYICI SİSTEMLERİNİN TASARIMI İÇİN ÖZEL KURALLAR .................... 108
+7.0. SİMGELER ................................................................................................................ 108
+7.1. KAPSAM ................................................................................................................... 111
+7.2. GENEL KURALLAR ................................................................................................ 111
+7.2.1. Betonarme Taşıyıcı Sistemlerin Sınıflandırılması ............................................... 111
+7.2.2. İlgili Standartlar .................................................................................................... 112
+7.2.3. Taşıyıcı Sistem Hesabında Kullanılacak Kesit Rijitlikleri ................................... 112
+7.2.4. Kesit Hesaplarında Kullanılacak Yöntem ............................................................ 112
+7.2.5. Malzeme ............................................................................................................... 112
+7.2.6. Donatılarının Kenetlenme Boyu ........................................................................... 113
+7.2.7. Kaynaklı, Manşonlu ve Kimyasal Ankrajlı Ek ve Bağlantılar ............................. 113
+7.2.8. Özel Deprem Etriyeleri ve Çirozları .................................................................... 113
+7.3. SÜNEKLİK DÜZEYİ YÜKSEK KOLONLAR ........................................................ 114
+7.3.1. Enkesit Koşulları .................................................................................................. 114
+7.3.2. Boyuna Donatı Koşulları ...................................................................................... 114
+7.3.3. Boyuna Donatının Düzenlenmesi ......................................................................... 114
+7.3.4. Enine Donatı Koşulları ......................................................................................... 115
+7.3.5. Kolonların Kirişlerden Daha Güçlü Olması Koşulu ............................................ 116
+7.3.6. Kolonların Kirişlerden Daha Güçlü Olması Koşulunun Bazı Kolonlarda
+Sağlanamaması Durumu ................................................................................................ 118
+7.3.7. Kolonların Kesme Güvenliği ............................................................................... 118
+7.3.8. Kısa Kolonlara İlişkin Koşullar ............................................................................ 120
+7.4. SÜNEKLİK DÜZEYİ YÜKSEK KİRİŞLER ............................................................ 121
+7.4.1. Enkesit Koşulları .................................................................................................. 121
+7.4.2. Boyuna Donatı Koşulları ...................................................................................... 122
+7.4.3. Boyuna Donatının Düzenlenmesi ......................................................................... 122
+7.4.4. Enine Donatı Koşulları ......................................................................................... 123
+7.4.5. Kirişlerin Kesme Güvenliği ................................................................................. 123
+7.5. SÜNEKLİK DÜZEYİ YÜKSEK ÇERÇEVE SİSTEMLERİNDE KOLON BİRLEŞİM
+BÖLGELERİ ..................................................................................................................... 125
+7.5.1. Kuşatılmış ve Kuşatılmamış Birleşimler .............................................................. 125
+
+--- Page 9 ---
+7.5.2. Kolon-Kiriş Birleşim Bölgelerinin Kesme Güvenliği .......................................... 125
+7.6. SÜNEKLİK DÜZEYİ YÜKSEK PERDELER .......................................................... 126
+7.6.1. Enkesit Koşulları .................................................................................................. 126
+7.6.2. Perde Uç Bölgeleri ve Kritik Perde Yüksekliği ................................................... 127
+7.6.3. Gövde Donatısı Koşulları ..................................................................................... 127
+7.6.4. Gövde Donatılarının Düzenlenmesi ..................................................................... 128
+7.6.5. Perde Uç Bölgelerinde Donatı Koşulları .............................................................. 128
+7.6.6. Tasarım Eğilme Momentleri ve Kesme Kuvvetleri ............................................. 130
+7.6.7. Perdelerin Kesme Güvenliği ................................................................................ 131
+7.6.8. Bağ Kirişli (Boşluklu) Perdelere İlişkin Kural ve Koşullar ................................. 132
+7.6.9. Perdelerde Boşluklar ............................................................................................ 133
+7.7. SÜNEKLİK DÜZEYİ SINIRLI KOLONLAR .......................................................... 134
+7.7.1. Enkesit Koşulları .................................................................................................. 134
+7.7.2. Boyuna Donatı Koşulları ...................................................................................... 134
+7.7.3. Boyuna Donatının Düzenlenmesi ......................................................................... 134
+7.7.4. Enine Donatı Koşulları ......................................................................................... 134
+7.7.5. Kolonların Kesme Güvenliği ............................................................................... 135
+7.7.6. Kısa Kolonlara İlişkin Koşullar ............................................................................ 135
+7.8. SÜNEKLİK DÜZEYİ SINIRLI KİRİŞLER .............................................................. 135
+7.8.1. Enkesit Koşulları .................................................................................................. 135
+7.8.2. Boyuna Donatı Koşulları ...................................................................................... 135
+7.8.3. Boyuna Donatının Düzenlenmesi ......................................................................... 135
+7.8.4. Enine Donatı Koşulları ......................................................................................... 135
+7.8.5. Kirişlerin Kesme Güvenliği ................................................................................. 136
+7.9. SÜNEKLİK DÜZEYİ SINIRLI ÇERÇEVE SİSTEMLERİNDE KOLON - KİRİŞ
+BİRLEŞİM BÖLGELERİ ................................................................................................. 136
+7.10. SÜNEKLİK DÜZEYİ SINIRLI PERDELER .......................................................... 136
+7.11. DÖŞEMELER .......................................................................................................... 136
+7.12. DUVAR HATILLARI .............................................................................................. 141
+7.13. BETONARME UYGULAMA PROJESİ ÇİZİMLERİNE İLİŞKİN KURALLAR 141
+7.13.1. Genel Kurallar .................................................................................................... 141
+7.13.2. Kolon ve Perde Detayları ................................................................................... 141
+7.13.3. Kiriş Detayları .................................................................................................... 142
+BÖLÜM 8 – DEPREM ETKİSİ ALTINDA ÖNÜRETİMLİ BETONARME BİNA
+TAŞIYICI SİSTEMLERİNİN TASARIMI İÇİN ÖZEL KURALLAR .................... 143
+8.0. SİMGELER ................................................................................................................ 143
+8.1. KAPSAM ................................................................................................................... 143
+8.2. ÖNÜRETİMLİ BİNALARIN GENEL ÖZELLİKLERİ ........................................... 143
+
+--- Page 10 ---
+8.2.1. Önüretimli Betonarme Taşıyıcı Sistem Elemanları ve Bağlantıları ..................... 143
+8.2.2. Önüretimli Betonarme Bina Tasarımına İlişkin Genel Kurallar .......................... 144
+8.2.3. Önüretimli Binalarda Malzeme Özellikleri .......................................................... 144
+8.3. MAFSALLI BAĞLANTILAR (MFB) ....................................................................... 145
+8.3.1. Genel Özellikler ................................................................................................... 145
+8.3.2. Mafsallı Bağlantılarda Devrilme Stabilitesi ......................................................... 145
+8.3.3. Pimli Bağlantılar (MFB1) .................................................................................... 146
+8.3.4. Kaynaklı Bağlantılar (MFB2) .............................................................................. 147
+8.3.5. Yuvalı Bağlantılar (MFB3) .................................................................................. 148
+8.3.6. Diğer Mafsallı Bağlantılar .................................................................................... 148
+8.4. MOMENT AKTARAN BAĞLANTILAR (MAB) .................................................... 149
+8.4.1. Genel Özellikler ................................................................................................... 149
+8.4.2. Islak Kolon-Kiriş Bağlantısı (MAB1) .................................................................. 149
+8.4.3. Tam Ard-Germeli Bağlantı (MAB2) .................................................................... 150
+8.4.4. Üstte Islak – Altta Kaynaklı Bağlantılar (MAB3) ............................................... 151
+8.4.5. Manşonlu-Pimli Bağlantılar (MAB4) .................................................................. 152
+8.4.6. Moment Aktaran Elemanların Eklerinde Kullanılacak Donatı Ekleme Araçları . 153
+8.5. ÖNÜRETİMLİ TAŞIYICI PANEL-DÖŞEME SİSTEMLERİ ................................. 153
+8.5.1. Çift Cidarlı Paneller ............................................................................................. 153
+8.5.2. Tek Cidarlı Paneller ............................................................................................. 153
+8.6. ÖNÜRETİMLİ BİNALARDA DİYAFRAMLARA İLİŞKİN KOŞULLAR ............ 154
+8.6.1. Çatı Diyaframı ...................................................................................................... 154
+8.6.2. Döşeme Diyaframı Oluşturulması .................................................................... 154
+8.7. KOLONLARI ÜSTTEN MAFSALLI BİNALARA İLİŞKİN EK KOŞULLAR ...... 156
+EK 8A – DONATI EKLEME ARAÇLARI ...................................................................... 157
+EK 8B – ÇATI DÜZLEMİ DİYAFRAMININ TANIMLANMASI ................................. 159
+BÖLÜM 9 – DEPREM ETKİSİ ALTINDA ÇELİK BİNA TAŞIYICI
+SİSTEMLERİNİN TASARIMI İÇİN ÖZEL KURALLAR ........................................ 160
+9.0. SİMGELER ................................................................................................................ 160
+9.1. KAPSAM ................................................................................................................... 164
+9.2. GENEL KURALLAR ................................................................................................ 164
+9.2.1. Çelik Taşıyıcı Sistemlerin Sınıflandırılması ........................................................ 164
+9.2.2. İlgili Standartlar ve Tasarım Esasları ................................................................... 165
+9.2.3. Malzeme Koşulları ............................................................................................... 165
+9.2.4. Olası Malzeme Dayanımı ..................................................................................... 166
+9.2.5. Deprem Etkisini İçeren Yük Birleşimleri ............................................................. 167
+9.2.6. Dayanım Fazlalığı Katsayısı ile Büyütülen Deprem Etkileri ............................... 167
+
+--- Page 11 ---
+9.2.7. Enkesit Koşulları .................................................................................................. 167
+9.2.8. Kirişlerde Stabilite Bağlantıları ............................................................................ 167
+9.2.9. Süneklik Düzeyi Yüksek Yatay Yük Taşıyıcı Sistemler için Kapasitesi Korunmuş
+Bölgeler .......................................................................................................................... 170
+9.2.10. Kolon ve Kiriş Ekleri ......................................................................................... 170
+9.3. SÜNEKLİK DÜZEYİ YÜKSEK MOMENT AKTARAN ÇELİK ÇERÇEVELER 171
+9.3.1. Genel Koşullar ...................................................................................................... 172
+9.3.2. Kolonların Kirişlerden Daha Güçlü Olması Koşulu ............................................ 172
+9.3.3. Kolonların Kirişlerden Daha Güçlü Olması Koşulunun Sağlanmaması Durumu 173
+9.3.4. Kiriş - Kolon Birleşim Bölgeleri .......................................................................... 174
+9.3.5. Kolon Ekleri ......................................................................................................... 176
+9.3.6. Kiriş – Kolon Birleşimlerinin Stabilitesi .............................................................. 176
+9.4. SÜNEKLİK DÜZEYİ SINIRLI MOMENT AKTARAN ÇELİK ÇERÇEVELER .. 177
+9.4.1. Genel Koşullar ...................................................................................................... 177
+9.4.2. Kiriş - Kolon Birleşim Bölgeleri .......................................................................... 177
+9.4.3. Kolon Ekleri ......................................................................................................... 178
+9.5. MERKEZİ VE DIŞMERKEZ ÇAPRAZLI ÇELİK ÇERÇEVELER ........................ 178
+9.6. SÜNEKLİK DÜZEYİ YÜKSEK MERKEZİ ÇAPRAZLI ÇELİK ÇERÇEVELER 179
+9.6.1. Genel Koşullar ...................................................................................................... 179
+9.6.2. Sistem Analizi ...................................................................................................... 179
+9.6.3. Çaprazlar .............................................................................................................. 181
+9.6.4. Özel Çapraz Düzenleri İçin Ek Koşullar .............................................................. 181
+9.6.5. Çapraz – Kiriş – Kolon Birleşimleri .................................................................... 182
+9.6.6. Çapraz Uç Birleşimlerinin Gerekli Dayanımı ...................................................... 182
+9.6.7. Kolon Ekleri ......................................................................................................... 183
+9.7. SÜNEKLİK DÜZEYİ SINIRLI MERKEZİ ÇAPRAZLI ÇELİK ÇERÇEVELER .. 183
+9.7.1. Genel Koşullar ...................................................................................................... 183
+9.7.2. Sistem Analizi ...................................................................................................... 183
+9.7.3. Çaprazlar .............................................................................................................. 183
+9.7.4. Özel Çapraz Düzenleri İçin Ek Koşullar .............................................................. 184
+9.7.5. Çapraz Birleşimleri .............................................................................................. 184
+9.7.6. Kolon Ekleri ......................................................................................................... 184
+9.8. SÜNEKLİK DÜZEYİ YÜKSEK DIŞMERKEZ ÇAPRAZLI ÇELİK ÇERÇEVELER
+........................................................................................................................................... 185
+9.8.1. Genel Koşullar ...................................................................................................... 185
+9.8.2. Bağ Kirişleri ......................................................................................................... 185
+9.8.3. Bağ Kirişinin Yanal Doğrultuda Desteklenmesi .................................................. 186
+9.8.4. Bağ Kirişinin Dönme Açısı .................................................................................. 186
+
+--- Page 12 ---
+9.8.5. Rijitlik (Berkitme) Levhaları ................................................................................ 187
+9.8.6. Çaprazlar, Kat Kirişleri ve Kolonlar .................................................................... 188
+9.8.7. Kolon Ekleri ......................................................................................................... 188
+9.8.8. Çapraz - Bağ Kirişi Birleşimi ............................................................................... 188
+9.8.9. Bağ Kirişi - Kolon Birleşimi ................................................................................ 188
+9.8.10. Çapraz – Kiriş – Kolon Birleşimi ....................................................................... 189
+9.9. BURKULMASI ÖNLENMİŞ ÇAPRAZLI ÇELİK ÇERÇEVELER ........................ 189
+9.9.1. Genel Koşullar ...................................................................................................... 189
+9.9.2. Sistem Analizi ...................................................................................................... 190
+9.9.3. Çaprazlar .............................................................................................................. 190
+9.9.4. Özel Çapraz Düzenleri İçin Ek Koşullar .............................................................. 191
+9.9.5. Kiriş – Kolon Birleşimleri .................................................................................... 191
+9.9.6. Çaprazların Uç Birleşimleri ................................................................................. 192
+9.9.7. Kolon Ekleri ......................................................................................................... 192
+9.10. DİYAFRAM İÇİ BAŞLIK VE DİKME ELEMANLARI ........................................ 192
+9.10.1. Genel Koşullar .................................................................................................... 192
+9.10.2. Diyafram Başlığı ................................................................................................ 193
+9.10.3. Diyafram Dikmeleri ........................................................................................... 193
+9.10.4. Yatay Çapraz Sistemleri ve Uzay Çatı Kafes Sistemleri ................................... 193
+9.11. MOMENT AKTARAN ÇERÇEVELERİN ÇELİK – BETONARME KOMPOZİT
+KOLONLARI .................................................................................................................... 193
+9.11.1. Genel .................................................................................................................. 193
+9.11.2. Kolonların Kirişlerden Daha Güçlü Olması Koşulu .......................................... 194
+9.11.3. Süneklik Düzeyi Yüksek Moment Aktaran Çerçevelerin Çelik Gömme Kompozit
+Kolonları ......................................................................................................................... 194
+9.11.4. Süneklik Düzeyi Yüksek Moment Aktaran Çerçevelerin Beton Dolgulu Kompozit
+Kolonları ......................................................................................................................... 196
+9.11.5. Süneklik Düzeyi Sınırlı Moment Aktaran Çerçevelerin Çelik Gömme Kompozit
+Kolonları ......................................................................................................................... 196
+9.11.6. Süneklik Düzeyi Sınırlı Moment Aktaran Çerçevelerin Beton Dolgulu Kompozit
+Kolonları ......................................................................................................................... 197
+9.12. TEMEL BAĞLANTI DETAYLARI ....................................................................... 197
+9.13. PROJE HESAP RAPORU VE UYGULAMA PROJELERİNE İLİŞKİN KURALLAR
+........................................................................................................................................... 198
+9.13.1. Proje Hesap Raporu ............................................................................................ 198
+9.13.2. Çelik Uygulama Projesi Çizimlerine İlişkin Kurallar ........................................ 198
+EK 9A – DEPREM KUVVETİ TAŞIYICI SİSTEMLERİN BİRLEŞİMLERİNDE GENEL
+KOŞULLAR ...................................................................................................................... 200
+
+--- Page 13 ---
+EK 9B – MOMENT AKTARAN ÇELİK ÇERÇEVELERDE KİRİŞ-KOLON BİRLEŞİM
+DETAYLARI .................................................................................................................... 202
+9B.0. SİMGELER ............................................................................................................. 202
+9B.1. KAPSAM VE GENEL HUSUSLAR ...................................................................... 203
+9B.2. TAM DAYANIMLI BULONLU ALIN LEVHALI BİRLEŞİMLER .................... 206
+9B.3. BULONLU BAŞLIK LEVHALI BİRLEŞİM ......................................................... 207
+9B.4. TAM PENETRASYONLU KÜT KAYNAKLI BİRLEŞİM .................................. 211
+9B.5. KAYNAKLI ZAYIFLATILMIŞ KİRİŞ ENKESİTLİ KİRİŞ – KOLON BİRLEŞİMİ
+........................................................................................................................................... 213
+EK 9C – ÇAPRAZ - KİRİŞ - KOLON BİRLEŞİM DETAYLARI .................................. 216
+BÖLÜM 10 – DEPREM ETKİSİ ALTINDA HAFİF ÇELİK BİNA TAŞIYICI
+SİSTEMLERİNİN TASARIMI İÇİN ÖZEL KURALLAR ........................................ 218
+10.0. SİMGELER .............................................................................................................. 218
+10.1. KAPSAM ................................................................................................................. 220
+10.2. GENEL KURALLAR .............................................................................................. 220
+10.2.1. Hafif Çelik Bina Taşıyıcı Sistemlerinin Sınıflandırılması ................................. 220
+10.2.2. İlgili Standartlar .................................................................................................. 221
+10.2.3. Malzeme ve Birleşim Araçlarına İlişkin Koşullar .............................................. 222
+10.2.4. Enkesit Koşulları ................................................................................................ 222
+10.2.5. Tasarım Yöntemi ve Yük Birleşimleri ............................................................... 224
+10.2.6. Deprem Hesabı ................................................................................................... 224
+10.2.7. Hafif Çelik Bina Sistemlerinin Yükseklik Sınırları ........................................... 225
+10.3. PANELLERİN TASARIM ESASLARI .................................................................. 225
+10.3.1. Kaplamalı Panel Sistemlerinin Oluşturulması ................................................... 225
+10.3.2. Panel Tasarımı .................................................................................................... 227
+10.3.3. Dikme Tasarımı .................................................................................................. 229
+10.3.4. Birleşimlerin Tasarımı ........................................................................................ 231
+10.4. YATAY YÜK TAŞIYAN PANELLER İÇİN UYULMASI GEREKEN KOŞULLAR
+........................................................................................................................................... 232
+10.4.1. Kaplamalı Panel Sistemler için Koşullar ........................................................... 232
+10.4.2. Çaprazlı Panel Sistemler için Koşullar ............................................................... 233
+10.4.3. Çapraz Elemanları Sadece Çekme Etkisi Altında Olan Çaprazlı Panel Sistemler
+için Ek Özel Koşullar ..................................................................................................... 234
+10.5. DÖŞEMELER .......................................................................................................... 234
+EK 10A – ELEMANLARDA AÇILACAK DELİKLER İÇİN KURALLAR ................. 236
+10A.0. SİMGELER ........................................................................................................... 236
+10A.1. KAPSAM VE GENEL HUSUSLAR .................................................................... 236
+10A.2. DELİKLER İÇİN KURALLAR ............................................................................ 236
+
+--- Page 14 ---
+EK 10B – MATKAP UÇLU VİDALAR VE BULONLAR İÇİN DAYANIM HESAPLARI
+........................................................................................................................................... 237
+10B.0. SİMGELER ........................................................................................................... 237
+10B.1. KAPSAM ............................................................................................................... 238
+EK 10C – PANEL DENEYİ ESASLARI ......................................................................... 241
+10C.0. SİMGELER ........................................................................................................... 241
+10C.1. KAPSAM VE GENEL HUSUSLAR .................................................................... 241
+BÖLÜM 11 – DEPREM ETKİSİ ALTINDA YIĞMA BİNA TAŞIYICI
+SİSTEMLERİNİN TASARIMI İÇİN ÖZEL KURALLAR ........................................ 243
+11.0. SİMGELER .............................................................................................................. 243
+11.1. KAPSAM VE TANIMLAR ..................................................................................... 244
+11.2. MALZEMELER VE DAYANIM ............................................................................ 245
+11.3. DEPREM HESABI .................................................................................................. 247
+11.4. TAŞIMA GÜCÜ YÖNTEMİNE GÖRE HESAP .................................................... 249
+11.5. DİĞER TASARIM KRİTERLERİ ........................................................................... 251
+BÖLÜM 12 – DEPREM ETKİSİ ALTINDA AHŞAP BİNA TAŞIYICI
+SİSTEMLERİNİN TASARIMI İÇİN ÖZEL KURALLAR ........................................ 257
+12.0. SİMGELER .............................................................................................................. 257
+12.1. KAPSAM ................................................................................................................. 257
+12.2. GENEL KURALLAR .............................................................................................. 257
+12.2.1. Ahşap Taşıyıcı Sistemlerin Sınıflandırılması ..................................................... 257
+12.2.2. İlgili Standartlar ve Tasarım Esasları ................................................................. 258
+12.2.3. Malzeme Koşulları ............................................................................................. 259
+12.3. DEPREM ETKİSİ ALTINDA YAPISAL MODELLEME VE HESAP ................. 259
+12.4. PANELLERİN TASARIM ESASLARI .................................................................. 260
+12.4.1. Panelleri Oluşturan Elemanlar ........................................................................... 260
+12.4.2. Panellerin Oluşturulmasına İlişkin Kurallar ....................................................... 261
+12.4.3. Panellerin Tasarımına İlişkin Kurallar ............................................................... 262
+12.4.4. Dikmelerin Tasarımı .......................................................................................... 264
+12.4.5. Birleşimlerin Tasarımı ........................................................................................ 264
+12.5. DÖŞEMELERİN TASARIM ESASLARI ............................................................... 265
+12.5.1. Ahşap Döşemeleri Oluşturan Elemanlar ............................................................ 265
+12.5.2. Döşemelerin Tasarımına İlişkin Kurallar ........................................................... 265
+12.6. BİRLEŞİMLERİN TASARIMI ............................................................................... 266
+BÖLÜM 13 – DEPREM ETKİSİ ALTINDA YÜKSEK BİNA TAŞIYICI
+SİSTEMLERİNİN TASARIMI İÇİN ÖZEL KURALLAR ........................................ 267
+13.0. SİMGELER .............................................................................................................. 267
+13.1. KAPSAM VE TANIM ............................................................................................. 267
+
+--- Page 15 ---
+13.2. PERFORMANS HEDEFLERİ VE TASARIM AŞAMALARI ............................... 268
+13.2.1. Tasarım Aşaması I: DD-2 Deprem Yer Hareketi Altında Ön Tasarım
+Boyutlandırma ................................................................................................................ 268
+13.2.2. Tasarım Aşaması II: DD-4 veya DD-3 Deprem Yer Hareketi Altında Kesintisiz
+Kullanım veya Sınırlı Hasar Performans Hedefi İçin Değerlendirme – İyileştirme ...... 268
+13.2.3. Tasarım Aşaması III: DD-1 Deprem Yer Hareketi Altında Göçmenin Önlenmesi
+veya Kontrollü Hasar Performans Hedefi İçin Değerlendirme – İyileştirme – Son Tasarım
+........................................................................................................................................ 269
+13.3. YÜKSEK BİNA TAŞIYICI SİSTEM ELEMANLARININ DAVRANIŞ
+ÖZELLİKLERİ ................................................................................................................. 269
+13.3.1. Doğrusal Olmayan Sünek Davranışa İlişkin Şekildeğiştirmeler ........................ 269
+13.3.2. Doğrusal Davranışa İlişkin İç Kuvvetler ............................................................ 270
+13.4. TASARIM AŞAMASI I: ÖN TASARIM – BOYUTLANDIRMA İÇİN HESAP
+ESASLARI ........................................................................................................................ 270
+13.4.1. Kapsam ............................................................................................................... 270
+13.4.2. I. Aşama Taşıyıcı Sistem Modellemesi .............................................................. 271
+13.4.3. I. Aşama Deprem Hesabı ................................................................................... 271
+13.4.4. Taşıyıcı Sistemin Ön Boyutlamasına İlişkin Ek Koşullar .................................. 271
+13.5. TASARIM AŞAMASI II: KESİNTİSİZ KULLANIM VEYA SINIRLI HASAR
+PERFORMANS DEĞERLENDİRMESİ İÇİN HESAP ESASLARI ............................... 272
+13.5.1. Kapsam ............................................................................................................... 272
+13.5.2. II. Aşama Taşıyıcı Sistem Modellemesi ............................................................ 272
+13.5.3. II. Aşama Deprem Hesabı .................................................................................. 272
+13.5.4. II. Aşamada Değerlendirmeye Esas Şekildeğiştirme ve İç Kuvvet Talepleri .... 273
+13.5.5. II. Aşama Performans Değerlendirmesi ............................................................. 274
+13.6. TASARIM AŞAMASI III: GÖÇMENİN ÖNLENMESİ VEYA KONTROLLÜ
+HASAR PERFORMANS DEĞERLENDİRMESİ İÇİN HESAP ESASLARI ................ 274
+13.6.1. Kapsam ............................................................................................................... 274
+13.6.2. III. Aşama Taşıyıcı Sistem Modellemesi ........................................................... 275
+13.6.3. III. Aşama Deprem Hesabı ................................................................................. 275
+13.6.4. III. Aşamada Değerlendirmeye Esas Şekildeğiştirme ve İç Kuvvet Talepleri ... 275
+13.6.5. III. Aşama Performans Değerlendirmesi ............................................................ 276
+13.7. YÜKSEK BİNA TASARIMININ SONUÇLANDIRILMASI VE TEMELLERİN
+TASARIMI ........................................................................................................................ 276
+13.7.1. Yüksek Bina Tasarımın Sonuçlandırılması ........................................................ 276
+13.7.2. Temellerin Performans Değerlendirmesi / Tasarımı .......................................... 276
+13.8. YÜKSEK BİNALARDA KURULACAK YAPI SAĞLIĞI İZLEME SİSTEMİ .... 277
+BİLGİLENDİRME EKİ 13A – YÜKSEK BİNA TAŞIYICI SİSTEMLERİ ................... 278
+13A.1. TİPİK YÜKSEK BİNA TAŞIYICI SİSTEMLERİ ............................................... 278
+
+--- Page 16 ---
+13A.2. YÜKSEK BİNA TAŞIYICI SİSTEMİNİN DÜZENLENMESİNDE GÖZÖNÜNE
+ALINACAK HUSUSLAR ................................................................................................ 279
+BÖLÜM 14 – DEPREM ETKİSİ ALTINDA YALITIMLI BİNA TAŞIYICI
+SİSTEMLERİNİN TASARIMI İÇİN ÖZEL KURALLAR ........................................ 280
+14.0. SİMGELER VE TANIMLAR .................................................................................. 280
+14.0.1. Simgeler ............................................................................................................. 280
+14.0.2. Tanımlar ............................................................................................................. 283
+14.1. KAPSAM ................................................................................................................. 284
+14.2. AMAÇ ...................................................................................................................... 284
+14.3. GENEL TASARIM İLKELERİ ............................................................................... 284
+14.4. YALITIM BİRİMLERİNİN TEMEL ÖZELLİKLERİ ............................................ 285
+14.5. YALITIM SİSTEMİNİN KARARLILIĞI ............................................................... 286
+14.6. RÜZGAR, YANGIN VE ÇEVRESEL ETKİLER ................................................... 286
+14.7. YALITIM SİSTEMİNİN İNCELENMESİ, İZLENMESİ VE BAKIMI ................. 286
+14.8. ONAYLAR VE BELGELER ................................................................................... 287
+14.9. PERFORMANS HEDEFLERİ ................................................................................. 287
+14.10. TASARIMDA KULLANILACAK YÜK BİRLEŞİMLERİ .................................. 287
+14.10.1. Yalıtım Arayüzü ve Altında Kalan Altyapı Elemanların Tasarımında Kullanılacak
+Yük Birleşimleri ............................................................................................................. 287
+14.10.2. Yalıtım Arayüzü Üzerindeki Üstyapı Elemanların Tasarımında Kullanılacak Yük
+Birleşimleri ..................................................................................................................... 287
+14.10.3. Yalıtım Birimi Deneylerinde Kullanılacak Yük Birleşimleri .......................... 287
+14.11. YALITIM SİSTEMİ HESAP ESASLARI ............................................................. 288
+14.12. ELASTOMER YALITIM BİRİMLERİ ................................................................. 288
+14.12.1. Tasarımda Kullanılacak Alt ve Üst Sınır Değerleri ......................................... 288
+14.12.2. Elastomer Yalıtım Birimlerinin Birim Şekildeğiştirme Sınırları ..................... 289
+14.12.3. Elastomer Yalıtım Birimlerinin Düşey Kararlılığı ........................................... 290
+14.12.4. Elastomer Yalıtım Birimlerinin Bağlantıları .................................................... 292
+14.13. EĞRİ YÜZEYLİ SÜRTÜNMELİ YALITIM BİRİMLERİ .................................. 293
+14.13.1. Tasarımda Kullanılacak Alt ve Üst Sınır Değerler .......................................... 293
+14.13.2. Eğri Yüzeyli Sürtünmeli Yalıtım Birimlerinin Bağlantıları ............................. 293
+14.14. HESAP YÖNTEMLERİ ........................................................................................ 293
+14.14.1. Hesap Yönteminin Seçilmesi ........................................................................... 293
+14.14.2. Etkin Deprem Yükü Yöntemi .......................................................................... 294
+14.14.3. Mod Birleştirme Yöntemi ................................................................................ 295
+14.14.4. Zaman Tanım Alanında Doğrusal Olmayan Hesap Yöntemi .......................... 296
+14.14.5. Yalıtımlı Binalarda Göreli Kat Ötelemesi Sınırları ve Deprem Derzleri ......... 297
+14.15. YALITIM BİRİMİ DENEYLERİ .......................................................................... 297
+
+--- Page 17 ---
+14.15.1. Deney Koşulları ................................................................................................ 297
+14.15.2. Yalıtım Birimi Prototip Deneyleri .................................................................... 297
+14.15.3. Yalıtım Birimi Üretim Kontrol Deneyleri ........................................................ 297
+14.15.4. Yalıtım Birimi Kabul Koşulları........................................................................ 299
+14.15.5. Tasarımın Doğrulanması .................................................................................. 300
+EK 14A – ELASTOMER YALITIM BİRİMLERİNİN TEMEL ÖZELLİKLERİ .......... 301
+EK 14B – EĞRİ YÜZEYLİ SÜRTÜNMELİ YALITIM BİRİMLERİNİN TEMEL
+ÖZELLİKLERİ ................................................................................................................. 304
+BÖLÜM 15 – DEPREM ETKİSİ ALTINDA MEVCUT BİNA SİSTEMLERİNİN
+DEĞERLENDİRİLMESİ VE GÜÇLENDİRME TASARIMI İÇİN ÖZEL
+KURALLAR .................................................................................................................... 306
+15.0. SİMGELER .............................................................................................................. 306
+15.1. KAPSAM ................................................................................................................. 307
+15.2. BİNALARDAN BİLGİ TOPLANMASI ................................................................. 307
+15.2.1. Binalardan Toplanacak Bilginin Kapsamı ......................................................... 307
+15.2.2. Bilgi Düzeyleri ................................................................................................... 308
+15.2.3. Mevcut Malzeme Dayanımı ............................................................................... 308
+15.2.4. Betonarme Binalarda Sınırlı Bilgi Düzeyi ......................................................... 308
+15.2.5. Betonarme Binalarda Kapsamlı Bilgi Düzeyi .................................................... 309
+15.2.6. Çelik Binalarda Sınırlı Bilgi Düzeyi .................................................................. 310
+15.2.7. Çelik Binalarda Kapsamlı Bilgi Düzeyi ............................................................. 310
+15.2.8. Önüretimli Betonarme Binalarda Sınırlı Bilgi Düzeyi ....................................... 311
+15.2.9. Önüretimli Betonarme Binalarda Kapsamlı Bilgi Düzeyi ................................. 311
+15.2.10. Yığma Binalarda Sınırlı Bilgi Düzeyi .............................................................. 311
+15.2.11. Yığma Binalarda Kapsamlı Bilgi Düzeyi......................................................... 311
+15.2.12. Bilgi Düzeyi Katsayıları ................................................................................... 312
+15.3. YAPI ELEMANLARINDA HASAR SINIRLARI VE HASAR BÖLGELERİ ...... 312
+15.3.1. Kesit Hasar Durumları ....................................................................................... 312
+15.3.2. Kesit Hasar Bölgeleri ......................................................................................... 312
+15.3.3. Kesit ve Eleman Hasarlarının Tanımlanması ..................................................... 313
+15.4. DEPREM HESABINA İLİŞKİN GENEL İLKE VE KURALLAR ........................ 313
+15.5. DOĞRUSAL HESAP YÖNTEMLERİ İLE DEPREM HESABI ............................ 314
+15.5.1. Hesap Yöntemleri ............................................................................................... 314
+15.5.2. Betonarme Binaların Yapı Elemanlarında Hasar Türlerinin Belirlenmesi ........ 314
+15.5.3. Doğrusal Hesap Yöntemlerinin Uygulama Sınırları .......................................... 315
+15.5.4. Birim Şekildeğiştirme ve Plastik Dönme Taleplerinin Belirlenmesi ................. 316
+15.6. DOĞRUSAL OLMAYAN HESAP YÖNTEMLERİ İLE DEPREM HESABI ...... 316
+15.6.1. Tanım ................................................................................................................. 316
+
+--- Page 18 ---
+15.6.2. Hesap Yöntemleri ............................................................................................... 317
+15.7. ŞEKİLDEĞİŞTİRME SINIRLARI .......................................................................... 317
+15.7.1. Betonarme ve Önüretimli Betonarme Elemanların Kesit Birim Şekildeğiştirme ve
+Plastik Dönme Sınırları .................................................................................................. 317
+15.7.2. Çelik Elemanların Şekildeğiştirme ve Plastik Dönme Sınırları ......................... 317
+15.7.3. Güçlendirilen Bölme Duvarlarının Şekildeğiştirme Sınırları ............................. 317
+15.8. MEVCUT BİNALARIN DEPREM PERFORMANSININ BELİRLENMESİ ....... 318
+15.8.1. Mevcut veya Güçlendirilecek Binalarda Hedeflenen Deprem Performansı ...... 318
+15.8.2. Mevcut veya Güçlendirilecek Binaların Deprem Performansı .......................... 318
+15.8.3. Mevcut Binalarda Sınırlı Hasar Performans Düzeyi .......................................... 318
+15.8.4. Mevcut Binalarda Kontrollü Hasar Performans Düzeyi .................................... 318
+15.8.5. Mevcut Binalarda Göçmenin Önlenmesi Performans Düzeyi ........................... 319
+15.8.6. Göçme Durumu .................................................................................................. 319
+15.8.7. Betonarme Binalarda Güçlendirilmiş Bölme Duvarların Performans Düzeyleri
+........................................................................................................................................ 319
+15.8.8. Yığma Binaların Deprem Performansının Belirlenmesi .................................... 319
+15.9. BİNALARIN GÜÇLENDİRİLMESİ ....................................................................... 319
+15.9.1. Güçlendirilen Binaların Deprem Güvenliğinin Belirlenmesi ............................. 320
+15.9.2. Binalara Eklenecek Elemanların Tasarımı ......................................................... 320
+15.9.3. Güçlendirme Türleri ........................................................................................... 320
+15.10. BETONARME BİNALARIN GÜÇLENDİRİLMESİ ........................................... 320
+15.10.1. Kolonların Sarılması ........................................................................................ 320
+15.10.2. Kolonların Eğilme Kapasitesinin Arttırılması .................................................. 321
+15.10.3. Kirişlerin Sarılması .......................................................................................... 321
+15.10.4. Bölme Duvarlarının Güçlendirilmesi ............................................................... 322
+15.10.5. Betonarme Taşıyıcı Sistemlerin Yerinde Dökme Betonarme Perdeler ile
+Güçlendirilmesi .............................................................................................................. 322
+15.10.6. Betonarme Sisteme Yeni Çerçeveler Eklenmesi .............................................. 323
+15.10.7. Betonarme Sistemin Kütlesinin Azaltılması .................................................... 323
+EK 15A – DOĞRUSAL YÖNTEMLER İLE HESAPTA KOLON, PERDE VE KİRİŞ
+ELEMANLARINDA YERDEĞİŞTİRMİŞ EKSEN DÖNMELERİNİN TANIMI ......... 324
+15A.0. SİMGELER ........................................................................................................... 324
+15A.1. TANIMLAR .......................................................................................................... 324
+15A.2. YERDEĞİŞTİRMİŞ EKSEN DÖNMESİ ............................................................. 324
+15A.3. ÇERÇEVE ELEMANLARINDA AKMA DÖNMESİ ......................................... 325
+15A.4. PERDE ELEMANLARINDA AKMA DÖNMESİ............................................... 325
+EK 15B – LİFLİ POLİMER İLE SARGILANAN KOLONLARDA DAYANIM VE
+SÜNEKLİK ARTIŞININ HESABI ................................................................................... 327
+
+--- Page 19 ---
+15B.0. SİMGELER ........................................................................................................... 327
+15B.1. KOLONLARIN KESME DAYANIMININ ARTTIRILMASI ............................. 328
+15B.2. KOLONLARIN EKSENEL BASINÇ DAYANIMININ ARTTIRILMASI ......... 329
+15B.3. KOLONLARIN SÜNEKLİĞİNİN ARTTIRILMASI ........................................... 330
+15B.4. KOLONLARDA YETERSİZ BİNDİRME BOYU İÇİN SARGILAMA ............. 330
+15B.5. KOLON-KİRİŞ BİRLEŞİM BÖLGELERİNİN LP İLE GÜÇLENDİRİLMESİ . 331
+EK 15C – DOLGU DUVARLARININ GÜÇLENDİRİLMESİ ....................................... 332
+15C.0. SİMGELER ........................................................................................................... 332
+15C.1. DOLGU DUVARLARININ GÜÇLENDİRİLMESİ ............................................ 332
+15C.2. DOLGU DUVARLARIN HASIR ÇELİK DONATILI ÖZEL SIVA İLE
+GÜÇLENDİRİLMESİ ....................................................................................................... 333
+15C.3. DOLGU DUVARLARININ LİFLİ POLİMERLER İLE GÜÇLENDİRİLMESİ 335
+BÖLÜM 16 – DEPREM ETKİSİ ALTINDA TEMEL ZEMİNİ VE TEMELLERİN
+TASARIMI İÇİN ÖZEL KURALLAR ......................................................................... 337
+16.0. SİMGELER .............................................................................................................. 337
+16.1. KAPSAM ................................................................................................................. 340
+16.2. ZEMİN KOŞULLARININ TANIMLANMASI ...................................................... 341
+16.2.1. Zemin Araştırmaları ........................................................................................... 341
+16.2.2. Zemin ve Temel Etüd Raporları ......................................................................... 341
+16.3. ZEMİN PARAMETRELERİNİN BELİRLENMESİ .............................................. 342
+16.4. YEREL ZEMİN SINIFLARININ BELİRLENMESİ .............................................. 343
+16.5. DEPREM ETKİSİ ALTINDA SAHAYA ÖZEL ZEMİN DAVRANIŞ ANALİZLERİ
+........................................................................................................................................... 344
+16.5.1. Kapsam ............................................................................................................... 344
+16.5.2. Doğrusal Olmayan Serbest Zemin Modeli ve Deprem Analizi ......................... 344
+16.6. DEPREM ETKİSİ ALTINDA ZEMİNİN SIVILAŞMA RİSKİNİN
+DEĞERLENDİRMESİ ...................................................................................................... 345
+16.7. TEMELLERİN TASARIMI İÇİN GENEL KURALLAR ....................................... 346
+16.7.1. Amaç .................................................................................................................. 346
+16.7.2. Temel Tasarımında Taşıma Gücü İlkesi ............................................................ 347
+16.7.3. Tasarım Etkileri .................................................................................................. 347
+16.7.4. Tasarım Dayanımları .......................................................................................... 347
+16.8. YÜZEYSEL TEMELLER ........................................................................................ 347
+16.8.1. Kapsam ............................................................................................................... 347
+16.8.2. Yüzeysel Temeller İçin Dayanım Katsayıları .................................................... 348
+16.8.3. Yüzeysel Temellerin Taşıma Gücü .................................................................... 348
+16.8.4. Yüzeysel Temellerin Yatayda Kayması ............................................................. 349
+16.8.5. Temel Bağ Kirişleri ............................................................................................ 350
+
+--- Page 20 ---
+16.9. KAZIKLI TEMELLER ............................................................................................ 350
+16.9.1. Kapsam ............................................................................................................... 350
+16.9.2. Kazıklı Temeller İçin Dayanım Katsayıları ....................................................... 351
+16.9.3. Kazıkların Düşey Taşıma Gücü ......................................................................... 351
+16.9.4. Kazıkların Yanal Taşıma Gücü .......................................................................... 352
+16.10. KAZIKLI TEMELLERİN DEPREM HESABI ..................................................... 352
+16.10.1. Yapı – Kazık – Zemin Etkileşimi ..................................................................... 352
+16.10.2. Kazıkların Tasarımına İlişkin Özel Koşullar ................................................... 353
+16.11. BİNALARIN BODRUM PERDELERİNE ETKİYEN STATİK VE DİNAMİK
+ZEMİN BASINÇLARI ..................................................................................................... 353
+16.12. DEPREM ETKİSİ ALTINDA DAYANMA YAPILARININ TASARIMI İÇİN
+KURALLAR ..................................................................................................................... 354
+16.12.1. Dayanma Yapılarının Stabilitesi ...................................................................... 354
+16.12.2. Toprak Basınçları ............................................................................................. 355
+16.12.3. Dayanma Yapısı Arkası Su Seviyesinin Etkisi ................................................ 356
+16.13. DEPREM ETKİSİ ALTINDA ŞEVLERİN DURAYLILIĞI ................................ 357
+EK 16A – ZEMİN ARAŞTIRMALARI İÇİN GENEL KURALLAR ............................. 360
+16A.1. ZEMİN ARAŞTIRMA SONDAJLARI ................................................................ 360
+16A.2. ARAZİ DENEYLERİ ............................................................................................ 360
+16A.3. LABORATUVAR DENEYLERİ .......................................................................... 361
+EK 16B – BASİTLEŞTİRİLMİŞ ZEMİN SIVILAŞMA DEĞERLENDİRMESİ ........... 362
+16B.1. KAPSAM ............................................................................................................... 362
+16B.2. SPT VERİLERİNİN DÜZELTİLMESİ ............................................................. 362
+16B.2.1. Ham SPT Verilerinin Düzeltilmesi .................................................................. 362
+16B.2.2. SPT Verilerinin İnce Dane İçeriğine Göre Düzeltilmesi ................................. 362
+16B.3. SIVILAŞMA DİRENCİNİN HESAPLANMASI ................................................. 363
+16B.4. DEPREMDE OLUŞAN KAYMA GERİLMESİNİN HESAPLANMASI ........... 363
+EK 16C – DEPREM ETKİSİ ALTINDA YAPI – KAZIK – ZEMİN ETKİLEŞİMİ ....... 365
+16C.1. YAPI – ZEMİN ETKİLEŞİMİ .............................................................................. 365
+16C.2. YÖNTEM I İLE YAPI – KAZIK – ZEMİN ETKİLEŞİMİ HESABI................... 365
+16C.2.1. Yöntem I – Kapsam ......................................................................................... 365
+16C.2.2. Yöntem I – Kinematik Etkileşim Hesabı ......................................................... 365
+16C.2.3. Yöntem I – Eylemsizlik Etkileşimi Hesabı ..................................................... 366
+16C.2.4. Yöntem I – Ortak Sistem Yaklaşımı ile Etkileşim Hesabı .............................. 367
+16C.3. YÖNTEM II İLE YAPI – KAZIK – ZEMİN ETKİLEŞİMİ HESABI ................. 367
+16C.3.1. Yöntem II – Kapsam ........................................................................................ 367
+16C.3.2. Yöntem II – Kinematik Etkileşim Hesabı ....................................................... 367
+16C.3.3. Yöntem II – Eylemsizlik Etkileşimi Hesabı .................................................... 369
+
+================================================================================
+FILE: ts-iso-9194-yukler.pdf
+================================================================================
+Page count: 16
+
+--- Page 1 ---
+TÜRK STANDARDI
+TURKISH STANDARD
+TS ISO 9194
+Kasım 1997
+ICS 91.010.30
+1. Baskı
+YAPILARIN PROJELENDİRİLME ESASLARI-TAŞIYICI
+OLAN VE OLMAYAN ELEMANLAR DEPOLANMIŞ
+MALZEMELER-YOĞUNLUK
+Bases for design of structures; actions due to the self-weight
+of structures, non-structural elements and stored materials;
+density
+TÜRK STANDARDLARI ENSTİTÜSÜ
+Necatibey Caddesi No.112 Bakanlıklar/ANKARA
+
+--- Page 2 ---
+− Bugünkü teknik ve uygulamaya dayanılarak hazırlanmış olan bu standardın, zamanla ortaya
+çıkacak gelişme ve değişikliklere uydurulması mümkün olduğundan ilgililerin yayınları izlemelerini
+ve standardın uygulanmasında karşılaştıkları aksaklıkları Enstitümüze iletmelerini rica ederiz.
+− Bu standardı oluşturan Hazırlık Grubu üyesi değerli uzmanların emeklerini; tasarılar üzerinde
+görüşlerini bildirmek suretiyle yardımcı olan bilim, kamu ve özel sektör kuruluşları ile kişilerin
+değerli katkılarını şükranla anarız.
+Kalite Sistem Belgesi
+İmalât ve hizmet sektörlerinde faaliyet gösteren kuruluşların sistemlerini TS EN ISO 9000 Kalite
+Standardlarına uygun olarak kurmaları durumunda TSE tarafından verilen belgedir.
+Türk Standardlarına Uygunluk Markası (TSE Markası)
+TSE Markası, üzerine veya ambalâjına konulduğu malların veya hizmetin ilgili Türk Standardına uygun
+olduğunu ve mamulle veya hizmetle ilgili bir problem ortaya çıktığında Türk Standardları Enstitüsü’nün
+garantisi altında olduğunu ifade eder.
+TSEK
+Kalite Uygunluk Markası (TSEK Markası)
+TSEK Markası, üzerine veya ambalâjına konulduğu malların veya hizmetin henüz Türk Standardı
+olmadığından ilgili milletlerarası veya diğer ülkelerin standardlarına veya Enstitü tarafından kabul
+edilen teknik özelliklere uygun olduğunu ve mamulle veya hizmetle ilgili bir problem ortaya çıktığında
+Türk Standardları Enstitüsü’nün garantisi altında olduğunu ifade eder.
+DİKKAT!
+TS işareti ve yanında yer alan sayı tek başına iken (TS 4600 gibi), mamulün Türk Standardına uygun
+üretildiğine dair üreticinin beyanını ifade eder. Türk Standardları Enstitüsü tarafından herhangi bir
+garanti söz konusu değildir.
+Standardlar ve standardizasyon konusunda daha geniş bilgi Enstitümüzden sağlanabilir.
+TÜRK STANDARDLARININ YAYIN HAKLARI SAKLIDIR.
+
+--- Page 3 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+ÖNSÖZ
+− Bu standard, ISO tarafından kabul edilen ISO 9194: 1987 standardı esas alınarak, TSE İnşaat
+Hazırlık Grubu’nca hazırlanmış ve TSE Teknik Kurulu’nun 18.11.1997 tarihli toplantısında Türk
+Standardı olarak kabul edilerek yayımına karar verilmiştir.
+
+--- Page 4 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+İÇİNDEKİLER
+0 - GİRİŞ..................................................................................................................... 1
+1 - KAPSAM VE UYGULAMA ALANI ....................................................................... 1
+2 - ATIF YAPILAN STANDARDLAR......................................................................... 1
+3 - GENEL.................................................................................................................. 1
+4 - YOĞUNLUK DEĞERLERİ.................................................................................... 2
+EK A...........................................................................................................................3
+EK B...........................................................................................................................8
+
+--- Page 5 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+YAPILARIN PROJELENDİRİLME ESASLARI -
+TAŞIYICI OLAN VE OLMAYAN ELEMANLAR -
+DEPOLANMIŞ MALZEMELER - YOĞUNLUK
+0 - GİRİŞ
+Yapıların güvenilirliği ile ilgili genel kurallar ISO 2394’de (TS 1914) verilmiştir. Bu standardda verilmiş
+olan değerler şu ana kadar, yeterli olmayan istatistiksel verilerin değerlendirilmesi sonucu ortaya
+çıkarılmış olan değerlerdir. Genel olarak bu değerler yoğunlukların ortalama değerleri olarak
+yorumlanabilir. Bu ortalama değerler; bazı durumlarda aynı malzeme için bir ülkeden diğerine
+değişebilir. Bu nedenle aynı malzeme için iki değer arasında bir aralık tanımlanmıştır. Her ülkenin ilgili
+standardında, tanımlanmış bu aralıktaki değerlerin kullanılması tavsiye olunur.
+1 - KAPSAM VE UYGULAMA ALANI
+Bu standard, yapıların kendi kütlelerinin taşıyıcı olmayan elemanlar ve depolanmış malzemelerin
+neden olduğu etkileri ve malzemeler ile ilgili sayısal yoğunluk değerlerini kapsar. Bu etkiler; yoğunluk,
+yerçekimi ivmesi ve gerçek hacimlerin çarpımı ile belirlenir. Yapı üzerinde bulunan toprak kütlesi
+sonucu oluşan etkiler de aynı şekilde hesaplanır.
+2 - ATIF YAPILAN STANDARDLAR
+Bu standardda atıf yapılan standardların atıf yapılan madde hükümleri, bu standardın hükümleri
+sayılır. Atıf yapılan standardın yayımı tarihinde yürürlükteki baskısı geçerlidir. Ancak bütün
+standardların zamanla tadil veya revizyona tâbi tutulması söz konusu olduğundan, ilgililer aşağıda
+verilen standardların en yeni baskılarını kullanma olanaklarını araştırmaya özen göstermelidir. Bütün
+standardların en yeni baskıları TSE’den temin edilebilir.
+EN, ISO, IEC vb. Adı TS No Adı
+No (İngilizce) (Türkçe)
+ISO 2394 General principles on TS 1914 Yapıların Güvenliğini Gerçeklemede
+reliability for structures Genel İlkeler
+ISO 3893 Concrete - Classification TS 5893 Beton Basınç Mukavemetlerine Göre
+by compressive Strength Sınıflandırma
+3 - GENEL
+3.1 -Yapıların kendi kütlelerinin taşıyıcı olmayan ve/veya depolanmış malzemelerin yol açtığı etkilerin
+hesabında en önemli unsur yoğunluktur.
+3.2 - Üç boyutu aynı mertebede olan malzemelerin yoğunluğu kg/m3 cinsinden ifade edilir. Kaplama
+malzemesi olarak kullanılan ve bir boyutu diğer iki boyutundan daha küçük olan malzemeler de ise
+kg/m2 olarak ifade edilen yüzeysel yoğunluk kullanılır.
+3.3 - Bazı ülkelerde kaplama malzemeleri, kar yükü gibi dış yük olarak nazarı dikkate alınarak N/m2
+veya paskal 1) olarak ifade edilir. Bu nedenle kaplama malzemeleri yüzeysel yük ve yüzeysel yoğunluk
+olarak belirlenmiştir, (Ek - A).
+3.4 - Depolanmış malzemelerin yoğunlukları esas itibari ile yerleştirme şekillerine bağlıdır. Depolama
+genellikle iki şekilde yapılır;
+a) Düzensiz depolama
+b) Düzenli depolama
+Düzensiz ya da gevşek depolanmış malzemeler tabiî yığın halindedir. Düzenli olarak depolanmış
+malzemeler ise denk, küme, balya ya da yığın durumdadır.
+1) 1Pa= 1N/m2
+1
+
+--- Page 6 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+4 - YOĞUNLUK DEĞERLERİ
+4.1 - Yapı bileşenleri ve/veya yapı malzemeleri, yapısal olmayan elemanlar ve depolanmış
+malzemelerin yoğunlunu gösteren değerler genellikle ortalama değerlerdir. Bu değerler; genellikle tek
+değer ile ifade edilir. Yoğunluklar gerçekte, işçilik kalitesi ve nem muhtevasına bağlı olarak değişebilir.
+Zemin yoğunluğu değerleri de aynı şekilde sıkışma durumu göz önüne alınarak belirlenir.
+4.2 - Taşıyıcı olan ve taşıyıcı olmayan elemanların yoğunlukları Ek - A’daki çizelgede verilmiştir.
+Depolanmış malzemeler ve yapı üzerine yerleştirilmiş olan toprak ile ilgili değerler de benzer şekilde
+Ek - B’deki çizelgede verilmiştir.
+4.3 - Bir malzeme için çizelgelerde tek bir yoğunluk değeri verilmişse bu değerin farklı ülkelerde
+m%5’ten fazla değişmediğini ve ortalama değer olduğunu gösterir. Eklerde, bir malzeme için verilmiş
+olan sınır değerler farklı ülkelerde ortalama değerlerin bu sınırlar içerisinde değiştiğini gösterir. Bu aynı
+zamanda tabiî şev açısı için de böyledir. Bununla birlikte, farklı ülkelerdeki yerel uygulamalara göre
+tabiî şev açısı Ek - B’de verildiği gibi m%30 kadar değişebilir. Ek - B’de tabiî şev açısı ile ilgili olarak
+verilmiş değerler yaklaşık değerlerdir.
+4.4 - Şu ana kadar sadece sınırlı istatistiksel veriler mevcut olup, Ek - A ve - Ek - B’de verilen değerler,
+ulusal uygulamaların sonuçlarına dayandırılmıştır.
+2
+
+--- Page 7 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+EK A
+TAŞIYICI OLAN VE OLMAYAN ELEMANLARIN YOĞUNLUKLARI
+( Bu çizelge standardın bir parçasıdır)
+Bu ekte, taşıyıcı olan ve olmayan elemanların yoğunlukları bir çizelge halinde verilmiştir.
+Malzeme Yoğunluk
+kg/m3
+Ağaç ve benzeri malzemeler 1) (havada kurutulmuş, yaklaşık %15 rutubetli)
+Sert Ağaçlar
+Kayın ağacı (Fagus sylvatica) 680
+Meşe ağacı (Quercus) 690
+Pedoncular meşesi (Quercus robor) 640
+Plesenk ağacı (Dalbergia nigra) 800
+Türk meşesi (Quercus cerris) 640-770
+Porsuk ağacı (Taxus baccata) 640
+Avusturalya Sert Ağaçları
+Şimşir (gri) (Eucalyptus microcarpa) 1120
+Penda (kahverengi)(Xanthosternon chrysanthus) 1120
+Yumuşak ağaçlar
+Kara çam (Pinus laricio) 570
+İğneli kara çam (Larix decidua) 550
+Norveç çamı (Picea) 430
+Köknar (Pinus eccelsa) 380-440
+İskoç (beyaz - sarı) çamı (Pinus silvestris) 490
+Beyaz söğüt (Salix alba) 330
+Dev kavak (Populus alba) 410
+Salkım söğüt (Populus trcmula) 450
+Oküm (Ocome) 410
+Kozalaklar 400 - 600
+Preslenmiş pullu plakalar 500 - 750
+Lifli plakalar
+Sert 900 - 1100
+Yarı sert 600 - 850
+Boşluklu, tecrit için 250 - 400
+Kontrplak 750 - 850
+Göbek plakası 450 - 650
+Doğal Yapı Taşları
+Plütonik kayaçlar 2650 - 3000
+Volkanik kayaçlar 2500 - 2850
+Volkanik tüfler 1400 - 2000
+Sedimanter
+Kumtaşı 2700
+Marn 2300
+Traverten 1700 - 2200
+Tatlısu kireçtaşı 2400
+Boşluksuz kireçtası 2650 - 2800
+Dolomit 2800
+Başkalaşım kayaçları
+Killi sleyt 2600
+Mermer 2700
+Yapı Tuğlaları ve Bloklar
+Pişmiş topraktan dolu tuğla
+Basınç dayanımı 14 MPa’ya kadar 1600
+Basınç dayanımı 14 MPa’nın üzerinde 1800
+Delikli tuğla (boşluk hacmi tuğla hacminden %25 fazla)
+Boşluklu tuğla 820 - 1350
+Delikli tuğla 1150 - 1450
+Kireç - kumtaşı 1700
+Kerpiç blok 1600
+Genel amaçlı refrakter tuğla
+3
+
+--- Page 8 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+Malzeme Yoğunluk
+kg/m3
+Ateş tuğlası 1850
+Yüksek dayanımlı ateş tuğlası 2100
+Silis 1800
+Manyezit (lületaşı) 2800
+Krom manyezit 3000
+Korindon 2600
+Kaplama tuğlaları
+İç duvar kaplaması 1600
+Dış yüzey kaplaması 1800
+Klinker tuğlası 2000
+Gazbeton blok
+Basınç dayanımı 2 MPa 500
+Basınç dayanımı 5 MPa 700
+Basınç dayanımı 7.5 MPa 900
+Aside dayanıklı tuğla 2000
+Tüf blok, basınç dayanımı 5 MPa 1100
+Cam tuğla, çift cidarlı 870 - 1100
+Harçlar
+Kireç harcı 1200 - 1800
+Kireçli çimento harcı (takviyeli) 1750 - 2000
+Çimento harcı (basınç dayanımı 2,5 MPa ve daha büyük) 2100
+Döşeme kaplaması harcı 1600
+Alçı harcı 1200 - 1800
+Ateş tuğlası harcı 1900
+Perlit harcı
+Kireç ile 340
+Alçı ile 370
+Çimento ile 440
+Nehir kumu ile yapılmış bitümlü harç 1700
+Beton 2)
+Tabi agregalı beton 2250 - 2500
+Bazalt agregalı beton 2300 - 2500
+Kırmataş agregalı beton 2300 - 2500
+C3 - C35
+Yüksek fırın cürüfü ile beton 1600 - 1900
+C3 - C10
+Hava sürüklenmiş ve gaz beton 600 - 1500
+C1,5 - C5
+Genleştirilmiş kil ile beton 700 - 1700
+C1,5 - C16
+Perlit ile beton 350 - 700
+C1,5 - C2
+Tüf ile beton 1400 - 1600
+C3 - C6
+Hafif agrega olarak pulverize uçucu kül kullanılmış olan beton 1600 - 1850
+Isı yalıtımı için gaz beton 300 - 900
+Isı yalıtımı için perlit tuğlası ve boru tecrit malzemesi 260
+Agregalar ve İnce Dolgu Malzemeleri
+Kum 1550
+0-40 mm tane çapı aralığındaki agrega 1700
+Çakıl 1500 - 1600
+Yüksek fırın cürufu 1700
+Granüle yüksek fırın cürufu 1200
+5 - 40 mm tane grubundaki kırılmış cüruf taşı 1500
+Gözenekli silis 1000
+Uçucu küllü çimentolu beton (bağıl yoğunluğu) 800 - 1050
+Hafif beton agregası (bağıl yoğunluğu) 750 - 1000
+Doğal kumdan veya uçucu külden yapılmış hafif agrega 1700 2000
+4
+
+--- Page 9 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+Malzeme Yoğunluk
+kg/m3
+Doğal Taşlardan Yapılmış Duvar
+İlk oluşum kayaçları
+Bazalt, melafir,diyorit,gabro 3000
+Bazalt lavı 2400
+Diyabaz 2900
+Granit, siyenit, porfirit 2800
+Trakit 2600
+Tortul Kayaç
+Grovak, kumtaşı, pudding taşı 2700
+Yoğun kireçtaşı, dolomit, fosilli kireçtaşı ve mermer 2800
+Kireçtaşı konglomera (traverten vb.) 2600
+Volkanik tüf 2000
+Başkalaşım kayaçları
+Gnays 3000
+Sleyt 2800
+Serpantin 2700
+Tuğla Duvar 3)
+Harman tuğlası 1500
+Dolu tuğla
+Basınç dayanımı 14 MPa’ya kadar 1500 - 1700
+Basınç dayanımı 14 MPa’nın üzerinde 1900
+Boşluklu tuğla veya seramik bloktan duvar (kullanılan tuğla ve bloğun cinsine bağlı olarak) 1150 - 1450
+Orta büyüklükte tüf betondan yapı bloğu 1200
+Orta büyüklükte gaz betondan yapı bloğu
+Basınç dayanımı 1,5-2,5 MPa 600 - 800
+Basınç dayanımı 2,5-5 MPa 800 -1100
+Basınç dayanımı 5-10 MPa 900 - 1300
+Basınç dayanımı 10-20 MPa 1000 - 1600
+İç duvar kaplama tuğlası 1700
+Dış cephe tuğlası 1900
+Klinker tuğlası 2000
+Ateş tuğlası (ateş kili harcından) 2000
+Aside dayanıklı tuğla (bitüm harcından) 1900
+Cam tuğlası, çift cidarlı (çimento harcından) 1100
+Cam tuğlası, bir taraftan birleştirilmiş (çimento harcından) 870
+Yapı Metalleri
+Yapı çeliği 7850
+Dökme demir 7100
+Alüminyum 2700
+Kaplama ve Diğer Yapı Malzemeleri
+Asfalt, katkısız 2200
+Bitüm 1000 - 1400
+Katran 1100 - 1400
+Asbestli çimento, çatı ve kaplama örtüsü 1800 - 2100
+Oluklu, asbest çimentodan levha 1600
+Asbest çimentodan boru 1800
+Selüloz asetat levha 1300
+Çimento karo 2400
+Mozaik karo 2200
+Beton kaldırım taşı 2200
+Kiremit 1750 - 2000
+Cephe tuğlası (dış yüzeyi sert) 2500
+Taş kaplama 2400
+Kaplama tuğlası
+Boşluklu 1350
+Boşluksuz 1600
+Epoksi reçinesi
+Fillersiz 1150
+5
+
+--- Page 10 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+Malzeme Yoğunluk
+kg/m3
+Mineral keçeli 2000
+Fiberglâslı 1800
+Fenoplâstik 1500
+Lâstik döşeme 1800
+Plastik karo 1100
+Poliamid 1100
+Poliester reçine, fillersiz 1350
+Polietilen 930
+Polibütilen 1350
+Polimetilakrilat 1150
+Polipropilen 930
+PVC sert levha 1400
+PVC döşeme levhası 1600
+PVC yer karosu 1700
+Düzcam 2600
+Telli cam 3000
+Yüzey Yüzey
+BasıncıN/m2 Yoğunluğu
+kg/m2
+Çatı Malzemeleri, Kaplamalar 4)
+Çatı kaplamaları
+Düz kiremit, pişmiş kilden 380 38
+Preslenmiş kiremit, pişmiş kilden 480 48
+Düz kiremit, tek kat 350 35
+Düz kiremit, çift kat 700 70
+Düz beton çatı kiremiti 600 60
+Beton kiremit, tek kat 400-500 40-50
+Metal levha kaplamalar
+0,53 mm kalınlığında galvanize çelik saçtan kaplama
+kenetli ve ekli 40 4
+Galvanize çelik saçtan çift kat kaynaklanmış, 0,63 mm
+kalınlığında çatı kaplaması 55 5,5
+0,75 mm kalınlığında kaynaklanmış çinko levha kaplama 45 4,5
+0,60 mm kalınlığında iki kat kaynaklanmış bakır kaplama 60 6
+Alüminyum kaplama levhası
+0,6 mm kalınlığında 20 2
+0,7 mm kalınlığında 25 2,5
+2 mm kalınlığında kurşun levha kaplama,lehimlenmiş 240 24
+Oluklu saç (galvanizlenmiş) 150 15
+Dilimli saç levha kaplama 75 - 240 7,5 - 24
+Diğer levha kaplamalar
+1 mm kalınlığında, yumuşak plastik kaplama 90 9
+Bitümlü, kaplama plakası
+2 tabakalı, çivili 80 8
+3 tabakalı, çivili, kumlu 250 25
+Asbestli çimentodan oluklu veya lifler ile güçlendirilmiş
+diğer levhalar
+Standard kaplamalar ve oluklu kaplama levhaları 200 20
+Çift kat levhalar 250 25
+1,5 mm kalınlığında oluklu plastik kaplama levhası 20 2
+Diğer kaplamalar
+Plastik - bitüm kaplamalar, kaplama kalınlığı 4 mm olan 50 5
+Sentetik - cam kaplama, kaplama kalınlığı 1 mm olan 60 6
+6 mm kalınlığında düz cam kaplama 200 20
+6 mm kalınlığında telli cam kaplama 250 25
+6 mm kalınlığında oluklu telli cam kaplama 300 30
+Bölmeli cam kaplama
+Tek kat 200 20
+Çift kaplama 400 40
+6
+
+--- Page 11 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+1) Ağaç yoğunluğu suya doygun durumda olduğunda 120 kg/m3, dış şartlara maruz ve atmosferik
+rutubete karşı koruma olmayan ortamlarda ise 80 kg/m3 arttırılmalıdır.
+2) C sınıfı betonlar için ISO 3893 : 1977 Beton - Basınç dayanımına göre sınıflandırma. Betonarme
+betonun yoğunluk değeri uygun bir beton için betonarme yüzdesi (oranı) 1,25 veya daha az ise 100
+kg/m3 arttırılmalıdır. Uygun ayarlamalar betonarme betonu yüksek değerleri için yapılabilir.
+3) Tuğla duvar yoğunluğu boşluklar harç ile dolu ve sıvasız iken hesaplanmaktadır. Beton, hafif beton
+ve donatılı beton duvarların yoğunluğu temin edilen malzemenin yoğunluğuna bağlıdır.
+4) Bu değerlere, bağlayıcı ve taşıyıcı elemanlar dahil değildir.
+7
+
+--- Page 12 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+EK B
+DEPOLANMIŞ MALZEMELERİN ŞEV AÇILARI VE YOĞUNLUKLARININ TEMSİLİ DEĞERLERİ
+(Bu ek standardın bir parçasıdır)
+Bu ekte, depolanmış malzemelerin şev açıları ve temsili yoğunlukları bir çizelge halinde verilmiştir.
+Malzeme Yoğunluk 1) Şev açısı
+(derece)
+Tabii Düzenli
+Yığın 2) Yığın 3)
+Bina ve İnşaat Malzemeleri
+Bazalt döşeme taşı (parke taşı) - 2750 -3000 -
+Kilden kütle - 2100 -
+Tuğla kumu,tuğla kırıkları, tuğla artıkları, tabi neminde 1500 - 25 -40
+Çimento 1100-1200 1300-1600 18-28
+Kil
+Pudra inceliğinde, kuru 1100 - -
+Ağır, havada kurutulmuş 1600 - -
+Mantar kırıntısı - 60 -
+Kok külü 750 - 25
+Kırılmış cüruf 900 - 35
+Genleştirilmiş taneli kil
+Hafif 250 - 30-35
+Orta 400 - 30-35
+Ağır 550 - 30-35
+Fiberglas - 160-180 -
+Cam elyafı
+Köpük şeklinde cüruf, kırılmış, tabi neminde 1000 - 35
+Cam yünü - 100-110 -
+Granit döşeme taşı (parke taşı) - 2600-2800 -
+Çakıl ve kuru kum veya tabi neminde 1800 - 30-36
+Isı yalıtımlı gaz beton - 500 -
+Isı yalıtımlı perlit tuğla - 260 -
+Boru yalıtımı için perlit - 260 -
+Sönmüş kireç 500 600 25
+Kireç
+Taneli 850-1300 - 45
+Öğütülmüş 600-1300 1000-1100 25
+Toz kireç - 1300 -
+Magnezit (kostik magnezit),öğütülmüş - 1200 -
+Mineral yünü ve türevleri - 75-260 -
+Alçı 1100 1100-1500 25
+Plastikler
+Polietilen, polisitrol, tanelendirilmiş - 650 -
+Polivinilklorür, toz - 600 -
+Poliester reçine - 1200 -
+Perlit - 70-250 -
+Kanaviçeli kaplama örtüsü - 150-220 -
+Kömür tozu külü 900 1000-1200 25
+Silt - 1800 -
+Cüruf yünü - 200-300 -
+Cüruf , taneli 1100 - 30
+Sönmüş kireç - 1300-1400 -
+Tras,öğütülmüş - 1500 -
+Ahşap yünü - 300-380 -
+Yanıcı Maddeler ve Yakıtlar
+Kömür
+Taş kömürü 900-1200 - 30-35
+Kok 450-650 - 35-45
+8
+
+--- Page 13 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+Malzeme Yoğunluk 1) Şev açısı
+(derece)
+Tabii Düzenli
+Yığın 2) Yığın 3)
+Briket kömürü
+Yumurta kömürü 800 - 25
+Köşeli kömür 700 - 35
+Linyit
+Kuru 800 - 35
+Tabii neminde 1000 - 30
+Briket 800 - 30
+Kok 1000 - 40
+Linyit tozu 500 - 25
+Odun kömürü 250 - -
+Yakıtlar
+Fueloil, mazot 800-1000 - -
+Ham petrol 980 - -
+Benzin 750-800 - -
+Petrol, mazot 800 - -
+Sıvılaştırılmış gaz
+Propan 500 - -
+Bütan 580 - -
+Odun (havada kurutulmuş, yaklaşık % 15 nemli)
+Sert odun
+Kırılmış odun 400-600 - 45
+Kütük 500 600-700 50
+Yumuşak odun
+Kırılmış 250 400 45
+Kütük 300 400-600 -
+Yakacak odun 400 - 45
+Çalı - 200 -
+Turba 300-600 500-900 -
+Gıda Maddeleri ve Tarım Ürünleri
+Alkol 800 - -
+Arpa 500-800 - 30
+Torbalanmış arpa - 650-750 -
+Bira
+Tanklarda 1050 - -
+Fıçılarda - 900 -
+Tereyaðı
+Fıçılarda - 550 -
+Paketlenmiş veya kutulanmış - 500-800 -
+Torbalanmış kakao - 550 -
+Torbalanmış kahve - 550-700 -
+Torbalanmış karanfil tohumu - 750 -
+Kavanoz veya kutu içerisinde konserveler - 800 -
+Kuru hayvan yemi
+Balyalanmış - 350 -
+Siloda 1000 - -
+Sofralık yağ
+Fıçıda - 750 -
+Şişelenmiş, sandıkta - 550 -
+Karton ambalajda yumurta - 550 -
+Kutulanmış yağ - 800 -
+Balık
+Fıçıda - 600 -
+Paketlenmiş - 800 -
+Keten, balyalarda - 1300 -
+Torba içerisinde keten tohumu - 700 -
+Sandıkta meyve 500-700 - 25
+9
+
+--- Page 14 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+Malzeme Yoğunluk 1) Şev açısı
+(derece)
+Tabii Yığın 2) Düzenli Yığın 3)
+Kutuda meyve - 350-400 -
+Yer fıstığı - 400 -
+Balyalanmış ot - 150-200 -
+Kenevir tohumu 500 - 25
+Torbalanmış kenevir tohumu - 450 -
+Bal
+Tank içerisinde 1300 - -
+Teneke kutuda - 1000 -
+Şişede - 600 -
+Baklagiller 850 - -
+Torbalanmış baklagiller - 800 -
+Koçan halinde mısır 450 - -
+Tanelenmiş mısır 700 - -
+Margarin
+Fıçılarda - 550 -
+Paketlenmiş veya kutuda - 700 -
+Un 600 - -
+Torbalanmış un - 500-600 -
+Dondurulmuş et - 400-700 -
+Süt
+Tanklarda 950-1000 - -
+Teneke Kutuda - 850 -
+Şişede - 700 -
+Yulaf
+Öğütülmüş yulaf 450-600 - -
+Soğan 750-800 - -
+Torbada - 550 -
+Sandıkta - 550 -
+Şişelenmiş salatalık turşusu - 700 -
+Biber (pimiento) - 500 -
+İçecekler
+Şişelerde - 850 -
+şişeler,kasada - 800 -
+şişeler, sandıkta - 750 -
+Patates 700-760 - 30
+Çuvalda patates - 500-700 -
+Öğütülmemiş pirinç 500 - -
+Öğütülmemiş pirinç, torbalanmış, kabuksuz - 800 -
+Çavdar 750 - -
+Kaya tuzu - 2200 -
+Yığın halinde, öğütülmüş 1000 - -
+Yığın halinde, sıkıştırılmış, hayvan tuzu - 1800 -
+Torbalanmış nişasta unu - 800 -
+Balyalanmış saman (standard balya) - 170 -
+Yüksek yoğunluklu saman balyaları - 600 -
+Pudra veya taneli şeker
+Kâğıt torbada - 600 -
+Jüt çuvalda - 800 -
+Kesme şeker
+Kâğıt torbada - 600 -
+Kutuda - 700 -
+Balyalanmış tütün - 300-500 -
+Buğday 550-820 - 30
+Torbalanmış buğday - 750 -
+Şarap
+Tanklarda 1000 - -
+Fıçılarda - 850 -
+10
+
+--- Page 15 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+Malzeme Yoğunluk 1) Şev açısı
+(derece)
+Tabii Yığın 2) Düzenli Yığın 3)
+Diğer Malzemeler4)
+Alüminyum 2700 - -
+Alüminyum alaşım 2800 - -
+Torbalar, balyalar - 500 -
+Kemik talaşı 700 - -
+Kitap ve kâğıt yığınları - 850 -
+Prinç (metal) 8300-8500 - -
+Kaba kumaş (top halinde) - 400 -
+Bronz 8400 - -
+Katran
+Tanklarda 1000 - -
+Fıçılarda - 800 -
+Balyalanmış selüloz - 100 -
+Lif halinde balyalanmış selüloz - 750 -
+Preslenip balyalanmış - 1200 -
+Balyalanmış kumaş - 400 -
+Kimyasal Gübreler
+Fosfatik 1200-1600 - 28
+Potasyum manganez - 1300-1500 -
+Potasyum sülfat 1600 - 28
+Torbalanmış azot - 2000 -
+Kompozit Gübre 1200 - 45
+Bakır 8700-8900 - -
+Balyalanmış pamuk - 700-1300 -
+İnsan atığı 1200 - -
+Balyalanmış keçe, yığın halinde - 500 -
+Preslenip balyalanmış lif - 1200 -
+Cam
+Şişe, vs. - 400 -
+Ambalajlanmış cam levha - 1000 -
+Balyalanmış üstüpü - 400 -
+Dökme demir 7100-7250 - -
+Demir cevheri 3000 - -
+Blok halinde buz - 850-900 -
+Blok halinde kuru buz - 1700 -
+Balyalanmış jüt ipliği - 700 -
+Kurşun 11400-12000 - -
+İşlenmiş deri, yığın halinde - 900-1000 -
+Top halinde keten - 600 -
+Muşamba, rulo halinde, yer döşemesi için - 1300 -
+Magnezyum 1850 - -
+Nikel 8900 - -
+Teneke kutuda yağlı boya ve vernik - 1100 -
+Kâğıt
+Yığın halinde - 1200 -
+Rulo halinde - 1100 -
+Ham deri
+Yığın halinde, kurutulmuş - 350 -
+Yığın halinde, tuzlanmış - 1100 -
+Lâstik
+Rulo halinde, döşeme malzemesi - 1300 -
+Balyalanmış ham - 1000 -
+Çelik 7850 - -
+Çelik ray 2600 - -
+Top halinde tekstil 1100 - -
+Teneke halinde rulo - 7200-7400 -
+Kılıflı, ambalajlı elbise 300 - -
+11
+
+--- Page 16 ---
+ICS 91.040 TÜRK STANDARDI TS ISO 9194/Kasım 1997
+Malzeme Yoğunluk 1) Şev açısı
+(derece)
+Tabii Düzenli
+Yığın 2) Yığın 3)
+Yün
+Balyalanmış 700 - -
+Sıkıştırılıp, balyalanmış 1300 - -
+Çinko
+Döküm 6900 - -
+Rulo halinde 7200 - -
+Zeminler 5)
+İnorganik Kohezyonlu Zeminler
+Gevşek 1800-2000 - 10-24
+Az sıkışmış 1900-2050 - 12-26
+Sıkışmış 2000-2100 - 17-27
+Yumuşak organik kil 1400 - 15
+Organik silt 1700 - -
+Kum
+Tabiî neminde
+Gevşek 1200-1500 - 30
+Az sıkışmış 1500-1800 - 30
+Sıkışmış 1700-2000 - 35
+Doygun
+Gevşek 1500-1800 - 30
+Az sıkışmış 1700-2000 - 30
+Sıkışmış 1800-2100 - 35
+Su içinde
+Gevşek 900-1000 - 30
+Az sıkışmış 1000-1200 - 30
+Sıkışmış 1100-1200 - 35
+Çakıl
+Tabiî neminde
+Gevşek 1500-1700 - 32
+Az sıkışmış 1600-1800 - 35
+Sıkışmış 1900 - 37
+Doygun
+Gevşek 1900 - 32
+Az sıkışmış 2000 - 35
+Sıkışmış 2100 - 37
+Su içinde
+Gevşek 900 - -
+Az sıkışmış 1000 - -
+Sıkışmış 1100 - -
+1) Küme ve yığın yoğunluğu balyalar üzerinde belirtilir.
+2) Tabiî yığın: düzensiz veya toplu olarak anlaşmaya uygun bir şekilde depolanmış malzemeler, tank
+içindeki sıvılar.
+3) Yığın ya da küme: düzenli ve bağlı veya düzenli ancak bağlı olmayan malzemelerdir.
+4) Depolanmış metal ürünlerin yoğunlukları gerçekteki duruma göre 1,0’den küçük bir katsayı ile
+çarpılabilir.
+5) Jeoteknik verilerden farklılık arzeden zeminlerin şev açıları ve yoğunlukları için verilen değerler
+sadece mevcut zemin depolanmış malzemeleri ile aynı ise kullanılmalıdır.
+Çizelgede belirtilen zeminler için kohezyon katsayıları, ilgili uluslararası standardlara bağlı kalarak
+verilmelidir.
+12

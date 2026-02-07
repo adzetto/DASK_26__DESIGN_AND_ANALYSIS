@@ -1,0 +1,499 @@
+#!/usr/bin/env python3
+"""
+TWIN TOWERS MODEL V4 - NO PODIUM (Straight Towers)
+===================================================
+Simple twin towers without podium irregularity.
+
+Layout:
+- Tower dimensions: 30 x 16 cm each
+- Total footprint: 30 x 40 cm (two towers + 8cm gap)
+- Height: 26 floors straight up (no setback)
+- Shear walls in BOTH directions
+- Full bracing system
+
+X Layout (30cm): 6-6-3-3-3-3-6 = 30cm (symmetric)
+Y Layout (16cm per tower): 4-4-4-4 = 16cm
+Gap: 8cm between towers
+"""
+
+import numpy as np
+import pandas as pd
+from pathlib import Path
+import ezdxf
+
+print("=" * 70)
+print("TWIN TOWERS MODEL V4 - NO PODIUM (Straight 30x16)")
+print("=" * 70)
+
+# ============================================
+# GEOMETRY PARAMETERS
+# ============================================
+# X Layout: 6-6-3-3-3-3-6 = 30cm (7 bay lines, 6 bays)
+# Core at center: 3-3 bays
+X_COORDS = np.array([0.0, 6.0, 12.0, 15.0, 18.0, 21.0, 24.0, 30.0])
+X_BAYS = [6.0, 6.0, 3.0, 3.0, 3.0, 3.0, 6.0]
+
+# Y Layout per tower: 4-4-4-4 = 16cm (5 grid lines, 4 bays)
+Y_COORDS_T1 = np.array([0.0, 4.0, 8.0, 12.0, 16.0])
+Y_COORDS_T2 = np.array([24.0, 28.0, 32.0, 36.0, 40.0])
+
+TOWER_GAP = 8.0  # 8cm gap for bridges
+TOWER_WIDTH = 30.0  # X direction
+TOWER_DEPTH = 16.0  # Y direction
+
+print(f"Tower X: 0 to {TOWER_WIDTH}m (30cm)")
+print(f"Tower 1 Y: {Y_COORDS_T1[0]} to {Y_COORDS_T1[-1]}m")
+print(f"Tower 2 Y: {Y_COORDS_T2[0]} to {Y_COORDS_T2[-1]}m")
+print(f"Gap: {TOWER_GAP}m")
+
+# Floor heights
+FLOOR_HEIGHT_GROUND = 9.0  # F0 to F1
+FLOOR_HEIGHT_NORMAL = 6.0  # F1+
+TOTAL_FLOORS = 27  # F0 to F26 (F26 = roof)
+
+Z_COORDS = [0.0, FLOOR_HEIGHT_GROUND]
+for i in range(2, TOTAL_FLOORS):
+    Z_COORDS.append(Z_COORDS[-1] + FLOOR_HEIGHT_NORMAL)
+Z_COORDS = np.array(Z_COORDS)
+
+TOTAL_HEIGHT = Z_COORDS[-1]
+print(f"Height: {TOTAL_HEIGHT}m ({TOTAL_FLOORS} floors)")
+
+# ============================================
+# NODE GENERATION
+# ============================================
+nodes = []
+node_id = 0
+node_lookup = {}
+
+def add_node(tower, floor, x, y):
+    global node_id
+    z = Z_COORDS[floor]
+    key = (tower, floor, x, y)
+    if key not in node_lookup:
+        nodes.append({
+            'node_id': node_id, 'x': x, 'y': y, 'z': z,
+            'floor': floor, 'zone': 'tower', 'tower': tower
+        })
+        node_lookup[key] = node_id
+        node_id += 1
+    return node_lookup[key]
+
+# Generate nodes for both towers
+for tower_num, y_coords in [(1, Y_COORDS_T1), (2, Y_COORDS_T2)]:
+    for floor in range(TOTAL_FLOORS):
+        for x in X_COORDS:
+            for y in y_coords:
+                add_node(tower_num, floor, x, y)
+
+n_nodes = len(nodes)
+print(f"Nodes: {n_nodes}")
+
+position_df = pd.DataFrame(nodes)
+coords = np.zeros((n_nodes, 3))
+for node in nodes:
+    coords[node['node_id']] = [node['x'], node['y'], node['z']]
+
+# ============================================
+# ELEMENT GENERATION
+# ============================================
+elements = []
+elem_id = 0
+
+def add_element(n1, n2, etype, tower='', conn='rigid'):
+    global elem_id
+    if n1 is None or n2 is None:
+        return None
+    elements.append({
+        'element_id': elem_id, 'node_i': n1, 'node_j': n2,
+        'element_type': etype, 'tower': tower, 'connection': conn
+    })
+    elem_id += 1
+    return elem_id - 1
+
+def get_node(tower, floor, x, y):
+    return node_lookup.get((tower, floor, x, y))
+
+# Bracing floors (every 2 floors)
+BRACING_FLOORS = list(range(0, TOTAL_FLOORS - 1, 2))
+
+# Shear wall positions
+# X-direction shear walls: at Y edges (front/back of each tower)
+# Y-direction shear walls: at X edges and core
+
+for tower_num, y_coords in [(1, Y_COORDS_T1), (2, Y_COORDS_T2)]:
+    tower_str = f'tower{tower_num}'
+
+    for floor in range(TOTAL_FLOORS):
+        # COLUMNS (all grid intersections)
+        if floor < TOTAL_FLOORS - 1:
+            for x in X_COORDS:
+                for y in y_coords:
+                    n1 = get_node(tower_num, floor, x, y)
+                    n2 = get_node(tower_num, floor + 1, x, y)
+                    add_element(n1, n2, 'column', tower_str)
+
+        # BEAMS - X direction (all Y lines)
+        for i in range(len(X_COORDS) - 1):
+            for y in y_coords:
+                n1 = get_node(tower_num, floor, X_COORDS[i], y)
+                n2 = get_node(tower_num, floor, X_COORDS[i+1], y)
+                add_element(n1, n2, 'beam_x', tower_str)
+
+        # BEAMS - Y direction (all X lines)
+        for j in range(len(y_coords) - 1):
+            for x in X_COORDS:
+                n1 = get_node(tower_num, floor, x, y_coords[j])
+                n2 = get_node(tower_num, floor, x, y_coords[j+1])
+                add_element(n1, n2, 'beam_y', tower_str)
+
+        # =====================================================
+        # SHEAR WALLS & BRACING (at bracing floors)
+        # =====================================================
+        if floor < TOTAL_FLOORS - 1 and floor in BRACING_FLOORS:
+
+            # -------------------------------------------------
+            # X-DIRECTION SHEAR WALLS (XZ plane - Front/Back)
+            # At Y = front and back of tower
+            # DAMA pattern in all X bays
+            # -------------------------------------------------
+            for y in [y_coords[0], y_coords[-1]]:
+                for bay_idx in range(len(X_COORDS) - 1):
+                    x_left = X_COORDS[bay_idx]
+                    x_right = X_COORDS[bay_idx + 1]
+
+                    n_bot_l = get_node(tower_num, floor, x_left, y)
+                    n_bot_r = get_node(tower_num, floor, x_right, y)
+                    n_top_l = get_node(tower_num, floor + 1, x_left, y)
+                    n_top_r = get_node(tower_num, floor + 1, x_right, y)
+
+                    # DAMA pattern
+                    dama_phase = (bay_idx + floor) % 2
+                    if dama_phase == 0:
+                        add_element(n_bot_l, n_top_r, 'shear_wall_x', tower_str, 'pin')
+                    else:
+                        add_element(n_bot_r, n_top_l, 'shear_wall_x', tower_str, 'pin')
+
+            # -------------------------------------------------
+            # Y-DIRECTION SHEAR WALLS (YZ plane - Sides)
+            # At X = edges and core
+            # X bracing pattern
+            # -------------------------------------------------
+            # Edge X positions + core
+            shear_x_positions = [X_COORDS[0], X_COORDS[-1], 15.0, 18.0]  # 0, 30, 15, 18
+
+            for x in shear_x_positions:
+                if x not in X_COORDS:
+                    continue
+                for j in range(len(y_coords) - 1):
+                    n_bot_1 = get_node(tower_num, floor, x, y_coords[j])
+                    n_bot_2 = get_node(tower_num, floor, x, y_coords[j+1])
+                    n_top_1 = get_node(tower_num, floor + 1, x, y_coords[j])
+                    n_top_2 = get_node(tower_num, floor + 1, x, y_coords[j+1])
+
+                    # Full X-bracing
+                    add_element(n_bot_1, n_top_2, 'shear_wall_y', tower_str, 'pin')
+                    add_element(n_bot_2, n_top_1, 'shear_wall_y', tower_str, 'pin')
+
+            # -------------------------------------------------
+            # CORE WALLS (in central 3m bays: 12-15 and 18-21)
+            # X-direction at tower edges
+            # -------------------------------------------------
+            core_x_bays = [(12.0, 15.0), (18.0, 21.0)]
+            for x_left, x_right in core_x_bays:
+                for y in [y_coords[0], y_coords[-1]]:
+                    n1 = get_node(tower_num, floor, x_left, y)
+                    n2 = get_node(tower_num, floor + 1, x_right, y)
+                    n3 = get_node(tower_num, floor, x_right, y)
+                    n4 = get_node(tower_num, floor + 1, x_left, y)
+                    add_element(n1, n2, 'core_wall', tower_str)
+                    add_element(n3, n4, 'core_wall', tower_str)
+
+print(f"Tower elements: {len(elements)}")
+
+# ============================================
+# BRIDGES
+# ============================================
+# Bridge X positions: use core columns (15 and 18)
+BRIDGE_X_LEFT = 12.0
+BRIDGE_X_RIGHT = 21.0
+BRIDGE_WIDTH = BRIDGE_X_RIGHT - BRIDGE_X_LEFT  # 9m
+
+BRIDGE_FLOORS_SINGLE = [(5, 6), (11, 12), (17, 18)]
+BRIDGE_FLOORS_DOUBLE = (23, 25)
+
+Y_T1_BACK = Y_COORDS_T1[-1]   # 16
+Y_T2_FRONT = Y_COORDS_T2[0]   # 24
+Y_BRIDGE_MID = (Y_T1_BACK + Y_T2_FRONT) / 2  # 20
+
+print(f"\nBridge X: {BRIDGE_X_LEFT} to {BRIDGE_X_RIGHT} ({BRIDGE_WIDTH}m)")
+print(f"Bridge Y: {Y_T1_BACK} to {Y_T2_FRONT} ({Y_T2_FRONT - Y_T1_BACK}m gap)")
+
+bridge_nodes = []
+bridge_node_lookup = {}
+bridge_node_id = n_nodes
+
+def add_bridge_node(floor, x, y):
+    global bridge_node_id
+    z = Z_COORDS[floor]
+    key = ('bridge', floor, x, y)
+    if key not in bridge_node_lookup:
+        bridge_nodes.append({
+            'node_id': bridge_node_id, 'x': x, 'y': y, 'z': z,
+            'floor': floor, 'zone': 'bridge', 'tower': 'bridge'
+        })
+        bridge_node_lookup[key] = bridge_node_id
+        bridge_node_id += 1
+    return bridge_node_lookup[key]
+
+def get_bridge_node(floor, x, y):
+    return bridge_node_lookup.get(('bridge', floor, x, y))
+
+# Create bridge mid-span nodes
+all_bridge_floors = set()
+for fb, ft in BRIDGE_FLOORS_SINGLE:
+    all_bridge_floors.update([fb, ft])
+all_bridge_floors.update([BRIDGE_FLOORS_DOUBLE[0], BRIDGE_FLOORS_DOUBLE[1]])
+
+for f in all_bridge_floors:
+    for x in [BRIDGE_X_LEFT, BRIDGE_X_RIGHT]:
+        add_bridge_node(f, x, Y_BRIDGE_MID)
+
+bridge_elements = []
+
+def add_bridge_elem(n1, n2, etype, conn='rigid'):
+    global elem_id
+    if n1 is None or n2 is None:
+        return
+    bridge_elements.append({
+        'element_id': elem_id, 'node_i': n1, 'node_j': n2,
+        'element_type': etype, 'tower': 'bridge', 'connection': conn
+    })
+    elem_id += 1
+
+def create_bridge(floor_bot, floor_top, is_rigid_top=False):
+    t1_bot_l = get_node(1, floor_bot, BRIDGE_X_LEFT, Y_T1_BACK)
+    t1_bot_r = get_node(1, floor_bot, BRIDGE_X_RIGHT, Y_T1_BACK)
+    t1_top_l = get_node(1, floor_top, BRIDGE_X_LEFT, Y_T1_BACK)
+    t1_top_r = get_node(1, floor_top, BRIDGE_X_RIGHT, Y_T1_BACK)
+
+    t2_bot_l = get_node(2, floor_bot, BRIDGE_X_LEFT, Y_T2_FRONT)
+    t2_bot_r = get_node(2, floor_bot, BRIDGE_X_RIGHT, Y_T2_FRONT)
+    t2_top_l = get_node(2, floor_top, BRIDGE_X_LEFT, Y_T2_FRONT)
+    t2_top_r = get_node(2, floor_top, BRIDGE_X_RIGHT, Y_T2_FRONT)
+
+    mid_bot_l = get_bridge_node(floor_bot, BRIDGE_X_LEFT, Y_BRIDGE_MID)
+    mid_bot_r = get_bridge_node(floor_bot, BRIDGE_X_RIGHT, Y_BRIDGE_MID)
+    mid_top_l = get_bridge_node(floor_top, BRIDGE_X_LEFT, Y_BRIDGE_MID)
+    mid_top_r = get_bridge_node(floor_top, BRIDGE_X_RIGHT, Y_BRIDGE_MID)
+
+    nodes_check = [t1_bot_l, t1_bot_r, t1_top_l, t1_top_r,
+                   t2_bot_l, t2_bot_r, t2_top_l, t2_top_r,
+                   mid_bot_l, mid_bot_r, mid_top_l, mid_top_r]
+    if any(n is None for n in nodes_check):
+        print(f"  WARNING: Bridge F{floor_bot}-F{floor_top} missing nodes")
+        return
+
+    # Bottom beams
+    add_bridge_elem(t1_bot_l, t1_bot_r, 'bridge_beam')
+    add_bridge_elem(t1_bot_l, mid_bot_l, 'bridge_beam')
+    add_bridge_elem(t1_bot_r, mid_bot_r, 'bridge_beam')
+    add_bridge_elem(mid_bot_l, mid_bot_r, 'bridge_beam')
+    add_bridge_elem(mid_bot_l, t2_bot_l, 'bridge_beam')
+    add_bridge_elem(mid_bot_r, t2_bot_r, 'bridge_beam')
+    add_bridge_elem(t2_bot_l, t2_bot_r, 'bridge_beam')
+
+    # Top beams
+    add_bridge_elem(t1_top_l, t1_top_r, 'bridge_beam')
+    add_bridge_elem(t1_top_l, mid_top_l, 'bridge_beam')
+    add_bridge_elem(t1_top_r, mid_top_r, 'bridge_beam')
+    add_bridge_elem(mid_top_l, mid_top_r, 'bridge_beam')
+    add_bridge_elem(mid_top_l, t2_top_l, 'bridge_beam')
+    add_bridge_elem(mid_top_r, t2_top_r, 'bridge_beam')
+    add_bridge_elem(t2_top_l, t2_top_r, 'bridge_beam')
+
+    # Columns
+    add_bridge_elem(mid_bot_l, mid_top_l, 'bridge_column')
+    add_bridge_elem(mid_bot_r, mid_top_r, 'bridge_column')
+
+    # Coupled shear wall (YZ)
+    add_bridge_elem(t1_bot_l, mid_top_l, 'bridge_shear_yz')
+    add_bridge_elem(mid_bot_l, t1_top_l, 'bridge_shear_yz')
+    add_bridge_elem(mid_bot_l, t2_top_l, 'bridge_shear_yz')
+    add_bridge_elem(t2_bot_l, mid_top_l, 'bridge_shear_yz')
+    add_bridge_elem(t1_bot_r, mid_top_r, 'bridge_shear_yz')
+    add_bridge_elem(mid_bot_r, t1_top_r, 'bridge_shear_yz')
+    add_bridge_elem(mid_bot_r, t2_top_r, 'bridge_shear_yz')
+    add_bridge_elem(t2_bot_r, mid_top_r, 'bridge_shear_yz')
+
+    # Truss
+    add_bridge_elem(t1_bot_l, mid_top_l, 'bridge_truss')
+    add_bridge_elem(mid_bot_l, t2_top_l, 'bridge_truss')
+    add_bridge_elem(t1_bot_r, mid_top_r, 'bridge_truss')
+    add_bridge_elem(mid_bot_r, t2_top_r, 'bridge_truss')
+
+    # Extra rigid bracing for top bridge
+    if is_rigid_top:
+        print(f"  Adding RIGID bracing to top bridge F{floor_bot}-F{floor_top}...")
+        # Bottom plane X-bracing
+        add_bridge_elem(t1_bot_l, mid_bot_r, 'bridge_rigid_bot')
+        add_bridge_elem(t1_bot_r, mid_bot_l, 'bridge_rigid_bot')
+        add_bridge_elem(mid_bot_l, t2_bot_r, 'bridge_rigid_bot')
+        add_bridge_elem(mid_bot_r, t2_bot_l, 'bridge_rigid_bot')
+        add_bridge_elem(t1_bot_l, t2_bot_r, 'bridge_rigid_bot')
+        add_bridge_elem(t1_bot_r, t2_bot_l, 'bridge_rigid_bot')
+
+        # Top plane X-bracing
+        add_bridge_elem(t1_top_l, mid_top_r, 'bridge_rigid_top')
+        add_bridge_elem(t1_top_r, mid_top_l, 'bridge_rigid_top')
+        add_bridge_elem(mid_top_l, t2_top_r, 'bridge_rigid_top')
+        add_bridge_elem(mid_top_r, t2_top_l, 'bridge_rigid_top')
+        add_bridge_elem(t1_top_l, t2_top_r, 'bridge_rigid_top')
+        add_bridge_elem(t1_top_r, t2_top_l, 'bridge_rigid_top')
+
+        # Side faces
+        add_bridge_elem(t1_bot_l, t2_top_l, 'bridge_rigid_xz')
+        add_bridge_elem(t2_bot_l, t1_top_l, 'bridge_rigid_xz')
+        add_bridge_elem(t1_bot_r, t2_top_r, 'bridge_rigid_xz')
+        add_bridge_elem(t2_bot_r, t1_top_r, 'bridge_rigid_xz')
+
+        # Front/back faces
+        add_bridge_elem(t1_bot_l, t1_top_r, 'bridge_rigid_yz')
+        add_bridge_elem(t1_bot_r, t1_top_l, 'bridge_rigid_yz')
+        add_bridge_elem(t2_bot_l, t2_top_r, 'bridge_rigid_yz')
+        add_bridge_elem(t2_bot_r, t2_top_l, 'bridge_rigid_yz')
+
+        # 3D diagonals
+        add_bridge_elem(t1_bot_l, t2_top_r, 'bridge_rigid_3d')
+        add_bridge_elem(t1_bot_r, t2_top_l, 'bridge_rigid_3d')
+        add_bridge_elem(t2_bot_l, t1_top_r, 'bridge_rigid_3d')
+        add_bridge_elem(t2_bot_r, t1_top_l, 'bridge_rigid_3d')
+
+print("\nCreating bridges...")
+for fb, ft in BRIDGE_FLOORS_SINGLE:
+    create_bridge(fb, ft, is_rigid_top=False)
+create_bridge(BRIDGE_FLOORS_DOUBLE[0], BRIDGE_FLOORS_DOUBLE[1], is_rigid_top=True)
+
+print(f"Bridge elements: {len(bridge_elements)}")
+print(f"Bridge nodes: {len(bridge_nodes)}")
+
+# ============================================
+# COMBINE DATA
+# ============================================
+if bridge_nodes:
+    bridge_nodes_df = pd.DataFrame(bridge_nodes)
+    position_df = pd.concat([position_df, bridge_nodes_df], ignore_index=True)
+    n_total = n_nodes + len(bridge_nodes)
+    new_coords = np.zeros((n_total, 3))
+    new_coords[:n_nodes] = coords
+    for bn in bridge_nodes:
+        new_coords[bn['node_id']] = [bn['x'], bn['y'], bn['z']]
+    coords = new_coords
+else:
+    n_total = n_nodes
+
+all_elements = elements + bridge_elements
+
+for elem in all_elements:
+    n1, n2 = elem['node_i'], elem['node_j']
+    c1, c2 = coords[n1], coords[n2]
+    elem['length'] = round(np.sqrt(np.sum((c2 - c1) ** 2)), 4)
+
+connectivity_df = pd.DataFrame(all_elements)
+
+print(f"\nTotal nodes: {n_total}")
+print(f"Total elements: {len(connectivity_df)}")
+print("\nElements by type:")
+print(connectivity_df['element_type'].value_counts().to_string())
+
+# Weight analysis
+total_length_mm = connectivity_df['length'].sum() * 10
+WEIGHT_LIMIT = 1.40
+weight = total_length_mm * 36 * 160 / 1e9
+
+print(f"\nTotal length: {total_length_mm:,.0f} mm")
+print(f"Weight (ρ=160): {weight:.3f} kg")
+print(f"Limit: {WEIGHT_LIMIT} kg")
+print(f"Margin: {(WEIGHT_LIMIT - weight)*1000:.0f}g")
+print(f"Status: {'✓ OK' if weight <= WEIGHT_LIMIT else '✗ OVER'}")
+
+# Save data
+DATA_DIR = Path(__file__).parent.parent / 'data'
+DATA_DIR.mkdir(exist_ok=True)
+
+position_df.to_csv(DATA_DIR / 'twin_position_matrix.csv', index=False)
+connectivity_df.to_csv(DATA_DIR / 'twin_connectivity_matrix.csv', index=False)
+
+adj = np.zeros((n_total, n_total), dtype=int)
+for _, row in connectivity_df.iterrows():
+    i, j = int(row['node_i']), int(row['node_j'])
+    adj[i, j] = adj[j, i] = 1
+np.savetxt(DATA_DIR / 'twin_adjacency_matrix.csv', adj, delimiter=',', fmt='%d')
+
+np.savez(DATA_DIR / 'twin_building_data.npz',
+         adjacency_matrix=adj, coords=coords,
+         x_coords=X_COORDS,
+         podium_x=X_COORDS, tower_x=X_COORDS,  # Same coords (no podium)
+         y_coords_t1=Y_COORDS_T1, y_coords_t2=Y_COORDS_T2, z_coords=Z_COORDS,
+         tower_gap=TOWER_GAP,
+         bridge_floors_single=np.array(BRIDGE_FLOORS_SINGLE),
+         bridge_floors_double=np.array(BRIDGE_FLOORS_DOUBLE))
+
+print(f"\nData saved to {DATA_DIR}")
+
+# Create DXF
+print("\nCreating DXF...")
+EXPORTS_DIR = Path(__file__).parent.parent / 'exports'
+EXPORTS_DIR.mkdir(exist_ok=True)
+
+doc = ezdxf.new('R2010')
+msp = doc.modelspace()
+
+LAYER_COLORS = {
+    'column': 7, 'beam_x': 3, 'beam_y': 4,
+    'shear_wall_x': 1, 'shear_wall_y': 1, 'core_wall': 5,
+    'bridge_beam': 2, 'bridge_column': 2,
+    'bridge_shear_yz': 1, 'bridge_truss': 6,
+    'bridge_rigid_bot': 5, 'bridge_rigid_top': 5,
+    'bridge_rigid_xz': 6, 'bridge_rigid_yz': 6, 'bridge_rigid_3d': 1
+}
+
+for etype in connectivity_df['element_type'].unique():
+    color = LAYER_COLORS.get(etype, 7)
+    doc.layers.new(name=etype, dxfattribs={'color': color})
+
+for _, elem in connectivity_df.iterrows():
+    n1, n2 = int(elem['node_i']), int(elem['node_j'])
+    p1 = tuple(coords[n1])
+    p2 = tuple(coords[n2])
+    msp.add_line(p1, p2, dxfattribs={'layer': elem['element_type']})
+
+dxf_path = EXPORTS_DIR / 'twin_towers_v4_no_podium.dxf'
+doc.saveas(dxf_path)
+
+print(f"\n{'='*70}")
+print(f"DXF SAVED: {dxf_path}")
+print(f"{'='*70}")
+
+print(f"""
+STRUCTURAL SUMMARY - NO PODIUM DESIGN
+=====================================
+Tower Dimensions: {TOWER_WIDTH} x {TOWER_DEPTH} cm each
+Total Footprint: {TOWER_WIDTH} x {Y_COORDS_T2[-1]} cm
+Height: {TOTAL_HEIGHT}m ({TOTAL_FLOORS} floors)
+Gap: {TOWER_GAP}m
+
+X Layout: 6-6-3-3-3-3-6 = 30cm
+Y Layout: 4-4-4-4 = 16cm per tower
+
+Shear Walls:
+  - X-direction (XZ plane): DAMA pattern on front/back faces
+  - Y-direction (YZ plane): Full X-bracing at edges + core
+  - Core walls: 3m bays at 12-15 and 18-21
+
+Bridges: 4 total
+  - F5-6, F11-12, F17-18 (single height)
+  - F23-25 (double height, extra rigid)
+
+Weight: {weight:.3f} kg
+""")

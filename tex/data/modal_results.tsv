@@ -1,0 +1,6 @@
+mode	period	frequency	direction
+1	0.0479	20.88	X-Translation
+2	0.0478	20.92	Y-Translation
+3	0.0478	20.92	Torsion
+4	0.0162	61.73	X-2nd mode
+5	0.0161	62.11	Y-2nd mode

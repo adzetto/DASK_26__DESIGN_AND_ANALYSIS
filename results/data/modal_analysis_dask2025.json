@@ -1,0 +1,159 @@
+{
+  "model_info": {
+    "total_nodes": 1680,
+    "total_elements": 4232,
+    "fixed_base_nodes": 64,
+    "height_cm": 153.0,
+    "units": "cm",
+    "towers": [
+      "1",
+      "2",
+      "bridge"
+    ]
+  },
+  "material_properties": {
+    "E_kN_cm2": 350.0,
+    "G_kN_cm2": 20.0,
+    "rho_tonne_cm3": 1.6e-10,
+    "section_cm": 0.3,
+    "A_cm2": 0.09,
+    "Iz_cm4": 0.0006749999999999999
+  },
+  "dask_weights": {
+    "floor_weight_kg": 1.6,
+    "roof_weight_kg": 2.22,
+    "weight_spacing_cm": 18.0,
+    "num_floor_weight_levels": 8,
+    "total_mass_kg": 15.02,
+    "weight_levels_cm": [
+      15.0,
+      33.0,
+      51.0,
+      69.0,
+      87.0,
+      105.0,
+      123.0,
+      141.0
+    ]
+  },
+  "spectrum_parameters": {
+    "code": "TBDY 2018",
+    "earthquake_level": "DD-2",
+    "location": "Afyon Dinar",
+    "SDS": 0.964,
+    "SD1": 0.429,
+    "TA": 0.089,
+    "TB": 0.445,
+    "TL": 6.0
+  },
+  "modal_results": [
+    {
+      "mode": 1,
+      "eigenvalue": 146.23002031496944,
+      "omega_rad_s": 12.092560535923292,
+      "frequency_hz": 1.924590783930171,
+      "period_s": 0.5195909740136647,
+      "Sae_g": 0.8256494463060433,
+      "spectral_region": "Descending"
+    },
+    {
+      "mode": 2,
+      "eigenvalue": 424.20465661641117,
+      "omega_rad_s": 20.596229184401963,
+      "frequency_hz": 3.2779916837511283,
+      "period_s": 0.30506483739936235,
+      "Sae_g": 0.964,
+      "spectral_region": "Plateau"
+    },
+    {
+      "mode": 3,
+      "eigenvalue": 437.38469176896746,
+      "omega_rad_s": 20.913744087775566,
+      "frequency_hz": 3.328525750128383,
+      "period_s": 0.30043330743691243,
+      "Sae_g": 0.964,
+      "spectral_region": "Plateau"
+    },
+    {
+      "mode": 4,
+      "eigenvalue": 1383.1577300053689,
+      "omega_rad_s": 37.19082857379449,
+      "frequency_hz": 5.919104205202697,
+      "period_s": 0.16894448303867213,
+      "Sae_g": 0.964,
+      "spectral_region": "Plateau"
+    },
+    {
+      "mode": 5,
+      "eigenvalue": 3150.3486170423953,
+      "omega_rad_s": 56.1279664431413,
+      "frequency_hz": 8.933043305121965,
+      "period_s": 0.11194393286178599,
+      "Sae_g": 0.964,
+      "spectral_region": "Plateau"
+    },
+    {
+      "mode": 6,
+      "eigenvalue": 3927.934916824353,
+      "omega_rad_s": 62.67323923992084,
+      "frequency_hz": 9.974755824614343,
+      "period_s": 0.10025308063505037,
+      "Sae_g": 0.964,
+      "spectral_region": "Plateau"
+    },
+    {
+      "mode": 7,
+      "eigenvalue": 4414.758022837685,
+      "omega_rad_s": 66.44364546619703,
+      "frequency_hz": 10.574834612990658,
+      "period_s": 0.09456412668350858,
+      "Sae_g": 0.964,
+      "spectral_region": "Plateau"
+    },
+    {
+      "mode": 8,
+      "eigenvalue": 4506.4504681721855,
+      "omega_rad_s": 67.13010105885574,
+      "frequency_hz": 10.68408741377537,
+      "period_s": 0.09359713761894768,
+      "Sae_g": 0.964,
+      "spectral_region": "Plateau"
+    },
+    {
+      "mode": 9,
+      "eigenvalue": 6427.6923906768225,
+      "omega_rad_s": 80.17289062193544,
+      "frequency_hz": 12.759911844446885,
+      "period_s": 0.07837044739734625,
+      "Sae_g": 0.8949198514002817,
+      "spectral_region": "Ascending"
+    },
+    {
+      "mode": 10,
+      "eigenvalue": 8415.203883772087,
+      "omega_rad_s": 91.7344203871812,
+      "frequency_hz": 14.599986456289828,
+      "period_s": 0.06849321422275631,
+      "Sae_g": 0.8307289337802499,
+      "spectral_region": "Ascending"
+    },
+    {
+      "mode": 11,
+      "eigenvalue": 8946.903727460349,
+      "omega_rad_s": 94.58807391770037,
+      "frequency_hz": 15.054159521543593,
+      "period_s": 0.06642682366750051,
+      "Sae_g": 0.8172997169582281,
+      "spectral_region": "Ascending"
+    },
+    {
+      "mode": 12,
+      "eigenvalue": 9501.783677690442,
+      "omega_rad_s": 97.47709309212314,
+      "frequency_hz": 15.513961203840243,
+      "period_s": 0.06445807017697487,
+      "Sae_g": 0.804505031352385,
+      "spectral_region": "Ascending"
+    }
+  ]
+}

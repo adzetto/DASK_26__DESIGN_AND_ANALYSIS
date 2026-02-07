@@ -1,0 +1,11 @@
+TBDY 2018 A1a Torsional Irregularity Analysis Results
+======================================================
+Generated: TBDY 2018 Torsion Analysis
+
+Fundamental Period T1 = 0.19990821377601217 s
+Base Shear Vt = 13.007596072882562 kN
+
+Maximum eta_bi = 1.914992240926045
+Critical Floor = 1
+Critical Case = Y, -5%
+D_bi = 2.5466633908381637

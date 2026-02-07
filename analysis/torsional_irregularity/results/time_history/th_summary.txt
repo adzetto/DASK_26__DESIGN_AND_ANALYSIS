@@ -1,0 +1,11 @@
+TBDY 2018 Time History Analysis Results
+=======================================
+Model: Calibrated Stick Model (Twin Towers V9 1:50)
+Ground Motion: 1999 Duzce - Bolu BOL090 (scaled 1/sqrt(50))
+PGA = 0.1163 g
+T1 = 0.4031 s
+
+Max Roof Ux = 0.214000 cm
+Max Roof Uy = 0.000000 cm
+Drift Ratio X = 0.001399
+Base Shear = 0.0002 kN

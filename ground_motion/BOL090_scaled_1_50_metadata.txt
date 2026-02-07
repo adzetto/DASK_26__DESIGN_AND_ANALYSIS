@@ -1,0 +1,16 @@
+SCALED GROUND MOTION METADATA
+======================================================================
+
+Original File: BOL090.AT2
+Scaled File: BOL090_scaled_1_50.AT2
+
+Scale Model: 1:50
+Acceleration Scale Factor: 1/sqrt(50) = 0.141421
+Time Scale Factor: sqrt(50) = 7.071
+
+Original PGA: 0.822429 g (8.068 m/s²)
+Scaled PGA: 0.116309 g (1.141 m/s²)
+
+NPTS: 5590
+DT: 0.01 sec
+Duration: 55.90 sec

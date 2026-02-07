@@ -1,0 +1,245 @@
+{
+  "calibration_info": {
+    "method": "AFAD spectrum parameters from PDF reports",
+    "location": {
+      "lat": 41.002136,
+      "lon": 29.106832,
+      "desc": "Istanbul"
+    },
+    "soil_class": "ZD",
+    "E_kN_cm2": 170.0,
+    "section_mm": "6x6"
+  },
+  "model_info": {
+    "total_nodes": 1680,
+    "total_elements": 4232,
+    "fixed_base_nodes": 64,
+    "height_cm": 153.0,
+    "units": "kN, cm, s"
+  },
+  "material_properties": {
+    "E_kN_cm2": 170.0,
+    "G_kN_cm2": 65.38461538461539,
+    "nu": 0.3,
+    "section_cm": 0.6,
+    "A_cm2": 0.36,
+    "Iz_cm4": 0.010799999999999999
+  },
+  "mass_configuration": {
+    "floor_weight_kg": 1.6,
+    "roof_weight_kg": 2.22,
+    "total_mass_kg": 15.02,
+    "weight_levels": [
+      15.0,
+      33.0,
+      51.0,
+      69.0,
+      87.0,
+      105.0,
+      123.0,
+      141.0
+    ]
+  },
+  "afad_spectrum_parameters": {
+    "DD-1": {
+      "SS": 1.544,
+      "S1": 0.427,
+      "FS": 1.0,
+      "F1": 1.873,
+      "SDS": 1.544,
+      "SD1": 0.8,
+      "TA": 0.104,
+      "TB": 0.518,
+      "TL": 6.0,
+      "PGA": 0.628,
+      "PGV": 38.949
+    },
+    "DD-2": {
+      "SS": 0.877,
+      "S1": 0.243,
+      "FS": 1.149,
+      "F1": 2.114,
+      "SDS": 1.008,
+      "SD1": 0.514,
+      "TA": 0.102,
+      "TB": 0.51,
+      "TL": 6.0,
+      "PGA": 0.362,
+      "PGV": 22.389
+    },
+    "DD-3": {
+      "SS": 0.358,
+      "S1": 0.099,
+      "FS": 1.514,
+      "F1": 2.4,
+      "SDS": 0.542,
+      "SD1": 0.238,
+      "TA": 0.088,
+      "TB": 0.438,
+      "TL": 6.0,
+      "PGA": 0.152,
+      "PGV": 9.459
+    },
+    "DD-4": {
+      "SS": 0.24,
+      "S1": 0.066,
+      "FS": 1.6,
+      "F1": 2.4,
+      "SDS": 0.384,
+      "SD1": 0.158,
+      "TA": 0.083,
+      "TB": 0.412,
+      "TL": 6.0,
+      "PGA": 0.102,
+      "PGV": 6.37
+    }
+  },
+  "spectrum_analysis": {
+    "DD-1": {
+      "SDS": 1.544,
+      "SD1": 0.8,
+      "TA": 0.104,
+      "TB": 0.518,
+      "Sae_T1": 1.544,
+      "region": "Plateau",
+      "PGA": 0.628
+    },
+    "DD-2": {
+      "SDS": 1.008,
+      "SD1": 0.514,
+      "TA": 0.102,
+      "TB": 0.51,
+      "Sae_T1": 1.008,
+      "region": "Plateau",
+      "PGA": 0.362
+    },
+    "DD-3": {
+      "SDS": 0.542,
+      "SD1": 0.238,
+      "TA": 0.088,
+      "TB": 0.438,
+      "Sae_T1": 0.542,
+      "region": "Plateau",
+      "PGA": 0.152
+    },
+    "DD-4": {
+      "SDS": 0.384,
+      "SD1": 0.158,
+      "TA": 0.083,
+      "TB": 0.412,
+      "Sae_T1": 0.384,
+      "region": "Plateau",
+      "PGA": 0.102
+    }
+  },
+  "modal_results": [
+    {
+      "mode": 1,
+      "eigenvalue": 988.2738553050359,
+      "omega_rad_s": 31.436823238123726,
+      "frequency_hz": 5.0033258134535545,
+      "period_s": 0.19986705589131887,
+      "Sae_g": 1.008,
+      "spectral_region": "Plateau"
+    },
+    {
+      "mode": 2,
+      "eigenvalue": 1825.4762594248896,
+      "omega_rad_s": 42.725592557914155,
+      "frequency_hz": 6.799989252122335,
+      "period_s": 0.14705905596657987,
+      "Sae_g": 1.008,
+      "spectral_region": "Plateau"
+    },
+    {
+      "mode": 3,
+      "eigenvalue": 2173.9341830063277,
+      "omega_rad_s": 46.625467107647594,
+      "frequency_hz": 7.420673564150691,
+      "period_s": 0.1347586565229071,
+      "Sae_g": 1.008,
+      "spectral_region": "Plateau"
+    },
+    {
+      "mode": 4,
+      "eigenvalue": 9537.271365579698,
+      "omega_rad_s": 97.65895435432277,
+      "frequency_hz": 15.542905322676246,
+      "period_s": 0.06433803585878213,
+      "Sae_g": 0.7846867067391318,
+      "spectral_region": "Ascending"
+    },
+    {
+      "mode": 5,
+      "eigenvalue": 20974.93428084864,
+      "omega_rad_s": 144.82725669171754,
+      "frequency_hz": 23.049973796925624,
+      "period_s": 0.04338399725787882,
+      "Sae_g": 0.6604415837408344,
+      "spectral_region": "Ascending"
+    },
+    {
+      "mode": 6,
+      "eigenvalue": 21331.406947961284,
+      "omega_rad_s": 146.0527539896502,
+      "frequency_hz": 23.245017749637366,
+      "period_s": 0.04301997145240298,
+      "Sae_g": 0.6582831248471895,
+      "spectral_region": "Ascending"
+    },
+    {
+      "mode": 7,
+      "eigenvalue": 22371.833817445673,
+      "omega_rad_s": 149.57216926101484,
+      "frequency_hz": 23.805150086868153,
+      "period_s": 0.04200771666428765,
+      "Sae_g": 0.6522810493976586,
+      "spectral_region": "Ascending"
+    },
+    {
+      "mode": 8,
+      "eigenvalue": 31686.098139924048,
+      "omega_rad_s": 178.00589355390468,
+      "frequency_hz": 28.33051785859368,
+      "period_s": 0.035297625161365115,
+      "Sae_g": 0.6124941538979768,
+      "spectral_region": "Ascending"
+    },
+    {
+      "mode": 9,
+      "eigenvalue": 42979.19924165634,
+      "omega_rad_s": 207.31425238428818,
+      "frequency_hz": 32.995088040360216,
+      "period_s": 0.030307541497594463,
+      "Sae_g": 0.5829058931151484,
+      "spectral_region": "Ascending"
+    },
+    {
+      "mode": 10,
+      "eigenvalue": 60611.41944974383,
+      "omega_rad_s": 246.19386558105754,
+      "frequency_hz": 39.18297066612694,
+      "period_s": 0.025521291086397495,
+      "Sae_g": 0.5545262436181686,
+      "spectral_region": "Ascending"
+    },
+    {
+      "mode": 11,
+      "eigenvalue": 67204.77697898168,
+      "omega_rad_s": 259.2388415708219,
+      "frequency_hz": 41.25914307741303,
+      "period_s": 0.024237052091065886,
+      "Sae_g": 0.5469114618105554,
+      "spectral_region": "Ascending"
+    },
+    {
+      "mode": 12,
+      "eigenvalue": 68445.37245665381,
+      "omega_rad_s": 261.6206651941964,
+      "frequency_hz": 41.63822208064614,
+      "period_s": 0.02401639527411066,
+      "Sae_g": 0.5456030966841385,
+      "spectral_region": "Ascending"
+    }
+  ]
+}

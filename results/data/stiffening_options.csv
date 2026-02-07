@@ -1,0 +1,5 @@
+option,weight_g,effect,priority
+Y-braces,43.13088,1.5x Y-stiffness,1
+Bridges,14.7456,30% torsion reduction,1
+Base section,14.515199999999997,68% base stress reduction,1
+Core braces,28.20096,1.4x stiffness,2

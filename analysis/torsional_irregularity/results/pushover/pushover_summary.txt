@@ -1,0 +1,9 @@
+TBDY 2018 Pushover Analysis Results
+====================================
+Model: Calibrated Stick Model (Twin Towers V9 1:50)
+T1 = 0.4031 s
+Final Disp = 6.1200 cm
+Drift = 0.040000
+Max Base Shear = 13.4672 kN
+Disp at Max V = 6.1200 cm
+Steps completed: 612 / 612

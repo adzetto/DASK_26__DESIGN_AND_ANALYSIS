@@ -1,0 +1,19 @@
+Parameter,Value
+Building Height (m),159.0
+Number of Floors,27
+Total Mass (kg),406.795
+T_empirical (s),2.239
+T_rayleigh (s),0.078
+T_dual (s),3.134
+T_design (s),2.687
+SS (g),1.20
+S1 (g),0.35
+SDS (g),1.440
+SD1 (g),0.525
+TA (s),0.073
+TB (s),0.365
+Spectral Region,DESCENDING (TB < T ≤ TL)
+Sae (g),0.195
+In Plateau,NO
+Base Shear (N),568.91
+Seismic Coefficient Cs,0.0950
