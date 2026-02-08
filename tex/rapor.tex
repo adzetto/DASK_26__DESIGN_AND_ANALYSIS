@@ -14,7 +14,7 @@
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{tikz}
-\usetikzlibrary{shapes.geometric, positioning, arrows.meta}
+\usetikzlibrary{shapes.geometric, positioning, arrows.meta, decorations.pathreplacing}
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
@@ -82,13 +82,13 @@
     \resizebox{6cm}{!}{\input{dask_tikz_logo}} \\[1cm] 
     
     {\Huge \textbf{2026}} \\[0.5cm]
-    {\huge \textbf{İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ TEKLİFİ}} \\[1.5cm]
+    {\huge \textbf{İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ PROJE TEKLİFİ}} \\[1.5cm]
     
     \begin{flushleft}
         \large
         \textbf{Proje Adı: ZENITH/SKYRA Towers} \\ [0.8cm]
         \textbf{Takım Üyeleri:} \\[0.4cm]
-        1. Emre KARACA (Kaptan) \\[0.4cm]
+        1. Emre KARACA (\textit{Kaptan}) \\[0.4cm]
         2. Muhammet YAĞCIOĞLU \\[0.4cm]
         3. Yunus Emre ÇETİN \\[0.4cm]
         4. Zehra ÖZER \\[0.4cm]
@@ -126,17 +126,123 @@ Binanın mimari tasarımında dikkate alınan tasarım kriterlerinin çevresel v
 
 % --- 3. YAPISAL SİSTEM TANIMI ve TASARIMI ---
 \section{YAPISAL SİSTEM TANIMI ve TASARIMI}
-Proje, İstanbul Finans Merkezi yerleşkesinde ($41.002136^\circ$, $29.106832^\circ$) konumlandırılmış, iki kuleden ve kuleleri 6., 12., 18. ve 25.~katlarda bağlayan gökyüzü köprülerinden oluşan bir ikiz kule sistemidir. Yarışma kapsamında üretilecek fiziksel model balsa çıta ve balsa levhalardan imal edilecektir. Model, $40 \times 40\,\mathrm{cm}$ ahşap tabla üzerinde, her biri $30 \times 16\,\mathrm{cm}$ ($L_x \times L_y$) taban alanına sahip iki kule ve aralarında $8\,\mathrm{cm}$ köprü açıklığı olacak şekilde düzenlenmiştir. Kule yüksekliği $153\,\mathrm{cm}$'dir. Kat tanımı yarışma yönergesine uygun olarak zemin kat $9\,\mathrm{cm}$, diğer katlar $6\,\mathrm{cm}$ yüksekliğindedir.
+Proje, İstanbul Finans Merkezi yerleşkesinde ($41.002^\circ$\,K, $29.107^\circ$\,D) konumlandırılmış ikiz kule sistemidir. Fiziksel model, $40\times40\,\mathrm{cm}$ ahşap tabla üzerinde balsa çıta ($6\times6\,\mathrm{mm}$) ve levhadan ($3\,\mathrm{mm}$) imal edilmektedir. Her kule $30\times16\,\mathrm{cm}$ ($L_x \times L_y$) plan alanı ve $8\times4$ kolon gridine sahip olup kuleler arası $8\,\mathrm{cm}$ köprü açıklığı bulunmaktadır. Zemin kat yüksekliği $9\,\mathrm{cm}$, üst 24~kat $6\,\mathrm{cm}$ olup toplam kule yüksekliği $H=153\,\mathrm{cm}$'dir (Şekil~\ref{fig:sistem}).
 
-Zemin koşulları ZC--ZD aralığında değerlendirilmiş; emniyetli tarafta kalmak üzere ZD zemin sınıfı esas alınmıştır. Deprem tehlikesi TBDY~2018'e göre DD-2 düzeyi parametreleri ile tanımlanmış; $S_{DS} = 1.008g$ ve $S_{D1} = 0.514g$ kullanılmıştır. Yapı kullanım amacı ofis/işyeri kapsamında $BKS = 3$ olup, buna bağlı Bina Önem Katsayısı $I = 1.0$ alınmıştır; bu kabullerle yapı $DTS = 1$ ve $BYS = 1$ kapsamında ele alınmıştır.
+Sismik tehlike TBDY~2018 DD-2 düzeyi ($S_{DS}=1.008$\,g, $S_{D1}=0.514$\,g) ve ZD zemin sınıfı ($F_S=1.149$, $F_1=2.114$) ile tanımlanmıştır~\cite{afad2024}. Köşe periyotları $T_A=0.102$~s, $T_B=0.510$~s olup yapı $DTS=1$, $BYS=1$, $BKS=3$, $I=1.0$ kapsamındadır~\cite{tbdy2018}.
 
-Taşıyıcı sistemin temel hedefi; deprem etkileri altında yeterli yanal rijitlik ve kontrollü enerji tüketimi sağlayarak göreli kat ötelemelerini sınırlamak, burulma etkilerini kontrol etmek ve iç kuvvetleri temele sürekli bir yük yolu ile aktarmaktır. Her kulede yanal dayanım ve rijitlik sağlayan ana sistem, moment taşıyan çerçeveler ile çapraz elemanların bir arada kullanıldığı çerçeve-çapraz hibrit sistem olarak kurgulanmıştır. Çapraz elemanlar $XZ$ ve $YZ$ düzlemlerinde stratejik noktalara yerleştirilmiş; köprü bağlantısı iki kule arasında yük paylaşımını sağlayarak global sistem rijitliğini artırmıştır. Köprü seviyeleri, iki kulenin göreli hareketini azaltan ve kuleler arasında kuvvet aktarımı oluşturan kritik davranış bölgeleri olarak değerlendirilmiştir. Köprü--kule birleşimleri modelde rijit kabul edilerek köprülerin yatay yükler altında iki kuleyi birlikte çalıştırma etkisi temsil edilmiştir.
+Taşıyıcı sistem, moment çerçeveleri ile çapraz ve panel eleman\-ların birlikte çalıştığı çerçeve--çapraz hibrit yapıdır. Alt bölgede (0--7.~katlar) iç kolon aralıklarında $3\,\mathrm{mm}$ balsa kesme panelleri uygulanarak perde benzeri rijitlik sağlanmış; üst katlarda çapraz elemanlar $XZ$~düzleminde her~4, $YZ$~düzleminde her~6~katta devam ettirilmiştir. Kuleleri bağlayan gökyüzü köprüleri yapı yüksekliğinin $\sim$$H/4$, $H/2$, $3H/4$ ve tepe seviyelerine (6., 12., 18. ve 25.~katlar) konumlandırılmıştır~\cite{patoliya2023}. Her köprü 10~kiriş, 2~kolon, 8~kafes çaprazı ve 4~rijit diyafram elemanından oluşmaktadır. Köprü--kule birleşimleri rijit kabul edilerek kulelerin yatay yükler altında birlikte çalışması sağlanmıştır.
 
-Deprem performansı değerlendirmesinde \textsc{OpenSees}\textsuperscript{\textregistered}~\cite{opensees} ile zaman tanım alanında hesap (ZTAH) yürütülmüştür. Taşıyıcı sistem 1680~düğüm ve 4248~\texttt{elasticBeamColumn} elemanı ile idealize edilmiştir. Yer hareketi verileri olarak 1999 Düzce depremi (BOL090) kaydı ile yarışma kapsamında verilen üç kayıt (KYH-1, KYH-2, KYH-3) kullanılmıştır. SAP2000 modeli ana analizlerin yerine geçmeyecek şekilde, geometri/rijitlik tutarlılığı ve genel davranış kontrolü amacıyla doğrulama için kullanılmıştır.
+Taşıyıcı sistem \textsc{OpenSees}\textsuperscript{\textregistered}~\cite{opensees} ile 1680~düğüm ve 4248~\texttt{elasticBeamColumn} elemanı olarak modellenmiştir. Malzeme: balsa ahşap, kalibre modülü $E=170\,\mathrm{kN/cm^2}$, $\rho=160\,\mathrm{kg/m^3}$; çıta kesiti $A=0.36\,\mathrm{cm^2}$, $I_z=I_y=0.0108\,\mathrm{cm^4}$. Yapısal ağırlık $1.076\,\mathrm{kg}$ ($<1.400\,\mathrm{kg}$ sınırı). Kat kütleleri 3., 6., \ldots, 24.~katlara $1.60\,\mathrm{kg}$ çelik tij, 25.~kata $2.22\,\mathrm{kg}$ tepe plakası olarak yerleştirilmiştir. Yer hareketi olarak 1999 Düzce (BOL090) ve yarışma kayıtları (KYH-1/2/3) kullanılmış; SAP2000 ile geometri tutarlılığı doğrulanmıştır.
 
-Modeldeki kat kütlesi, 2026 ön şartnamesine ve geçmiş yarışmalardaki uygulamalara uygun biçimde yerleştirilen çelik tijler ve tepe plakasından oluşmaktadır. Katlar arasında düşeyde her $18\,\mathrm{cm}$'de bir olacak şekilde toplam 8~adet tij yerleştirilmiş olup her birinin ortalama kütlesi $1.6\,\mathrm{kg}$'dır. En üstte ivmeölçerin de bulunduğu, toplam kütlesi $2.2\,\mathrm{kg}$ olan bir tepe plakası yer almaktadır. Bu kütle dağılımı, ikiz kule--köprü etkileşiminin sarsma masası üzerinde gözlemlenebilir olmasını sağlayacak şekilde düzenlenmiştir.
+Prototip ölçeğinde (1:50, $h=76.5\,\mathrm{m}$) rüzgar etkisi TS~EN~1991-1-4'e göre değerlendirilmiştir~\cite{tsen1991}. İstanbul temel rüzgar hızı $V_{b}=28.0\,\mathrm{m/s}$, Arazi~Kat.\,III ($z_0=0.3\,\mathrm{m}$) için bina tepe kotunda ortalama rüzgar hızı $v_m(76.5)=33.3\,\mathrm{m/s}$ ve hız basıncı $q_p=1.58\,\mathrm{kPa}$ ($I_v=0.18$) hesaplanmıştır. Rüzgar taban kesme kuvveti $F_{w,x}\approx c_f\,q_p\,A_{ref} = 1.3 \times 1.58 \times 1530 \approx 3.1\,\mathrm{MN}$ olup prototip deprem taban kesmesi $V_t\approx6.6\,\mathrm{MN}$'dur; sismik yükler ${\sim}2.1$~kat belirleyicidir.
 
-Sonuç olarak, İstanbul Finans Merkezi'nde yüksek sismik tehlikeye karşı güvenli ve ekonomik bir yapı tasarlanması amacıyla detaylı deprem analizleri gerçekleştirilmiştir. Yapının düzenli geometrisi, düşük eksantrisite değerleri ($e_x/L_x = 0.005$, $e_y/L_y = 0.034$) ve çerçeve-çapraz hibrit taşıyıcı sistem tasarımı ile sismik performans optimize edilmiştir~\cite{tbdy2018}.
+Modal analiz sonuçları: $T_1=0.200$~s, $T_2=0.147$~s, $T_3=0.135$~s; üçü de plato bölgesinde ($T_A<T_n<T_B$) $S_{ae}=1.008$~g almaktadır. Göreli kat ötelemesi $\delta_i/h_i=0.00017 \ll 0.008$ olup TBDY~2018 sınırı fazlasıyla sağlanmıştır. Kütle--rijitlik eksantrisitesi $e_x/L_x=0.005$, $e_y/L_y=0.034$ ile yapı simetrisi korunmuştur~\cite{tbdy2018}.
+
+% --- Şekil: Yapısal sistem şeması ---
+\begin{figure}[H]
+\centering
+\resizebox{0.88\textwidth}{!}{%
+\begin{tikzpicture}[>=stealth, font=\scriptsize]
+% ============ (a) KESİT GÖRÜNÜM (YZ düzlemi) ============
+\begin{scope}[shift={(0,0)}]
+% Ground
+\fill[black!6] (-0.5,-0.35) rectangle (3.95,0);
+\draw[thick] (-0.5,0) -- (3.95,0);
+% Tower 1 (y=0→16 → 0→1.44,  z=0→153 → 0→6.0)
+\draw[thick] (0,0) rectangle (1.44,6.0);
+% Tower 2 (y=24→40 → 2.16→3.60)
+\draw[thick] (2.16,0) rectangle (3.60,6.0);
+% Panel zone fill (floors 0-7, z=0→1.76)
+\fill[black!10] (0.50,0) rectangle (0.94,1.76);
+\fill[black!10] (2.66,0) rectangle (3.10,1.76);
+% Bridge 1 (floors 5–6, z=33–39 → 1.29–1.53)
+\fill[black!12] (1.44,1.29) rectangle (2.16,1.53);
+\draw (1.44,1.29) -- (2.16,1.29); \draw (1.44,1.53) -- (2.16,1.53);
+\draw[thin, black!40] (1.44,1.29) -- (2.16,1.53);
+\draw[thin, black!40] (1.44,1.53) -- (2.16,1.29);
+% Bridge 2 (floors 11–12, z=69–75 → 2.71–2.94)
+\fill[black!12] (1.44,2.71) rectangle (2.16,2.94);
+\draw (1.44,2.71) -- (2.16,2.71); \draw (1.44,2.94) -- (2.16,2.94);
+\draw[thin, black!40] (1.44,2.71) -- (2.16,2.94);
+\draw[thin, black!40] (1.44,2.94) -- (2.16,2.71);
+% Bridge 3 (floors 17–18, z=105–111 → 4.12–4.35)
+\fill[black!12] (1.44,4.12) rectangle (2.16,4.35);
+\draw (1.44,4.12) -- (2.16,4.12); \draw (1.44,4.35) -- (2.16,4.35);
+\draw[thin, black!40] (1.44,4.12) -- (2.16,4.35);
+\draw[thin, black!40] (1.44,4.35) -- (2.16,4.12);
+% Bridge 4 (floors 23–25, z=141–153 → 5.53–6.00, double)
+\fill[black!12] (1.44,5.53) rectangle (2.16,6.00);
+\draw (1.44,5.53) -- (2.16,5.53);
+\pgfmathsetmacro{\zmid}{(5.53+6.00)/2}
+\draw[thin, black!15] (1.44,\zmid) -- (2.16,\zmid);
+\draw[thin, black!40] (1.44,5.53) -- (2.16,\zmid);
+\draw[thin, black!40] (1.44,\zmid) -- (2.16,5.53);
+\draw[thin, black!40] (1.44,\zmid) -- (2.16,6.00);
+\draw[thin, black!40] (1.44,6.00) -- (2.16,\zmid);
+% Dimension: total height
+\draw[<->, thin] (-0.3,0) -- node[left, font=\tiny, rotate=90, anchor=south] {$H\!=\!153$\,cm} (-0.3,6.0);
+% Tower widths
+\draw[<->, thin] (0,-0.2) -- node[below, font=\tiny] {$16$} (1.44,-0.2);
+\draw[<->, thin] (1.44,-0.2) -- node[below, font=\tiny] {$8$} (2.16,-0.2);
+\draw[<->, thin] (2.16,-0.2) -- node[below, font=\tiny] {$16$} (3.60,-0.2);
+% Floor heights (right side)
+\draw[<->, thin] (3.75,0) -- node[right, font=\tiny] {$9$} (3.75,0.35);
+\draw[<->, thin] (3.75,0.35) -- node[right, font=\tiny] {$6$} (3.75,0.59);
+% Tower labels
+\node[font=\tiny, black!50] at (0.72,3.0) {Kule\,1};
+\node[font=\tiny, black!50] at (2.88,3.0) {Kule\,2};
+% Bridge labels
+\node[font=\tiny, anchor=west, black!60] at (2.20,1.41) {K.\,6};
+\node[font=\tiny, anchor=west, black!60] at (2.20,2.83) {K.\,12};
+\node[font=\tiny, anchor=west, black!60] at (2.20,4.24) {K.\,18};
+\node[font=\tiny, anchor=west, black!60] at (2.20,5.77) {K.\,25};
+% Panel zone label
+\draw[decorate, decoration={brace, amplitude=2pt, mirror}, thin, black!40]
+  (-0.1,0) -- node[left, font=\tiny, xshift=-2pt, black!40] {panel} (-0.1,1.76);
+% Subtitle
+\node[font=\footnotesize, anchor=north] at (1.80,-0.55) {(a) Kesit ($YZ$)};
+\end{scope}
+% ============ (b) KAT PLANI (XY düzlemi) ============
+\begin{scope}[shift={(5.5,0.8)}, scale=0.08]
+% Tower 1 outline
+\draw[thick] (0,0) rectangle (30,16);
+% Tower 2 outline
+\draw[thick] (0,24) rectangle (30,40);
+% Bridge zone
+\fill[black!5] (10.5,16) rectangle (19.5,24);
+\draw[dashed, black!40] (10.5,16) -- (10.5,24);
+\draw[dashed, black!40] (19.5,16) -- (19.5,24);
+% Core panel locations (thick lines on front/back faces)
+\foreach \ya/\yb in {0/0, 16/16, 24/24, 40/40} {
+  \draw[line width=1.8pt, black!45] (10.5,\ya) -- (13.5,\ya);
+  \draw[line width=1.8pt, black!45] (16.5,\ya) -- (19.5,\ya);
+}
+% Column grid -- Tower 1
+\foreach \x in {0, 3, 10.5, 13.5, 16.5, 19.5, 27, 30} {
+  \foreach \y in {0, 7.0, 9.0, 16} { \fill[black] (\x,\y) circle (0.8); }
+}
+% Column grid -- Tower 2
+\foreach \x in {0, 3, 10.5, 13.5, 16.5, 19.5, 27, 30} {
+  \foreach \y in {24, 31.0, 33.0, 40} { \fill[black] (\x,\y) circle (0.8); }
+}
+% X dimension
+\draw[<->, thin] (0,-3) -- node[below, font=\tiny] {$L_x\!=\!30$} (30,-3);
+% Y dimensions
+\draw[<->, thin] (34,0) -- node[right, font=\tiny, rotate=90, anchor=south] {$16$} (34,16);
+\draw[<->, thin] (34,16) -- node[right, font=\tiny, rotate=90, anchor=south] {$8$} (34,24);
+\draw[<->, thin] (34,24) -- node[right, font=\tiny, rotate=90, anchor=south] {$16$} (34,40);
+% Labels
+\node[font=\tiny, black!50] at (15,8) {Kule\,1};
+\node[font=\tiny, black!50] at (15,32) {Kule\,2};
+\node[font=\tiny, black!30] at (15,20) {köprü};
+% Subtitle
+\node[font=\footnotesize, anchor=north] at (15,-6) {(b) Plan ($XY$)};
+\end{scope}
+\end{tikzpicture}%
+}
+\caption{V9 yapısal sistem şeması: (a)~ikiz kule kesit görünümü ($YZ$~düzlemi)---köprü bağlantıları ve alt bölge kesme panelleri; (b)~$8\times4$ kolon gridi, çekirdek panel konumları (kalın çizgi) ve köprü açıklığı ($XY$~düzlemi). Ölçüler cm cinsindendir.}
+\label{fig:sistem}
+\end{figure}
 
 \newpage
 
@@ -184,7 +290,9 @@ Sonuç olarak, sahaya özgü deprem tehlikesi parametreleri ($S_{DS} = 1.008$~g,
 
 \textbf{Soru:} Binanızın doğal titreşim periyodu ile deprem yer hareketi tepki spektrumu arasındaki ilişkiyi açıklayınız.
 
-\textbf{Cevap:} İstanbul Finans Merkezi ($41.002136^\circ$, $29.106832^\circ$) için AFAD~\cite{afad2024} DD-2 verileri: $S_S = 0.877$, $S_1 = 0.243$, zemin sınıfı ZD. Yerel zemin etki katsayıları $F_S = 1.149$, $F_1 = 2.114$ ile tasarım parametreleri:
+\textbf{Cevap:} Yapının ilk üç doğal titreşim periyodu ($T_1=0.200$~s, $T_2=0.147$~s, $T_3=0.135$~s) TBDY~2018 DD-2 tasarım spektrumunun sabit ivme (plato) bölgesine ($T_A=0.102$~s $< T_n <$ $T_B=0.510$~s) düşmektedir. Bu durum, yapının tasarım depreminden alabileceği maksimum spektral ivmeye ($S_{ae}=1.008$~g) maruz kaldığı anlamına gelir; ancak periyotların ZD zemin hakim periyodundan ($T_g\approx0.4$--$0.7$~s) belirgin şekilde kısa olması rezonans riskini ortadan kaldırmaktadır.
+
+İstanbul Finans Merkezi ($41.002136^\circ$, $29.106832^\circ$) için AFAD~\cite{afad2024} DD-2 verileri: $S_S = 0.877$, $S_1 = 0.243$, zemin sınıfı ZD. Yerel zemin etki katsayıları $F_S = 1.149$, $F_1 = 2.114$ ile tasarım parametreleri:
 %
 \begin{equation}
 S_{DS} = 0.877 \times 1.149 = 1.008\text{~g}, \quad S_{D1} = 0.243 \times 2.114 = 0.514\text{~g}.
@@ -1070,6 +1178,8 @@ Yapısal olmayan elemanlarda hafif kozmetik hasar muhtemeldir; onarım bedeli ya
 \bibitem{of2022} Of, N., Öztürk, S., Depremlerden Sonraki Yeniden Yapılanma Süreci Üzerine Küresel Bir Araştırma: Çelik Prefabrik Malzeme Kullanımının Gerekliliği, \textit{Afet ve Risk Dergisi}, cilt~5, sayı~1, ss.~346--360, 2022, doi: 10.35341/afet.1092649.
 
 \bibitem{tambunan2024} Tambunan, M.L.S., Sjah, J., Rarasati, A.D., Sulistian, R., Trigunarsyah, B., Optimizing Seismic Design of Multi-Tower Buildings Using Sky Bridge Isolation and BIM: A Case Study, \textit{Int.\ J.\ Eng.\ Technol.\ Innov.}, vol.~14, no.~4, pp.~355--377, 2024, doi: 10.46604/ijeti.2024.13409.
+
+\bibitem{tsen1991} TS~EN~1991-1-4, \textit{Eurocode~1: Yapılar Üzerindeki Etkiler -- Bölüm~1-4: Genel Etkiler -- Rüzgar Etkileri}, Türk Standartları Enstitüsü, 2015.
 
 \end{thebibliography}
 
