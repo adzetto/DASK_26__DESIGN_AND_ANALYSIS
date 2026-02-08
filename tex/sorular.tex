@@ -10,6 +10,7 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{pgfplots}
+\usepgfplotslibrary{fillbetween}
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{tikz}
@@ -198,11 +199,11 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 
 \textbf{Cevap:} Düşey taşıyıcı yerleşiminde üç temel hedef gözetilmiştir: (i)~düşey yüklerin ($Z$) sürekli ve kesintisiz temele aktarımı, (ii)~yatay kuvvetlere ($X$, $Y$) karşı yeterli yanal rijitliğin temini, (iii)~burulma düzensizliğinin kontrolü~\cite{tbdy2018}.
 
-\textit{Kolon Grid Konfigürasyonu:} Her kule için $8 \times 4$ ortogonal kolon gridi uygulanmıştır. $X$ ekseninde değişken açıklık düzeni benimsenmiş olup köşe açıklıkları ($L = 3$~cm) kısa tutularak moment çerçevesi rijitliği artırılmış, merkez bölgede dar kolon aralığı ($\Delta x = 1.2$~cm) ile perde duvarı benzeri rijitlik konsantrasyonu sağlanmıştır. $Y$ ekseninde iç kolon sıraları ($y = 7.4$ ve $8.6$~cm) yakınlaştırılarak köprü bağlantı hattı güçlendirilmiş; bu konfigürasyon rijitlik merkezi ile kütle merkezi arasındaki mesafeyi minimize ederek burulma talebini azaltmaktadır~\cite{nehrp2009}.
+\textit{Kolon Grid Konfigürasyonu:} Her kule için $8 \times 4$ ortogonal kolon gridi uygulanmıştır. $X$ ekseninde değişken açıklık düzeni benimsenmiş olup köşe açıklıkları ($L = 3$~cm) kısa tutularak moment çerçevesi rijitliği artırılmış, merkez bölgede dar kolon aralığı ($\Delta x = 2.0$~cm) ile perde duvarı benzeri rijitlik konsantrasyonu sağlanmıştır. $Y$ ekseninde iç kolon sıraları ($y = 7.0$ ve $9.0$~cm) yakınlaştırılarak köprü bağlantı hattı güçlendirilmiş; bu konfigürasyon rijitlik merkezi ile kütle merkezi arasındaki mesafeyi minimize ederek burulma talebini azaltmaktadır~\cite{nehrp2009}.
 
 \textit{Yanal Yük Taşıyıcı Sistem:} Moment çerçevesi tek başına hedef yanal rijitliği karşılayamadığından, $XZ$ ve $YZ$ düzlemlerinde çapraz elemanlarla desteklenmiş hibrit sistem tercih edilmiştir. Çapraz elemanlar köşe ve merkez açıklıklara yerleştirilmiş; tüm katlarda kesintisiz devam ettirilerek yük akışı sürekliliği tesis edilmiştir~\cite{tbdy2018}.
 
-\textit{Köprü Bağlantı Seviyeleri:} Köprüler yapı yüksekliğinin $H/4$, $H/2$, $3H/4$ ve tepe kotlarına konumlandırılmıştır. Bu dağılım, ikiz kule sistemlerinde mod şekillerini dengeleyerek taban kesme kuvvetini minimize etmektedir~\cite{patoliya2023}. Köprü genişliği merkez kolon hattı ($x = 11$--$19$~cm) ile sınırlandırılmış; böylece kulelerin bağımsız titreşim karakteristiği korunarak kontrollü yük paylaşımı sağlanmıştır. Uygulanan yerleşim düzeni sonucunda kütle-rijitlik eksantrisitesi $e_x/L_x = 0.005$, $e_y/L_y = 0.034$ olarak elde edilmiş; TBDY 2018 sınır değeri ($e/L < 0.05$) sağlanmıştır~\cite{tbdy2018}. Zemin katta A1a burulma düzensizliği katsayısı $\eta_{bi} = 1.19 \lessapprox 1.2$ olup bu durum temel-üstyapı rijitlik geçişinden kaynaklanmaktadır; üst katlarda $\eta_{bi} < 1.1$ değerleri elde edilmiştir~\cite{teblig2024}. Kolon yerleşimi Şekil~\ref{fig:plan}'de sunulmaktadır.
+\textit{Köprü Bağlantı Seviyeleri:} Köprüler yapı yüksekliğinin $H/4$, $H/2$, $3H/4$ ve tepe kotlarına konumlandırılmıştır. Bu dağılım, ikiz kule sistemlerinde mod şekillerini dengeleyerek taban kesme kuvvetini minimize etmektedir~\cite{patoliya2023}. Köprü genişliği merkez kolon hattı ($x = 10.5$--$19.5$~cm) ile sınırlandırılmış; böylece kulelerin bağımsız titreşim karakteristiği korunarak kontrollü yük paylaşımı sağlanmıştır. Uygulanan yerleşim düzeni sonucunda kütle-rijitlik eksantrisitesi $e_x/L_x = 0.005$, $e_y/L_y = 0.034$ olarak elde edilmiş; TBDY 2018 sınır değeri ($e/L < 0.05$) sağlanmıştır~\cite{tbdy2018}. Zemin katta A1a burulma düzensizliği katsayısı $\eta_{bi} = 1.19 \lessapprox 1.2$ olup bu durum temel-üstyapı rijitlik geçişinden kaynaklanmaktadır; üst katlarda $\eta_{bi} < 1.1$ değerleri elde edilmiştir~\cite{teblig2024}. Kolon yerleşimi Şekil~\ref{fig:plan}'de sunulmaktadır.
 
 % ==============================================================================
 % ŞEKİL: Kolon Yerleşimi ve Köprü Bağlantısı (Kesit + Plan)
@@ -224,18 +225,18 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 \draw[line width=0.5pt] (0,\kh) -- (16,\kh);
 \draw[line width=0.5pt] (24,\kh) -- (40,\kh);
 % Kolonlar
-\foreach \y in {0,7.4,8.6,16,24,31.4,32.6,40} {
+\foreach \y in {0,7.0,9.0,16,24,31.0,33.0,40} {
     \draw[fill=white, draw=black, line width=0.4pt] (\y-0.4,0) rectangle (\y+0.4,\kh);
 }
 % X-brace çaprazlar
-\draw[line width=0.3pt, gray] (0,0) -- (7.4,\kh);
-\draw[line width=0.3pt, gray] (7.4,0) -- (0,\kh);
-\draw[line width=0.3pt, gray] (8.6,0) -- (16,\kh);
-\draw[line width=0.3pt, gray] (16,0) -- (8.6,\kh);
-\draw[line width=0.3pt, gray] (24,0) -- (31.4,\kh);
-\draw[line width=0.3pt, gray] (31.4,0) -- (24,\kh);
-\draw[line width=0.3pt, gray] (32.6,0) -- (40,\kh);
-\draw[line width=0.3pt, gray] (40,0) -- (32.6,\kh);
+\draw[line width=0.3pt, gray] (0,0) -- (7.0,\kh);
+\draw[line width=0.3pt, gray] (7.0,0) -- (0,\kh);
+\draw[line width=0.3pt, gray] (9.0,0) -- (16,\kh);
+\draw[line width=0.3pt, gray] (16,0) -- (9.0,\kh);
+\draw[line width=0.3pt, gray] (24,0) -- (31.0,\kh);
+\draw[line width=0.3pt, gray] (31.0,0) -- (24,\kh);
+\draw[line width=0.3pt, gray] (33.0,0) -- (40,\kh);
+\draw[line width=0.3pt, gray] (40,0) -- (33.0,\kh);
 \node[font=\scriptsize] at (8,\kh/2) {Kule 1};
 \node[font=\scriptsize] at (32,\kh/2) {Kule 2};
 \node[font=\scriptsize, anchor=east] at (-1,\kh/2) {$n{-}1$};
@@ -248,18 +249,18 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 \draw[line width=0.5pt] (0,\kh) -- (16,\kh);
 \draw[line width=0.5pt] (24,\kh) -- (40,\kh);
 % Kolonlar
-\foreach \y in {0,7.4,8.6,16,24,31.4,32.6,40} {
+\foreach \y in {0,7.0,9.0,16,24,31.0,33.0,40} {
     \draw[fill=white, draw=black, line width=0.4pt] (\y-0.4,0) rectangle (\y+0.4,\kh);
 }
 % X-brace çaprazlar
-\draw[line width=0.3pt, gray] (0,0) -- (7.4,\kh);
-\draw[line width=0.3pt, gray] (7.4,0) -- (0,\kh);
-\draw[line width=0.3pt, gray] (8.6,0) -- (16,\kh);
-\draw[line width=0.3pt, gray] (16,0) -- (8.6,\kh);
-\draw[line width=0.3pt, gray] (24,0) -- (31.4,\kh);
-\draw[line width=0.3pt, gray] (31.4,0) -- (24,\kh);
-\draw[line width=0.3pt, gray] (32.6,0) -- (40,\kh);
-\draw[line width=0.3pt, gray] (40,0) -- (32.6,\kh);
+\draw[line width=0.3pt, gray] (0,0) -- (7.0,\kh);
+\draw[line width=0.3pt, gray] (7.0,0) -- (0,\kh);
+\draw[line width=0.3pt, gray] (9.0,0) -- (16,\kh);
+\draw[line width=0.3pt, gray] (16,0) -- (9.0,\kh);
+\draw[line width=0.3pt, gray] (24,0) -- (31.0,\kh);
+\draw[line width=0.3pt, gray] (31.0,0) -- (24,\kh);
+\draw[line width=0.3pt, gray] (33.0,0) -- (40,\kh);
+\draw[line width=0.3pt, gray] (40,0) -- (33.0,\kh);
 % KÖPRÜ (y=16 ile y=24 arası, 8cm açıklık)
 \draw[line width=0.6pt] (16,2) -- (24,2);
 \draw[line width=0.6pt] (16,4) -- (24,4);
@@ -280,18 +281,18 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 \draw[line width=0.5pt] (0,\kh) -- (16,\kh);
 \draw[line width=0.5pt] (24,\kh) -- (40,\kh);
 % Kolonlar
-\foreach \y in {0,7.4,8.6,16,24,31.4,32.6,40} {
+\foreach \y in {0,7.0,9.0,16,24,31.0,33.0,40} {
     \draw[fill=white, draw=black, line width=0.4pt] (\y-0.4,0) rectangle (\y+0.4,\kh);
 }
 % X-brace çaprazlar
-\draw[line width=0.3pt, gray] (0,0) -- (7.4,\kh);
-\draw[line width=0.3pt, gray] (7.4,0) -- (0,\kh);
-\draw[line width=0.3pt, gray] (8.6,0) -- (16,\kh);
-\draw[line width=0.3pt, gray] (16,0) -- (8.6,\kh);
-\draw[line width=0.3pt, gray] (24,0) -- (31.4,\kh);
-\draw[line width=0.3pt, gray] (31.4,0) -- (24,\kh);
-\draw[line width=0.3pt, gray] (32.6,0) -- (40,\kh);
-\draw[line width=0.3pt, gray] (40,0) -- (32.6,\kh);
+\draw[line width=0.3pt, gray] (0,0) -- (7.0,\kh);
+\draw[line width=0.3pt, gray] (7.0,0) -- (0,\kh);
+\draw[line width=0.3pt, gray] (9.0,0) -- (16,\kh);
+\draw[line width=0.3pt, gray] (16,0) -- (9.0,\kh);
+\draw[line width=0.3pt, gray] (24,0) -- (31.0,\kh);
+\draw[line width=0.3pt, gray] (31.0,0) -- (24,\kh);
+\draw[line width=0.3pt, gray] (33.0,0) -- (40,\kh);
+\draw[line width=0.3pt, gray] (40,0) -- (33.0,\kh);
 \node[font=\scriptsize, anchor=east] at (-1,\kh/2) {$n{+}1$};
 \end{scope}
 
@@ -309,74 +310,74 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 \begin{scope}[shift={(55,0)}]
 
 % Kirişler X yönü (Kule 1)
-\foreach \y in {0,7.4,8.6,16} {
+\foreach \y in {0,7.0,9.0,16} {
     \draw[line width=0.5pt] (0,\y) -- (30,\y);
 }
 % Kirişler X yönü (Kule 2)
-\foreach \y in {24,31.4,32.6,40} {
+\foreach \y in {24,31.0,33.0,40} {
     \draw[line width=0.5pt] (0,\y) -- (30,\y);
 }
 % Kirişler Y yönü (Kule 1)
-\foreach \x in {0,3,11,14.4,15.6,19,27,30} {
+\foreach \x in {0,3,10.5,13.5,16.5,19.5,27,30} {
     \draw[line width=0.5pt] (\x,0) -- (\x,16);
 }
 % Kirişler Y yönü (Kule 2)
-\foreach \x in {0,3,11,14.4,15.6,19,27,30} {
+\foreach \x in {0,3,10.5,13.5,16.5,19.5,27,30} {
     \draw[line width=0.5pt] (\x,24) -- (\x,40);
 }
 
 % X-Brace döşeme (Kule 1) - her panelde çapraz
-\draw[line width=0.3pt, gray] (0,0) -- (3,7.4);
-\draw[line width=0.3pt, gray] (3,0) -- (0,7.4);
-\draw[line width=0.3pt, gray] (27,0) -- (30,7.4);
-\draw[line width=0.3pt, gray] (30,0) -- (27,7.4);
-\draw[line width=0.3pt, gray] (0,8.6) -- (3,16);
-\draw[line width=0.3pt, gray] (3,8.6) -- (0,16);
-\draw[line width=0.3pt, gray] (27,8.6) -- (30,16);
-\draw[line width=0.3pt, gray] (30,8.6) -- (27,16);
+\draw[line width=0.3pt, gray] (0,0) -- (3,7.0);
+\draw[line width=0.3pt, gray] (3,0) -- (0,7.0);
+\draw[line width=0.3pt, gray] (27,0) -- (30,7.0);
+\draw[line width=0.3pt, gray] (30,0) -- (27,7.0);
+\draw[line width=0.3pt, gray] (0,9.0) -- (3,16);
+\draw[line width=0.3pt, gray] (3,9.0) -- (0,16);
+\draw[line width=0.3pt, gray] (27,9.0) -- (30,16);
+\draw[line width=0.3pt, gray] (30,9.0) -- (27,16);
 % Merkez X-brace
-\draw[line width=0.3pt, gray] (11,0) -- (19,7.4);
-\draw[line width=0.3pt, gray] (19,0) -- (11,7.4);
-\draw[line width=0.3pt, gray] (11,8.6) -- (19,16);
-\draw[line width=0.3pt, gray] (19,8.6) -- (11,16);
+\draw[line width=0.3pt, gray] (10.5,0) -- (19.5,7.0);
+\draw[line width=0.3pt, gray] (19.5,0) -- (10.5,7.0);
+\draw[line width=0.3pt, gray] (10.5,9.0) -- (19.5,16);
+\draw[line width=0.3pt, gray] (19.5,9.0) -- (10.5,16);
 
 % X-Brace döşeme (Kule 2)
-\draw[line width=0.3pt, gray] (0,24) -- (3,31.4);
-\draw[line width=0.3pt, gray] (3,24) -- (0,31.4);
-\draw[line width=0.3pt, gray] (27,24) -- (30,31.4);
-\draw[line width=0.3pt, gray] (30,24) -- (27,31.4);
-\draw[line width=0.3pt, gray] (0,32.6) -- (3,40);
-\draw[line width=0.3pt, gray] (3,32.6) -- (0,40);
-\draw[line width=0.3pt, gray] (27,32.6) -- (30,40);
-\draw[line width=0.3pt, gray] (30,32.6) -- (27,40);
+\draw[line width=0.3pt, gray] (0,24) -- (3,31.0);
+\draw[line width=0.3pt, gray] (3,24) -- (0,31.0);
+\draw[line width=0.3pt, gray] (27,24) -- (30,31.0);
+\draw[line width=0.3pt, gray] (30,24) -- (27,31.0);
+\draw[line width=0.3pt, gray] (0,33.0) -- (3,40);
+\draw[line width=0.3pt, gray] (3,33.0) -- (0,40);
+\draw[line width=0.3pt, gray] (27,33.0) -- (30,40);
+\draw[line width=0.3pt, gray] (30,33.0) -- (27,40);
 % Merkez X-brace
-\draw[line width=0.3pt, gray] (11,24) -- (19,31.4);
-\draw[line width=0.3pt, gray] (19,24) -- (11,31.4);
-\draw[line width=0.3pt, gray] (11,32.6) -- (19,40);
-\draw[line width=0.3pt, gray] (19,32.6) -- (11,40);
+\draw[line width=0.3pt, gray] (10.5,24) -- (19.5,31.0);
+\draw[line width=0.3pt, gray] (19.5,24) -- (10.5,31.0);
+\draw[line width=0.3pt, gray] (10.5,33.0) -- (19.5,40);
+\draw[line width=0.3pt, gray] (19.5,33.0) -- (10.5,40);
 
 % Kule 1 kolonları
-\foreach \x in {0,3,11,14.4,15.6,19,27,30} {
-    \foreach \y in {0,7.4,8.6,16} {
+\foreach \x in {0,3,10.5,13.5,16.5,19.5,27,30} {
+    \foreach \y in {0,7.0,9.0,16} {
         \draw[fill=white, draw=black, line width=0.4pt] (\x-0.5,\y-0.5) rectangle (\x+0.5,\y+0.5);
     }
 }
 % Kule 2 kolonları
-\foreach \x in {0,3,11,14.4,15.6,19,27,30} {
-    \foreach \y in {24,31.4,32.6,40} {
+\foreach \x in {0,3,10.5,13.5,16.5,19.5,27,30} {
+    \foreach \y in {24,31.0,33.0,40} {
         \draw[fill=white, draw=black, line width=0.4pt] (\x-0.5,\y-0.5) rectangle (\x+0.5,\y+0.5);
     }
 }
 
-% KÖPRÜ - sadece x=11 ile x=19 arası (8cm), y=16 ile y=24 arası (8cm)
-\draw[fill=gray!30, draw=black, line width=0.8pt] (11,16) rectangle (19,24);
+% KÖPRÜ - sadece x=10.5 ile x=19.5 arası (9cm), y=16 ile y=24 arası (8cm)
+\draw[fill=gray!30, draw=black, line width=0.8pt] (10.5,16) rectangle (19.5,24);
 % Köprü X-brace
-\draw[line width=0.4pt] (11,16) -- (19,24);
-\draw[line width=0.4pt] (19,16) -- (11,24);
+\draw[line width=0.4pt] (10.5,16) -- (19.5,24);
+\draw[line width=0.4pt] (19.5,16) -- (10.5,24);
 \node[font=\scriptsize, fill=white, inner sep=1pt] at (15,20) {Köprü};
 
 % Köprü bağlantı kolonları (vurgulu)
-\foreach \x in {11,14.4,15.6,19} {
+\foreach \x in {10.5,13.5,16.5,19.5} {
     \draw[fill=black, draw=black, line width=0.5pt] (\x-0.6,16-0.6) rectangle (\x+0.6,16+0.6);
     \draw[fill=black, draw=black, line width=0.5pt] (\x-0.6,24-0.6) rectangle (\x+0.6,24+0.6);
 }
@@ -392,13 +393,13 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 \node[font=\tiny, rotate=90] at (-5,8) {16 cm};
 \draw[<->, line width=0.3pt] (33,16) -- (33,24);
 \node[font=\tiny, rotate=90] at (35,20) {8 cm};
-\draw[<->, line width=0.3pt] (11,43) -- (19,43);
-\node[font=\tiny] at (15,45) {8 cm};
+\draw[<->, line width=0.3pt] (10.5,43) -- (19.5,43);
+\node[font=\tiny] at (15,45) {9 cm};
 
 % Koordinatlar
 \node[font=\tiny, anchor=north] at (0,-1) {0};
-\node[font=\tiny, anchor=north] at (11,-1) {11};
-\node[font=\tiny, anchor=north] at (19,-1) {19};
+\node[font=\tiny, anchor=north] at (10.5,-1) {10.5};
+\node[font=\tiny, anchor=north] at (19.5,-1) {19.5};
 \node[font=\tiny, anchor=north] at (30,-1) {30};
 \node[font=\tiny, anchor=east] at (-1,0) {0};
 \node[font=\tiny, anchor=east] at (-1,16) {16};
@@ -459,7 +460,7 @@ Türkiye'de inşaat sektörü köklü bir betonarme geleneği üzerine inşa edi
 
 \textbf{Soru:} Deprem etkileri altında tasarıma esas iç kuvvetleri belirlemek için hangi hesap yöntemini seçtiğinizi nedenleriyle birlikte açıklayınız.
 
-\textbf{Cevap:} Tasarıma esas iç kuvvetlerin tayininde \textbf{Mod Birleştirme Yöntemi} (MBY, TBDY 2018 Md.~4.8.2) tercih edilmiştir~\cite{tbdy2018}.
+\textbf{Cevap:} Tasarıma esas iç kuvvetlerin tayininde \texttt{Mod Birleştirme Yöntemi} (MBY, TBDY 2018 Md.~4.8.2) tercih edilmiştir~\cite{tbdy2018}.
 
 \subsubsection{EDYY'nin Yetersizliği}
 
@@ -467,7 +468,7 @@ Eşdeğer Deprem Yükü Yöntemi (EDYY, Md.~4.7.3) yapı davranışının birinc
 
 \subsubsection{MBY'nin Tercih Gerekçesi}
 
-MBY'de tüm anlamlı titreşim modları ayrı ayrı göz önüne alınır. Her $n$.~mod için azaltılmış spektral ivme $S_{aR}(T_n) = S_{ae}(T_n)/R_a(T_n)$ tasarım spektrumundan okunur; modal kütle ile çarpılarak ilgili moda ait deprem kuvveti elde edilir ($R=4$, $D=2.5$, $I=1.0$). Elde edilen modal kuvvetler elemanlarda $N$, $V$, $M$ iç tesirlerine dönüştürülüp istatistiksel bir kaide ile tevhid edilir. İlk üç modun yakın frekansları hasebiyle modlar arası korelasyon ihmal edilemez; bu sebeple SRSS yerine \textbf{CQC} kuralı ($\xi=0.05$) benimsenmiştir. Denk.~4.30 muktezasınca her iki doğrultuda etkin kütle oranı toplamı \%95'i aşıncaya dek mod sayısı artırılmış; 12 mod ile şart sağlanmıştır~\cite{tbdy2018}.
+MBY'de tüm anlamlı titreşim modları ayrı ayrı göz önüne alınır. Her $n$.~mod için azaltılmış spektral ivme $S_{aR}(T_n) = S_{ae}(T_n)/R_a(T_n)$ tasarım spektrumundan okunur; modal kütle ile çarpılarak ilgili moda ait deprem kuvveti elde edilir ($R=4$, $D=2.5$, $I=1.0$). Elde edilen modal kuvvetler elemanlarda $N$, $V$, $M$ iç tesirlerine dönüştürülüp istatistiksel bir kaide ile tevhid edilir. İlk üç modun yakın frekansları hasebiyle modlar arası korelasyon ihmal edilemez; bu sebeple SRSS yerine \textit{CQC} kuralı ($\xi=0.05$) benimsenmiştir. Denk.~4.30 muktezasınca her iki doğrultuda etkin kütle oranı toplamı \%95'i aşıncaya dek mod sayısı artırılmış; 12 mod ile şart sağlanmıştır~\cite{tbdy2018}.
 
 Taban kesme kuvveti Md.~4.8.4 Denk.~4.31 uyarınca $\beta_{tE}$ ile kontrol edilmiş; A1a düzensizliği sebebiyle $\gamma_E = 0.90$ alınmıştır. Göreli kat ötelemesinde çelik yapılara mahsus $\kappa = 0.5$ (Md.~4.9.1.4) gözetilmiş; ikinci mertebe etkileri $C_h = 1$ ile hesaba katılmıştır (Md.~4.9.2)~\cite{tbdy2018, cythye2018}.
 
@@ -731,7 +732,230 @@ Maksimum interstory drift her üç kayıt altında 12.~katta teşekkül etmekted
 % ==============================================================================
 \subsection{Soru \RN{8}}
 
-\textit{Bu bölüm daha sonra doldurulacaktır.}
+\textbf{Soru:} Önerdiğiniz yapısal sistemin tasarım depremine maruz kalması halinde oluşması muhtemel hasar durumunu yorumlayınız ve yapının deprem öncesi durumuna getirilmesinin teknik ve ekonomik açıdan fizibilitesini değerlendiriniz.
+
+\textbf{Cevap:} Tasarım depremi DD-2 altında yapılan zaman tanım alanında hesap sonuçlarına göre, önerilen çelik ikiz kule sisteminin tüm kolon, kiriş ve çapraz elemanlarında kalıcı şekil değiştirme oluşmadığı, birleşim bölgelerinde akma eşiğinin çok altında kalındığı ve yapının deprem sonrası derhal kullanılabilir durumda olduğu belirlenmiştir. Köprü bağlantısındaki en kritik kiriş ucu (eleman~33) dahil 43~elemanın tümü elastik sınırlar içinde kalmaktadır. Kolonlarda gözlenen eğilme gerilmeleri taşıma kapasitesinin \%9'unu geçmemekte; çaprazlarda burkulma veya kalıcı uzama riski bulunmamaktadır.
+
+Yapıştırma birleşim kapasitesine göre talep/kapasite oranı $\text{TKO}_{max}\!=\!0.087$ olup hasar eşiğinin ($\text{TKO}\!=\!0.25$) çok altındadır. Eleman bazlı gerilme dağılımı Şekil~\ref{fig:damage}a'da sunulmuştur. Balsa kırılma dayanımı $f_b\!=\!3.5$~kN/cm\textsuperscript{2}; modelde $\times$240 ölçekleme ile $f_{b,m}\!=\!840$~kN/cm\textsuperscript{2}. Birleşim verimi $\eta_j\!=\!0.35$ olup belirleyici kapasite $M_j\!=\!\eta_j f_{b,m} W_{el}\!=\!10.6$~kN$\cdot$cm'dir~\cite{femap58}. KYH-3'te ($1.896$~g, tasarımın 5.7~katı) en kritik eleman~33'ün $\text{TKO}\!=\!0.68$ ($<1.0$, hâlâ elastik).
+
+Göçme olasılığı Baker~(2015) MLE yöntemi ile lognormal kırılganlık fonksiyonu $P(\text{DS}|\text{PGA}) = \Phi\!\big[\ln(\text{PGA}/\theta)/\beta\big]$ olarak hesaplanmıştır~\cite{femap58, baker2015}. 43~eleman$\,\times\,$3~yer hareketi verisinden eleman bazlı $k_i\!=\!\text{TKO}_i/\text{PGA}$ MLE ile saptanmış, sistem kırılganlığı en zayıf halkadan (el.~33) türetilmiştir. Medyan kapasiteler: $\theta_{\text{DS-1}}\!=\!0.86$~g, $\theta_{\text{göçme}}\!=\!3.45$~g. Belirsizlik: $\beta_r\!=\!0.15$, $\beta_u\!=\!\sqrt{0.30^2+0.30^2+0.35^2}\!=\!0.55$ (model$+$malzeme$+$birleşim), $\beta_T\!=\!0.57$. DD-2'de: $P(\text{DS-1})\!=\!4.9\%$, $P(\text{göçme})\!=\!2.2 \times 10^{-5}$ (Şekil~\ref{fig:damage}b). Yıllık göçme olasılığı $4.5 \times 10^{-8} \ll 10^{-4}$ (ASCE~7-22)~\cite{asce41}. Eleman bazlı medyan göçme kapasitesi ($\theta_{\text{göçme},i}$) dağılımı Şekil~\ref{fig:damage}c'de sunulmuştur.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}[b]{0.54\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    sciencestyle,
+    width=\textwidth, height=4.5cm,
+    xlabel={Eleman numarası},
+    ylabel={$\sigma_b$ (kN/cm\textsuperscript{2})},
+    xmin=0, xmax=44,
+    ymin=0, ymax=250,
+    xtick={1,5,10,15,20,25,30,35,40,43},
+    ytick={0,50,100,150,200,250},
+    minor y tick num=4,
+    tick label style={font=\scriptsize},
+    label style={font=\scriptsize},
+    legend pos=north west,
+    legend style={font=\tiny, draw=black!40, fill=white, inner sep=1pt, row sep=-2pt, column sep=2pt},
+    legend columns=1,
+    clip=false,
+]
+% KYH-3
+\addplot[black!35, densely dotted, line width=0.6pt, mark=triangle, mark size=1.5pt, mark options={fill=white, draw=black!50, thin}] coordinates {
+    (1,20.0) (2,0.0) (3,61.4) (4,121.1) (5,95.5) (6,58.2) (7,87.9) (8,66.7)
+    (9,124.6) (10,16.4) (11,104.1) (12,124.7) (13,167.2) (14,23.6) (15,84.4)
+    (16,123.6) (17,36.6) (18,5.5) (19,16.0) (20,61.8) (21,15.7) (22,23.2)
+    (23,39.7) (24,57.3) (25,11.0) (26,64.9) (27,67.6) (28,50.4) (29,75.8)
+    (30,45.2) (31,103.5) (32,39.2) (33,200.5) (34,11.9) (35,66.8) (36,105.2)
+    (37,3.8) (38,4.1) (39,60.0) (40,50.4) (41,13.5) (42,19.2) (43,45.7)
+};
+\addlegendentry{KYH-3 $\sigma_b$}
+% KYH-2
+\addplot[black!60, dashed, line width=0.6pt, mark=square, mark size=1.3pt, mark options={fill=white, draw=black!60, thin}] coordinates {
+    (1,11.2) (2,0.0) (3,31.7) (4,63.4) (5,48.2) (6,29.5) (7,44.3) (8,33.8)
+    (9,61.4) (10,8.2) (11,50.2) (12,59.8) (13,79.7) (14,11.4) (15,39.5)
+    (16,58.5) (17,17.4) (18,2.6) (19,7.3) (20,28.7) (21,7.3) (22,12.8)
+    (23,21.3) (24,29.3) (25,6.8) (26,33.3) (27,34.0) (28,25.7) (29,38.3)
+    (30,22.9) (31,49.8) (32,18.9) (33,96.4) (34,5.7) (35,31.3) (36,49.3)
+    (37,2.1) (38,2.0) (39,27.7) (40,22.9) (41,6.2) (42,9.0) (43,21.3)
+};
+\addlegendentry{KYH-2 $\sigma_b$}
+% KYH-1
+\addplot[black, solid, line width=0.8pt, mark=o, mark size=1.8pt, mark options={fill=white, draw=black, thin}] coordinates {
+    (1,2.8) (2,0.0) (3,8.1) (4,16.2) (5,12.3) (6,7.5) (7,11.4) (8,8.7)
+    (9,15.7) (10,2.1) (11,13.2) (12,15.8) (13,21.3) (14,3.0) (15,11.2)
+    (16,16.0) (17,4.7) (18,0.7) (19,2.3) (20,8.4) (21,2.1) (22,3.2)
+    (23,5.4) (24,7.5) (25,1.8) (26,8.5) (27,8.8) (28,6.6) (29,9.9)
+    (30,5.9) (31,13.1) (32,5.0) (33,25.4) (34,1.5) (35,8.8) (36,13.9)
+    (37,0.7) (38,0.6) (39,8.2) (40,7.3) (41,1.9) (42,2.5) (43,6.1)
+};
+\addlegendentry{KYH-1 $\sigma_b$}
+\node[font=\tiny, anchor=south] at (axis cs:33,205) {El.~33};
+\node[font=\tiny, black!50, anchor=south east] at (axis cs:43,242) {$f_b\!=\!840$ (ölçek dışı)};
+\end{axis}
+\end{tikzpicture}
+\\[-2pt]{\footnotesize (a) Eğilme gerilmesi dağılımı}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.43\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{semilogxaxis}[
+    sciencestyle,
+    width=\textwidth, height=4.5cm,
+    xlabel={PGA (g)},
+    ylabel={$P(\text{DS}|\text{PGA})$},
+    xmin=0.1, xmax=10,
+    ymin=0, ymax=1.05,
+    ytick={0,0.2,0.4,0.6,0.8,1.0},
+    xtick={0.1,0.2,0.5,1,2,5,10},
+    xticklabels={0.1,0.2,0.5,1,2,5,10},
+    minor y tick num=1,
+    tick label style={font=\scriptsize},
+    label style={font=\scriptsize},
+    legend pos=south east,
+    legend style={font=\tiny, draw=black!40, fill=white, inner sep=1pt, row sep=-3pt, column sep=1pt},
+    clip=false,
+]
+% 90% CI lower bound (collapse)
+\addplot[name path=ci_lo, draw=none, no marks, forget plot] coordinates {
+    (0.10,0) (0.50,0) (0.70,0.000002) (0.80,0.000104)
+    (0.90,0.001724) (1.00,0.013134) (1.10,0.056276) (1.20,0.157027)
+    (1.30,0.318059) (1.40,0.508345) (1.50,0.684696) (1.60,0.818886)
+    (1.80,0.955090) (2.00,0.991774) (3.00,1.0) (5.00,1.0) (10.00,1.0)
+};
+% 90% CI upper bound (collapse)
+\addplot[name path=ci_hi, draw=none, no marks, forget plot] coordinates {
+    (0.10,0) (0.50,0) (0.70,0) (0.80,0) (0.90,0) (1.00,0) (1.10,0)
+    (1.20,0) (1.30,0) (1.40,0) (1.50,0) (1.60,0) (1.80,0) (2.00,0)
+    (3.00,0) (5.00,0.000188) (6.00,0.009629) (7.00,0.094620)
+    (8.00,0.336287) (9.00,0.641549) (10.00,0.856563)
+};
+\addplot[fill=black!8, draw=none, forget plot] fill between[of=ci_lo and ci_hi];
+% DS-1 (θ=0.862g, β_T=0.570)
+\addplot[black, solid, line width=0.9pt, no marks, smooth] coordinates {
+    (0.05,0.000000) (0.10,0.000079) (0.15,0.001080) (0.20,0.005194)
+    (0.25,0.014957) (0.30,0.032054) (0.335,0.048673) (0.40,0.089023)
+    (0.50,0.169694) (0.60,0.262531) (0.70,0.357495) (0.80,0.447914)
+    (1.00,0.602756) (1.50,0.834405) (2.00,0.930075) (3.00,0.985650)
+    (5.00,0.998978) (10.00,0.999991)
+};
+\addlegendentry{DS-1 ($\theta\!=\!0.86$)}
+% DS-2 (θ=1.725g, β_T=0.570)
+\addplot[black!65, dashed, line width=0.8pt, no marks, smooth] coordinates {
+    (0.05,0.000000) (0.10,0.000000) (0.15,0.000009) (0.20,0.000079)
+    (0.25,0.000352) (0.30,0.001076) (0.335,0.002022) (0.40,0.005179)
+    (0.50,0.014918) (0.60,0.031981) (0.70,0.056820) (0.80,0.088860)
+    (1.00,0.169437) (1.50,0.403167) (2.00,0.602363) (3.00,0.834152)
+    (5.00,0.969032) (10.00,0.998974)
+};
+\addlegendentry{DS-2 ($\theta\!=\!1.73$)}
+% DS-3 (θ=2.587g, β_T=0.570)
+\addplot[black!45, dashdotted, line width=0.7pt, no marks, smooth] coordinates {
+    (0.05,0.000000) (0.10,0.000000) (0.15,0.000000) (0.20,0.000004)
+    (0.25,0.000021) (0.30,0.000079) (0.335,0.000168) (0.40,0.000529)
+    (0.50,0.001969) (0.60,0.005184) (0.70,0.010926) (0.80,0.019761)
+    (1.00,0.047729) (1.50,0.169523) (2.00,0.325842) (3.00,0.602494)
+    (5.00,0.876130) (10.00,0.991147)
+};
+\addlegendentry{DS-3 ($\theta\!=\!2.59$)}
+% Göçme (θ=3.449g, β_T=0.570)
+\addplot[black!30, dotted, line width=0.7pt, no marks, smooth] coordinates {
+    (0.05,0.000000) (0.10,0.000000) (0.15,0.000000) (0.20,0.000000)
+    (0.25,0.000002) (0.30,0.000009) (0.335,0.000022) (0.40,0.000079)
+    (0.50,0.000353) (0.60,0.001078) (0.70,0.002576) (0.80,0.005186)
+    (1.00,0.014938) (1.50,0.072075) (2.00,0.169566) (3.00,0.403364)
+    (5.00,0.742605) (10.00,0.969067)
+};
+\addlegendentry{Göçme ($\theta\!=\!3.45$)}
+% El.13 fragility (2nd critical)
+\addplot[black!40, densely dashed, line width=0.5pt, no marks, smooth, forget plot] coordinates {
+    (0.10,0.000000) (0.20,0.000000) (0.30,0.000002) (0.335,0.000006)
+    (0.50,0.000111) (0.70,0.000964) (1.00,0.006654) (1.50,0.038860)
+    (2.00,0.103949) (3.00,0.291837) (5.00,0.636140) (10.00,0.941116)
+};
+\node[font=\tiny, black!40, anchor=west] at (axis cs:5.5,0.68) {El.13};
+% DD-2 design earthquake line
+\draw[black!50, densely dashed, thin] (axis cs:0.335,0) -- (axis cs:0.335,1.05);
+\node[font=\tiny, rotate=90, anchor=south, black!60] at (axis cs:0.295,0.55) {DD-2};
+% DD-1 MCE line
+\draw[black!30, densely dotted, thin] (axis cs:0.50,0) -- (axis cs:0.50,1.05);
+\node[font=\tiny, rotate=90, anchor=south, black!35] at (axis cs:0.44,0.55) {DD-1};
+% Annotation box with probabilities
+% 90% CI label
+\node[font=\tiny, black!35, anchor=west] at (axis cs:2.3,0.06) {90\% GA};
+\end{semilogxaxis}
+\end{tikzpicture}
+\\[-2pt]{\footnotesize (b) Sistem kırılganlık eğrileri (MLE)}
+\end{minipage}
+\vspace{-2pt}
+
+\begin{minipage}[b]{0.99\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    sciencestyle,
+    width=\textwidth, height=2.2cm,
+    xlabel={Eleman numaras\i{}},
+    ylabel={$\theta_{\text{göçme}}$ (g)},
+    xmin=0, xmax=44,
+    ymin=0, ymax=60,
+    xtick={1,5,10,15,20,25,30,35,40,43},
+    ytick={0,20,40,60},
+    minor y tick num=1,
+    tick label style={font=\scriptsize},
+    label style={font=\scriptsize},
+    clip=false,
+    ybar, bar width=2.5pt,
+    fill=black!25,
+    draw=black!60,
+]
+% 25th-75th percentile band (IQR)
+\fill[black!6] (axis cs:0,7.0) rectangle (axis cs:44,16.7);
+\addplot[fill=black!25, draw=black!60] coordinates {
+    (1,31.8) (2,55) (3,10.8) (4,5.5) (5,7.1) (6,11.6) (7,7.7) (8,10.1)
+    (9,5.5) (10,44.3) (11,6.6) (12,5.6) (13,4.1) (14,29.4) (15,8.1)
+    (16,5.6) (17,18.8) (18,55) (19,43.4) (20,11.1) (21,49.0) (22,27.7)
+    (23,16.4) (24,11.7) (25,53.6) (26,10.4) (27,10.0) (28,13.3) (29,8.9)
+    (30,14.9) (31,6.7) (32,17.6) (33,3.4) (34,55) (35,10.3) (36,6.5)
+    (37,55) (38,55) (39,11.4) (40,13.4) (41,50.6) (42,36.0) (43,15.0)
+};
+% Highlight critical elements (el.33, el.13)
+\addplot[fill=black!70, draw=black, forget plot] coordinates {(33,3.4)};
+\addplot[fill=black!55, draw=black!80, forget plot] coordinates {(13,4.1)};
+% Median line
+\draw[black, densely dashed, thin] (axis cs:0,10.9) -- (axis cs:44,10.9);
+\node[font=\tiny, black, anchor=east] at (axis cs:44.5,50) {$\tilde{\theta}\!=\!10.9$};
+% 5th percentile line
+\draw[black!40, densely dotted, thin] (axis cs:0,5.2) -- (axis cs:44,5.2);
+\node[font=\tiny, black!40, anchor=east] at (axis cs:44.5,3.5) {$P_5\!=\!5.2$};
+% DD-2 PGA line
+\draw[black!50, densely dashed, thin] (axis cs:0,0.335) -- (axis cs:44,0.335);
+\node[font=\tiny, black!50, anchor=west] at (axis cs:38,1.8) {DD-2};
+% Critical element labels
+\node[font=\tiny, anchor=south] at (axis cs:33,4.5) {El.~33};
+\node[font=\tiny, anchor=south] at (axis cs:13,5.5) {El.~13};
+\node[font=\tiny, anchor=south] at (axis cs:4,6.8) {El.~4};
+\node[font=\tiny, anchor=south] at (axis cs:36,8.0) {El.~36};
+% Stats box
+\node[font=\tiny, anchor=north east, fill=white, draw=black!30, inner sep=1.5pt,
+      text width=1.6cm, align=left] at (axis cs:49.5,99) {%
+$N\!=\!43$, kırp.\ 5 el.$>$50\,g\\
+$\tilde{\theta}\!=\!10.9$\,g, $\bar{\theta}\!=\!15.3$\,g\\
+CoV$\,=\,0.78$, $P_5\!=\!5.2$\,g\\
+$\theta<\!10$\,g: 13~el.\ (\%30)};
+\end{axis}
+\end{tikzpicture}
+\\[-2pt]{\footnotesize (c) Eleman bazlı $\theta_{\text{göçme},i}$\,---\,gri bant: IQR ($Q_1$--$Q_3$)}
+\end{minipage}
+\vspace{-6pt}
+\caption{Hasar değerlendirmesi: (a)~eğilme gerilmesi dağılımı (3~yer hareketi); (b)~Baker~(2015) MLE kırılganlık eğrileri ($\beta_T\!=\!0.57$, gri alan: göçme \%90 GA); (c)~eleman bazlı $\theta_{\text{göçme},i}$ (gri bant IQR). En zayıf halka el.~33.}
+\label{fig:damage}
+\end{figure}
+
+Yapısal olmayan elemanlarda hafif kozmetik hasar muhtemeldir; onarım bedeli yapı bedelinin \%1--3'ü, süre 2--4~hafta. Taşıyıcı elemanlar elastik; kalıcı deformasyon sıfır~\cite{asce41}. Yapı Hemen Kullanım (HK) seviyesindedir~\cite{tbdy2018}.
 
 \newpage
 % ==============================================================================
@@ -747,6 +971,14 @@ Maksimum interstory drift her üç kayıt altında 12.~katta teşekkül etmekted
 
 \bibitem{opensees} McKenna, F., Scott, M.H., Fenves, G.L., \textit{OpenSees: Open System for Earthquake Engineering Simulation}, Pacific Earthquake Engineering Research Center, UC Berkeley, \url{https://opensees.berkeley.edu}.
 \bibitem{nehrp2009} FEMA P-751, \textit{2009 NEHRP Recommended Seismic Provisions: Design Examples}, Building Seismic Safety Council, National Institute of Building Sciences, Washington, D.C., 2012.
+
+\bibitem{femap58} FEMA P-58, \textit{Seismic Performance Assessment of Buildings}, Federal Emergency Management Agency, Washington, D.C., 2012.
+
+\bibitem{baker2015} Baker, J.W., ``Efficient Analytical Fragility Function Fitting Using Dynamic Structural Analysis,'' \textit{Earthquake Spectra}, 31(1), 579--599, 2015.
+
+\bibitem{asce41} ASCE/SEI 41-17, \textit{Seismic Evaluation and Retrofit of Existing Buildings}, American Society of Civil Engineers, Reston, Virginia, 2017.
+
+\bibitem{fema356} FEMA 356, \textit{Prestandard and Commentary for the Seismic Rehabilitation of Buildings}, Federal Emergency Management Agency, Washington, D.C., 2000.
 
 \bibitem{patoliya2023} Patoliya, N., Patel, I., Agrawal, V., Seismic Analysis of Tall Buildings Connected with Sky Bridge, \textit{IARJSET}, vol.~10, 2023, doi: 10.17148/IARJSET.2023.10446.
 
