@@ -28,6 +28,25 @@
 
 \geometry{margin=2.5cm, headheight=14.5pt}
 \pgfplotsset{compat=1.17}
+\pgfplotsset{
+    sciencestyle/.style={
+        tick align=inside,
+        major tick length=4pt,
+        minor tick length=2pt,
+        tick style={thin, black},
+        axis line style={thin, black},
+        xtick pos=both,
+        ytick pos=both,
+        xticklabel pos=lower,
+        yticklabel pos=left,
+        grid=major,
+        grid style={line width=0.08pt, draw=gray!18},
+        tick label style={font=\small},
+        label style={font=\small},
+        legend style={font=\scriptsize, draw=gray!50, fill=white, fill opacity=0.95, cells={anchor=west}, rounded corners=0.5pt},
+        every axis plot/.append style={line width=0.8pt},
+    }
+}
 \setlength{\parindent}{1.5em}
 
 \hypersetup{
@@ -99,21 +118,18 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 \resizebox{0.85\textwidth}{!}{%
 \begin{tikzpicture}
 \begin{axis}[
+    sciencestyle,
     width=14cm,
     height=8cm,
     xlabel={Periyot, $T$ (s)},
     ylabel={Spektral İvme, $S_{ae}$ (g)},
     xmin=0, xmax=2.5,
     ymin=0, ymax=1.8,
-    grid=both,
-    grid style={line width=0.2pt, draw=gray!30},
-    major grid style={line width=0.4pt, draw=gray!50},
+    xtick={0,0.5,1.0,1.5,2.0,2.5},
+    ytick={0,0.2,0.4,0.6,0.8,1.0,1.2,1.4,1.6,1.8},
+    minor tick num=4,
     legend pos=north east,
-    legend style={font=\scriptsize, draw=black, fill=white, cells={anchor=west}},
-    tick label style={font=\small},
-    label style={font=\small},
-    every axis plot/.append style={line width=0.8pt},
-    clip=false
+    clip=false,
 ]
 
 % DD-1 Spektrumu
@@ -470,21 +486,98 @@ TBDY 2018 usulleri gerçek ölçekli binalar için tanzim edilmiş olmakla birli
 
 \textbf{Soru:} Yapı analizinde sönüm oranının ne şekilde dikkate alındığını açıklayınız.
 
-\textbf{Cevap:} Sönüm, deprem enerjisinin yapı içinde yutulmasını temsil eden ve dinamik tepkiyi doğrudan tayin eden parametredir. Analizlerde (i)~tasarım spektrumunda sönüm düzeltmesi, (ii)~ZTAH'de Rayleigh sönümü olmak üzere iki seviyede dikkate alınmıştır~\cite{tbdy2018}.
+\textbf{Cevap:} Gerçek yapılarda deprem enerjisi malzeme histerezisi, birleşim sürtünmesi ve yapısal olmayan elemanlar vasıtasıyla yutulur. Bu enerji kaybı analitik modelde doğrudan temsil edilemediğinden eşdeğer viskoz sönüm oranı $\xi$ ile idealize edilir. Sönüm, yapı tepkisini doğrudan sınırlandıran parametredir; ihmal edilmesi halinde rezonans civarında teorik olarak sonsuz genlik hasıl olur. Analizlerde $\xi$ iki seviyede dikkate alınmıştır~\cite{tbdy2018}.
 
-\subsubsection{Tasarım Spektrumu ve Sönüm Düzeltmesi}
+\textit{Spektral düzeltme.}
+MBY'de deprem talebi tasarım spektrumundan okunur; spektrum ise belirli bir referans sönüme göre tanzim edilmiştir. TBDY 2018 $\xi = \%5$ esas alır. Farklı $\xi$ değerlerinde spektral ordinatlar $\eta_b = \sqrt{10/(5 + \xi\,(\%))}$ ile tashih edilir (Md.~2.3.4): $\xi = \%2 \to \eta_b = 1.195$ (spektrum yükselir, talep artar), $\xi = \%10 \to 0.816$ (talep düşer). Sebebi açıktır: düşük sönümlü yapı rezonans bandında daha fazla enerji biriktirir, dolayısıyla aynı yer hareketi altında daha büyük ivme tepkisi verir. Çelik çerçeve modelimiz için $\xi = \%5$ benimsenmiştir; bu, kaynaksız bulonlu birleşim detayı ile uyumlu alt sınır değeridir~\cite{cythye2018}.
 
-TBDY 2018 elastik tasarım spektrumu $\xi = \%5$ esas alınarak tanzim edilmiştir. Farklı sönüm nispetinde spektral ordinatlar $\eta_b = \sqrt{10/(5 + \xi\,(\%))}$ katsayısı ile tashih edilir (Md.~2.3.4): $\xi = \%2$ için $\eta_b = 1.195$; $\xi = \%5$ için $\eta_b = 1.00$; $\xi = \%10$ için $\eta_b = 0.816$~\cite{tbdy2018}. Modelimizde $\xi = \%5$ kabul edilmiştir; bu değer çelik çerçeve yapılar ($\%2$--$\%5$) ile uyumludur~\cite{cythye2018}.
+\textit{Rayleigh sönümü.}
+ZTAH'de hareket denklemi $\mathbf{M}\ddot{\mathbf{u}} + \mathbf{C}\dot{\mathbf{u}} + \mathbf{K}\mathbf{u} = -\mathbf{M}\mathbf{1}\ddot{u}_g(t)$ adım adım entegre edilir; burada $\mathbf{C}$ sönüm matrisinin açıkça tanımlanması gerekir. Genel bir $\mathbf{C}$ matrisi $N^2$ bağımsız terim içereceğinden deneysel tayini imkansızdır. Rayleigh formülasyonu $\mathbf{C} = a_0\mathbf{M} + a_1\mathbf{K}$ bu sorunu iki parametreye indirger; $\mathbf{M}$ ve $\mathbf{K}$'ya orantılı olduğundan modal ayrışma özelliği korunur: $\xi_n = a_0/(2\omega_n) + a_1\omega_n/2$. İki kontrol frekansında hedef $\xi$ sağlanacak biçimde $a_0$ ve $a_1$ hesaplanır~\cite{opensees}. V9 modelinde $\omega_1 = 31.43$~rad/s ve $\omega_2 = 3.5\omega_1 = 110.0$~rad/s seçilmiş; $\xi = 0.05$ ile $a_0 = 2.443$, $a_1 = 7.07 \times 10^{-4}$~s elde edilmiştir. $\omega_1$--$\omega_2$ arasında sönüm hedefin altında kalır ($\xi_{min} = 0.042$); yüksek frekanslı modlarda $a_1\mathbf{K}$ terimi baskınlaşarak aşırı sönüm verir ve fiziksel anlamsız yüksek mod salınımları bastırılır (Şekil~\ref{fig:damping}b).
 
-\subsubsection{Rayleigh Sönümü}
+\textit{Parametrik doğrulama.}
+Sönümün yapısal tepkiye etkisini nicel olarak göstermek amacıyla KYH-1 (PGA $= 0.335$~g) altında 9 farklı $\xi$ ($\%0{,}5$--$\%20$) ile tam ZTAH ($32{,}2$~s, 6446 adım, sıfır yakınsama hatası) icra edilmiştir (Şekil~\ref{fig:damping}a). $\xi = \%0{,}5$'te $u_{max} = 1{,}127$~cm iken $\xi = \%5$'te $0{,}449$~cm'e, $\xi = \%20$'de $0{,}319$~cm'e düşmüştür. Düşük sönümde ($\xi < \%3$) eğri dikleşir zira birinci mod rezonans bandına yaklaşır; yüksek sönümde ise eğri yataylaşır çünkü enerji yutma kapasitesi doyuma ulaşır. Bu durum sönüm seçiminin tasarımda kritik bir mühendislik kararı olduğunu teyit etmektedir~\cite{tbdy2018}.
 
-ZTAH'de hareket denklemi $\mathbf{M}\ddot{\mathbf{u}} + \mathbf{C}\dot{\mathbf{u}} + \mathbf{K}\mathbf{u} = -\mathbf{M}\mathbf{1}\ddot{u}_g(t)$ olup sönüm matrisi Rayleigh formülasyonuyla $\mathbf{C} = a_0\mathbf{M} + a_1\mathbf{K}$ şeklinde tesis edilir. Herhangi $n$.~modun sönüm oranı $\xi_n = a_0/(2\omega_n) + a_1\omega_n/2$'dir. İki kontrol frekansında hedef $\xi$ sağlanacak biçimde $a_0 = 2\xi\omega_i\omega_j/(\omega_i+\omega_j)$, $a_1 = 2\xi/(\omega_i+\omega_j)$ hesaplanır~\cite{opensees}.
-
-V9 modelinde $\omega_1 = 2\pi/T_1 = 31.43$~rad/s ve $\omega_2 = 3.5\omega_1 = 110.0$~rad/s seçilmiş; $\xi = 0.05$ ile $a_0 = 2.443$, $a_1 = 7.07 \times 10^{-4}$~s elde edilmiştir. Bu iki frekans arasında sönüm oranı hedefin altında kalır ($\xi_{min} = 0.0416$); yüksek modlarda aşırı sönüm hasıl olarak sahte salınımlar bastırılır. \textsc{OpenSees}\textsuperscript{\textregistered}'de \texttt{rayleigh \$a0 \$a1 0 0} komutuyla atanmıştır; elastik modelde $\mathbf{K}_0 = \mathbf{K}_t$ olduğundan son iki argüman sıfırdır. Frekansa göre efektif sönüm oranı: $T = 0.050$~s'de $\xi = 0.064$; $T_3 = 0.135$~s'de $\xi = 0.042$; $T_1 = 0.200$~s'de $\xi = 0.050$; $T = 0.500$~s'de $\xi = 0.117$.
-
-\subsubsection{Sönümün Yapı Tepkisine Tesiri}
-
-KYH-1 (PGA $= 0.335$~g) altında $\xi = \%2$ ile çatı ötelemesi $u_{max} = 0.486$~cm elde edilmiş; $\xi = \%5$'te $\eta_b$ düzeltmesi ($\approx 0.84$) ile ${\sim}0.41$~cm mertebesine inmesi beklenir. Sönüm iki katına çıktığında tepki $\%15$--$\%20$ azalmakta, yarıya düştüğünde aynı oranda artmaktadır. MBY'de sönüm etkisi spektrum üzerinden yansır; ZTAH'de Rayleigh formülasyonuyla her moda ayrı ayrı atanır. Her iki yaklaşımda sonuçlar tutarlıdır~\cite{tbdy2018}.
+\begin{figure}[H]
+\centering
+\begin{minipage}[b]{0.47\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{semilogxaxis}[
+    sciencestyle,
+    width=\textwidth, height=4.2cm,
+    xlabel={Sönüm oranı $\xi$},
+    ylabel={$u_{max}$ (cm)},
+    xmin=0.004, xmax=0.25,
+    ymin=0.2, ymax=1.2,
+    ytick={0.2,0.4,0.6,0.8,1.0,1.2},
+    minor y tick num=3,
+    xminorticks=true,
+    mark size=1.5pt,
+    xtick={0.005,0.01,0.02,0.05,0.1,0.2},
+    xticklabels={\%0.5,\%1,\%2,\%5,\%10,\%20},
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+]
+\addplot[black!70, thick, mark=*, mark options={fill=black!70, scale=0.8}] coordinates {
+    (0.005,1.127) (0.010,0.813) (0.020,0.616)
+    (0.030,0.517) (0.050,0.449) (0.070,0.424)
+    (0.100,0.393) (0.150,0.352) (0.200,0.319)
+};
+\addplot[only marks, mark=*, mark size=2.5pt, red!80!black] coordinates {(0.050,0.449)};
+\node[font=\tiny, anchor=south west, red!80!black] at (axis cs:0.057,0.458) {$\xi\!=\!\%5$};
+\end{semilogxaxis}
+\end{tikzpicture}
+\\[1pt]{\footnotesize (a)}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.47\textwidth}
+\centering
+\begin{tikzpicture}
+\begin{semilogxaxis}[
+    sciencestyle,
+    width=\textwidth, height=4.2cm,
+    xlabel={Periyot $T$ (s)},
+    ylabel={Efektif $\xi$},
+    xmin=0.02, xmax=0.6,
+    ymin=0, ymax=0.22,
+    ytick={0,0.05,0.10,0.15,0.20},
+    minor y tick num=4,
+    xminorticks=true,
+    legend pos=north east,
+    legend style={font=\tiny, draw=gray!40, fill=white, fill opacity=0.95},
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+]
+\addplot[black!50, dashed, line width=0.6pt] coordinates {
+    (0.020,0.0460) (0.030,0.0320) (0.050,0.0217)
+    (0.070,0.0181) (0.100,0.0167) (0.135,0.0171)
+    (0.200,0.0200) (0.300,0.0263) (0.500,0.0407)
+};
+\addlegendentry{$\xi_0\!=\!\%2$}
+\addplot[black, thick] coordinates {
+    (0.020,0.1150) (0.030,0.0799) (0.050,0.0542)
+    (0.070,0.0454) (0.100,0.0417) (0.135,0.0427)
+    (0.200,0.0500) (0.300,0.0658) (0.500,0.1017)
+};
+\addlegendentry{$\xi_0\!=\!\%5$}
+\addplot[black!50, densely dotted, line width=0.9pt] coordinates {
+    (0.020,0.2299) (0.030,0.1598) (0.050,0.1083)
+    (0.070,0.0907) (0.100,0.0833) (0.135,0.0854)
+    (0.200,0.1000) (0.300,0.1315) (0.500,0.2034)
+};
+\addlegendentry{$\xi_0\!=\!\%10$}
+\draw[red!70!black, thin, dashed] (axis cs:0.200,0) -- (axis cs:0.200,0.215);
+\node[font=\tiny, red!70!black, anchor=south] at (axis cs:0.200,0.213) {$T_1$};
+\draw[red!70!black, thin, dashed] (axis cs:0.135,0) -- (axis cs:0.135,0.215);
+\node[font=\tiny, red!70!black, anchor=south] at (axis cs:0.135,0.213) {$T_3$};
+\end{semilogxaxis}
+\end{tikzpicture}
+\\[1pt]{\footnotesize (b)}
+\end{minipage}
+\vspace{-4pt}
+\caption{(a)~Çatı ötelemesi--sönüm oranı (KYH-1, ZTAH), (b)~Rayleigh sönüm eğrileri.}
+\label{fig:damping}
+\end{figure}
 
 \newpage
 

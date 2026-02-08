@@ -1,0 +1,43 @@
+============================================================
+DASK 2026 TIME HISTORY ANALYSIS - COMPREHENSIVE RESULTS
+============================================================
+
+Ground Motion:    KYH2
+PGA:              1.24269 g
+Duration:         32.233 s
+dt (ground):      0.001 s
+dt (analysis):    0.005 s
+Steps:            6446
+Failures:         0
+Wall time:        2520 s (42.0 min)
+
+Model:            V9 Twin Towers (1:50)
+Nodes:            1680
+Elements:         4248
+T1:               0.199908 s
+Damping:          0.05 (Rayleigh, a0=2.444583, a1=0.00070703)
+
+--- PEAK RESPONSES ---
+Tower 1 Max Ux:   1.518747 cm (drift 0.009926)
+Tower 1 Max Uy:   0.003564 cm (drift 0.000023)
+Tower 2 Max Ux:   1.518654 cm (drift 0.009926)
+Tower 2 Max Uy:   0.003590 cm (drift 0.000023)
+Differential Ux:  0.000092 cm
+
+--- FINAL STATE ---
+T1 Roof Ux:       0.004563 cm
+T1 Roof Uy:       -0.000004 cm
+T2 Roof Ux:       0.004563 cm
+T2 Roof Uy:       -0.000004 cm
+
+--- OUTPUT FILES ---
+Node disp:        results/th_KYH2/node_disp/ (T1_floor[1-25]_disp.txt, T2_floor[1-25]_disp.txt)
+Node vel:         results/th_KYH2/node_vel/
+Node accel:       results/th_KYH2/node_accel/
+Base reactions:   results/th_KYH2/node_reaction/
+Interstory drift: results/th_KYH2/drift/ (T1_drift_floor[1-25].txt, T2_drift_floor[1-25].txt)
+Envelopes:        results/th_KYH2/envelope/ (T1_floor[1-25]_env.txt, T2_floor[1-25]_env.txt)
+Element forces:   results/th_KYH2/element_forces/sample_forces.txt
+Analysis log:     results/th_KYH2/analysis_log.txt
+
+Completed: 1770468754
