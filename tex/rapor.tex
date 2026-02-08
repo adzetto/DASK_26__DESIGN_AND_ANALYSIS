@@ -67,8 +67,9 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{DASK 2026}
-\fancyhead[R]{İstanbul Finans Merkezi Proje Teklifi}
-\fancyfoot[C]{\thepage/\pageref{LastPage}}
+\fancyhead[R]{\small İzmir Yüksek Teknoloji Enstitüsü Proje Teklifi}
+\fancyfoot[L]{ \small DASK Depreme Dayanıklı Bina Tasarımı Yarışması Proje Teklifi}
+\fancyfoot[R]{\thepage/\pageref{LastPage}}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
@@ -82,7 +83,7 @@
     \resizebox{6cm}{!}{\input{dask_tikz_logo}} \\[1cm] 
     
     {\Huge \textbf{2026}} \\[0.5cm]
-    {\huge \textbf{İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ PROJE TEKLİFİ}} \\[1.5cm]
+    {\huge \textbf{İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ TEKLİFİ}} \\[1.5cm]
     
     \begin{flushleft}
         \large
@@ -93,7 +94,7 @@
         3. Yunus Emre ÇETİN \\[0.4cm]
         4. Zehra ÖZER \\[0.4cm]
         5. Ali ÖZUYSAL \\[1cm]
-        \textbf{Akademik Danışman:} Dr. Gürsoy TURAN
+        \textbf{Akademik Danışman:} Prof. Dr. Gürsoy TURAN
     \end{flushleft}
     
     \vfill
@@ -126,123 +127,172 @@ Binanın mimari tasarımında dikkate alınan tasarım kriterlerinin çevresel v
 
 % --- 3. YAPISAL SİSTEM TANIMI ve TASARIMI ---
 \section{YAPISAL SİSTEM TANIMI ve TASARIMI}
-Proje, İstanbul Finans Merkezi yerleşkesinde ($41.002^\circ$\,K, $29.107^\circ$\,D) konumlandırılmış ikiz kule sistemidir. Fiziksel model, $40\times40\,\mathrm{cm}$ ahşap tabla üzerinde balsa çıta ($6\times6\,\mathrm{mm}$) ve levhadan ($3\,\mathrm{mm}$) imal edilmektedir. Her kule $30\times16\,\mathrm{cm}$ ($L_x \times L_y$) plan alanı ve $8\times4$ kolon gridine sahip olup kuleler arası $8\,\mathrm{cm}$ köprü açıklığı bulunmaktadır. Zemin kat yüksekliği $9\,\mathrm{cm}$, üst 24~kat $6\,\mathrm{cm}$ olup toplam kule yüksekliği $H=153\,\mathrm{cm}$'dir (Şekil~\ref{fig:sistem}).
 
-Sismik tehlike TBDY~2018 DD-2 düzeyi ($S_{DS}=1.008$\,g, $S_{D1}=0.514$\,g) ve ZD zemin sınıfı ($F_S=1.149$, $F_1=2.114$) ile tanımlanmıştır~\cite{afad2024}. Köşe periyotları $T_A=0.102$~s, $T_B=0.510$~s olup yapı $DTS=1$, $BYS=1$, $BKS=3$, $I=1.0$ kapsamındadır~\cite{tbdy2018}.
+\noindent\textbf{Saha koşulları ve deprem tehlikesi.}
+Proje sahası İstanbul Finans Merkezi ($41.00^\circ$\,K, $29.11^\circ$\,D) Kuzey Anadolu Fayı'na yakın olup yüksek sismik tehlike altındadır.
+AFAD~\cite{afad2024} verileri: $S_S\!=\!0.877$, $S_1\!=\!0.243$; ZD zemin ($F_S\!=\!1.149$, $F_1\!=\!2.114$).
+Tasarım parametreleri: $S_{DS}\!=\!1.008$\,g, $S_{D1}\!=\!0.514$\,g; köşe periyotları $T_A\!=\!0.102$~s, $T_B\!=\!0.510$~s.
+Yapı $DTS\!=\!1$, $BYS\!=\!1$, $I\!=\!1.0$ kapsamındadır~\cite{tbdy2018}.
+TS~EN~1991-1-4~\cite{tsen1991} rüzgar kesmesi $F_w\!\approx\!3.1$\,MN iken deprem taban kesmesi $V_t\!\approx\!6.6$\,MN olup sismik yükler belirleyicidir.
 
-Taşıyıcı sistem, moment çerçeveleri ile çapraz ve panel eleman\-ların birlikte çalıştığı çerçeve--çapraz hibrit yapıdır. Alt bölgede (0--7.~katlar) iç kolon aralıklarında $3\,\mathrm{mm}$ balsa kesme panelleri uygulanarak perde benzeri rijitlik sağlanmış; üst katlarda çapraz elemanlar $XZ$~düzleminde her~4, $YZ$~düzleminde her~6~katta devam ettirilmiştir. Kuleleri bağlayan gökyüzü köprüleri yapı yüksekliğinin $\sim$$H/4$, $H/2$, $3H/4$ ve tepe seviyelerine (6., 12., 18. ve 25.~katlar) konumlandırılmıştır~\cite{patoliya2023}. Her köprü 10~kiriş, 2~kolon, 8~kafes çaprazı ve 4~rijit diyafram elemanından oluşmaktadır. Köprü--kule birleşimleri rijit kabul edilerek kulelerin yatay yükler altında birlikte çalışması sağlanmıştır.
+\noindent\textbf{Taşıyıcı sistem seçimi.}
+Beş tasarım hedefi belirlenmiştir: (i)~yeterli yanal rijitlik, (ii)~düşük eksantrisite, (iii)~sünek davranış, (iv)~kesintisiz yük aktarımı, (v)~minimum ağırlık.
+Moment çerçevesi sünek fakat rijitliği yetersiz; salt çaprazlı sistem rijit fakat gevrek.
+Çerçeve--çapraz hibrit sistem her ikisinin avantajını birleştirir~\cite{nehrp2009}.
+İkiz kule konfigürasyonu köprü bağlantıları ile yük paylaşımı ve global rijitlik artışı sağlar~\cite{patoliya2023, tambunan2024}.
 
-Taşıyıcı sistem \textsc{OpenSees}\textsuperscript{\textregistered}~\cite{opensees} ile 1680~düğüm ve 4248~\texttt{elasticBeamColumn} elemanı olarak modellenmiştir. Malzeme: balsa ahşap, kalibre modülü $E=170\,\mathrm{kN/cm^2}$, $\rho=160\,\mathrm{kg/m^3}$; çıta kesiti $A=0.36\,\mathrm{cm^2}$, $I_z=I_y=0.0108\,\mathrm{cm^4}$. Yapısal ağırlık $1.076\,\mathrm{kg}$ ($<1.400\,\mathrm{kg}$ sınırı). Kat kütleleri 3., 6., \ldots, 24.~katlara $1.60\,\mathrm{kg}$ çelik tij, 25.~kata $2.22\,\mathrm{kg}$ tepe plakası olarak yerleştirilmiştir. Yer hareketi olarak 1999 Düzce (BOL090) ve yarışma kayıtları (KYH-1/2/3) kullanılmış; SAP2000 ile geometri tutarlılığı doğrulanmıştır.
+\noindent\textbf{Sistem geometrisi.}
+Model $40\!\times\!40\,\mathrm{cm}$ tabla üzerinde $6\!\times\!6\,\mathrm{mm}$ balsa çıtadan imal edilmiştir (Şekil~\ref{fig:sistem}).
+Her kule: $30\!\times\!16\,\mathrm{cm}$ plan, $8\!\times\!4$ kolon gridi; zemin kat $9\,\mathrm{cm}$, üst 24~kat $6\,\mathrm{cm}$; $H\!=\!153\,\mathrm{cm}$.
+Kuleler arası açıklık $8\,\mathrm{cm}$.
+İç açıklıklarda ($3{,}4\,\mathrm{cm}$) zemin--2.\ köprü arasında (0--12.~kat) X-çapraz elemanlar uygulanmıştır.
+Dış açıklıklarda $XZ$ ve $YZ$ çaprazlar 3~katlık zikzak düzeniyle yerleştirilmiştir.
+Köprüler 6., 12., 18.\ ve 25.~katta olup her biri 24~elemandan oluşur.
 
-Prototip ölçeğinde (1:50, $h=76.5\,\mathrm{m}$) rüzgar etkisi TS~EN~1991-1-4'e göre değerlendirilmiştir~\cite{tsen1991}. İstanbul temel rüzgar hızı $V_{b}=28.0\,\mathrm{m/s}$, Arazi~Kat.\,III ($z_0=0.3\,\mathrm{m}$) için bina tepe kotunda ortalama rüzgar hızı $v_m(76.5)=33.3\,\mathrm{m/s}$ ve hız basıncı $q_p=1.58\,\mathrm{kPa}$ ($I_v=0.18$) hesaplanmıştır. Rüzgar taban kesme kuvveti $F_{w,x}\approx c_f\,q_p\,A_{ref} = 1.3 \times 1.58 \times 1530 \approx 3.1\,\mathrm{MN}$ olup prototip deprem taban kesmesi $V_t\approx6.6\,\mathrm{MN}$'dur; sismik yükler ${\sim}2.1$~kat belirleyicidir.
+\noindent\textbf{Analiz ve sonuçlar.}
+Model \textsc{OpenSees}~\cite{opensees} ile 1680~düğüm, 3808~\texttt{elasticBeamColumn} elemanı olarak oluşturulmuştur.
+Balsa: $E\!=\!170\,\mathrm{kN/cm^2}$, $\rho\!=\!160\,\mathrm{kg/m^3}$; çıta: $A\!=\!0.36\,\mathrm{cm^2}$, $I\!=\!0.0108\,\mathrm{cm^4}$.
+Yapısal ağırlık $W\!=\!1.377\,\mathrm{kg}$ ($<2.000\,\mathrm{kg}$).
+Modal periyotlar: $T_1\!=\!0.200$~s, $T_2\!=\!0.147$~s, $T_3\!=\!0.135$~s; üçü de plato bölgesindedir.
+Göreli öteleme $\delta_i/h_i\!=\!0.00017 \ll 0.008$; eksantrisite $e_x/L_x\!=\!0.005$, $e_y/L_y\!=\!0.034$ ile kontroller sağlanmıştır~\cite{tbdy2018}.
 
-Modal analiz sonuçları: $T_1=0.200$~s, $T_2=0.147$~s, $T_3=0.135$~s; üçü de plato bölgesinde ($T_A<T_n<T_B$) $S_{ae}=1.008$~g almaktadır. Göreli kat ötelemesi $\delta_i/h_i=0.00017 \ll 0.008$ olup TBDY~2018 sınırı fazlasıyla sağlanmıştır. Kütle--rijitlik eksantrisitesi $e_x/L_x=0.005$, $e_y/L_y=0.034$ ile yapı simetrisi korunmuştur~\cite{tbdy2018}.
-
-% --- Şekil: Yapısal sistem şeması ---
+% --- Şekil: Yapısal sistem ---
 \begin{figure}[H]
 \centering
-\resizebox{0.88\textwidth}{!}{%
-\begin{tikzpicture}[>=stealth, font=\scriptsize]
-% ============ (a) KESİT GÖRÜNÜM (YZ düzlemi) ============
-\begin{scope}[shift={(0,0)}]
-% Ground
-\fill[black!6] (-0.5,-0.35) rectangle (3.95,0);
-\draw[thick] (-0.5,0) -- (3.95,0);
-% Tower 1 (y=0→16 → 0→1.44,  z=0→153 → 0→6.0)
-\draw[thick] (0,0) rectangle (1.44,6.0);
-% Tower 2 (y=24→40 → 2.16→3.60)
-\draw[thick] (2.16,0) rectangle (3.60,6.0);
-% Panel zone fill (floors 0-7, z=0→1.76)
-\fill[black!10] (0.50,0) rectangle (0.94,1.76);
-\fill[black!10] (2.66,0) rectangle (3.10,1.76);
-% Bridge 1 (floors 5–6, z=33–39 → 1.29–1.53)
-\fill[black!12] (1.44,1.29) rectangle (2.16,1.53);
-\draw (1.44,1.29) -- (2.16,1.29); \draw (1.44,1.53) -- (2.16,1.53);
-\draw[thin, black!40] (1.44,1.29) -- (2.16,1.53);
-\draw[thin, black!40] (1.44,1.53) -- (2.16,1.29);
-% Bridge 2 (floors 11–12, z=69–75 → 2.71–2.94)
-\fill[black!12] (1.44,2.71) rectangle (2.16,2.94);
-\draw (1.44,2.71) -- (2.16,2.71); \draw (1.44,2.94) -- (2.16,2.94);
-\draw[thin, black!40] (1.44,2.71) -- (2.16,2.94);
-\draw[thin, black!40] (1.44,2.94) -- (2.16,2.71);
-% Bridge 3 (floors 17–18, z=105–111 → 4.12–4.35)
-\fill[black!12] (1.44,4.12) rectangle (2.16,4.35);
-\draw (1.44,4.12) -- (2.16,4.12); \draw (1.44,4.35) -- (2.16,4.35);
-\draw[thin, black!40] (1.44,4.12) -- (2.16,4.35);
-\draw[thin, black!40] (1.44,4.35) -- (2.16,4.12);
-% Bridge 4 (floors 23–25, z=141–153 → 5.53–6.00, double)
-\fill[black!12] (1.44,5.53) rectangle (2.16,6.00);
-\draw (1.44,5.53) -- (2.16,5.53);
-\pgfmathsetmacro{\zmid}{(5.53+6.00)/2}
-\draw[thin, black!15] (1.44,\zmid) -- (2.16,\zmid);
-\draw[thin, black!40] (1.44,5.53) -- (2.16,\zmid);
-\draw[thin, black!40] (1.44,\zmid) -- (2.16,5.53);
-\draw[thin, black!40] (1.44,\zmid) -- (2.16,6.00);
-\draw[thin, black!40] (1.44,6.00) -- (2.16,\zmid);
-% Dimension: total height
-\draw[<->, thin] (-0.3,0) -- node[left, font=\tiny, rotate=90, anchor=south] {$H\!=\!153$\,cm} (-0.3,6.0);
-% Tower widths
-\draw[<->, thin] (0,-0.2) -- node[below, font=\tiny] {$16$} (1.44,-0.2);
-\draw[<->, thin] (1.44,-0.2) -- node[below, font=\tiny] {$8$} (2.16,-0.2);
-\draw[<->, thin] (2.16,-0.2) -- node[below, font=\tiny] {$16$} (3.60,-0.2);
-% Floor heights (right side)
-\draw[<->, thin] (3.75,0) -- node[right, font=\tiny] {$9$} (3.75,0.35);
-\draw[<->, thin] (3.75,0.35) -- node[right, font=\tiny] {$6$} (3.75,0.59);
-% Tower labels
-\node[font=\tiny, black!50] at (0.72,3.0) {Kule\,1};
-\node[font=\tiny, black!50] at (2.88,3.0) {Kule\,2};
-% Bridge labels
-\node[font=\tiny, anchor=west, black!60] at (2.20,1.41) {K.\,6};
-\node[font=\tiny, anchor=west, black!60] at (2.20,2.83) {K.\,12};
-\node[font=\tiny, anchor=west, black!60] at (2.20,4.24) {K.\,18};
-\node[font=\tiny, anchor=west, black!60] at (2.20,5.77) {K.\,25};
-% Panel zone label
-\draw[decorate, decoration={brace, amplitude=2pt, mirror}, thin, black!40]
-  (-0.1,0) -- node[left, font=\tiny, xshift=-2pt, black!40] {panel} (-0.1,1.76);
-% Subtitle
-\node[font=\footnotesize, anchor=north] at (1.80,-0.55) {(a) Kesit ($YZ$)};
+\resizebox{0.93\textwidth}{!}{%
+\begin{tikzpicture}[font=\scriptsize]
+\pgfmathsetmacro{\s}{0.055}
+% ===== (a) ÖN GÖRÜNÜM (XZ düzlemi) =====
+\begin{scope}[xscale=\s, yscale=\s]
+% Zemin
+\fill[black!6] (-4,-5) rectangle (33,0);
+\draw[black!40] (-4,0) -- (33,0);
+% --- Kolonlar (cyan) ---
+\foreach \x in {0.3,3,11.3,15,18.7,27,29.7} {
+  \draw[cyan!60!black, line width=0.3pt] (\x,0) -- (\x,153);
+}
+% --- Kirişler beam_x (yeşil): her kat ---
+\draw[green!60!black, line width=0.15pt] (0.3,0) -- (29.7,0);
+\draw[green!60!black, line width=0.15pt] (0.3,9) -- (29.7,9);
+\foreach \f in {2,...,25} {
+  \pgfmathsetmacro{\z}{9+(\f-1)*6}
+  \draw[green!60!black, line width=0.15pt] (0.3,\z) -- (29.7,\z);
+}
+% --- Çapraz XZ: iç 3.7cm açıklıklar, X-cross kat 0--12 + son 2 kat ---
+\foreach \za/\zb in {0/9,9/15,15/21,21/27,27/33,33/39,39/45,45/51,51/57,57/63,63/69,69/75,75/81,141/147,147/153} {
+  \foreach \xa/\xb in {11.3/15,15/18.7} {
+    \draw[magenta!80, line width=0.2pt] (\xa,\za)--(\xb,\zb);
+    \draw[magenta!80, line width=0.2pt] (\xb,\za)--(\xa,\zb);
+  }
+}
+% --- Çapraz XZ: 8cm açıklıklar (3-11, 19-27), ilk 4 kat tek, sonra 3'er katlık ---
+\foreach \za/\zb in {0/9,9/15,15/21,21/27,27/45,45/63,63/81,81/99,99/117,117/135,135/153} {
+  \foreach \xa/\xb in {3/11.3,18.7/27} {
+    \draw[magenta!80, line width=0.2pt] (\xa,\za)--(\xb,\zb);
+    \draw[magenta!80, line width=0.2pt] (\xb,\za)--(\xa,\zb);
+  }
+}
+% --- Ölçüler ---
+\draw[<->,thin,black!60] (-3,0) -- node[left,font=\tiny,rotate=90,anchor=south]{$H\!=\!153$} (-3,153);
+\draw[<->,thin,black!60] (0.3,-3.5) -- node[below,font=\tiny]{$30$} (29.7,-3.5);
+\draw[<->,thin,black!40] (31.5,0) -- node[right,font=\tiny]{$9$} (31.5,9);
+\draw[<->,thin,black!40] (31.5,9) -- node[right,font=\tiny]{$6$} (31.5,15);
+% Alt başlık
+\node[font=\footnotesize,anchor=north] at (15,-7) {(a) Ön görünüm ($XZ$)};
 \end{scope}
-% ============ (b) KAT PLANI (XY düzlemi) ============
-\begin{scope}[shift={(5.5,0.8)}, scale=0.08]
-% Tower 1 outline
-\draw[thick] (0,0) rectangle (30,16);
-% Tower 2 outline
-\draw[thick] (0,24) rectangle (30,40);
-% Bridge zone
-\fill[black!5] (10.5,16) rectangle (19.5,24);
-\draw[dashed, black!40] (10.5,16) -- (10.5,24);
-\draw[dashed, black!40] (19.5,16) -- (19.5,24);
-% Core panel locations (thick lines on front/back faces)
-\foreach \ya/\yb in {0/0, 16/16, 24/24, 40/40} {
-  \draw[line width=1.8pt, black!45] (10.5,\ya) -- (13.5,\ya);
-  \draw[line width=1.8pt, black!45] (16.5,\ya) -- (19.5,\ya);
+% ===== (b) YAN GÖRÜNÜM (YZ düzlemi) =====
+\begin{scope}[shift={(2.9,0)}, xscale=\s, yscale=\s]
+% Zemin
+\fill[black!6] (-4,-5) rectangle (43,0);
+\draw[black!40] (-4,0) -- (43,0);
+% --- Kolonlar Kule 1 (cyan) ---
+\foreach \y in {0.3,8,15.7} {
+  \draw[cyan!60!black, line width=0.3pt] (\y,0) -- (\y,153);
 }
-% Column grid -- Tower 1
-\foreach \x in {0, 3, 10.5, 13.5, 16.5, 19.5, 27, 30} {
-  \foreach \y in {0, 7.0, 9.0, 16} { \fill[black] (\x,\y) circle (0.8); }
+% --- Kolonlar Kule 2 (cyan) ---
+\foreach \y in {24.3,32,39.7} {
+  \draw[cyan!60!black, line width=0.3pt] (\y,0) -- (\y,153);
 }
-% Column grid -- Tower 2
-\foreach \x in {0, 3, 10.5, 13.5, 16.5, 19.5, 27, 30} {
-  \foreach \y in {24, 31.0, 33.0, 40} { \fill[black] (\x,\y) circle (0.8); }
+% --- Kirişler beam_y (turuncu): her kat ---
+\draw[orange!70!black, line width=0.15pt] (0.3,0)--(15.7,0);
+\draw[orange!70!black, line width=0.15pt] (24.3,0)--(39.7,0);
+\draw[orange!70!black, line width=0.15pt] (0.3,9)--(15.7,9);
+\draw[orange!70!black, line width=0.15pt] (24.3,9)--(39.7,9);
+\foreach \f in {2,...,25} {
+  \pgfmathsetmacro{\z}{9+(\f-1)*6}
+  \draw[orange!70!black, line width=0.15pt] (0.3,\z)--(15.7,\z);
+  \draw[orange!70!black, line width=0.15pt] (24.3,\z)--(39.7,\z);
 }
-% X dimension
-\draw[<->, thin] (0,-3) -- node[below, font=\tiny] {$L_x\!=\!30$} (30,-3);
-% Y dimensions
-\draw[<->, thin] (34,0) -- node[right, font=\tiny, rotate=90, anchor=south] {$16$} (34,16);
-\draw[<->, thin] (34,16) -- node[right, font=\tiny, rotate=90, anchor=south] {$8$} (34,24);
-\draw[<->, thin] (34,24) -- node[right, font=\tiny, rotate=90, anchor=south] {$16$} (34,40);
-% Labels
-\node[font=\tiny, black!50] at (15,8) {Kule\,1};
-\node[font=\tiny, black!50] at (15,32) {Kule\,2};
-\node[font=\tiny, black!30] at (15,20) {köprü};
-% Subtitle
-\node[font=\footnotesize, anchor=north] at (15,-6) {(b) Plan ($XY$)};
+% --- Çapraz YZ (kırmızı): DAMALI, simetrik, alt/üst full ---
+% FULL: alt (0→9) ve üst (135→153) — tüm kanatlar
+\foreach \za/\zb in {0/9,135/153} {
+  \foreach \ya/\yb in {0.3/8,8/15.7,24.3/32,32/39.7} {
+    \draw[red!80, line width=0.25pt] (\ya,\za)--(\yb,\zb);
+    \draw[red!80, line width=0.25pt] (\yb,\za)--(\ya,\zb);
+  }
+}
+% Tek gruplar (1,3,5,7,9): T1 sağ (8→15.7) + T2 sol (24.3→32)
+\foreach \za/\zb in {9/15,21/27,45/63,81/99,117/135} {
+  \foreach \ya/\yb in {8/15.7,24.3/32} {
+    \draw[red!80, line width=0.25pt] (\ya,\za)--(\yb,\zb);
+    \draw[red!80, line width=0.25pt] (\yb,\za)--(\ya,\zb);
+  }
+}
+% Çift gruplar (2,4,6,8): T1 sol (0.3→8) + T2 sağ (32→39.7)
+\foreach \za/\zb in {15/21,27/45,63/81,99/117} {
+  \foreach \ya/\yb in {0.3/8,32/39.7} {
+    \draw[red!80, line width=0.25pt] (\ya,\za)--(\yb,\zb);
+    \draw[red!80, line width=0.25pt] (\yb,\za)--(\ya,\zb);
+  }
+}
+% --- Köprüler (turuncu): 6., 12., 18. kat ---
+\foreach \za/\zb in {33/39,69/75,105/111} {
+  % Kolon
+  \draw[orange!70!black, line width=0.4pt] (20,\za)--(20,\zb);
+  % Kirişler
+  \draw[orange!70!black, line width=0.3pt] (15.7,\za)--(24.3,\za);
+  \draw[orange!70!black, line width=0.3pt] (15.7,\zb)--(24.3,\zb);
+  % Çapraz kafes
+  \draw[orange!50, line width=0.2pt] (15.7,\za)--(20,\zb);
+  \draw[orange!50, line width=0.2pt] (20,\za)--(15.7,\zb);
+  \draw[orange!50, line width=0.2pt] (20,\za)--(24.3,\zb);
+  \draw[orange!50, line width=0.2pt] (24.3,\za)--(20,\zb);
+}
+% --- Köprü 4 (çift kat, Z=141--153) ---
+\draw[orange!70!black, line width=0.4pt] (20,141)--(20,153);
+\draw[orange!70!black, line width=0.3pt] (15.7,141)--(24.3,141);
+\draw[orange!70!black, line width=0.3pt] (15.7,147)--(24.3,147);
+\draw[orange!70!black, line width=0.3pt] (15.7,153)--(24.3,153);
+\draw[orange!50, line width=0.2pt] (15.7,141)--(20,147);
+\draw[orange!50, line width=0.2pt] (20,141)--(15.7,147);
+\draw[orange!50, line width=0.2pt] (20,141)--(24.3,147);
+\draw[orange!50, line width=0.2pt] (24.3,141)--(20,147);
+\draw[orange!50, line width=0.2pt] (15.7,147)--(20,153);
+\draw[orange!50, line width=0.2pt] (20,147)--(15.7,153);
+\draw[orange!50, line width=0.2pt] (20,147)--(24.3,153);
+\draw[orange!50, line width=0.2pt] (24.3,147)--(20,153);
+% Kule etiketleri
+\node[font=\tiny,black!50] at (8,80) {Kule\,1};
+\node[font=\tiny,black!50] at (32,80) {Kule\,2};
+% Köprü etiketleri
+\node[font=\tiny,black!60,anchor=west] at (24.8,36) {K.6};
+\node[font=\tiny,black!60,anchor=west] at (24.8,72) {K.12};
+\node[font=\tiny,black!60,anchor=west] at (24.8,108) {K.18};
+\node[font=\tiny,black!60,anchor=west] at (24.8,147) {K.25};
+% --- Ölçüler ---
+\draw[<->,thin,black!60] (0.3,-3.5) -- node[below,font=\tiny]{$16$} (15.7,-3.5);
+\draw[<->,thin,black!60] (15.7,-3.5) -- node[below,font=\tiny]{$8$} (24.3,-3.5);
+\draw[<->,thin,black!60] (24.3,-3.5) -- node[below,font=\tiny]{$16$} (39.7,-3.5);
+\draw[<->,thin,black!60] (-3,0) -- node[left,font=\tiny,rotate=90,anchor=south]{$153$} (-3,153);
+% Alt başlık
+\node[font=\footnotesize,anchor=north] at (20,-7) {(b) Yan görünüm ($YZ$)};
 \end{scope}
 \end{tikzpicture}%
 }
-\caption{V9 yapısal sistem şeması: (a)~ikiz kule kesit görünümü ($YZ$~düzlemi)---köprü bağlantıları ve alt bölge kesme panelleri; (b)~$8\times4$ kolon gridi, çekirdek panel konumları (kalın çizgi) ve köprü açıklığı ($XY$~düzlemi). Ölçüler cm cinsindendir.}
+\caption{V10 yapısal sistem: (a)~ön görünüm ($XZ$)---iç açıklıklarda X-çapraz (0--12.~kat), dış açıklıklarda 3~katlık zikzak; (b)~yan görünüm ($YZ$)---köprü bağlantıları ve 3~katlık zikzak çaprazlar. Renkler: \textcolor{cyan!60!black}{kolon}, \textcolor{green!60!black}{kiriş\,$X$}, \textcolor{orange!70!black}{kiriş\,$Y$\,/\,köprü}, \textcolor{magenta!80}{çapraz\,$XZ$}, \textcolor{red!80}{çapraz\,$YZ$}. Ölçüler cm.}
 \label{fig:sistem}
 \end{figure}
+
 
 \newpage
 
@@ -260,7 +310,7 @@ Binanın her bir farklı katına ait plan ve iki ana doğrultudaki kesit çiziml
 % ==============================================================================
 % SORU 1
 % ==============================================================================
-\section{Sorular}
+\section{SORULAR}
 \subsection{Soru \RN{1}}
 
 \textbf{Soru:} Yapı taşıyıcı sistemini belirlerken nelere dikkat ettiğinizi depreme dayanıklı bina tasarım ilkeleri çerçevesinde (taşıyıcı elemanların geometrisi ve yerleşimi, yeterli dayanım, rijitlik ve sünekliğin sağlanması gibi) açıklayınız.

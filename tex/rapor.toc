@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {2}MİMARİ TASARIM}{2}{section.2}%
 \contentsline {section}{\numberline {3}YAPISAL SİSTEM TANIMI ve TASARIMI}{3}{section.3}%
 \contentsline {section}{\numberline {4}ÇİZİMLER}{5}{section.4}%
-\contentsline {section}{\numberline {5}Sorular}{6}{section.5}%
+\contentsline {section}{\numberline {5}SORULAR}{6}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Soru I}{6}{subsection.5.1}%
 \contentsline {subsubsection}{\numberline {5.1.1}İkiz Kule ve Köprü Sistemi \& Simetri ve Düzenlilik}{6}{subsubsection.5.1.1}%
 \contentsline {subsubsection}{\numberline {5.1.2}Yeterli Yanal Rijitlik \& Sürekli Yük Aktarımı ve Süneklik}{6}{subsubsection.5.1.2}%
