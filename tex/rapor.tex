@@ -22,6 +22,12 @@
 \usepackage{amssymb}
 \usepackage{textcomp}
 
+% DASK tikz logo için premble ayarları
+\usetikzlibrary{svg.path}
+
+% Define the Coca-Cola Red color from the SVG (Hex #D6181F)
+\definecolor{CocaColaRed}{HTML}{D6181F}
+
 % Güzel Roman rakamları için makro (Türkçe babel uyumlu)
 \makeatletter
 \newcommand{\RN}[1]{\@Roman{#1}}
@@ -67,6 +73,83 @@
 \renewcommand{\footrulewidth}{0.4pt}
 
 \begin{document}
+
+% --- KAPAK SAYFASI ---
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    
+    \resizebox{6cm}{!}{\input{dask_tikz_logo}} \\[1cm] 
+    
+    {\Huge \textbf{2026}} \\[0.5cm]
+    {\huge \textbf{İZMİR YÜKSEK TEKNOLOJİ ENSTİTÜSÜ TEKLİFİ}} \\[1.5cm]
+    
+    \begin{flushleft}
+        \large
+        \textbf{Proje Adı: ZENITH/SKYRA Towers} \\ [0.8cm]
+        \textbf{Takım Üyeleri:} \\[0.4cm]
+        1. Emre KARACA (Kaptan) \\[0.4cm]
+        2. Muhammet YAĞCIOĞLU \\[0.4cm]
+        3. Yunus Emre ÇETİN \\[0.4cm]
+        4. Zehra ÖZER \\[0.4cm]
+        5. Ali ÖZUYSAL \\[1cm]
+        \textbf{Akademik Danışman:} Dr. Gürsoy TURAN
+    \end{flushleft}
+    
+    \vfill
+\end{titlepage}
+
+% --- İÇİNDEKİLER SAYFASI ---
+\newpage
+\pagenumbering{roman} % İçindekiler için romen rakamı
+\tableofcontents
+\newpage
+\pagenumbering{arabic} % Normal sayfalar için Arap rakamı
+
+% --- 1. BİNA TANITIMI ---
+\section{BİNA TANITIMI}
+
+Yüzyıllardır farklı medeniyetlere ev sahipliği yapmış, dünyanın sayılı metropollerinden biri olan İstanbul; Asya ve Avrupa arasında köprü görevi gören, tarihi dokusuyla Anadolu’nun kadim mirasını ve Avrupa’nın dinamik ruhunu birleştirerek uyumlu bir bütün oluşturan ülkemizin en önemli şehirlerinden biridir. Ayrıca, Türkiye İstatistik Kurumu verilerine göre ülkemizin hem ekonomik faaliyetleri hem de nüfusu açısından İstanbul gözle görülür bir öneme sahiptir. Bu bağlamda, İstanbul’un Ümraniye ilçesinde bulunan İstanbul Finans Merkezi’nde planlanan GÜRSOY Towers projesi; İstanbul’un küresel finans merkezi olma yolunda bölgede artan nitelikli ofis ve ticari alan ihtiyacına yanıt verirken ziyaretçilerine/çalışanlarına sürdürülebilir ve erişilebilir bir yaşam alanı sunmayı amaçlamaktadır. Projenin başlıca misyonları; bölgenin tarihsel dokusunu modern yaklaşımlarla harmanlamak, çevreci ve teknoloji odaklı sürdürülebilir yaklaşımları verimlilik esaslı mimari ve mühendislik çözümleriyle birleştirmektir.
+
+Kuleler; yapının ağırlığı, rijitliği, maliyeti, kira getirisi ve kullanım verimliliği gibi parametreler göz önünde bulundurularak tasarlanmıştır. İki simetrik 25 katlı kuleden oluşan projede, her bir kulede birbirinden bağımsız bir çekirdek bulunmaktadır. Kuleler, 6., 12., 18. ve 24./25. katlarda yer alan köprüler ile birbirine bağlanmış; böylece yatay yükler altında birlikte çalışmaları sağlanarak göreli kat ötelenmelerinin ve burulma etkilerinin azaltılması amaçlanmıştır. 
+
+Zemin kat, çalışanların ve ziyaretçilerin ihtiyaçlarına yönelik danışma, satış/sergi, konferans ve spor alanları gibi kamusal kullanımlara ayrılmıştır. Zemin katın devamında yer alan 1. ve 2. katlar, restoran ve mağazalara yönelik kiralanabilir alanlar olarak planlanmıştır. Orta katlarda, açık ofis düzeninde yüksek yoğunluklu kullanıma uygun çalışma alanları öngörülmektedir. Üst katlarda ise daha düşük yoğunluklu, tek kişilik veya üst düzey yöneticilere yönelik ofis düzeni planlanmıştır. Köprü katlarında, İstanbul manzarasına açılan lüks restoranlar ile sosyal ve dinlenme alanlarının oluşturulması hedeflenmiştir. Son olarak, B Kulesi’nde ikinci köprü seviyesinden itibaren rezidanslar ile 5 yıldızlı otel ve konaklama katları planlanmıştır. Bu sayede finans merkezi kullanıcıları için çalışma, yaşam ve konaklama bütünlüğünün sağlanması amaçlanmıştır.
+
+
+\newpage
+
+% --- 2. MİMARİ TASARIM ---
+\section{MİMARİ TASARIM}
+Binanın mimari tasarımında dikkate alınan tasarım kriterlerinin çevresel ve ekonomik koşulları da kapsayacak şekilde ilgili görsellerle desteklenerek açıklandığı bölümdür (şekiller hariç maksimum 1 A4 sayfa).
+
+\newpage
+
+% --- 3. YAPISAL SİSTEM TANIMI ve TASARIMI ---
+\section{YAPISAL SİSTEM TANIMI ve TASARIMI}
+Proje, İstanbul Finans Merkezi yerleşkesinde ($41.002136^\circ$, $29.106832^\circ$) konumlandırılmış, iki kuleden ve kuleleri 6., 12., 18. ve 25.~katlarda bağlayan gökyüzü köprülerinden oluşan bir ikiz kule sistemidir. Yarışma kapsamında üretilecek fiziksel model balsa çıta ve balsa levhalardan imal edilecektir. Model, $40 \times 40\,\mathrm{cm}$ ahşap tabla üzerinde, her biri $30 \times 16\,\mathrm{cm}$ ($L_x \times L_y$) taban alanına sahip iki kule ve aralarında $8\,\mathrm{cm}$ köprü açıklığı olacak şekilde düzenlenmiştir. Kule yüksekliği $153\,\mathrm{cm}$'dir. Kat tanımı yarışma yönergesine uygun olarak zemin kat $9\,\mathrm{cm}$, diğer katlar $6\,\mathrm{cm}$ yüksekliğindedir.
+
+Zemin koşulları ZC--ZD aralığında değerlendirilmiş; emniyetli tarafta kalmak üzere ZD zemin sınıfı esas alınmıştır. Deprem tehlikesi TBDY~2018'e göre DD-2 düzeyi parametreleri ile tanımlanmış; $S_{DS} = 1.008g$ ve $S_{D1} = 0.514g$ kullanılmıştır. Yapı kullanım amacı ofis/işyeri kapsamında $BKS = 3$ olup, buna bağlı Bina Önem Katsayısı $I = 1.0$ alınmıştır; bu kabullerle yapı $DTS = 1$ ve $BYS = 1$ kapsamında ele alınmıştır.
+
+Taşıyıcı sistemin temel hedefi; deprem etkileri altında yeterli yanal rijitlik ve kontrollü enerji tüketimi sağlayarak göreli kat ötelemelerini sınırlamak, burulma etkilerini kontrol etmek ve iç kuvvetleri temele sürekli bir yük yolu ile aktarmaktır. Her kulede yanal dayanım ve rijitlik sağlayan ana sistem, moment taşıyan çerçeveler ile çapraz elemanların bir arada kullanıldığı çerçeve-çapraz hibrit sistem olarak kurgulanmıştır. Çapraz elemanlar $XZ$ ve $YZ$ düzlemlerinde stratejik noktalara yerleştirilmiş; köprü bağlantısı iki kule arasında yük paylaşımını sağlayarak global sistem rijitliğini artırmıştır. Köprü seviyeleri, iki kulenin göreli hareketini azaltan ve kuleler arasında kuvvet aktarımı oluşturan kritik davranış bölgeleri olarak değerlendirilmiştir. Köprü--kule birleşimleri modelde rijit kabul edilerek köprülerin yatay yükler altında iki kuleyi birlikte çalıştırma etkisi temsil edilmiştir.
+
+Deprem performansı değerlendirmesinde \textsc{OpenSees}\textsuperscript{\textregistered}~\cite{opensees} ile zaman tanım alanında hesap (ZTAH) yürütülmüştür. Taşıyıcı sistem 1680~düğüm ve 4248~\texttt{elasticBeamColumn} elemanı ile idealize edilmiştir. Yer hareketi verileri olarak 1999 Düzce depremi (BOL090) kaydı ile yarışma kapsamında verilen üç kayıt (KYH-1, KYH-2, KYH-3) kullanılmıştır. SAP2000 modeli ana analizlerin yerine geçmeyecek şekilde, geometri/rijitlik tutarlılığı ve genel davranış kontrolü amacıyla doğrulama için kullanılmıştır.
+
+Modeldeki kat kütlesi, 2026 ön şartnamesine ve geçmiş yarışmalardaki uygulamalara uygun biçimde yerleştirilen çelik tijler ve tepe plakasından oluşmaktadır. Katlar arasında düşeyde her $18\,\mathrm{cm}$'de bir olacak şekilde toplam 8~adet tij yerleştirilmiş olup her birinin ortalama kütlesi $1.6\,\mathrm{kg}$'dır. En üstte ivmeölçerin de bulunduğu, toplam kütlesi $2.2\,\mathrm{kg}$ olan bir tepe plakası yer almaktadır. Bu kütle dağılımı, ikiz kule--köprü etkileşiminin sarsma masası üzerinde gözlemlenebilir olmasını sağlayacak şekilde düzenlenmiştir.
+
+Sonuç olarak, İstanbul Finans Merkezi'nde yüksek sismik tehlikeye karşı güvenli ve ekonomik bir yapı tasarlanması amacıyla detaylı deprem analizleri gerçekleştirilmiştir. Yapının düzenli geometrisi, düşük eksantrisite değerleri ($e_x/L_x = 0.005$, $e_y/L_y = 0.034$) ve çerçeve-çapraz hibrit taşıyıcı sistem tasarımı ile sismik performans optimize edilmiştir~\cite{tbdy2018}.
+
+\newpage
+
+% --- 4. ÇİZİMLER ---
+\section{ÇİZİMLER}
+Binanın her bir farklı katına ait plan ve iki ana doğrultudaki kesit çizimleri verilecektir.
+\begin{itemize}
+    \item Çizimler ayrıca "dwg" formatında ek olarak sunulacaktır.
+\end{itemize}
+
+\newpage
+
+% ################### SORULAR VE CEVAPLAR ###################
 
 % ==============================================================================
 % SORU 1
@@ -732,14 +815,15 @@ Maksimum interstory drift her üç kayıt altında 12.~katta teşekkül etmekted
 % ==============================================================================
 \subsection{Soru \RN{8}}
 
-\textbf{Soru:} Önerdiğiniz yapısal sistemin tasarım depremine maruz kalması halinde oluşması muhtemel hasar durumunu yorumlayınız ve yapının deprem öncesi durumuna getirilmesinin teknik ve ekonomik açıdan fizibilitesini değerlen\-diriniz.
+\textbf{Soru:} Önerdiğiniz yapısal sistemin tasarım depremine maruz kalması halinde oluşması muhtemel hasar durumunu yorumlayınız ve yapının deprem öncesi durumuna getirilmesinin teknik ve ekonomik açıdan fizibilitesini değerlendiriniz.
 
-\textbf{Cevap:} Tasarım depremi DD-2 altında yapılan zaman tanım alanında hesap sonuçlarına göre, önerilen çelik ikiz kule sisteminin tüm kolon, kiriş ve çapraz elemanlarında kalıcı şekil değiştirme oluşmadığı, birleşim bölgelerinde akma eşiğinin çok altında kalındığı ve yapının deprem sonrası derhal kullanılabilir durumda olduğu belirlen\-miştir. Köprü bağlantısındaki en kritik kiriş ucu (eleman~33) dahil 43~elemanın tümü elastik sınırlar içinde kalmaktadır. Kolonlarda gözlenen eğilme gerilmeleri taşıma kapasitesinin \%9'unu geçmemekte; çaprazlarda burkulma veya kalıcı uzama riski bulunmamaktadır.
+\textbf{Cevap:} Tasarım depremi DD-2 altında yapılan zaman tanım alanında hesap sonuçlarına göre, önerilen kompozit ikiz kule sisteminin tüm kolon, kiriş ve çapraz elemanlarında kalıcı şekil değiştirme oluşmadığı, birleşim bölgelerinde akma eşiğinin çok altında kalındığı ve yapının deprem sonrası derhal kullanılabilir durumda olduğu belirlenmiştir. Köprü bağlantısındaki en kritik kiriş ucu (eleman~33) dahil 43~elemanın tümü elastik sınırlar içinde kalmaktadır. Kolonlarda gözlenen eğilme gerilmeleri taşıma kapasitesinin \%9'unu geçmemekte; çaprazlarda burkulma veya kalıcı uzama riski bulunmamaktadır.
 
-Yapıştırma birleşim kapasitesine göre $\text{TKO}_{max}=0.087$ olup hasar eşiğinin ($\text{TKO}=0.25$) çok altındadır. Eleman bazlı gerilme dağılımı Şekil~\ref{fig:damage}a'da sunulmuştur. Balsa kırılma dayanımı $f_b=3.5$~kN/cm\textsuperscript{2}; modelde $\times 240$ ölçekleme ile $f_{b,m}=840$~kN/cm\textsuperscript{2}'dir.
-Birleşim verimi $\eta_j=0.35$, belirleyici kapasite $M_j=10.6$~kN$\cdot$cm~\cite{femap58}. KYH-3'te en kritik eleman~33'ün $\text{TKO}=0.68$ olup hâlâ elastiktir.
+Yapıştırma birleşim kapasitesine göre talep/kapasite oranı $\text{TKO}_{max}=0.087$ olup hasar eşiğinin ($\text{TKO}=0.25$) çok altındadır. Eleman bazlı gerilme dağılımı Şekil~\ref{fig:damage}a'da sunulmuştur. Balsa kırılma dayanımı $f_b=3.5$~kN/cm\textsuperscript{2}; modelde $\times$240 ölçekleme ile $f_{b,m}=840$~kN/cm\textsuperscript{2}.
+Birleşim verimi $\eta_j=0.35$ olup belirleyici kapasite $M_j=10.6$~kN$\cdot$cm'dir~\cite{femap58}. KYH-3'te en kritik eleman~33'ün $\text{TKO}=0.68$ ($<1.0$, hâlâ elastik).
 
-Göçme olasılığı Baker~(2015) MLE yöntemiyle lognormal kırılganlık fonksiyonu ile hesaplan\-mıştır~\cite{femap58, baker2015}. 43~elemana ait $k_i = \text{TKO}_i/\text{PGA}$ değeri MLE ile saptanmış; sistem kırılganlığı en zayıf halkadan (el.~33) türetilmiştir. Medyan kapasiteler: $\theta_{\text{DS-1}}=0.86$~g, $\theta_{\text{göçme}}=3.45$~g; belirsizlik $\beta_T=0.57$. DD-2'de $P(\text{DS-1})=\%4.9$, $P(\text{göçme})=2.2\times 10^{-5}$ (Şekil~\ref{fig:damage}b). Yıllık göçme olasılığı $4.5\times 10^{-8} \ll 10^{-4}$~\cite{asce41}. Eleman bazlı medyan göçme kapasitesi dağılımı Şekil~\ref{fig:damage}c'de sunulmuştur.
+Göçme olasılığı Baker~(2015) MLE yöntemi ile lognormal kırılganlık fonksiyonu kullanılarak hesaplanmıştır~\cite{femap58, baker2015}. 43~eleman$\,\times\,$3~yer hareketi verisinden eleman bazlı $k_i=\text{TKO}_i/\text{PGA}$ MLE ile saptanmış, sistem kırılganlığı en zayıf halkadan (el.~33) türetilmiştir. Medyan kapasiteler: $\theta_{\text{DS-1}}=0.86$~g, $\theta_{\text{göçme}}=3.45$~g. Belirsizlik: $\beta_r=0.15$, $\beta_u=0.55$ (model+malzeme+birleşim), $\beta_T=0.57$.
+DD-2'de: $P(\text{DS-1})=4.9\%$, $P(\text{göçme})=2.2 \times 10^{-5}$ (Şekil~\ref{fig:damage}b). Yıllık göçme olasılığı $4.5 \times 10^{-8} \ll 10^{-4}$ (ASCE~7-22)~\cite{asce41}. Eleman bazlı medyan göçme kapasitesi ($\theta_{\text{göçme},i}$) dağılımı Şekil~\ref{fig:damage}c'de sunulmuştur.
 
 \begin{figure}[H]
 \centering
@@ -940,19 +1024,13 @@ Göçme olasılığı Baker~(2015) MLE yöntemiyle lognormal kırılganlık fonk
 \node[font=\tiny, anchor=south] at (axis cs:13,5.5) {El.~13};
 \node[font=\tiny, anchor=south] at (axis cs:4,6.8) {El.~4};
 \node[font=\tiny, anchor=south] at (axis cs:36,8.0) {El.~36};
-% Stats box
-\node[font=\tiny, anchor=north east, fill=white, draw=black!30, inner sep=1.5pt,
-      text width=1.6cm, align=left] at (axis cs:43,58) {%
-$N\!=\!43$, kırp.\ 5 el.$>$50\,g\\
-$\tilde{\theta}\!=\!10.9$\,g, $\bar{\theta}\!=\!15.3$\,g\\
-CoV$\,=\,0.78$, $P_5\!=\!5.2$\,g\\
-$\theta<\!10$\,g: 13~el.\ (\%30)};
+
 \end{axis}
 \end{tikzpicture}
 \\[-2pt]{\footnotesize (c) Eleman bazlı $\theta_{\text{göçme},i}$\,---\,gri bant: IQR ($Q_1$--$Q_3$)}
 \end{minipage}
 \vspace{-6pt}
-\caption{Hasar değerlendirmesi: (a)~eğilme gerilmesi dağılımı (3~yer hareketi); (b)~Baker~(2015) MLE kırılganlık eğrileri ($\beta_T\!=\!0.57$, gri alan: göçme \%90 GA); (c)~eleman bazlı $\theta_{\text{göçme},i}$ (gri bant IQR). En zayıf halka el.~33.}
+\caption{Hasar değerlendirmesi: (a)~eğilme gerilmesi dağılımı (3~yer hareketi); (b)~Baker~(2015) MLE kırılganlık eğrileri ($\beta_T\!=\!0.57$, gri alan: göçme \%90 GA); (c)~eleman bazlı $\theta_{\text{göçme},i}$ (gri bant IQR). En zayıf halka el.~33. İstatistik ($N\!=\!43$, 5~el.${>}50$\,g kırpılmış): $\tilde{\theta}\!=\!10.9$\,g, $\bar{\theta}\!=\!15.3$\,g, CoV$\,=\,0.78$, $P_5\!=\!5.2$\,g; $\theta<10$\,g: 13~eleman (\%30).}
 \label{fig:damage}
 \end{figure}
 

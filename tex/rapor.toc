@@ -1,0 +1,23 @@
+\babel@toc {turkish}{}\relax 
+\contentsline {section}{\numberline {1}BİNA TANITIMI}{1}{section.1}%
+\contentsline {section}{\numberline {2}MİMARİ TASARIM}{2}{section.2}%
+\contentsline {section}{\numberline {3}YAPISAL SİSTEM TANIMI ve TASARIMI}{3}{section.3}%
+\contentsline {section}{\numberline {4}ÇİZİMLER}{4}{section.4}%
+\contentsline {section}{\numberline {5}Sorular}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Soru I}{5}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}İkiz Kule ve Köprü Sistemi \& Simetri ve Düzenlilik}{5}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Yeterli Yanal Rijitlik \& Sürekli Yük Aktarımı ve Süneklik}{5}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Hafiflik ve Malzeme}{5}{subsubsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.2}Soru II}{6}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Soru III}{7}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Soru IV}{8}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Uygulama Zorluğu}{8}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}Maliyet}{8}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.3}Sektörel Sebepler}{8}{subsubsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.5}Soru V}{9}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}EDYY'nin Yetersizliği}{9}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}MBY'nin Tercih Gerekçesi}{9}{subsubsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.3}Doğrulama ve Ölçekli Model}{9}{subsubsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.6}Soru VI}{10}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Soru VII}{11}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Soru VIII}{12}{subsection.5.8}%
