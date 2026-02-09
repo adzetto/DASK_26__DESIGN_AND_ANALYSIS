@@ -1,11 +1,11 @@
  SAPFire results-database version:           82
  Type    Result      File                  Records
- Resp    Case        .Y04                        1                  1832
- Resp    Displ       .Y00                        1                160704
- Resp    React       .Y03                        1                160704
- Resp    Frame       .Y07                        1               2979340
- Resp    Spring      .Y05                        1                 26784
- Resp    JFJoint     .Y01                        1                 53568
- Resp    JFSpring    .Y02                        1                 53568
- Resp    StrainAge   .Y06                        1                104768
- State   Frame       .Y08                        1               3012080
+ Resp    Case        .Y05                        1              40229868
+ Resp    Displ       .Y01                        1               1071360
+ Resp    React       .Y04                        1               1071360
+ Resp    JFJoint     .Y02                        1               1071360
+ Resp    JFSpring    .Y03                        1               1071360
+ Resp    DisplHist   .Y06                        1              20113600
+ Resp    VelocHist   .Y07                        1              20113600
+ Resp    AccelHist   .Y08                        1              20113600
+ Resp    DisplTran   .Y00                        1                642816

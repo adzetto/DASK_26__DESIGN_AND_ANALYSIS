@@ -340,15 +340,15 @@ def extract_frame_envelopes(sap, case_name, frame_names):
             ret = sap.Results.FrameForce(name, 0)
             if ret[0] > 0:
                 n = ret[0]
-                # [6]=P, [7]=V2, [8]=V3, [9]=T, [10]=M2, [11]=M3
+                # Correct indices: [8]=P, [9]=V2, [10]=V3, [11]=T, [12]=M2, [13]=M3
                 results[name] = {
-                    "max_P": max(abs(float(ret[6][i])) for i in range(n)),
-                    "min_P": min(float(ret[6][i]) for i in range(n)),
-                    "max_V2": max(abs(float(ret[7][i])) for i in range(n)),
-                    "max_V3": max(abs(float(ret[8][i])) for i in range(n)),
-                    "max_T": max(abs(float(ret[9][i])) for i in range(n)),
-                    "max_M2": max(abs(float(ret[10][i])) for i in range(n)),
-                    "max_M3": max(abs(float(ret[11][i])) for i in range(n)),
+                    "max_P": max(abs(float(ret[8][i])) for i in range(n)),
+                    "min_P": min(float(ret[8][i]) for i in range(n)),
+                    "max_V2": max(abs(float(ret[9][i])) for i in range(n)),
+                    "max_V3": max(abs(float(ret[10][i])) for i in range(n)),
+                    "max_T": max(abs(float(ret[11][i])) for i in range(n)),
+                    "max_M2": max(abs(float(ret[12][i])) for i in range(n)),
+                    "max_M3": max(abs(float(ret[13][i])) for i in range(n)),
                 }
         except Exception:
             errors += 1
@@ -504,11 +504,10 @@ def main():
     mj = joints[monitored]
     print(f"  Monitored: {monitored} at ({mj['x']:.1f}, {mj['y']:.1f}, {mj['z']:.1f})")
 
-    # === RUN ALL ANALYSES ===
+    # === RUN ALL ANALYSES (no pushover - convergence issues) ===
     modal_data = run_modal(sap)
     run_static(sap)
     run_time_history(sap)
-    run_pushover(sap, monitored)
 
     # === QUICK TH VERIFICATION ===
     print("\n--- TH VERIFICATION ---")
@@ -594,35 +593,6 @@ def main():
                 if elem in stresses:
                     row.update(stresses[elem])
                 all_frame_rows.append(row)
-
-    # === PUSHOVER RESULTS ===
-    print("\n--- PUSHOVER RESULTS ---")
-    for push_dir, push_case, dof in [("X", "PUSHOVER_X", "U1"), ("Y", "PUSHOVER_Y", "U2")]:
-        print(f"\n  {push_case}:")
-        curve = extract_pushover_curve(sap, push_case, monitored, dof)
-        node_res = extract_pushover_all_nodes(sap, push_case, joint_names)
-
-        if curve and len(curve) > 1:
-            max_d = max(abs(p["displacement_cm"]) for p in curve)
-            max_v = max(abs(p["base_shear_N"]) for p in curve)
-            print(f"    {len(curve)} steps, max_displ={max_d:.4f}cm, max_Vbase={max_v:.1f}N")
-
-            pd.DataFrame(curve).to_csv(
-                os.path.join(RESULTS_DIR, f"pushover_{push_dir}_curve.csv"), index=False)
-        else:
-            print(f"    WARNING: Only {len(curve)} pushover steps (check SAP2000 log)")
-            if curve:
-                pd.DataFrame(curve).to_csv(
-                    os.path.join(RESULTS_DIR, f"pushover_{push_dir}_curve.csv"), index=False)
-
-        if node_res:
-            rows = [{"joint": n, **v,
-                     "x_cm": joints[n]["x"], "y_cm": joints[n]["y"],
-                     "z_cm": joints[n]["z"]}
-                    for n, v in node_res.items() if n in joints]
-            pd.DataFrame(rows).to_csv(
-                os.path.join(RESULTS_DIR, f"pushover_{push_dir}_all_nodes.csv"), index=False)
-            print(f"    {len(rows)} node results saved")
 
     # === SAVE CSVs ===
     print("\n--- SAVING RESULTS ---")

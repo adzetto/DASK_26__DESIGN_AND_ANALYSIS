@@ -39,14 +39,14 @@ TABLE:  "CASE - STATIC 1 - LOAD ASSIGNMENTS"
    Case=TIJLER   LoadType="Load pattern"   LoadName=TIJLER   LoadSF=1
  
 TABLE:  "CASE - STATIC 2 - NONLINEAR LOAD APPLICATION"
-   Case=PUSHOVER_X   LoadApp="Full Load"   MonitorDOF=U1   MonitorJt=1057
-   Case=PUSHOVER_Y   LoadApp="Full Load"   MonitorDOF=U1   MonitorJt=1057
+   Case=PUSHOVER_X   LoadApp="Displ Ctrl"   DisplType=Monitored   TargetDispl=5   MonitorDOF=U1
+   Case=PUSHOVER_Y   LoadApp="Displ Ctrl"   DisplType=Monitored   TargetDispl=5   MonitorDOF=U2
  
 TABLE:  "CASE - STATIC 4 - NONLINEAR PARAMETERS"
-   Case=PUSHOVER_X   GeoNonLin="Large Displ"   ResultsSave="Final State"   SolScheme="Iterative Events"   MaxTotal=200   MaxNull=50   EvLumpTol=0.01   MaxEvPerStp=24   MaxIterCS=10   MaxIterNR=40   ItConvTol=0.0001   TFMaxIter=10 _
-        TFTol=0.01   TFAccelFact=1   TFNoStop=No
-   Case=PUSHOVER_Y   GeoNonLin="Large Displ"   ResultsSave="Final State"   SolScheme="Iterative Events"   MaxTotal=200   MaxNull=50   EvLumpTol=0.01   MaxEvPerStp=24   MaxIterCS=10   MaxIterNR=40   ItConvTol=0.0001   TFMaxIter=10 _
-        TFTol=0.01   TFAccelFact=1   TFNoStop=No
+   Case=PUSHOVER_X   GeoNonLin="Large Displ"   ResultsSave="Multiple States"   MinNumState=50   MaxNumState=100   PosIncOnly=Yes   SolScheme="Iterative Events"   MaxTotal=200   MaxNull=50   EvLumpTol=0.01   MaxEvPerStp=24   MaxIterCS=10 _
+        MaxIterNR=40   ItConvTol=0.0001   TFMaxIter=10   TFTol=0.01   TFAccelFact=1   TFNoStop=No
+   Case=PUSHOVER_Y   GeoNonLin="Large Displ"   ResultsSave="Multiple States"   MinNumState=50   MaxNumState=100   PosIncOnly=Yes   SolScheme="Iterative Events"   MaxTotal=200   MaxNull=50   EvLumpTol=0.01   MaxEvPerStp=24   MaxIterCS=10 _
+        MaxIterNR=40   ItConvTol=0.0001   TFMaxIter=10   TFTol=0.01   TFAccelFact=1   TFNoStop=No
  
 TABLE:  "COMBINATION DEFINITIONS"
    ComboName=G   ComboType="Linear Add"   AutoDesign=No   CaseName=DEAD   ScaleFactor=1   SteelDesign=None   ConcDesign=None   AlumDesign=None   ColdDesign=None   GUID=62e85238-8786-4f51-b8a8-b4e55ce8e884
@@ -19945,9 +19945,9 @@ TABLE:  "FUNCTION - STEADY STATE - USER"
    Name=UNIFSS   Frequency=1   Value=1
  
 TABLE:  "FUNCTION - TIME HISTORY - FROM FILE"
-   Name=KYH2   HeaderLines=0   PrefixChars=0   PtsPerLine=1   DataType="Equal Interval"   FormatType=Free   Interval=0.02   FileName=c:\Users\lenovo\Desktop\DASK_NEW\sap_bracing\KYH2_sap.txt
-   Name=KYH3   HeaderLines=0   PrefixChars=0   PtsPerLine=1   DataType="Equal Interval"   FormatType=Free   Interval=0.02   FileName=c:\Users\lenovo\Desktop\DASK_NEW\sap_bracing\KYH3_sap.txt
-   Name=KYH1   HeaderLines=0   PrefixChars=0   PtsPerLine=1   DataType="Equal Interval"   FormatType=Free   Interval=0.02   FileName=c:\Users\lenovo\Desktop\DASK_NEW\sap_bracing\KYH1_sap.txt
+   Name=KYH2   HeaderLines=0   PrefixChars=0   PtsPerLine=1   DataType="Time and Value"   FormatType=Free   FileName=c:\Users\lenovo\Desktop\DASK_NEW\sap_bracing\KYH2_sap.txt
+   Name=KYH3   HeaderLines=0   PrefixChars=0   PtsPerLine=1   DataType="Time and Value"   FormatType=Free   FileName=c:\Users\lenovo\Desktop\DASK_NEW\sap_bracing\KYH3_sap.txt
+   Name=KYH1   HeaderLines=0   PrefixChars=0   PtsPerLine=1   DataType="Time and Value"   FormatType=Free   FileName=c:\Users\lenovo\Desktop\DASK_NEW\sap_bracing\KYH1_sap.txt
  
 TABLE:  "FUNCTION - TIME HISTORY - USER"
    Name=RAMPTH   Time=0   Value=0
@@ -21570,8 +21570,8 @@ TABLE:  "LOAD CASE DEFINITIONS"
    Case=TIJLER   Type=LinStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Dead   DesActOpt="Prog Det"   DesignAct=Non-Composite   AutoType=None   RunCase=No   GUID=25c68328-b7bd-4043-9890-6d2f38063e94
    Case=KYH1_X   Type=LinModHist   InitialCond=Zero   ModalCase=MODAL   DesTypeOpt="Prog Det"   DesignType=Quake   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=12c65c84-bd48-40a3-bd66-13877946cf73
    Case=KYH1_Y   Type=LinModHist   InitialCond=Zero   ModalCase=MODAL   DesTypeOpt="Prog Det"   DesignType=Quake   DesActOpt="Prog Det"   DesignAct="Short-Term Composite"   AutoType=None   RunCase=No   GUID=11224622-6ee5-429d-9622-d60f3d64b739
-   Case=PUSHOVER_X   Type=NonStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct=Other   AutoType=None   RunCase=Yes   GUID=0e995e72-ed1a-45e7-9820-78d4cebde64b
-   Case=PUSHOVER_Y   Type=NonStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct=Other   AutoType=None   RunCase=Yes   GUID=c6ca6a82-5698-4992-a474-57903c892f03
+   Case=PUSHOVER_X   Type=NonStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct=Other   AutoType=None   RunCase=Yes   GUID=920c88fb-d10d-4f4d-b0eb-12301bd21911
+   Case=PUSHOVER_Y   Type=NonStatic   InitialCond=Zero   DesTypeOpt="Prog Det"   DesignType=Other   DesActOpt="Prog Det"   DesignAct=Other   AutoType=None   RunCase=Yes   GUID=a9b73b18-4b37-4db7-af15-dbd986b0c71e
  
 TABLE:  "LOAD PATTERN DEFINITIONS"
    LoadPat=DEAD   DesignType=Dead   SelfWtMult=1   GUID=a442aa4e-61de-4370-9b00-b84d3acc5e3d
