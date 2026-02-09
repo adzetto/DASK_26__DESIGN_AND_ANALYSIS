@@ -76,6 +76,7 @@
 \begin{document}
 
 % --- KAPAK SAYFASI ---
+\hypersetup{pageanchor=false}
 \begin{titlepage}
     \centering
     \vspace*{1cm}
@@ -106,6 +107,7 @@
 \tableofcontents
 \newpage
 \pagenumbering{arabic} % Normal sayfalar için Arap rakamı
+\hypersetup{pageanchor=true}
 
 % --- 1. BİNA TANITIMI ---
 \section{BİNA TANITIMI}
@@ -128,33 +130,35 @@ Binanın mimari tasarımında dikkate alınan tasarım kriterlerinin çevresel v
 % --- 3. YAPISAL SİSTEM TANIMI ve TASARIMI ---
 \section{YAPISAL SİSTEM TANIMI ve TASARIMI}
 
-\noindent\textbf{Saha koşulları ve deprem tehlikesi.}
-Proje sahası İstanbul Finans Merkezi ($41.00^\circ$\,K, $29.11^\circ$\,D) Kuzey Anadolu Fayı'na yakın olup yüksek sismik tehlike altındadır.
-AFAD~\cite{afad2024} verileri: $S_S\!=\!0.877$, $S_1\!=\!0.243$; ZD zemin ($F_S\!=\!1.149$, $F_1\!=\!2.114$).
-Tasarım parametreleri: $S_{DS}\!=\!1.008$\,g, $S_{D1}\!=\!0.514$\,g; köşe periyotları $T_A\!=\!0.102$~s, $T_B\!=\!0.510$~s.
-Yapı $DTS\!=\!1$, $BYS\!=\!1$, $I\!=\!1.0$ kapsamındadır~\cite{tbdy2018}.
-TS~EN~1991-1-4~\cite{tsen1991} rüzgar kesmesi $F_w\!\approx\!3.1$\,MN iken deprem taban kesmesi $V_t\!\approx\!6.6$\,MN olup sismik yükler belirleyicidir.
+\noindent\textit{Saha koşulları ve deprem tehlikesi.}
+Proje sahası, İstanbul Finans Merkezi ($41.00^\circ$\,K, $29.11^\circ$\,D) mevkiinde olup Kuzey Anadolu Fayı'na yakın konumu itibarıyla birinci derece deprem kuşağında yer almaktadır.
+AFAD~\cite{afad2024} DD-2 tehlike düzeyinde tasarım spektral ivmeleri $S_{DS}\!=\!1.008$\,g, $S_{D1}\!=\!0.514$\,g olarak belirlenmiştir~\cite{tbdy2018}.
+Saha ZD zemin sınıfında olup kalın yumuşak zemin tabakası uzun periyotlu deprem dalgalarını kuvvetlendirerek üstyapıya aktarmaktadır; bu durum yapısal tasarımda hem yanal rijitliği hem de yeterli şekil değiştirme kapasitesini zorunlu kılmaktadır.
 
-\noindent\textbf{Taşıyıcı sistem seçimi.}
-Beş tasarım hedefi belirlenmiştir: (i)~yeterli yanal rijitlik, (ii)~düşük eksantrisite, (iii)~sünek davranış, (iv)~kesintisiz yük aktarımı, (v)~minimum ağırlık.
-Moment çerçevesi sünek fakat rijitliği yetersiz; salt çaprazlı sistem rijit fakat gevrek.
-Çerçeve--çapraz hibrit sistem her ikisinin avantajını birleştirir~\cite{nehrp2009}.
-İkiz kule konfigürasyonu köprü bağlantıları ile yük paylaşımı ve global rijitlik artışı sağlar~\cite{patoliya2023, tambunan2024}.
+\noindent\textit{Taşıyıcı sistem tipi ve gerekçeleri.}
+Salt moment çerçevesi sünek olmakla birlikte yanal ötelenmeyi yeterince sınırlayamamakta; münferiden çaprazlı sistem ise yüksek rijitlik sağlamakla beraber gevrek kırılmaya açık bulunmaktadır.
+Bu iki uç arasındaki dengeyi kurmak üzere \textit{çerçeve--çapraz hibrit} sistem tercih edilmiştir~\cite{nehrp2009}: çapraz elemanlar eksenel kuvvet mekanizmasıyla yatay yükleri doğrudan temele ileterek yanal ötelenmeyi kontrol altına almakta; moment çerçevesi ise düğüm noktalarının dönme kapasitesi sayesinde enerji yutma ve plastik yeniden dağılım imkânı sunmaktadır.
+İkiz kule konfigürasyonu benimsenerek yapı yüksekliğinin ${\sim}H/4$, $H/2$, $3H/4$ ve tepe kotlarına yerleştirilen dört köprü vasıtasıyla kuleler kuplajlanmış; bu sayede global rijitlik artırılmış, diferansiyel ötelenme ve burulma talebi asgariye indirilmiştir~\cite{patoliya2023, tambunan2024}.
+Köprüler aynı zamanda iki kulenin eş fazlı titreşimini sağlayarak antisimetrik modları bastırma işlevi de görmektedir.
 
-\noindent\textbf{Sistem geometrisi.}
-Model $40\!\times\!40\,\mathrm{cm}$ tabla üzerinde $6\!\times\!6\,\mathrm{mm}$ balsa çıtadan imal edilmiştir (Şekil~\ref{fig:sistem}).
-Her kule: $30\!\times\!16\,\mathrm{cm}$ plan, $7\!\times\!3$ kolon gridi; zemin kat $9\,\mathrm{cm}$, üst 24~kat $6\,\mathrm{cm}$; $H\!=\!153\,\mathrm{cm}$.
-Kuleler arası açıklık $8\,\mathrm{cm}$.
-İç açıklıklarda ($3{,}7\,\mathrm{cm}$) zemin--13.~kat ve son 2~katta X-çapraz elemanlar uygulanmıştır.
-Dış açıklıklarda $XZ$ ve $YZ$ çaprazlar alt 4~katta her katta, üst katlarda 3~katlık zikzak düzeniyle yerleştirilmiştir.
-Köprüler 6., 12., 18.\ ve 25.~katta olup her biri 24~elemandan oluşur.
+\noindent\textit{İzlenen yaklaşımlar ve kabuller.}
+Yapısal model \textsc{OpenSees}\textsuperscript{\textregistered}~\cite{opensees} ortamında oluşturulmuştur.
+Düğüm noktalarında kolon--kiriş birleşimi rijit, çapraz uçları ise mafsallı kabul edilmiş; böylece çaprazlar yalnızca eksenel kuvvet taşımakta, eğilme momenti çerçeve elemanlarına aktarılmaktadır.
+Güçlü kolon--zayıf kiriş ilkesi gözetilerek plastik mafsalların kiriş uçlarında oluşması hedeflenmiş, kat mekanizması ihtimali bertaraf edilmiştir.
+Deprem analizinde Mod Birleştirme Yöntemi (MBY) ile zaman tanım alanında hesap (ZTAH) uygulanmış; modal katkılar CQC kuralı ($\xi\!=\!0.05$) ile birleştirilmiştir~\cite{tbdy2018}.
+Her iki doğrultuda tam simetri tesis edilerek kütle--rijitlik eksantrisitesi sıfırlanmış; burulma düzensizliği kontrolü sağlanmıştır~\cite{teblig2024}.
 
-\noindent\textbf{Analiz ve sonuçlar.}
-Model \textsc{OpenSees}~\cite{opensees} ile 1108~düğüm, 2794~eleman (2170~çerçeve + 624~kafes) olarak oluşturulmuştur.
-Balsa: $E\!=\!350\,\mathrm{kN/cm^2}$, $\rho\!=\!160\,\mathrm{kg/m^3}$; çıta: $A\!=\!0.36\,\mathrm{cm^2}$, $I\!=\!0.0108\,\mathrm{cm^4}$.
-Yapısal ağırlık $W\!=\!1.168\,\mathrm{kg}$ ($<2.000\,\mathrm{kg}$).
-Modal periyotlar: $T_1\!=\!0.115$~s (plato), $T_2\!=\!0.079$~s, $T_3\!=\!0.054$~s; $T_1$ plato bölgesinde, $T_2$ ve $T_3$ artan bölgededir.
-Eksantrisite $e_x/L_x\!=\!0{,}000$, $e_y/L_y\!=\!0{,}000$ (tam simetri); zemin katta $\eta_{bi}\!=\!1.69 < 2.0$ ile A1a kontrolü sağlanmıştır~\cite{tbdy2018}.
+\noindent\textit{Sistem geometrisi ve çapraz yerleşim stratejisi.}
+Model $40\!\times\!40\,\mathrm{cm}$ tabla üzerinde iki simetrik kuleden oluşmaktadır (Şekil~\ref{fig:sistem}).
+Her kule $30\!\times\!16\,\mathrm{cm}$ plan boyutunda, $7\!\times\!3$ düşey kolon ağı üzerine inşa edilmiş olup zemin kat yüksekliği $h_0\!=\!9\,\mathrm{cm}$, sonraki 24~kat $h\!=\!6\,\mathrm{cm}$; toplam yükseklik $H\!=\!153\,\mathrm{cm}$'dir.
+Kuleler arası açıklık $8\,\mathrm{cm}$ olup köprüler 6., 12., 18.\ ve 25.~katlarda konumlandırılmıştır.
+$X$ doğrultusunda köşe açıklıkları ($2{,}7\,\mathrm{cm}$) kısa tutularak çerçeve rijitliği takviye edilmiş; $Y$ doğrultusunda simetrik iki açıklık ($7{,}7\,\mathrm{cm}$) ile rijitlik dağılımı dengelenmiştir.
+
+Çapraz elemanlar, deprem kesme kuvvetinin en yoğun olduğu alt katlara konsantre edilmiştir (Şekil~\ref{fig:sistem}).
+$XZ$ düzleminde iç açıklıklarda zemin--13.~kat arasında X-çapraz çifti uygulanarak kesme kuvveti basınç ve çekme bileşenlerine ayrıştırılmış, tek yönlü burkulma riski azaltılmıştır.
+Dış açıklıklarda alt dört katta her katta tam çapraz, üst katlarda ise üçer katlık zikzak düzeninde çapraz yerleştirilmiştir; bu gradyan, üst katlardaki kesme kuvveti düşüşüne paralel olarak rijitlik dağılımını optimize etmektedir.
+$YZ$ düzleminde damalı (staggered) çapraz konfigürasyonu uygulanmış; ardışık katlarda çaprazlar sağ ve sol açıklıklara dönüşümlü yerleştirilerek gerilme akışı düzgün biçimde yayılmış ve tek açıklıkta aşırı gerilme yığılması önlenmiştir.
+Son iki katta ise her iki düzlemde tam çapraz uygulanarak tepe katlarının lateral stabilitesi güvence altına alınmıştır.
 
 % --- Şekil: Yapısal sistem ---
 \begin{figure}[H]
@@ -167,29 +171,41 @@ Eksantrisite $e_x/L_x\!=\!0{,}000$, $e_y/L_y\!=\!0{,}000$ (tam simetri); zemin k
 % Zemin
 \fill[black!6] (-4,-5) rectangle (33,0);
 \draw[black!40] (-4,0) -- (33,0);
-% --- Kolonlar (cyan) ---
+% --- Kolonlar (siyah) ---
 \foreach \x in {0.3,3,11.3,15,18.7,27,29.7} {
-  \draw[cyan!60!black, line width=0.3pt] (\x,0) -- (\x,153);
+  \draw[black, line width=0.4pt] (\x,0) -- (\x,153);
 }
-% --- Kirişler beam_x (yeşil): her kat ---
-\draw[green!60!black, line width=0.15pt] (0.3,0) -- (29.7,0);
-\draw[green!60!black, line width=0.15pt] (0.3,9) -- (29.7,9);
+% --- Kirişler beam_x: her kat (koyu gri) ---
+\draw[black!70, line width=0.2pt] (0.3,0) -- (29.7,0);
+\draw[black!70, line width=0.2pt] (0.3,9) -- (29.7,9);
 \foreach \f in {2,...,25} {
   \pgfmathsetmacro{\z}{9+(\f-1)*6}
-  \draw[green!60!black, line width=0.15pt] (0.3,\z) -- (29.7,\z);
+  \draw[black!70, line width=0.2pt] (0.3,\z) -- (29.7,\z);
 }
-% --- Çapraz XZ: iç 3.7cm açıklıklar, X-cross kat 0--12 + son 2 kat ---
+% --- Çapraz XZ: iç 3.7cm açıklıklar, X-cross kat 0--12 + son 2 kat (açık gri) ---
 \foreach \za/\zb in {0/9,9/15,15/21,21/27,27/33,33/39,39/45,45/51,51/57,57/63,63/69,69/75,75/81,141/147,147/153} {
   \foreach \xa/\xb in {11.3/15,15/18.7} {
-    \draw[magenta!80, line width=0.2pt] (\xa,\za)--(\xb,\zb);
-    \draw[magenta!80, line width=0.2pt] (\xb,\za)--(\xa,\zb);
+    \draw[black!40, line width=0.2pt] (\xa,\za)--(\xb,\zb);
+    \draw[black!40, line width=0.2pt] (\xb,\za)--(\xa,\zb);
   }
 }
-% --- Çapraz XZ: 8cm açıklıklar (3-11, 19-27), ilk 4 kat tek, sonra 3'er katlık ---
+% --- Çapraz XZ: 8cm açıklıklar (3-11, 19-27), ilk 4 kat tek, sonra 3'er katlık (açık gri) ---
 \foreach \za/\zb in {0/9,9/15,15/21,21/27,27/45,45/63,63/81,81/99,99/117,117/135,135/153} {
   \foreach \xa/\xb in {3/11.3,18.7/27} {
-    \draw[magenta!80, line width=0.2pt] (\xa,\za)--(\xb,\zb);
-    \draw[magenta!80, line width=0.2pt] (\xb,\za)--(\xa,\zb);
+    \draw[black!40, line width=0.2pt] (\xa,\za)--(\xb,\zb);
+    \draw[black!40, line width=0.2pt] (\xb,\za)--(\xa,\zb);
+  }
+}
+% --- Düğüm noktaları (beyaz dolu daire) ---
+\foreach \x in {0.3,3,11.3,15,18.7,27,29.7} {
+  % Zemin kat
+  \fill[white] (\x,0) circle (0.8); \draw[black, line width=0.15pt] (\x,0) circle (0.8);
+  % 1. kat (z=9)
+  \fill[white] (\x,9) circle (0.8); \draw[black, line width=0.15pt] (\x,9) circle (0.8);
+  % Üst katlar
+  \foreach \f in {2,...,25} {
+    \pgfmathsetmacro{\z}{9+(\f-1)*6}
+    \fill[white] (\x,\z) circle (0.8); \draw[black, line width=0.15pt] (\x,\z) circle (0.8);
   }
 }
 % --- Ölçüler ---
@@ -198,98 +214,120 @@ Eksantrisite $e_x/L_x\!=\!0{,}000$, $e_y/L_y\!=\!0{,}000$ (tam simetri); zemin k
 \draw[<->,thin,black!40] (31.5,0) -- node[right,font=\tiny]{$9$} (31.5,9);
 \draw[<->,thin,black!40] (31.5,9) -- node[right,font=\tiny]{$6$} (31.5,15);
 % Alt başlık
-\node[font=\footnotesize,anchor=north] at (15,-7) {(a) Ön görünüm ($XZ$)};
+\node[font=\tiny,anchor=north] at (15,-7) {(a) Ön görünüm ($XZ$)};
 \end{scope}
 % ===== (b) YAN GÖRÜNÜM (YZ düzlemi) =====
 \begin{scope}[shift={(2.9,0)}, xscale=\s, yscale=\s]
 % Zemin
 \fill[black!6] (-4,-5) rectangle (43,0);
 \draw[black!40] (-4,0) -- (43,0);
-% --- Kolonlar Kule 1 (cyan) ---
+% --- Kolonlar Kule 1 (siyah) ---
 \foreach \y in {0.3,8,15.7} {
-  \draw[cyan!60!black, line width=0.3pt] (\y,0) -- (\y,153);
+  \draw[black, line width=0.4pt] (\y,0) -- (\y,153);
 }
-% --- Kolonlar Kule 2 (cyan) ---
+% --- Kolonlar Kule 2 (siyah) ---
 \foreach \y in {24.3,32,39.7} {
-  \draw[cyan!60!black, line width=0.3pt] (\y,0) -- (\y,153);
+  \draw[black, line width=0.4pt] (\y,0) -- (\y,153);
 }
-% --- Kirişler beam_y (turuncu): her kat ---
-\draw[orange!70!black, line width=0.15pt] (0.3,0)--(15.7,0);
-\draw[orange!70!black, line width=0.15pt] (24.3,0)--(39.7,0);
-\draw[orange!70!black, line width=0.15pt] (0.3,9)--(15.7,9);
-\draw[orange!70!black, line width=0.15pt] (24.3,9)--(39.7,9);
+% --- Kirişler beam_y: her kat (koyu gri) ---
+\draw[black!70, line width=0.2pt] (0.3,0)--(15.7,0);
+\draw[black!70, line width=0.2pt] (24.3,0)--(39.7,0);
+\draw[black!70, line width=0.2pt] (0.3,9)--(15.7,9);
+\draw[black!70, line width=0.2pt] (24.3,9)--(39.7,9);
 \foreach \f in {2,...,25} {
   \pgfmathsetmacro{\z}{9+(\f-1)*6}
-  \draw[orange!70!black, line width=0.15pt] (0.3,\z)--(15.7,\z);
-  \draw[orange!70!black, line width=0.15pt] (24.3,\z)--(39.7,\z);
+  \draw[black!70, line width=0.2pt] (0.3,\z)--(15.7,\z);
+  \draw[black!70, line width=0.2pt] (24.3,\z)--(39.7,\z);
 }
-% --- Çapraz YZ (kırmızı): DAMALI, simetrik, alt/üst full ---
-% FULL: alt (0→9) ve üst (135→153) — tüm kanatlar
+% --- Çapraz YZ: DAMALI, simetrik, alt/üst full (açık gri) ---
+% FULL: alt (0→9) ve üst (135→153)
 \foreach \za/\zb in {0/9,135/153} {
   \foreach \ya/\yb in {0.3/8,8/15.7,24.3/32,32/39.7} {
-    \draw[red!80, line width=0.25pt] (\ya,\za)--(\yb,\zb);
-    \draw[red!80, line width=0.25pt] (\yb,\za)--(\ya,\zb);
+    \draw[black!40, line width=0.2pt] (\ya,\za)--(\yb,\zb);
+    \draw[black!40, line width=0.2pt] (\yb,\za)--(\ya,\zb);
   }
 }
 % Tek gruplar (1,3,5,7,9): T1 sağ (8→15.7) + T2 sol (24.3→32)
 \foreach \za/\zb in {9/15,21/27,45/63,81/99,117/135} {
   \foreach \ya/\yb in {8/15.7,24.3/32} {
-    \draw[red!80, line width=0.25pt] (\ya,\za)--(\yb,\zb);
-    \draw[red!80, line width=0.25pt] (\yb,\za)--(\ya,\zb);
+    \draw[black!40, line width=0.2pt] (\ya,\za)--(\yb,\zb);
+    \draw[black!40, line width=0.2pt] (\yb,\za)--(\ya,\zb);
   }
 }
 % Çift gruplar (2,4,6,8): T1 sol (0.3→8) + T2 sağ (32→39.7)
 \foreach \za/\zb in {15/21,27/45,63/81,99/117} {
   \foreach \ya/\yb in {0.3/8,32/39.7} {
-    \draw[red!80, line width=0.25pt] (\ya,\za)--(\yb,\zb);
-    \draw[red!80, line width=0.25pt] (\yb,\za)--(\ya,\zb);
+    \draw[black!40, line width=0.2pt] (\ya,\za)--(\yb,\zb);
+    \draw[black!40, line width=0.2pt] (\yb,\za)--(\ya,\zb);
   }
 }
-% --- Köprüler (turuncu): 6., 12., 18. kat ---
+% --- Köprüler (koyu gri): 6., 12., 18. kat ---
 \foreach \za/\zb in {33/39,69/75,105/111} {
   % Kolon
-  \draw[orange!70!black, line width=0.4pt] (20,\za)--(20,\zb);
+  \draw[black!80, line width=0.4pt] (20,\za)--(20,\zb);
   % Kirişler
-  \draw[orange!70!black, line width=0.3pt] (15.7,\za)--(24.3,\za);
-  \draw[orange!70!black, line width=0.3pt] (15.7,\zb)--(24.3,\zb);
+  \draw[black!70, line width=0.3pt] (15.7,\za)--(24.3,\za);
+  \draw[black!70, line width=0.3pt] (15.7,\zb)--(24.3,\zb);
   % Çapraz kafes
-  \draw[orange!50, line width=0.2pt] (15.7,\za)--(20,\zb);
-  \draw[orange!50, line width=0.2pt] (20,\za)--(15.7,\zb);
-  \draw[orange!50, line width=0.2pt] (20,\za)--(24.3,\zb);
-  \draw[orange!50, line width=0.2pt] (24.3,\za)--(20,\zb);
+  \draw[black!35, line width=0.2pt] (15.7,\za)--(20,\zb);
+  \draw[black!35, line width=0.2pt] (20,\za)--(15.7,\zb);
+  \draw[black!35, line width=0.2pt] (20,\za)--(24.3,\zb);
+  \draw[black!35, line width=0.2pt] (24.3,\za)--(20,\zb);
 }
 % --- Köprü 4 (çift kat, Z=141--153) ---
-\draw[orange!70!black, line width=0.4pt] (20,141)--(20,153);
-\draw[orange!70!black, line width=0.3pt] (15.7,141)--(24.3,141);
-\draw[orange!70!black, line width=0.3pt] (15.7,147)--(24.3,147);
-\draw[orange!70!black, line width=0.3pt] (15.7,153)--(24.3,153);
-\draw[orange!50, line width=0.2pt] (15.7,141)--(20,147);
-\draw[orange!50, line width=0.2pt] (20,141)--(15.7,147);
-\draw[orange!50, line width=0.2pt] (20,141)--(24.3,147);
-\draw[orange!50, line width=0.2pt] (24.3,141)--(20,147);
-\draw[orange!50, line width=0.2pt] (15.7,147)--(20,153);
-\draw[orange!50, line width=0.2pt] (20,147)--(15.7,153);
-\draw[orange!50, line width=0.2pt] (20,147)--(24.3,153);
-\draw[orange!50, line width=0.2pt] (24.3,147)--(20,153);
+\draw[black!80, line width=0.4pt] (20,141)--(20,153);
+\draw[black!70, line width=0.3pt] (15.7,141)--(24.3,141);
+\draw[black!70, line width=0.3pt] (15.7,147)--(24.3,147);
+\draw[black!70, line width=0.3pt] (15.7,153)--(24.3,153);
+\draw[black!35, line width=0.2pt] (15.7,141)--(20,147);
+\draw[black!35, line width=0.2pt] (20,141)--(15.7,147);
+\draw[black!35, line width=0.2pt] (20,141)--(24.3,147);
+\draw[black!35, line width=0.2pt] (24.3,141)--(20,147);
+\draw[black!35, line width=0.2pt] (15.7,147)--(20,153);
+\draw[black!35, line width=0.2pt] (20,147)--(15.7,153);
+\draw[black!35, line width=0.2pt] (20,147)--(24.3,153);
+\draw[black!35, line width=0.2pt] (24.3,147)--(20,153);
+% --- Düğüm noktaları Kule 1 (beyaz dolu daire) ---
+\foreach \y in {0.3,8,15.7} {
+  \fill[white] (\y,0) circle (0.8); \draw[black, line width=0.15pt] (\y,0) circle (0.8);
+  \fill[white] (\y,9) circle (0.8); \draw[black, line width=0.15pt] (\y,9) circle (0.8);
+  \foreach \f in {2,...,25} {
+    \pgfmathsetmacro{\z}{9+(\f-1)*6}
+    \fill[white] (\y,\z) circle (0.8); \draw[black, line width=0.15pt] (\y,\z) circle (0.8);
+  }
+}
+% --- Düğüm noktaları Kule 2 (beyaz dolu daire) ---
+\foreach \y in {24.3,32,39.7} {
+  \fill[white] (\y,0) circle (0.8); \draw[black, line width=0.15pt] (\y,0) circle (0.8);
+  \fill[white] (\y,9) circle (0.8); \draw[black, line width=0.15pt] (\y,9) circle (0.8);
+  \foreach \f in {2,...,25} {
+    \pgfmathsetmacro{\z}{9+(\f-1)*6}
+    \fill[white] (\y,\z) circle (0.8); \draw[black, line width=0.15pt] (\y,\z) circle (0.8);
+  }
+}
+% --- Köprü düğüm noktaları (beyaz dolu daire) ---
+\foreach \za in {33,39,69,75,105,111,141,147,153} {
+  \fill[white] (20,\za) circle (0.8); \draw[black, line width=0.15pt] (20,\za) circle (0.8);
+}
 % Kule etiketleri
-\node[font=\tiny,black!50] at (8,80) {Kule\,1};
-\node[font=\tiny,black!50] at (32,80) {Kule\,2};
+\node[font=\tiny,black!50] at (8,156) {Kule\,1};
+\node[font=\tiny,black!50] at (32,156) {Kule\,2};
 % Köprü etiketleri
-\node[font=\tiny,black!60,anchor=west] at (24.8,36) {K.6};
-\node[font=\tiny,black!60,anchor=west] at (24.8,72) {K.12};
-\node[font=\tiny,black!60,anchor=west] at (24.8,108) {K.18};
-\node[font=\tiny,black!60,anchor=west] at (24.8,147) {K.25};
+\node[font=\tiny,black!60,anchor=west] at (40.8,36) {K.6};
+\node[font=\tiny,black!60,anchor=west] at (40.8,72) {K.12};
+\node[font=\tiny,black!60,anchor=west] at (40.8,108) {K.18};
+\node[font=\tiny,black!60,anchor=west] at (40.8,147) {K.25};
 % --- Ölçüler ---
 \draw[<->,thin,black!60] (0.3,-3.5) -- node[below,font=\tiny]{$16$} (15.7,-3.5);
 \draw[<->,thin,black!60] (15.7,-3.5) -- node[below,font=\tiny]{$8$} (24.3,-3.5);
 \draw[<->,thin,black!60] (24.3,-3.5) -- node[below,font=\tiny]{$16$} (39.7,-3.5);
 \draw[<->,thin,black!60] (-3,0) -- node[left,font=\tiny,rotate=90,anchor=south]{$153$} (-3,153);
 % Alt başlık
-\node[font=\footnotesize,anchor=north] at (20,-7) {(b) Yan görünüm ($YZ$)};
+\node[font=\tiny,anchor=north] at (20,-7) {(b) Yan görünüm ($YZ$)};
 \end{scope}
 \end{tikzpicture}%
 }
-\caption{V10 yapısal sistem: (a)~ön görünüm ($XZ$)---iç açıklıklarda X-çapraz (0--12.~kat), dış açıklıklarda 3~katlık zikzak; (b)~yan görünüm ($YZ$)---köprü bağlantıları ve 3~katlık zikzak çaprazlar. Renkler: \textcolor{cyan!60!black}{kolon}, \textcolor{green!60!black}{kiriş\,$X$}, \textcolor{orange!70!black}{kiriş\,$Y$\,/\,köprü}, \textcolor{magenta!80}{çapraz\,$XZ$}, \textcolor{red!80}{çapraz\,$YZ$}. Ölçüler cm.}
+\caption{V10 yapısal sistem: (a)~ön görünüm ($XZ$)---iç açıklıklarda X-çapraz (0--12.~kat), dış açıklıklarda 3~katlık zikzak; (b)~yan görünüm ($YZ$)---köprü bağlantıları ve 3~katlık zikzak çaprazlar. Siyah: kolon, koyu gri: kiriş/köprü, açık gri: çapraz. Beyaz daireler: düğüm noktaları. Ölçüler cm.}
 \label{fig:sistem}
 \end{figure}
 
@@ -329,7 +367,7 @@ Deprem yüklerinin güvenle temele aktarılması için yapının yatay kuvvetler
 
 Deprem kuvvetleri yapı kütlesi ile doğru orantılı olduğundan, taşıyıcı sistemin mümkün olduğunca hafif tutulması esastır. Balsa ahşap malzeme ($E = 3.5$~GPa) kullanılarak yapısal analizler \textsc{OpenSees}\textsuperscript{\textregistered} yazılımı ile gerçekleştirilmiş~\cite{opensees}, ağırlık minimizasyonu ve rijitlik maksimizasyonu hedefleriyle iteratif optimizasyon yapılmıştır. \href{https://github.com/adzetto/DASK_26__DESIGN_AND_ANALYSIS}{\textcolor{blue}{Github deposunda}} tüm analiz ve optimizasyon kodları mevcuttur~\cite{github_repo}.
 
-Sonuç olarak, sahaya özgü deprem tehlikesi parametreleri ($S_{DS} = 1.008$~g, $S_{D1} = 0.514$~g, zemin sınıfı ZD) dikkate alınarak~\cite{afad2024}, TBDY 2018 gerekliliklerini karşılayan simetrik, rijit, sünek ve hafif bir ikiz kule--köprü taşıyıcı sistem tasarlanmıştır.
+Sonuç olarak, sahaya özgü deprem tehlikesi parametreleri ($S_{DS} = 1.008$~g, $S_{D1} = 0.514$~g, zemin sınıfı ZD) dikkate alınarak~\cite{afad2024}, TBDY 2018 gerekliliklerini karşılayan simetrik, yeterli yanal rijitliğe ve sünekliğe sahip, hafif bir çerçeve--çapraz hibrit ikiz kule--köprü taşıyıcı sistemi tasarlanmıştır.
 
 \newpage
 
@@ -357,7 +395,7 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 % ==============================================================================
 \begin{figure}[H]
 \centering
-\resizebox{0.85\textwidth}{!}{%
+\resizebox{0.65\textwidth}{!}{%
 \begin{tikzpicture}
 \begin{axis}[
     sciencestyle,
@@ -626,8 +664,8 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 }
 
 % Etiketler
-\node[font=\small] at (8,4) {Kule 1};
-\node[font=\small] at (8,28) {Kule 2};
+\node[font=\small] at (7.6,4) {Kule 1};
+\node[font=\small] at (7.6,28) {Kule 2};
 
 % Boyutlar
 \draw[<->, line width=0.3pt] (0.3,-3) -- (29.7,-3);
@@ -667,7 +705,7 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 
 \end{tikzpicture}%
 }
-\caption{V10 modeli kolon yerleşimi ve köprü bağlantısı: (a)~YZ kesiti ($n{-}1$, $n$, $n{+}1$ katları), (b)~köprü katı planı. $7 \times 3$ kolon gridi, köprü açıklığı $8{,}6$~cm. Temsilî çizim için DASK 2026 kodları~\cite{github_repo} kullanılmıştır.}
+\caption{V10 modeli kolon yerleşimi ve köprü bağlantısı: (a)~YZ kesiti ($n{-}1$, $n$, $n{+}1$ katları), (b)~köprü katı planı. $7 \times 3$ kolon gridi, köprü açıklığı $8{,}6$~cm. Temsilî çizim için DASK 2026 kodları~\cite{github_repo} kullanılmıştır. Uzunluklar elemanların dışından dışına ölçü olarak verilmiştir.}
 \label{fig:plan}
 \end{figure}
 
@@ -835,10 +873,10 @@ Sönümün yapısal tepkiye etkisini nicel olarak göstermek amacıyla KYH-1 (PG
 \textbf{Cevap:} Üç yer hareketi kaydı (KYH-1: $0.335$~g, KYH-2: $1.243$~g, KYH-3: $1.896$~g) altında tam ZTAH ($\Delta t\!=\!0.005$~s, 6446~adım, $\xi\!=\!0.05$~Rayleigh) icra edilmiştir~\cite{tbdy2018, opensees}. Önerilen hibrit sistemin etkisi iki esas tepki büyüklüğü üzerinden değerlendirilmiştir (Şekil~\ref{fig:drift_profile}).
 
 \textit{Göreli kat ötelemesi.}
-Maksimum interstory drift her üç kayıt altında 12.~katta teşekkül etmektedir: KYH-1'de $\lambda_{max}\!=\!0.439\%$, KYH-2'de $1.676\%$, KYH-3'te $3.468\%$. Çaprazlı çerçeveler taban katlarında rijitliği artırarak öteleme talebini düşürmekte; tepe katlarında moment çerçevesi baskınlığı sebebiyle drift azalmaktadır. Öteleme talebi orta katlarda (8--14.~kat) yoğunlaşmakta olup bu husus rijitlik gradyanı ile yüksek modların ($T_2\!=\!0.079$~s, $T_3\!=\!0.054$~s) bu kotlarda birinci moda yakın genlikler hasıl etmesinden kaynaklanmaktadır. PGA oranı $3.71\times$ iken drift oranı $3.82\times$ olarak elde edilmiş; elastik modelin lineer orantılılığı teyit edilmiştir. Kule arası diferansiyel öteleme $\Delta u_x < 0.001$~cm olup sky bridge kuleleri eş-fazlı çalıştırmaktadır~\cite{patoliya2023}. Tasarım depremi (KYH-1) altında $\lambda_{max}\!=\!0.439\% \ll 0.8\%$ ($\kappa\!=\!0.5$ çelik sınırı, Md.~4.9.1.3) olup yapı \textbf{öteleme güvenliğini} geniş marjla sağlamaktadır~\cite{tbdy2018, cythye2018}.
+Maksimum interstory drift her üç kayıt altında 23.~katta teşekkül etmektedir: KYH-1'de $\lambda_{max}\!=\!0.435\%$, KYH-2'de $1.320\%$, KYH-3'te $2.175\%$. Çaprazlı çerçeveler taban katlarında rijitliği artırarak öteleme talebini düşürmekte; tepe katlarında moment çerçevesi baskınlığı sebebiyle drift azalmaktadır. Öteleme talebi üst katlarda (14--23.~kat) yoğunlaşmakta olup bu husus rijitlik gradyanı ile yüksek modların bu kotlarda birinci moda yakın genlikler hasıl etmesinden kaynaklanmaktadır. PGA oranı $5.66\times$ iken drift oranı $5.00\times$ olarak elde edilmiş; elastik modelin yaklaşık lineer orantılılığı teyit edilmiştir. Kule arası diferansiyel öteleme $\Delta u_x < 0.001$~cm olup sky bridge kuleleri eş-fazlı çalıştırmaktadır~\cite{patoliya2023}. Tasarım depremi (KYH-1) altında $\lambda_{max}\!=\!0.435\% \ll 0.8\%$ ($\kappa\!=\!0.5$ çelik sınırı, Md.~4.9.1.3) olup yapı \textbf{öteleme güvenliğini} geniş marjla sağlamaktadır~\cite{tbdy2018, cythye2018}.
 
 \textit{Kat ivmeleri.}
-Çatı katı ivme yükseltme faktörü: KYH-1'de $\Omega\!=\!3.17$, KYH-2'de $2.60$, KYH-3'te $3.30$ ($\bar{\Omega}\!\approx\!3.0$). Kısa periyotlu yapı ($T_1\!=\!0.115$~s, plato bölgesi) sismik enerjiyi büyük oranda ivme olarak yapıya intikal ettirmektedir: KYH-3'te $u_{roof}\!=\!3.56$~cm (\%2.4) iken $\ddot{u}_{roof}\!=\!6.26$~g (PGA'nın $3.3\times$'ı). Rijit yapıların karakteristiği budur: \textbf{öteleme talebi düşük}, \textbf{ivme talebi yüksektir}. Periyodun uzatılması $\Omega$'yı düşürür fakat drift talebini artırır; bu mübadele yapısal sistem seçiminin esas dengeleme parametresidir. Çaprazlı çerçeveler $K_{lateral}$'i artırarak $T_1$'i düşürmekte (drift $\downarrow$, $\Omega$ $\uparrow$); moment çerçeveleri redundans ve yedek taşıyıcılık; sky bridge ise kuplajlama ($\Delta u_x \!\approx\! 0$, $\eta_{bi}\!=\!1.915$) temin etmektedir~\cite{tambunan2024}.
+Çatı katı ivme yükseltme faktörü: KYH-1'de $\Omega\!=\!3.17$, KYH-2'de $2.60$, KYH-3'te $3.30$ ($\bar{\Omega}\!\approx\!3.0$). Kısa periyotlu yapı ($T_1\!=\!0.115$~s, plato bölgesi) sismik enerjiyi büyük oranda ivme olarak yapıya intikal ettirmektedir: KYH-3'te $u_{roof}\!=\!2.37$~cm (\%1.6) iken $\ddot{u}_{roof}\!=\!6.26$~g (PGA'nın $3.3\times$'ı). Yanal rijitliği yüksek yapıların karakteristiği budur: \textbf{öteleme talebi düşük}, \textbf{ivme talebi yüksektir}. Periyodun uzatılması $\Omega$'yı düşürür fakat drift talebini artırır; bu mübadele yapısal sistem seçiminin esas dengeleme parametresidir. Çaprazlı çerçeveler $K_{lateral}$'i artırarak $T_1$'i düşürmekte (drift $\downarrow$, $\Omega$ $\uparrow$); moment çerçeveleri redundans ve yedek taşıyıcılık; sky bridge ise kuplajlama ($\Delta u_x \!\approx\! 0$, $\eta_{bi}\!=\!1.915$) temin etmektedir~\cite{tambunan2024}.
 
 \begin{figure}[H]
 \centering
@@ -862,24 +900,24 @@ Maksimum interstory drift her üç kayıt altında 12.~katta teşekkül etmekted
     label style={font=\scriptsize},
 ]
 \addplot[black, line width=0.9pt, mark=o, mark size=1.2pt, mark options={fill=white, thin}] coordinates {
-    (0.091,1) (0.138,2) (0.226,3) (0.253,4) (0.294,5) (0.305,6) (0.337,7) (0.372,8)
-    (0.351,9) (0.391,10) (0.408,11) (0.439,12) (0.385,13) (0.408,14) (0.365,15) (0.364,16)
-    (0.304,17) (0.325,18) (0.308,19) (0.319,20) (0.282,21) (0.282,22) (0.231,23) (0.220,24) (0.163,25)
+    (0.076,1) (0.092,2) (0.134,3) (0.171,4) (0.205,5) (0.238,6) (0.261,7) (0.259,8)
+    (0.294,9) (0.294,10) (0.312,11) (0.335,12) (0.329,13) (0.380,14) (0.398,15) (0.347,16)
+    (0.378,17) (0.389,18) (0.330,19) (0.395,20) (0.420,21) (0.341,22) (0.435,23) (0.365,24) (0.307,25)
 };
 \addlegendentry{KYH-1}
 \addplot[black!65, line width=0.9pt, mark=square, mark size=1.2pt, mark options={fill=white, thin}, dashed] coordinates {
-    (0.363,1) (0.545,2) (0.885,3) (0.991,4) (1.148,5) (1.193,6) (1.317,7) (1.451,8)
-    (1.371,9) (1.522,10) (1.564,11) (1.676,12) (1.464,13) (1.543,14) (1.363,15) (1.353,16)
-    (1.115,17) (1.186,18) (1.112,19) (1.145,20) (1.010,21) (1.007,22) (0.832,23) (0.793,24) (0.599,25)
+    (0.238,1) (0.289,2) (0.421,3) (0.532,4) (0.640,5) (0.746,6) (0.808,7) (0.811,8)
+    (0.918,9) (0.907,10) (0.968,11) (1.041,12) (1.014,13) (1.175,14) (1.238,15) (1.059,16)
+    (1.162,17) (1.200,18) (1.006,19) (1.206,20) (1.284,21) (1.038,22) (1.320,23) (1.115,24) (0.943,25)
 };
 \addlegendentry{KYH-2}
 \addplot[black!35, line width=0.9pt, mark=triangle, mark size=1.4pt, mark options={fill=white, thin}, densely dotted] coordinates {
-    (0.669,1) (1.036,2) (1.727,3) (1.937,4) (2.272,5) (2.364,6) (2.641,7) (2.915,8)
-    (2.794,9) (3.109,10) (3.229,11) (3.468,12) (3.038,13) (3.211,14) (2.856,15) (2.840,16)
-    (2.353,17) (2.507,18) (2.357,19) (2.431,20) (2.146,21) (2.140,22) (1.764,23) (1.680,24) (1.262,25)
+    (0.423,1) (0.513,2) (0.745,3) (0.929,4) (1.124,5) (1.315,6) (1.388,7) (1.425,8)
+    (1.608,9) (1.552,10) (1.670,11) (1.809,12) (1.729,13) (2.028,14) (2.140,15) (1.764,16)
+    (1.970,17) (2.044,18) (1.668,19) (2.016,20) (2.150,21) (1.722,22) (2.175,23) (1.860,24) (1.596,25)
 };
 \addlegendentry{KYH-3}
-\draw[black!40, dashed, thin] (axis cs:0,12) -- (axis cs:3.8,12);
+\draw[black!40, dashed, thin] (axis cs:0,23) -- (axis cs:3.8,23);
 \end{axis}
 \end{tikzpicture}
 \\[1pt]{\footnotesize (a) Göreli kat ötelemesi}
@@ -905,21 +943,21 @@ Maksimum interstory drift her üç kayıt altında 12.~katta teşekkül etmekted
     label style={font=\scriptsize},
 ]
 \addplot[black, line width=0.9pt, mark=o, mark size=1.2pt, mark options={fill=white, thin}] coordinates {
-    (0.008,1) (0.016,2) (0.030,3) (0.045,4) (0.063,5) (0.081,6) (0.102,7) (0.133,8)
-    (0.145,9) (0.172,10) (0.192,11) (0.219,12) (0.241,13) (0.267,14) (0.285,15) (0.312,16)
-    (0.324,17) (0.344,18) (0.361,19) (0.380,20) (0.397,21) (0.413,22) (0.427,23) (0.440,24) (0.452,25)
+    (0.007,1) (0.012,2) (0.020,3) (0.031,4) (0.043,5) (0.057,6) (0.073,7) (0.088,8)
+    (0.106,9) (0.124,10) (0.142,11) (0.163,12) (0.182,13) (0.205,14) (0.229,15) (0.250,16)
+    (0.272,17) (0.296,18) (0.316,19) (0.339,20) (0.365,21) (0.385,22) (0.411,23) (0.433,24) (0.451,25)
 };
 \addlegendentry{KYH-1}
 \addplot[black!65, line width=0.9pt, mark=square, mark size=1.2pt, mark options={fill=white, thin}, dashed] coordinates {
-    (0.033,1) (0.065,2) (0.119,3) (0.178,4) (0.247,5) (0.319,6) (0.398,7) (0.521,8)
-    (0.567,9) (0.673,10) (0.753,11) (0.857,12) (0.942,13) (1.046,14) (1.116,15) (1.219,16)
-    (1.264,17) (1.337,18) (1.402,19) (1.471,20) (1.531,21) (1.591,22) (1.641,23) (1.689,24) (1.733,25)
+    (0.021,1) (0.039,2) (0.064,3) (0.096,4) (0.134,5) (0.179,6) (0.228,7) (0.276,8)
+    (0.331,9) (0.386,10) (0.444,11) (0.506,12) (0.567,13) (0.638,14) (0.712,15) (0.776,16)
+    (0.845,17) (0.917,18) (0.978,19) (1.050,20) (1.127,21) (1.189,22) (1.269,23) (1.335,24) (1.392,25)
 };
 \addlegendentry{KYH-2}
 \addplot[black!35, line width=0.9pt, mark=triangle, mark size=1.4pt, mark options={fill=white, thin}, densely dotted] coordinates {
-    (0.060,1) (0.122,2) (0.226,3) (0.342,4) (0.479,5) (0.621,6) (0.780,7) (1.028,8)
-    (1.122,9) (1.339,10) (1.505,11) (1.720,12) (1.895,13) (2.114,14) (2.259,15) (2.475,16)
-    (2.571,17) (2.725,18) (2.862,19) (3.009,20) (3.137,21) (3.264,22) (3.370,23) (3.471,24) (3.564,25)
+    (0.038,1) (0.069,2) (0.114,3) (0.169,4) (0.237,5) (0.316,6) (0.399,7) (0.484,8)
+    (0.581,9) (0.674,10) (0.774,11) (0.883,12) (0.987,13) (1.108,14) (1.237,15) (1.342,16)
+    (1.461,17) (1.583,18) (1.683,19) (1.804,20) (1.933,21) (2.037,22) (2.167,23) (2.279,24) (2.374,25)
 };
 \addlegendentry{KYH-3}
 \end{axis}
@@ -965,7 +1003,7 @@ Maksimum interstory drift her üç kayıt altında 12.~katta teşekkül etmekted
 \\[1pt]{\footnotesize (c) Çatı ivmesi yükseltmesi}
 \end{minipage}
 \vspace{-4pt}
-\caption{Kule~1 ZTAH: (a)~göreli kat ötelemesi profili ($\lambda_{max}$: kat~12), (b)~kat deplasman zarfı, (c)~çatı ivmesi--PGA ilişkisi ($\bar{\Omega}\!\approx\!3$).}
+\caption{Kule~1 ZTAH: (a)~göreli kat ötelemesi profili ($\lambda_{max}$: kat~23), (b)~kat deplasman zarfı, (c)~çatı ivmesi--PGA ilişkisi ($\bar{\Omega}\!\approx\!3$).}
 \label{fig:drift_profile}
 \end{figure}
 

@@ -9,15 +9,15 @@
 \contentsline {subsubsection}{\numberline {5.1.2}Yeterli Yanal Rijitlik \& Sürekli Yük Aktarımı ve Süneklik}{6}{subsubsection.5.1.2}%
 \contentsline {subsubsection}{\numberline {5.1.3}Hafiflik ve Malzeme}{6}{subsubsection.5.1.3}%
 \contentsline {subsection}{\numberline {5.2}Soru II}{7}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Soru III}{9}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Soru IV}{10}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}Uygulama Zorluğu}{10}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.2}Maliyet}{10}{subsubsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.3}Sektörel Sebepler}{10}{subsubsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.5}Soru V}{11}{subsection.5.5}%
-\contentsline {subsubsection}{\numberline {5.5.1}EDYY'nin Yetersizliği}{11}{subsubsection.5.5.1}%
-\contentsline {subsubsection}{\numberline {5.5.2}MBY'nin Tercih Gerekçesi}{11}{subsubsection.5.5.2}%
-\contentsline {subsubsection}{\numberline {5.5.3}Doğrulama ve Ölçekli Model}{11}{subsubsection.5.5.3}%
-\contentsline {subsection}{\numberline {5.6}Soru VI}{12}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Soru VII}{13}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Soru VIII}{14}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.3}Soru III}{8}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Soru IV}{9}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Uygulama Zorluğu}{9}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}Maliyet}{9}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.3}Sektörel Sebepler}{9}{subsubsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.5}Soru V}{10}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}EDYY'nin Yetersizliği}{10}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}MBY'nin Tercih Gerekçesi}{10}{subsubsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.3}Doğrulama ve Ölçekli Model}{10}{subsubsection.5.5.3}%
+\contentsline {subsection}{\numberline {5.6}Soru VI}{11}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Soru VII}{12}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Soru VIII}{13}{subsection.5.8}%
