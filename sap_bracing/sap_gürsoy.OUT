@@ -1,0 +1,18 @@
+
+
+ SAP2000 v26.3.0 Ultimate 64-bit (Analysis Build 9993/64)                       
+ File: c:\Users\lenovo\Desktop\DASK_NEW\sap_bracing\sap_gürsoy.OUT              
+                                                                     
+                                                                       
+
+ D I S P L A C E M E N T   D E G R E E S   O F   F R E E D O M
+
+         (A) = Active DOF, equilibrium equation
+         (-) = Restrained DOF, reaction computed
+         (+) = Constrained DOF
+         (>) = External substructure DOF
+         ( ) = Null DOF
+
+  JOINTS              UX  UY  UZ  RX  RY  RZ
+    1143 TO       2    A   A   A   A   A   A
+     132 TO       1    -   -   -   -   -   -
