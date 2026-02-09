@@ -143,18 +143,18 @@ Moment çerçevesi sünek fakat rijitliği yetersiz; salt çaprazlı sistem riji
 
 \noindent\textbf{Sistem geometrisi.}
 Model $40\!\times\!40\,\mathrm{cm}$ tabla üzerinde $6\!\times\!6\,\mathrm{mm}$ balsa çıtadan imal edilmiştir (Şekil~\ref{fig:sistem}).
-Her kule: $30\!\times\!16\,\mathrm{cm}$ plan, $8\!\times\!4$ kolon gridi; zemin kat $9\,\mathrm{cm}$, üst 24~kat $6\,\mathrm{cm}$; $H\!=\!153\,\mathrm{cm}$.
+Her kule: $30\!\times\!16\,\mathrm{cm}$ plan, $7\!\times\!3$ kolon gridi; zemin kat $9\,\mathrm{cm}$, üst 24~kat $6\,\mathrm{cm}$; $H\!=\!153\,\mathrm{cm}$.
 Kuleler arası açıklık $8\,\mathrm{cm}$.
-İç açıklıklarda ($3{,}4\,\mathrm{cm}$) zemin--2.\ köprü arasında (0--12.~kat) X-çapraz elemanlar uygulanmıştır.
-Dış açıklıklarda $XZ$ ve $YZ$ çaprazlar 3~katlık zikzak düzeniyle yerleştirilmiştir.
+İç açıklıklarda ($3{,}7\,\mathrm{cm}$) zemin--13.~kat ve son 2~katta X-çapraz elemanlar uygulanmıştır.
+Dış açıklıklarda $XZ$ ve $YZ$ çaprazlar alt 4~katta her katta, üst katlarda 3~katlık zikzak düzeniyle yerleştirilmiştir.
 Köprüler 6., 12., 18.\ ve 25.~katta olup her biri 24~elemandan oluşur.
 
 \noindent\textbf{Analiz ve sonuçlar.}
-Model \textsc{OpenSees}~\cite{opensees} ile 1680~düğüm, 3808~\texttt{elasticBeamColumn} elemanı olarak oluşturulmuştur.
-Balsa: $E\!=\!170\,\mathrm{kN/cm^2}$, $\rho\!=\!160\,\mathrm{kg/m^3}$; çıta: $A\!=\!0.36\,\mathrm{cm^2}$, $I\!=\!0.0108\,\mathrm{cm^4}$.
-Yapısal ağırlık $W\!=\!1.377\,\mathrm{kg}$ ($<2.000\,\mathrm{kg}$).
-Modal periyotlar: $T_1\!=\!0.200$~s, $T_2\!=\!0.147$~s, $T_3\!=\!0.135$~s; üçü de plato bölgesindedir.
-Göreli öteleme $\delta_i/h_i\!=\!0.00017 \ll 0.008$; eksantrisite $e_x/L_x\!=\!0.005$, $e_y/L_y\!=\!0.034$ ile kontroller sağlanmıştır~\cite{tbdy2018}.
+Model \textsc{OpenSees}~\cite{opensees} ile 1108~düğüm, 2794~eleman (2170~çerçeve + 624~kafes) olarak oluşturulmuştur.
+Balsa: $E\!=\!350\,\mathrm{kN/cm^2}$, $\rho\!=\!160\,\mathrm{kg/m^3}$; çıta: $A\!=\!0.36\,\mathrm{cm^2}$, $I\!=\!0.0108\,\mathrm{cm^4}$.
+Yapısal ağırlık $W\!=\!1.168\,\mathrm{kg}$ ($<2.000\,\mathrm{kg}$).
+Modal periyotlar: $T_1\!=\!0.115$~s (plato), $T_2\!=\!0.079$~s, $T_3\!=\!0.054$~s; $T_1$ plato bölgesinde, $T_2$ ve $T_3$ artan bölgededir.
+Eksantrisite $e_x/L_x\!=\!0{,}000$, $e_y/L_y\!=\!0{,}000$ (tam simetri); zemin katta $\eta_{bi}\!=\!1.69 < 2.0$ ile A1a kontrolü sağlanmıştır~\cite{tbdy2018}.
 
 % --- Şekil: Yapısal sistem ---
 \begin{figure}[H]
@@ -319,7 +319,7 @@ Binanın her bir farklı katına ait plan ve iki ana doğrultudaki kesit çiziml
 
 \subsubsection{İkiz Kule ve Köprü Sistemi \& Simetri ve Düzenlilik}
 
-Yüksek katlı yapı konfigürasyonu olarak iki ayrı kule ve bunları birbirine bağlayan köprü elemanlarından oluşan bir sistem tasarlanmıştır. Her kule 26 kattan oluşmakta olup $8 \times 4$ kolon gridi üzerine inşa edilmiştir. Literatürdeki çalışmalar, köprü bağlantılarının yapı yüksekliğinin $1/4$, $1/2$ ve $3/4$ seviyelerine yerleştirilmesinin sismik performansı optimize ettiğini göstermektedir~\cite{patoliya2023}. Bu doğrultuda köprüler yaklaşık olarak 6., 12., 18. ve 25. katlara konumlandırılmıştır. Bu konfigürasyon, yatay yükler altında kulelerin birlikte çalışmasını sağlamakta ve tek bir yüksek kuleye kıyasla daha dengeli yük dağılımı sunmaktadır. Yapının planda ve düşeyde düzenli olması, burulma düzensizliğini önlemek açısından temel gerekliliktir. İkiz kule sistemi her iki ana eksende ($X$, $Y$) simetrik olarak tasarlanmış; kütle merkezi ile rijitlik merkezi arasındaki eksantrisite en aza indirilmiştir. A1a burulma düzensizliği katsayısı $\eta_{bi} = 1.112 < 1.4$ koşulunu sağlamakta olup yapı düzenli sınıfındadır~\cite{teblig2024}.
+Yüksek katlı yapı konfigürasyonu olarak iki ayrı kule ve bunları birbirine bağlayan köprü elemanlarından oluşan bir sistem tasarlanmıştır. Her kule 26 kattan oluşmakta olup $7 \times 3$ kolon gridi üzerine inşa edilmiştir. Literatürdeki çalışmalar, köprü bağlantılarının yapı yüksekliğinin $1/4$, $1/2$ ve $3/4$ seviyelerine yerleştirilmesinin sismik performansı optimize ettiğini göstermektedir~\cite{patoliya2023}. Bu doğrultuda köprüler yaklaşık olarak 6., 12., 18. ve 25. katlara konumlandırılmıştır. Bu konfigürasyon, yatay yükler altında kulelerin birlikte çalışmasını sağlamakta ve tek bir yüksek kuleye kıyasla daha dengeli yük dağılımı sunmaktadır. Yapının planda ve düşeyde düzenli olması, burulma düzensizliğini önlemek açısından temel gerekliliktir. İkiz kule sistemi her iki ana eksende ($X$, $Y$) simetrik olarak tasarlanmış; kütle merkezi ile rijitlik merkezi arasındaki eksantrisite en aza indirilmiştir. A1a burulma düzensizliği katsayısı zemin katta $\eta_{bi} = 1.69$ olup $2{,}0$'nin altındadır; üst katlarda $\eta_{bi} < 1.2$ değerleri elde edilmiştir~\cite{teblig2024}.
 
 \subsubsection{Yeterli Yanal Rijitlik \& Sürekli Yük Aktarımı ve Süneklik}
 
@@ -340,7 +340,7 @@ Sonuç olarak, sahaya özgü deprem tehlikesi parametreleri ($S_{DS} = 1.008$~g,
 
 \textbf{Soru:} Binanızın doğal titreşim periyodu ile deprem yer hareketi tepki spektrumu arasındaki ilişkiyi açıklayınız.
 
-\textbf{Cevap:} Yapının ilk üç doğal titreşim periyodu ($T_1=0.200$~s, $T_2=0.147$~s, $T_3=0.135$~s) TBDY~2018 DD-2 tasarım spektrumunun sabit ivme (plato) bölgesine ($T_A=0.102$~s $< T_n <$ $T_B=0.510$~s) düşmektedir. Bu durum, yapının tasarım depreminden alabileceği maksimum spektral ivmeye ($S_{ae}=1.008$~g) maruz kaldığı anlamına gelir; ancak periyotların ZD zemin hakim periyodundan ($T_g\approx0.4$--$0.7$~s) belirgin şekilde kısa olması rezonans riskini ortadan kaldırmaktadır.
+\textbf{Cevap:} Yapının ilk üç doğal titreşim periyodu ($T_1=0.115$~s, $T_2=0.079$~s, $T_3=0.054$~s) değerlendirildiğinde, $T_1$ TBDY~2018 DD-2 tasarım spektrumunun sabit ivme (plato) bölgesine ($T_A=0.102$~s $< T_1 <$ $T_B=0.510$~s) düşmekte; $T_2$ ve $T_3$ ise artan bölgede ($T < T_A$) yer almaktadır. Birinci mod tam plato ivmesini ($S_{ae}=1.008$~g) alırken, $T_2$ için $S_{ae}=0.872$~g, $T_3$ için $S_{ae}=0.723$~g elde edilmektedir. Periyotların ZD zemin hakim periyodundan ($T_g\approx0.4$--$0.7$~s) belirgin şekilde kısa olması rezonans riskini ortadan kaldırmaktadır.
 
 İstanbul Finans Merkezi ($41.002136^\circ$, $29.106832^\circ$) için AFAD~\cite{afad2024} DD-2 verileri: $S_S = 0.877$, $S_1 = 0.243$, zemin sınıfı ZD. Yerel zemin etki katsayıları $F_S = 1.149$, $F_1 = 2.114$ ile tasarım parametreleri:
 %
@@ -350,7 +350,7 @@ S_{DS} = 0.877 \times 1.149 = 1.008\text{~g}, \quad S_{D1} = 0.243 \times 2.114 
 %
 Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{DS} = 0.510$~s olarak hesaplanmıştır~\cite{tbdy2018}.
 
-\textsc{OpenSees}\textsuperscript{\textregistered}~\cite{opensees} ile 4248 elemanlı V9 modeli \texttt{elasticBeamColumn} elemanları ve toplu kütle (\textit{lumped mass}) formülasyonu ile oluşturulmuştur. Özdeğer problemi $\mathbf{K}\boldsymbol{\phi}_n = \omega_n^2 \mathbf{M}\boldsymbol{\phi}_n$ ARPACK kütüphanesi ile Lanczos iterasyonu (\texttt{-genBandArpack}) kullanılarak çözülmüş; ilk 12~mod için periyotlar $T_n = 2\pi/\omega_n$ ile elde edilmiştir. Modal periyotlar: $T_1 = 0.200$~s, $T_2 = 0.147$~s, $T_3 = 0.135$~s. Her üç mod $T_A < T_n < T_B$ aralığında plato bölgesinde olup $S_{ae} = S_{DS} = 1.008$~g almaktadır. Dördüncü mod ($T_4 = 0.063$~s) artan bölgede: $S_{ae}(T_4) = (0.4 + 0.6 \cdot 0.063/0.102) \cdot 1.008 = 0.777$~g. Modal katkılar CQC yöntemiyle birleştirilmiş olup korelasyon katsayısı $\rho_{ij} = 8\xi^2(1+\beta_{ij})\beta_{ij}^{3/2}/[(1-\beta_{ij}^2)^2 + 4\xi^2\beta_{ij}(1+\beta_{ij})^2]$ ($\beta_{ij} = \omega_i/\omega_j$, $\xi = 0.05$) ile hesaplanmıştır. Taban kesme kuvveti $V_t = 2.75$~N'dur. Yapı periyodunun ZD zemin hakim periyodundan ($T_g \approx 0.4$--$0.7$~s) kısa olması rezonans riskini azaltmaktadır. Spektrum-periyot ilişkisi Şekil~\ref{fig:spectrum}'de gösterilmektedir.
+\textsc{OpenSees}\textsuperscript{\textregistered}~\cite{opensees} ile 1108 düğüm, 2794~elemanlı V10 modeli \texttt{elasticBeamColumn} elemanları ve toplu kütle (\textit{lumped mass}) formülasyonu ile oluşturulmuştur. Özdeğer problemi $\mathbf{K}\boldsymbol{\phi}_n = \omega_n^2 \mathbf{M}\boldsymbol{\phi}_n$ ARPACK kütüphanesi ile Lanczos iterasyonu (\texttt{-genBandArpack}) kullanılarak çözülmüş; ilk 12~mod için periyotlar $T_n = 2\pi/\omega_n$ ile elde edilmiştir. Modal periyotlar: $T_1 = 0.115$~s (Y sallanım, \%72.3), $T_2 = 0.079$~s (X sallanım, \%68.3), $T_3 = 0.054$~s (burulma). Birinci mod $T_A < T_1 < T_B$ aralığında plato bölgesinde olup $S_{ae} = S_{DS} = 1.008$~g almaktadır; $T_2$ ve $T_3$ artan bölgede olup $S_{ae}(T_2) = 0.872$~g, $S_{ae}(T_3) = 0.723$~g değerlerini almaktadır. Dördüncü mod ($T_4 = 0.039$~s) daha derin artan bölgede: $S_{ae}(T_4) = (0.4 + 0.6 \cdot 0.039/0.102) \cdot 1.008 = 0.635$~g. Modal katkılar CQC yöntemiyle birleştirilmiş olup korelasyon katsayısı $\rho_{ij} = 8\xi^2(1+\beta_{ij})\beta_{ij}^{3/2}/[(1-\beta_{ij}^2)^2 + 4\xi^2\beta_{ij}(1+\beta_{ij})^2]$ ($\beta_{ij} = \omega_i/\omega_j$, $\xi = 0.05$) ile hesaplanmıştır. Elastik taban kesme kuvveti $V_t = 160$~N olup TBDY~2018 gerekliliklerini sağlamaktadır. Yapı periyodunun ZD zemin hakim periyodundan ($T_g \approx 0.4$--$0.7$~s) kısa olması rezonans riskini azaltmaktadır. Spektrum-periyot ilişkisi Şekil~\ref{fig:spectrum}'de gösterilmektedir.
 
 % ==============================================================================
 % ŞEKİL: AFAD Tasarım Spektrumları ve Modal Analiz
@@ -394,17 +394,17 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
     (0.001, 0.1536) (0.083, 0.384) (0.412, 0.384) (0.5, 0.316) (0.6, 0.263) (0.8, 0.198) (1.0, 0.158) (1.2, 0.132) (1.5, 0.105) (2.0, 0.079) (2.5, 0.063)
 };
 
-% Modal Analiz - Mod 1
-\addplot[only marks, mark=o, mark size=3.5pt, fill=white, draw=black, line width=0.8pt] coordinates {(0.200, 1.008)};
-\node[anchor=south west, font=\scriptsize] at (axis cs:0.205, 1.020) {$T_1$};
+% Modal Analiz - Mod 1 (plato)
+\addplot[only marks, mark=o, mark size=3.5pt, fill=white, draw=black, line width=0.8pt] coordinates {(0.115, 1.008)};
+\node[anchor=south west, font=\scriptsize] at (axis cs:0.120, 1.020) {$T_1$};
 
-% Mod 2
-\addplot[only marks, mark=square, mark size=3pt, fill=white, draw=black, line width=0.8pt] coordinates {(0.147, 1.008)};
-\node[anchor=south, font=\scriptsize] at (axis cs:0.147, 0.835) {$T_2$};
+% Mod 2 (artan bölge)
+\addplot[only marks, mark=square, mark size=3pt, fill=white, draw=black, line width=0.8pt] coordinates {(0.079, 0.872)};
+\node[anchor=south, font=\scriptsize] at (axis cs:0.079, 0.700) {$T_2$};
 
-% Mod 3
-\addplot[only marks, mark=triangle, mark size=3.5pt, fill=white, draw=black, line width=0.8pt] coordinates {(0.135, 1.008)};
-\node[anchor=south, font=\scriptsize] at (axis cs:0.135, 1.050) {$T_3$};
+% Mod 3 (artan bölge)
+\addplot[only marks, mark=triangle, mark size=3.5pt, fill=white, draw=black, line width=0.8pt] coordinates {(0.054, 0.723)};
+\node[anchor=south west, font=\scriptsize] at (axis cs:0.060, 0.740) {$T_3$};
 
 % Köşe periyotları
 \addplot[black, thin, densely dotted] coordinates {(0.102, 0) (0.102, 1.15)};
@@ -423,7 +423,7 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 \end{axis}
 \end{tikzpicture}%
 }
-\caption{AFAD DD-1/2/3/4 yatay elastik tasarım spektrumları ve \textsc{OpenSees} modal analiz sonuçları (İFM, ZD). Beyaz işaretçiler V9 modelinin ilk üç modunu göstermektedir ($T_1 = 0.200$~s, $T_2 = 0.147$~s, $T_3 = 0.135$~s).}
+\caption{AFAD DD-1/2/3/4 yatay elastik tasarım spektrumları ve \textsc{OpenSees} modal analiz sonuçları (İFM, ZD). Beyaz işaretçiler V10 modelinin ilk üç modunu göstermektedir ($T_1 = 0.115$~s plato, $T_2 = 0.079$~s artan, $T_3 = 0.054$~s artan).}
 \label{fig:spectrum}
 \end{figure}
 
@@ -440,11 +440,11 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 
 \textbf{Cevap:} Düşey taşıyıcı yerleşiminde üç temel hedef gözetilmiştir: (i)~düşey yüklerin ($Z$) sürekli ve kesintisiz temele aktarımı, (ii)~yatay kuvvetlere ($X$, $Y$) karşı yeterli yanal rijitliğin temini, (iii)~burulma düzensizliğinin kontrolü~\cite{tbdy2018}.
 
-\textit{Kolon Grid Konfigürasyonu:} Her kule için $8 \times 4$ ortogonal kolon gridi uygulanmıştır. $X$ ekseninde değişken açıklık düzeni benimsenmiş olup köşe açıklıkları ($L = 3$~cm) kısa tutularak moment çerçevesi rijitliği artırılmış, merkez bölgede dar kolon aralığı ($\Delta x = 2.0$~cm) ile perde duvarı benzeri rijitlik konsantrasyonu sağlanmıştır. $Y$ ekseninde iç kolon sıraları ($y = 7.0$ ve $9.0$~cm) yakınlaştırılarak köprü bağlantı hattı güçlendirilmiş; bu konfigürasyon rijitlik merkezi ile kütle merkezi arasındaki mesafeyi minimize ederek burulma talebini azaltmaktadır~\cite{nehrp2009}.
+\textit{Kolon Grid Konfigürasyonu:} Her kule için $7 \times 3$ ortogonal kolon gridi uygulanmıştır. $X$ ekseninde değişken açıklık düzeni benimsenmiş olup köşe açıklıkları ($L = 2{,}7$~cm) kısa tutularak moment çerçevesi rijitliği artırılmış, iç açıklıklarda ($3{,}7$~cm) perde duvarı benzeri rijitlik konsantrasyonu sağlanmıştır. $Y$ ekseninde eşit iki açıklık ($L_y = 7{,}7$~cm) ile simetrik dağılım elde edilmiş; merkez kolonlar köprü bağlantı hattını güçlendirmektedir. Bu konfigürasyon rijitlik merkezi ile kütle merkezi arasındaki mesafeyi sıfıra indirerek burulma talebini azaltmaktadır~\cite{nehrp2009}.
 
 \textit{Yanal Yük Taşıyıcı Sistem:} Moment çerçevesi tek başına hedef yanal rijitliği karşılayamadığından, $XZ$ ve $YZ$ düzlemlerinde çapraz elemanlarla desteklenmiş hibrit sistem tercih edilmiştir. Çapraz elemanlar köşe ve merkez açıklıklara yerleştirilmiş; tüm katlarda kesintisiz devam ettirilerek yük akışı sürekliliği tesis edilmiştir~\cite{tbdy2018}.
 
-\textit{Köprü Bağlantı Seviyeleri:} Köprüler yapı yüksekliğinin $H/4$, $H/2$, $3H/4$ ve tepe kotlarına konumlandırılmıştır. Bu dağılım, ikiz kule sistemlerinde mod şekillerini dengeleyerek taban kesme kuvvetini minimize etmektedir~\cite{patoliya2023}. Köprü genişliği merkez kolon hattı ($x = 10.5$--$19.5$~cm) ile sınırlandırılmış; böylece kulelerin bağımsız titreşim karakteristiği korunarak kontrollü yük paylaşımı sağlanmıştır. Uygulanan yerleşim düzeni sonucunda kütle-rijitlik eksantrisitesi $e_x/L_x = 0.005$, $e_y/L_y = 0.034$ olarak elde edilmiş; TBDY 2018 sınır değeri ($e/L < 0.05$) sağlanmıştır~\cite{tbdy2018}. Zemin katta A1a burulma düzensizliği katsayısı $\eta_{bi} = 1.19 \lessapprox 1.2$ olup bu durum temel-üstyapı rijitlik geçişinden kaynaklanmaktadır; üst katlarda $\eta_{bi} < 1.1$ değerleri elde edilmiştir~\cite{teblig2024}. Kolon yerleşimi Şekil~\ref{fig:plan}'de sunulmaktadır.
+\textit{Köprü Bağlantı Seviyeleri:} Köprüler yapı yüksekliğinin $H/4$, $H/2$, $3H/4$ ve tepe kotlarına konumlandırılmıştır. Bu dağılım, ikiz kule sistemlerinde mod şekillerini dengeleyerek taban kesme kuvvetini minimize etmektedir~\cite{patoliya2023}. Köprü genişliği merkez kolon hattı ($x = 11.3$--$18.7$~cm, genişlik $7{,}4$~cm) ile sınırlandırılmış; böylece kulelerin bağımsız titreşim karakteristiği korunarak kontrollü yük paylaşımı sağlanmıştır. Uygulanan çift simetri sayesinde kütle-rijitlik eksantrisitesi $e_x/L_x = 0{,}000$, $e_y/L_y = 0{,}000$ olarak elde edilmiştir~\cite{tbdy2018}. Zemin katta A1a burulma düzensizliği katsayısı $\eta_{bi} = 1{,}69 < 2{,}0$ olup bu değer alt katlardaki asimetrik çapraz rijitliğinden kaynaklanmaktadır; 5.~kattan itibaren $\eta_{bi} < 1{,}2$ değerleri elde edilmiştir~\cite{teblig2024}. Kolon yerleşimi Şekil~\ref{fig:plan}'de sunulmaktadır.
 
 % ==============================================================================
 % ŞEKİL: Kolon Yerleşimi ve Köprü Bağlantısı (Kesit + Plan)
@@ -461,23 +461,23 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 
 % n-1. kat - köprü yok
 % Kirişler (üst ve alt)
-\draw[line width=0.5pt] (0,0) -- (16,0);
-\draw[line width=0.5pt] (24,0) -- (40,0);
-\draw[line width=0.5pt] (0,\kh) -- (16,\kh);
-\draw[line width=0.5pt] (24,\kh) -- (40,\kh);
+\draw[line width=0.5pt] (0.3,0) -- (15.7,0);
+\draw[line width=0.5pt] (24.3,0) -- (39.7,0);
+\draw[line width=0.5pt] (0.3,\kh) -- (15.7,\kh);
+\draw[line width=0.5pt] (24.3,\kh) -- (39.7,\kh);
 % Kolonlar
-\foreach \y in {0,7.0,9.0,16,24,31.0,33.0,40} {
+\foreach \y in {0.3,8.0,15.7,24.3,32.0,39.7} {
     \draw[fill=white, draw=black, line width=0.4pt] (\y-0.4,0) rectangle (\y+0.4,\kh);
 }
 % X-brace çaprazlar
-\draw[line width=0.3pt, gray] (0,0) -- (7.0,\kh);
-\draw[line width=0.3pt, gray] (7.0,0) -- (0,\kh);
-\draw[line width=0.3pt, gray] (9.0,0) -- (16,\kh);
-\draw[line width=0.3pt, gray] (16,0) -- (9.0,\kh);
-\draw[line width=0.3pt, gray] (24,0) -- (31.0,\kh);
-\draw[line width=0.3pt, gray] (31.0,0) -- (24,\kh);
-\draw[line width=0.3pt, gray] (33.0,0) -- (40,\kh);
-\draw[line width=0.3pt, gray] (40,0) -- (33.0,\kh);
+\draw[line width=0.3pt, gray] (0.3,0) -- (8.0,\kh);
+\draw[line width=0.3pt, gray] (8.0,0) -- (0.3,\kh);
+\draw[line width=0.3pt, gray] (8.0,0) -- (15.7,\kh);
+\draw[line width=0.3pt, gray] (15.7,0) -- (8.0,\kh);
+\draw[line width=0.3pt, gray] (24.3,0) -- (32.0,\kh);
+\draw[line width=0.3pt, gray] (32.0,0) -- (24.3,\kh);
+\draw[line width=0.3pt, gray] (32.0,0) -- (39.7,\kh);
+\draw[line width=0.3pt, gray] (39.7,0) -- (32.0,\kh);
 \node[font=\scriptsize] at (8,\kh/2) {Kule 1};
 \node[font=\scriptsize] at (32,\kh/2) {Kule 2};
 \node[font=\scriptsize, anchor=east] at (-1,\kh/2) {$n{-}1$};
@@ -485,61 +485,61 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 % n. kat - KÖPRÜ VAR
 \begin{scope}[shift={(0,\kh+1)}]
 % Kirişler
-\draw[line width=0.5pt] (0,0) -- (16,0);
-\draw[line width=0.5pt] (24,0) -- (40,0);
-\draw[line width=0.5pt] (0,\kh) -- (16,\kh);
-\draw[line width=0.5pt] (24,\kh) -- (40,\kh);
+\draw[line width=0.5pt] (0.3,0) -- (15.7,0);
+\draw[line width=0.5pt] (24.3,0) -- (39.7,0);
+\draw[line width=0.5pt] (0.3,\kh) -- (15.7,\kh);
+\draw[line width=0.5pt] (24.3,\kh) -- (39.7,\kh);
 % Kolonlar
-\foreach \y in {0,7.0,9.0,16,24,31.0,33.0,40} {
+\foreach \y in {0.3,8.0,15.7,24.3,32.0,39.7} {
     \draw[fill=white, draw=black, line width=0.4pt] (\y-0.4,0) rectangle (\y+0.4,\kh);
 }
 % X-brace çaprazlar
-\draw[line width=0.3pt, gray] (0,0) -- (7.0,\kh);
-\draw[line width=0.3pt, gray] (7.0,0) -- (0,\kh);
-\draw[line width=0.3pt, gray] (9.0,0) -- (16,\kh);
-\draw[line width=0.3pt, gray] (16,0) -- (9.0,\kh);
-\draw[line width=0.3pt, gray] (24,0) -- (31.0,\kh);
-\draw[line width=0.3pt, gray] (31.0,0) -- (24,\kh);
-\draw[line width=0.3pt, gray] (33.0,0) -- (40,\kh);
-\draw[line width=0.3pt, gray] (40,0) -- (33.0,\kh);
-% KÖPRÜ (y=16 ile y=24 arası, 8cm açıklık)
-\draw[line width=0.6pt] (16,2) -- (24,2);
-\draw[line width=0.6pt] (16,4) -- (24,4);
-\draw[line width=0.3pt, gray] (16,2) -- (24,4);
-\draw[line width=0.3pt, gray] (24,2) -- (16,4);
+\draw[line width=0.3pt, gray] (0.3,0) -- (8.0,\kh);
+\draw[line width=0.3pt, gray] (8.0,0) -- (0.3,\kh);
+\draw[line width=0.3pt, gray] (8.0,0) -- (15.7,\kh);
+\draw[line width=0.3pt, gray] (15.7,0) -- (8.0,\kh);
+\draw[line width=0.3pt, gray] (24.3,0) -- (32.0,\kh);
+\draw[line width=0.3pt, gray] (32.0,0) -- (24.3,\kh);
+\draw[line width=0.3pt, gray] (32.0,0) -- (39.7,\kh);
+\draw[line width=0.3pt, gray] (39.7,0) -- (32.0,\kh);
+% KÖPRÜ (y=15.7 ile y=24.3 arası, 8.6cm açıklık)
+\draw[line width=0.6pt] (15.7,2) -- (24.3,2);
+\draw[line width=0.6pt] (15.7,4) -- (24.3,4);
+\draw[line width=0.3pt, gray] (15.7,2) -- (24.3,4);
+\draw[line width=0.3pt, gray] (24.3,2) -- (15.7,4);
 \node[font=\tiny, fill=white, inner sep=0.5pt] at (20,3) {Köprü};
 \node[font=\scriptsize, anchor=east] at (-1,\kh/2) {\textbf{n}};
 % Köprü bağlantı noktaları
-\draw[fill=black] (16,3) circle (0.4);
-\draw[fill=black] (24,3) circle (0.4);
+\draw[fill=black] (15.7,3) circle (0.4);
+\draw[fill=black] (24.3,3) circle (0.4);
 \end{scope}
 
 % n+1. kat - köprü yok
 \begin{scope}[shift={(0,2*\kh+2)}]
 % Kirişler
-\draw[line width=0.5pt] (0,0) -- (16,0);
-\draw[line width=0.5pt] (24,0) -- (40,0);
-\draw[line width=0.5pt] (0,\kh) -- (16,\kh);
-\draw[line width=0.5pt] (24,\kh) -- (40,\kh);
+\draw[line width=0.5pt] (0.3,0) -- (15.7,0);
+\draw[line width=0.5pt] (24.3,0) -- (39.7,0);
+\draw[line width=0.5pt] (0.3,\kh) -- (15.7,\kh);
+\draw[line width=0.5pt] (24.3,\kh) -- (39.7,\kh);
 % Kolonlar
-\foreach \y in {0,7.0,9.0,16,24,31.0,33.0,40} {
+\foreach \y in {0.3,8.0,15.7,24.3,32.0,39.7} {
     \draw[fill=white, draw=black, line width=0.4pt] (\y-0.4,0) rectangle (\y+0.4,\kh);
 }
 % X-brace çaprazlar
-\draw[line width=0.3pt, gray] (0,0) -- (7.0,\kh);
-\draw[line width=0.3pt, gray] (7.0,0) -- (0,\kh);
-\draw[line width=0.3pt, gray] (9.0,0) -- (16,\kh);
-\draw[line width=0.3pt, gray] (16,0) -- (9.0,\kh);
-\draw[line width=0.3pt, gray] (24,0) -- (31.0,\kh);
-\draw[line width=0.3pt, gray] (31.0,0) -- (24,\kh);
-\draw[line width=0.3pt, gray] (33.0,0) -- (40,\kh);
-\draw[line width=0.3pt, gray] (40,0) -- (33.0,\kh);
+\draw[line width=0.3pt, gray] (0.3,0) -- (8.0,\kh);
+\draw[line width=0.3pt, gray] (8.0,0) -- (0.3,\kh);
+\draw[line width=0.3pt, gray] (8.0,0) -- (15.7,\kh);
+\draw[line width=0.3pt, gray] (15.7,0) -- (8.0,\kh);
+\draw[line width=0.3pt, gray] (24.3,0) -- (32.0,\kh);
+\draw[line width=0.3pt, gray] (32.0,0) -- (24.3,\kh);
+\draw[line width=0.3pt, gray] (32.0,0) -- (39.7,\kh);
+\draw[line width=0.3pt, gray] (39.7,0) -- (32.0,\kh);
 \node[font=\scriptsize, anchor=east] at (-1,\kh/2) {$n{+}1$};
 \end{scope}
 
 % Boyutlar
-\draw[<->, line width=0.3pt] (16,-2) -- (24,-2);
-\node[font=\tiny] at (20,-3.5) {8 cm};
+\draw[<->, line width=0.3pt] (15.7,-2) -- (24.3,-2);
+\node[font=\tiny] at (20,-3.5) {8.6 cm};
 \draw[<->, line width=0.3pt] (42,\kh+1) -- (42,\kh+1+\kh);
 \node[font=\tiny, rotate=90] at (44,\kh+4) {6 cm};
 
@@ -551,101 +551,103 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 \begin{scope}[shift={(55,0)}]
 
 % Kirişler X yönü (Kule 1)
-\foreach \y in {0,7.0,9.0,16} {
-    \draw[line width=0.5pt] (0,\y) -- (30,\y);
+\foreach \y in {0.3,8.0,15.7} {
+    \draw[line width=0.5pt] (0.3,\y) -- (29.7,\y);
 }
 % Kirişler X yönü (Kule 2)
-\foreach \y in {24,31.0,33.0,40} {
-    \draw[line width=0.5pt] (0,\y) -- (30,\y);
+\foreach \y in {24.3,32.0,39.7} {
+    \draw[line width=0.5pt] (0.3,\y) -- (29.7,\y);
 }
 % Kirişler Y yönü (Kule 1)
-\foreach \x in {0,3,10.5,13.5,16.5,19.5,27,30} {
-    \draw[line width=0.5pt] (\x,0) -- (\x,16);
+\foreach \x in {0.3,3.0,11.3,15.0,18.7,27.0,29.7} {
+    \draw[line width=0.5pt] (\x,0.3) -- (\x,15.7);
 }
 % Kirişler Y yönü (Kule 2)
-\foreach \x in {0,3,10.5,13.5,16.5,19.5,27,30} {
-    \draw[line width=0.5pt] (\x,24) -- (\x,40);
+\foreach \x in {0.3,3.0,11.3,15.0,18.7,27.0,29.7} {
+    \draw[line width=0.5pt] (\x,24.3) -- (\x,39.7);
 }
 
-% X-Brace döşeme (Kule 1) - her panelde çapraz
-\draw[line width=0.3pt, gray] (0,0) -- (3,7.0);
-\draw[line width=0.3pt, gray] (3,0) -- (0,7.0);
-\draw[line width=0.3pt, gray] (27,0) -- (30,7.0);
-\draw[line width=0.3pt, gray] (30,0) -- (27,7.0);
-\draw[line width=0.3pt, gray] (0,9.0) -- (3,16);
-\draw[line width=0.3pt, gray] (3,9.0) -- (0,16);
-\draw[line width=0.3pt, gray] (27,9.0) -- (30,16);
-\draw[line width=0.3pt, gray] (30,9.0) -- (27,16);
-% Merkez X-brace
-\draw[line width=0.3pt, gray] (10.5,0) -- (19.5,7.0);
-\draw[line width=0.3pt, gray] (19.5,0) -- (10.5,7.0);
-\draw[line width=0.3pt, gray] (10.5,9.0) -- (19.5,16);
-\draw[line width=0.3pt, gray] (19.5,9.0) -- (10.5,16);
+% Döşeme çaprazları (Kule 1) - köşe ve merkez panel
+% Köşe sol
+\draw[line width=0.3pt, gray] (0.3,0.3) -- (3.0,8.0);
+\draw[line width=0.3pt, gray] (3.0,0.3) -- (0.3,8.0);
+\draw[line width=0.3pt, gray] (27.0,0.3) -- (29.7,8.0);
+\draw[line width=0.3pt, gray] (29.7,0.3) -- (27.0,8.0);
+\draw[line width=0.3pt, gray] (0.3,8.0) -- (3.0,15.7);
+\draw[line width=0.3pt, gray] (3.0,8.0) -- (0.3,15.7);
+\draw[line width=0.3pt, gray] (27.0,8.0) -- (29.7,15.7);
+\draw[line width=0.3pt, gray] (29.7,8.0) -- (27.0,15.7);
+% Merkez
+\draw[line width=0.3pt, gray] (11.3,0.3) -- (18.7,8.0);
+\draw[line width=0.3pt, gray] (18.7,0.3) -- (11.3,8.0);
+\draw[line width=0.3pt, gray] (11.3,8.0) -- (18.7,15.7);
+\draw[line width=0.3pt, gray] (18.7,8.0) -- (11.3,15.7);
 
-% X-Brace döşeme (Kule 2)
-\draw[line width=0.3pt, gray] (0,24) -- (3,31.0);
-\draw[line width=0.3pt, gray] (3,24) -- (0,31.0);
-\draw[line width=0.3pt, gray] (27,24) -- (30,31.0);
-\draw[line width=0.3pt, gray] (30,24) -- (27,31.0);
-\draw[line width=0.3pt, gray] (0,33.0) -- (3,40);
-\draw[line width=0.3pt, gray] (3,33.0) -- (0,40);
-\draw[line width=0.3pt, gray] (27,33.0) -- (30,40);
-\draw[line width=0.3pt, gray] (30,33.0) -- (27,40);
-% Merkez X-brace
-\draw[line width=0.3pt, gray] (10.5,24) -- (19.5,31.0);
-\draw[line width=0.3pt, gray] (19.5,24) -- (10.5,31.0);
-\draw[line width=0.3pt, gray] (10.5,33.0) -- (19.5,40);
-\draw[line width=0.3pt, gray] (19.5,33.0) -- (10.5,40);
+% Döşeme çaprazları (Kule 2)
+% Köşe sol
+\draw[line width=0.3pt, gray] (0.3,24.3) -- (3.0,32.0);
+\draw[line width=0.3pt, gray] (3.0,24.3) -- (0.3,32.0);
+\draw[line width=0.3pt, gray] (27.0,24.3) -- (29.7,32.0);
+\draw[line width=0.3pt, gray] (29.7,24.3) -- (27.0,32.0);
+\draw[line width=0.3pt, gray] (0.3,32.0) -- (3.0,39.7);
+\draw[line width=0.3pt, gray] (3.0,32.0) -- (0.3,39.7);
+\draw[line width=0.3pt, gray] (27.0,32.0) -- (29.7,39.7);
+\draw[line width=0.3pt, gray] (29.7,32.0) -- (27.0,39.7);
+% Merkez
+\draw[line width=0.3pt, gray] (11.3,24.3) -- (18.7,32.0);
+\draw[line width=0.3pt, gray] (18.7,24.3) -- (11.3,32.0);
+\draw[line width=0.3pt, gray] (11.3,32.0) -- (18.7,39.7);
+\draw[line width=0.3pt, gray] (18.7,32.0) -- (11.3,39.7);
 
 % Kule 1 kolonları
-\foreach \x in {0,3,10.5,13.5,16.5,19.5,27,30} {
-    \foreach \y in {0,7.0,9.0,16} {
+\foreach \x in {0.3,3.0,11.3,15.0,18.7,27.0,29.7} {
+    \foreach \y in {0.3,8.0,15.7} {
         \draw[fill=white, draw=black, line width=0.4pt] (\x-0.5,\y-0.5) rectangle (\x+0.5,\y+0.5);
     }
 }
 % Kule 2 kolonları
-\foreach \x in {0,3,10.5,13.5,16.5,19.5,27,30} {
-    \foreach \y in {24,31.0,33.0,40} {
+\foreach \x in {0.3,3.0,11.3,15.0,18.7,27.0,29.7} {
+    \foreach \y in {24.3,32.0,39.7} {
         \draw[fill=white, draw=black, line width=0.4pt] (\x-0.5,\y-0.5) rectangle (\x+0.5,\y+0.5);
     }
 }
 
-% KÖPRÜ - sadece x=10.5 ile x=19.5 arası (9cm), y=16 ile y=24 arası (8cm)
-\draw[fill=gray!30, draw=black, line width=0.8pt] (10.5,16) rectangle (19.5,24);
+% KÖPRÜ (x=11.3→18.7, y=15.7→24.3, genişlik 7.4cm, açıklık 8.6cm)
+\draw[fill=gray!30, draw=black, line width=0.8pt] (11.3,15.7) rectangle (18.7,24.3);
 % Köprü X-brace
-\draw[line width=0.4pt] (10.5,16) -- (19.5,24);
-\draw[line width=0.4pt] (19.5,16) -- (10.5,24);
+\draw[line width=0.4pt] (11.3,15.7) -- (18.7,24.3);
+\draw[line width=0.4pt] (18.7,15.7) -- (11.3,24.3);
 \node[font=\scriptsize, fill=white, inner sep=1pt] at (15,20) {Köprü};
 
 % Köprü bağlantı kolonları (vurgulu)
-\foreach \x in {10.5,13.5,16.5,19.5} {
-    \draw[fill=black, draw=black, line width=0.5pt] (\x-0.6,16-0.6) rectangle (\x+0.6,16+0.6);
-    \draw[fill=black, draw=black, line width=0.5pt] (\x-0.6,24-0.6) rectangle (\x+0.6,24+0.6);
+\foreach \x in {11.3,15.0,18.7} {
+    \draw[fill=black, draw=black, line width=0.5pt] (\x-0.6,15.7-0.6) rectangle (\x+0.6,15.7+0.6);
+    \draw[fill=black, draw=black, line width=0.5pt] (\x-0.6,24.3-0.6) rectangle (\x+0.6,24.3+0.6);
 }
 
 % Etiketler
-\node[font=\small] at (7,4) {Kule 1};
-\node[font=\small] at (7,28) {Kule 2};
+\node[font=\small] at (8,4) {Kule 1};
+\node[font=\small] at (8,28) {Kule 2};
 
 % Boyutlar
-\draw[<->, line width=0.3pt] (0,-3) -- (30,-3);
+\draw[<->, line width=0.3pt] (0.3,-3) -- (29.7,-3);
 \node[font=\tiny] at (15,-5) {$L_x = 30$ cm};
-\draw[<->, line width=0.3pt] (-3,0) -- (-3,16);
+\draw[<->, line width=0.3pt] (-3,0.3) -- (-3,15.7);
 \node[font=\tiny, rotate=90] at (-5,8) {16 cm};
-\draw[<->, line width=0.3pt] (33,16) -- (33,24);
-\node[font=\tiny, rotate=90] at (35,20) {8 cm};
-\draw[<->, line width=0.3pt] (10.5,43) -- (19.5,43);
-\node[font=\tiny] at (15,45) {9 cm};
+\draw[<->, line width=0.3pt] (33,15.7) -- (33,24.3);
+\node[font=\tiny, rotate=90] at (35,20) {8.6 cm};
+\draw[<->, line width=0.3pt] (11.3,43) -- (18.7,43);
+\node[font=\tiny] at (15,45) {7.4 cm};
 
 % Koordinatlar
-\node[font=\tiny, anchor=north] at (0,-1) {0};
-\node[font=\tiny, anchor=north] at (10.5,-1) {10.5};
-\node[font=\tiny, anchor=north] at (19.5,-1) {19.5};
-\node[font=\tiny, anchor=north] at (30,-1) {30};
-\node[font=\tiny, anchor=east] at (-1,0) {0};
-\node[font=\tiny, anchor=east] at (-1,16) {16};
-\node[font=\tiny, anchor=east] at (-1,24) {24};
-\node[font=\tiny, anchor=east] at (-1,40) {40};
+\node[font=\tiny, anchor=north] at (0.3,-1) {0.3};
+\node[font=\tiny, anchor=north] at (11.3,-1) {11.3};
+\node[font=\tiny, anchor=north] at (18.7,-1) {18.7};
+\node[font=\tiny, anchor=north] at (29.7,-1) {29.7};
+\node[font=\tiny, anchor=east] at (-1,0.3) {0.3};
+\node[font=\tiny, anchor=east] at (-1,15.7) {15.7};
+\node[font=\tiny, anchor=east] at (-1,24.3) {24.3};
+\node[font=\tiny, anchor=east] at (-1,39.7) {39.7};
 
 \node[font=\small, anchor=north] at (15,-8) {\textbf{(b) Kat Planı ($n$. kat)}};
 \end{scope}
@@ -665,7 +667,7 @@ Köşe periyotları $T_A = 0.2 \cdot S_{D1}/S_{DS} = 0.102$~s, $T_B = S_{D1}/S_{
 
 \end{tikzpicture}%
 }
-\caption{V9 modeli kolon yerleşimi ve köprü bağlantısı: (a)~YZ kesiti ($n{-}1$, $n$, $n{+}1$ katları), (b)~köprü katı planı. Şekil temsili ve ölçeklendirilmemiştir. Temsilî çizim için DASK 2026 kodları~\cite{github_repo} kullanılmıştır.}
+\caption{V10 modeli kolon yerleşimi ve köprü bağlantısı: (a)~YZ kesiti ($n{-}1$, $n$, $n{+}1$ katları), (b)~köprü katı planı. $7 \times 3$ kolon gridi, köprü açıklığı $8{,}6$~cm. Temsilî çizim için DASK 2026 kodları~\cite{github_repo} kullanılmıştır.}
 \label{fig:plan}
 \end{figure}
 
@@ -705,7 +707,7 @@ Türkiye'de inşaat sektörü köklü bir betonarme geleneği üzerine inşa edi
 
 \subsubsection{EDYY'nin Yetersizliği}
 
-Eşdeğer Deprem Yükü Yöntemi (EDYY, Md.~4.7.3) yapı davranışının birinci mod ile temsil edilebileceğini varsayar. Kat deprem kuvvetleri bu tek modun şekil fonksiyonuna istinaden dağıtılır. Ne var ki ikiz kule--köprü sisteminde köprü elemanları iki kulenin müstakil titreşim modlarını çiftleştirmekte; translasyonel ve torsiyonel bileşenleri müteselsilen ihtiva eden karışık modlar hasıl olmaktadır. İlk üç doğal periyot ($T_1=0.200$~s, $T_2=0.147$~s, $T_3=0.135$~s) birbirine yakındır; birinci modun etkin kütle oranı yalnızca \%42'dir. Kalan katkı üst modlara tevzi olmaktadır. Bu husus EDYY'nin esas varsayımını geçersiz kılmaktadır~\cite{tbdy2018}.
+Eşdeğer Deprem Yükü Yöntemi (EDYY, Md.~4.7.3) yapı davranışının birinci mod ile temsil edilebileceğini varsayar. Kat deprem kuvvetleri bu tek modun şekil fonksiyonuna istinaden dağıtılır. Ne var ki ikiz kule--köprü sisteminde köprü elemanları iki kulenin müstakil titreşim modlarını çiftleştirmekte; translasyonel ve torsiyonel bileşenleri müteselsilen ihtiva eden karışık modlar hasıl olmaktadır. İlk üç doğal periyot ($T_1=0.115$~s, $T_2=0.079$~s, $T_3=0.054$~s) birbirine yakındır; birinci modun etkin kütle oranı \%72 olup kalan katkı üst modlara tevzi olmaktadır. Bu husus EDYY'nin esas varsayımını geçersiz kılmaktadır~\cite{tbdy2018}.
 
 \subsubsection{MBY'nin Tercih Gerekçesi}
 
@@ -715,7 +717,7 @@ Taban kesme kuvveti Md.~4.8.4 Denk.~4.31 uyarınca $\beta_{tE}$ ile kontrol edil
 
 \subsubsection{Doğrulama ve Ölçekli Model}
 
-\textsc{OpenSees}\textsuperscript{\textregistered}~\cite{opensees} ile 1680 düğüm, 4248 \texttt{elasticBeamColumn} elemanlı V9 modeli tesis edilmiştir. MBY neticeleri iki müstakil yöntemle teyit edilmiştir: ZTAH (Md.~4.8.3; Düzce BOL090, $1/\!\sqrt{50}$ ölçek, Newmark-$\beta$, $\Delta t = 0.005$~s) ve statik itme (Md.~5.6.5; ters üçgen yük, $\delta_t = 6.12$~cm)~\cite{github_repo}. Her iki tahlilde taban kesme kuvveti ve kat ötelemesi MBY ile mutabık bulunmuştur.
+\textsc{OpenSees}\textsuperscript{\textregistered}~\cite{opensees} ile 1108 düğüm, 2794~elemanlı V10 modeli tesis edilmiştir. MBY neticeleri iki müstakil yöntemle teyit edilmiştir: ZTAH (Md.~4.8.3; Düzce BOL090, $1/\!\sqrt{50}$ ölçek, Newmark-$\beta$, $\Delta t = 0.005$~s) ve statik itme (Md.~5.6.5; ters üçgen yük, $\delta_t = 6.12$~cm)~\cite{github_repo}. Her iki tahlilde taban kesme kuvveti ve kat ötelemesi MBY ile mutabık bulunmuştur.
 
 TBDY 2018 usulleri gerçek ölçekli binalar için tanzim edilmiş olmakla birlikte dayandığı nazari esaslar ölçekten bağımsızdır. Özdeğer problemi, CQC ve modal süperpozisyon sırf riyazi işlemlerdir; yapının balsa ($E\!=\!3.5$~GPa) yahut çelik ($E\!=\!200$~GPa) olması yalnızca $\mathbf{K}$ ve $\mathbf{M}$'yi değiştirir. Benzeşim kuramı gereğince $S_F\!=\!S_E S_L^2$, $S_m\!=\!S_\rho S_L^3$ şartı sağlandıkça bu yöntemler ölçekli modelde de mer'iyyetini muhafaza etmektedir~\cite{tbdy2018}.
 
@@ -734,7 +736,7 @@ TBDY 2018 usulleri gerçek ölçekli binalar için tanzim edilmiş olmakla birli
 MBY'de deprem talebi tasarım spektrumundan okunur; spektrum ise belirli bir referans sönüme göre tanzim edilmiştir. TBDY 2018 $\xi = \%5$ esas alır. Farklı $\xi$ değerlerinde spektral ordinatlar $\eta_b = \sqrt{10/(5 + \xi\,(\%))}$ ile tashih edilir (Md.~2.3.4): $\xi = \%2 \to \eta_b = 1.195$ (spektrum yükselir, talep artar), $\xi = \%10 \to 0.816$ (talep düşer). Sebebi açıktır: düşük sönümlü yapı rezonans bandında daha fazla enerji biriktirir, dolayısıyla aynı yer hareketi altında daha büyük ivme tepkisi verir. Çelik çerçeve modelimiz için $\xi = \%5$ benimsenmiştir; bu, kaynaksız bulonlu birleşim detayı ile uyumlu alt sınır değeridir~\cite{cythye2018}.
 
 \textit{Rayleigh sönümü.}
-ZTAH'de hareket denklemi $\mathbf{M}\ddot{\mathbf{u}} + \mathbf{C}\dot{\mathbf{u}} + \mathbf{K}\mathbf{u} = -\mathbf{M}\mathbf{1}\ddot{u}_g(t)$ adım adım entegre edilir; burada $\mathbf{C}$ sönüm matrisinin açıkça tanımlanması gerekir. Genel bir $\mathbf{C}$ matrisi $N^2$ bağımsız terim içereceğinden deneysel tayini imkansızdır. Rayleigh formülasyonu $\mathbf{C} = a_0\mathbf{M} + a_1\mathbf{K}$ bu sorunu iki parametreye indirger; $\mathbf{M}$ ve $\mathbf{K}$'ya orantılı olduğundan modal ayrışma özelliği korunur: $\xi_n = a_0/(2\omega_n) + a_1\omega_n/2$. İki kontrol frekansında hedef $\xi$ sağlanacak biçimde $a_0$ ve $a_1$ hesaplanır~\cite{opensees}. V9 modelinde $\omega_1 = 31.43$~rad/s ve $\omega_2 = 3.5\omega_1 = 110.0$~rad/s seçilmiş; $\xi = 0.05$ ile $a_0 = 2.443$, $a_1 = 7.07 \times 10^{-4}$~s elde edilmiştir. $\omega_1$--$\omega_2$ arasında sönüm hedefin altında kalır ($\xi_{min} = 0.042$); yüksek frekanslı modlarda $a_1\mathbf{K}$ terimi baskınlaşarak aşırı sönüm verir ve fiziksel anlamsız yüksek mod salınımları bastırılır (Şekil~\ref{fig:damping}b).
+ZTAH'de hareket denklemi $\mathbf{M}\ddot{\mathbf{u}} + \mathbf{C}\dot{\mathbf{u}} + \mathbf{K}\mathbf{u} = -\mathbf{M}\mathbf{1}\ddot{u}_g(t)$ adım adım entegre edilir; burada $\mathbf{C}$ sönüm matrisinin açıkça tanımlanması gerekir. Genel bir $\mathbf{C}$ matrisi $N^2$ bağımsız terim içereceğinden deneysel tayini imkansızdır. Rayleigh formülasyonu $\mathbf{C} = a_0\mathbf{M} + a_1\mathbf{K}$ bu sorunu iki parametreye indirger; $\mathbf{M}$ ve $\mathbf{K}$'ya orantılı olduğundan modal ayrışma özelliği korunur: $\xi_n = a_0/(2\omega_n) + a_1\omega_n/2$. İki kontrol frekansında hedef $\xi$ sağlanacak biçimde $a_0$ ve $a_1$ hesaplanır~\cite{opensees}. V10 modelinde $\omega_1 = 54.64$~rad/s ve $\omega_2 = 3.5\omega_1 = 191.2$~rad/s seçilmiş; $\xi = 0.05$ ile $a_0 = 4.250$, $a_1 = 4.07 \times 10^{-4}$~s elde edilmiştir. $\omega_1$--$\omega_2$ arasında sönüm hedefin altında kalır ($\xi_{min} = 0.042$); yüksek frekanslı modlarda $a_1\mathbf{K}$ terimi baskınlaşarak aşırı sönüm verir ve fiziksel anlamsız yüksek mod salınımları bastırılır (Şekil~\ref{fig:damping}b).
 
 \textit{Parametrik doğrulama.}
 Sönümün yapısal tepkiye etkisini nicel olarak göstermek amacıyla KYH-1 (PGA $= 0.335$~g) altında 9 farklı $\xi$ ($\%0{,}5$--$\%20$) ile tam ZTAH ($32{,}2$~s, 6446 adım, sıfır yakınsama hatası) icra edilmiştir (Şekil~\ref{fig:damping}a). $\xi = \%0{,}5$'te $u_{max} = 1{,}127$~cm iken $\xi = \%5$'te $0{,}449$~cm'e, $\xi = \%20$'de $0{,}319$~cm'e düşmüştür. Düşük sönümde ($\xi < \%3$) eğri dikleşir zira birinci mod rezonans bandına yaklaşır; yüksek sönümde ise eğri yataylaşır çünkü enerji yutma kapasitesi doyuma ulaşır. Bu durum sönüm seçiminin tasarımda kritik bir durum olduğunu teyit etmektedir~\cite{tbdy2018}.
@@ -808,10 +810,10 @@ Sönümün yapısal tepkiye etkisini nicel olarak göstermek amacıyla KYH-1 (PG
     (0.200,0.1000) (0.300,0.1315) (0.500,0.2034)
 };
 \addlegendentry{$\xi_0\!=\!\%10$}
-\draw[red!70!black, thin, dashed] (axis cs:0.200,0) -- (axis cs:0.200,0.215);
-\node[font=\tiny, red!70!black, anchor=south] at (axis cs:0.200,0.213) {$T_1$};
-\draw[red!70!black, thin, dashed] (axis cs:0.135,0) -- (axis cs:0.135,0.215);
-\node[font=\tiny, red!70!black, anchor=south] at (axis cs:0.135,0.213) {$T_3$};
+\draw[red!70!black, thin, dashed] (axis cs:0.115,0) -- (axis cs:0.115,0.215);
+\node[font=\tiny, red!70!black, anchor=south] at (axis cs:0.115,0.213) {$T_1$};
+\draw[red!70!black, thin, dashed] (axis cs:0.054,0) -- (axis cs:0.054,0.215);
+\node[font=\tiny, red!70!black, anchor=south] at (axis cs:0.054,0.213) {$T_3$};
 \end{semilogxaxis}
 \end{tikzpicture}
 \\[1pt]{\footnotesize (b)}
@@ -833,10 +835,10 @@ Sönümün yapısal tepkiye etkisini nicel olarak göstermek amacıyla KYH-1 (PG
 \textbf{Cevap:} Üç yer hareketi kaydı (KYH-1: $0.335$~g, KYH-2: $1.243$~g, KYH-3: $1.896$~g) altında tam ZTAH ($\Delta t\!=\!0.005$~s, 6446~adım, $\xi\!=\!0.05$~Rayleigh) icra edilmiştir~\cite{tbdy2018, opensees}. Önerilen hibrit sistemin etkisi iki esas tepki büyüklüğü üzerinden değerlendirilmiştir (Şekil~\ref{fig:drift_profile}).
 
 \textit{Göreli kat ötelemesi.}
-Maksimum interstory drift her üç kayıt altında 12.~katta teşekkül etmektedir: KYH-1'de $\lambda_{max}\!=\!0.439\%$, KYH-2'de $1.676\%$, KYH-3'te $3.468\%$. Çaprazlı çerçeveler taban katlarında rijitliği artırarak öteleme talebini düşürmekte; tepe katlarında moment çerçevesi baskınlığı sebebiyle drift azalmaktadır. Öteleme talebi orta katlarda (8--14.~kat) yoğunlaşmakta olup bu husus rijitlik gradyanı ile yüksek modların ($T_2\!=\!0.147$~s, $T_3\!=\!0.135$~s) bu kotlarda birinci moda yakın genlikler hasıl etmesinden kaynaklanmaktadır. PGA oranı $3.71\times$ iken drift oranı $3.82\times$ olarak elde edilmiş; elastik modelin lineer orantılılığı teyit edilmiştir. Kule arası diferansiyel öteleme $\Delta u_x < 0.001$~cm olup sky bridge kuleleri eş-fazlı çalıştırmaktadır~\cite{patoliya2023}. Tasarım depremi (KYH-1) altında $\lambda_{max}\!=\!0.439\% \ll 0.8\%$ ($\kappa\!=\!0.5$ çelik sınırı, Md.~4.9.1.3) olup yapı \textbf{öteleme güvenliğini} geniş marjla sağlamaktadır~\cite{tbdy2018, cythye2018}.
+Maksimum interstory drift her üç kayıt altında 12.~katta teşekkül etmektedir: KYH-1'de $\lambda_{max}\!=\!0.439\%$, KYH-2'de $1.676\%$, KYH-3'te $3.468\%$. Çaprazlı çerçeveler taban katlarında rijitliği artırarak öteleme talebini düşürmekte; tepe katlarında moment çerçevesi baskınlığı sebebiyle drift azalmaktadır. Öteleme talebi orta katlarda (8--14.~kat) yoğunlaşmakta olup bu husus rijitlik gradyanı ile yüksek modların ($T_2\!=\!0.079$~s, $T_3\!=\!0.054$~s) bu kotlarda birinci moda yakın genlikler hasıl etmesinden kaynaklanmaktadır. PGA oranı $3.71\times$ iken drift oranı $3.82\times$ olarak elde edilmiş; elastik modelin lineer orantılılığı teyit edilmiştir. Kule arası diferansiyel öteleme $\Delta u_x < 0.001$~cm olup sky bridge kuleleri eş-fazlı çalıştırmaktadır~\cite{patoliya2023}. Tasarım depremi (KYH-1) altında $\lambda_{max}\!=\!0.439\% \ll 0.8\%$ ($\kappa\!=\!0.5$ çelik sınırı, Md.~4.9.1.3) olup yapı \textbf{öteleme güvenliğini} geniş marjla sağlamaktadır~\cite{tbdy2018, cythye2018}.
 
 \textit{Kat ivmeleri.}
-Çatı katı ivme yükseltme faktörü: KYH-1'de $\Omega\!=\!3.17$, KYH-2'de $2.60$, KYH-3'te $3.30$ ($\bar{\Omega}\!\approx\!3.0$). Kısa periyotlu yapı ($T_1\!=\!0.200$~s, plato bölgesi) sismik enerjiyi büyük oranda ivme olarak yapıya intikal ettirmektedir: KYH-3'te $u_{roof}\!=\!3.56$~cm (\%2.4) iken $\ddot{u}_{roof}\!=\!6.26$~g (PGA'nın $3.3\times$'ı). Rijit yapıların karakteristiği budur: \textbf{öteleme talebi düşük}, \textbf{ivme talebi yüksektir}. Periyodun uzatılması $\Omega$'yı düşürür fakat drift talebini artırır; bu mübadele yapısal sistem seçiminin esas dengeleme parametresidir. Çaprazlı çerçeveler $K_{lateral}$'i artırarak $T_1$'i düşürmekte (drift $\downarrow$, $\Omega$ $\uparrow$); moment çerçeveleri redundans ve yedek taşıyıcılık; sky bridge ise kuplajlama ($\Delta u_x \!\approx\! 0$, $\eta_{bi}\!=\!1.915$) temin etmektedir~\cite{tambunan2024}.
+Çatı katı ivme yükseltme faktörü: KYH-1'de $\Omega\!=\!3.17$, KYH-2'de $2.60$, KYH-3'te $3.30$ ($\bar{\Omega}\!\approx\!3.0$). Kısa periyotlu yapı ($T_1\!=\!0.115$~s, plato bölgesi) sismik enerjiyi büyük oranda ivme olarak yapıya intikal ettirmektedir: KYH-3'te $u_{roof}\!=\!3.56$~cm (\%2.4) iken $\ddot{u}_{roof}\!=\!6.26$~g (PGA'nın $3.3\times$'ı). Rijit yapıların karakteristiği budur: \textbf{öteleme talebi düşük}, \textbf{ivme talebi yüksektir}. Periyodun uzatılması $\Omega$'yı düşürür fakat drift talebini artırır; bu mübadele yapısal sistem seçiminin esas dengeleme parametresidir. Çaprazlı çerçeveler $K_{lateral}$'i artırarak $T_1$'i düşürmekte (drift $\downarrow$, $\Omega$ $\uparrow$); moment çerçeveleri redundans ve yedek taşıyıcılık; sky bridge ise kuplajlama ($\Delta u_x \!\approx\! 0$, $\eta_{bi}\!=\!1.915$) temin etmektedir~\cite{tambunan2024}.
 
 \begin{figure}[H]
 \centering

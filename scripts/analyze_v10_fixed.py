@@ -105,7 +105,7 @@ for nid in rnodes:
 total_roof_mass = 2.22 / 1000
 
 # Self weight: distributed to all nodes
-SELF_KG = 1.149
+SELF_KG = 1.168
 ms = SELF_KG / 1000 / len(all_int_nodes)
 for nid in all_int_nodes:
     node_mass[nid] += ms
