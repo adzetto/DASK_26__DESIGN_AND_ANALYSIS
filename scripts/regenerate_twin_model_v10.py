@@ -194,35 +194,40 @@ for tower_num, y_coords in [(1, Y_COORDS_T1), (2, Y_COORDS_T2)]:
                     add_element(n_bl, n_tr, 'brace_xz', tower_str, 'pin')
                     add_element(n_br, n_tl, 'brace_xz', tower_str, 'pin')
 
-    # YZ braces: 3-floor span MIRRORED CHECKERBOARD on side faces
-    # Tower 1: odd groups → right bay, even groups → left bay
-    # Tower 2: odd groups → left bay, even groups → right bay
-    # First and last groups: FULL (both bays)
-    n_groups = len(brace_groups_3)
-    for gi, (fb, ft) in enumerate(brace_groups_3):
-        is_full = (gi == 0 or gi == n_groups - 1)  # bottom & top = full
-        for x in [X_COORDS[0], X_COORDS[-1]]:
-            active_bays = []
-            for j in range(len(y_coords) - 1):
-                y_bot, y_top = y_coords[j], y_coords[j+1]
-                active_bays.append((j, y_bot, y_top))
-            for bi, (j, y_bot, y_top) in enumerate(active_bays):
-                if is_full:
-                    place = True
-                else:
-                    # Tower 1: place if (gi+bi) even; Tower 2: place if (gi+bi) odd
-                    if tower_num == 1:
-                        place = (gi + bi) % 2 == 0
-                    else:
-                        place = (gi + bi) % 2 == 1
-                if not place:
-                    continue
-                n_bl = get_node(tower_num, fb, x, y_bot)
-                n_br = get_node(tower_num, fb, x, y_top)
-                n_tl = get_node(tower_num, ft, x, y_bot)
-                n_tr = get_node(tower_num, ft, x, y_top)
-                add_element(n_bl, n_tr, 'brace_yz', tower_str, 'pin')
-                add_element(n_br, n_tl, 'brace_yz', tower_str, 'pin')
+    # ============================================================
+    # YZ BRACES: MEGA BRACE SYSTEM on side faces (x=0.3, x=29.7)
+    # Pattern: converge to center column, diverge to next bridge
+    # Matches TikZ figure in Section 3 (rapor.tex)
+    # ============================================================
+    for x in [X_COORDS[0], X_COORDS[-1]]:
+        y_left  = y_coords[0]   # 0.3 or 24.3
+        y_mid   = y_coords[1]   # 8.0 or 32.0  (center column)
+        y_right = y_coords[2]   # 15.7 or 39.7
+
+        # (A) GROUND BLOCK: floor 0 → floor 2 (center) → floor 5 (bridge 1 bottom)
+        # Converge: edges → center
+        add_element(get_node(tower_num, 0, x, y_left),  get_node(tower_num, 2, x, y_mid), 'brace_yz', tower_str, 'pin')
+        add_element(get_node(tower_num, 0, x, y_right), get_node(tower_num, 2, x, y_mid), 'brace_yz', tower_str, 'pin')
+        # Diverge: center → edges
+        add_element(get_node(tower_num, 2, x, y_mid), get_node(tower_num, 5, x, y_left),  'brace_yz', tower_str, 'pin')
+        add_element(get_node(tower_num, 2, x, y_mid), get_node(tower_num, 5, x, y_right), 'brace_yz', tower_str, 'pin')
+
+        # (B) UPPER BLOCKS: bridge_bot → center → next_bridge_bot
+        #     + bridge_top → center (extra stiffening)
+        for f_bot, f_top, f_mid, f_br_top in [(5,11,8,6), (11,17,14,12), (17,23,20,18)]:
+            # Converge: bridge bottom edges → mega center
+            add_element(get_node(tower_num, f_bot, x, y_left),  get_node(tower_num, f_mid, x, y_mid), 'brace_yz', tower_str, 'pin')
+            add_element(get_node(tower_num, f_bot, x, y_right), get_node(tower_num, f_mid, x, y_mid), 'brace_yz', tower_str, 'pin')
+            # Diverge: mega center → next bridge bottom edges
+            add_element(get_node(tower_num, f_mid, x, y_mid), get_node(tower_num, f_top, x, y_left),  'brace_yz', tower_str, 'pin')
+            add_element(get_node(tower_num, f_mid, x, y_mid), get_node(tower_num, f_top, x, y_right), 'brace_yz', tower_str, 'pin')
+            # Bridge top → mega center connection
+            add_element(get_node(tower_num, f_br_top, x, y_left),  get_node(tower_num, f_mid, x, y_mid), 'brace_yz', tower_str, 'pin')
+            add_element(get_node(tower_num, f_br_top, x, y_right), get_node(tower_num, f_mid, x, y_mid), 'brace_yz', tower_str, 'pin')
+
+        # (C) TOP BLOCK: floor 23 (bridge 4 bottom) → floor 25 (roof)
+        add_element(get_node(tower_num, 23, x, y_left),  get_node(tower_num, 25, x, y_mid), 'brace_yz', tower_str, 'pin')
+        add_element(get_node(tower_num, 23, x, y_right), get_node(tower_num, 25, x, y_mid), 'brace_yz', tower_str, 'pin')
 
     # FLOOR BRACES
     for floor in range(TOTAL_FLOORS):
