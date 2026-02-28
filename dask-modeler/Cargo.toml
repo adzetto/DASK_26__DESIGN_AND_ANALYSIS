@@ -1,0 +1,27 @@
+[package]
+name = "dask-modeler"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = { version = "0.17", features = ["default"] }
+bevy_egui = "0.38"
+bevy_panorbit_camera = "0.33"
+
+nalgebra = "0.33"
+nalgebra-sparse = "0.10"
+
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+csv = "1.4"
+
+log = "0.4"
+env_logger = "0.11"
+anyhow = "1.0"
+rfd = "0.15"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
